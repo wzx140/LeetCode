@@ -1,2 +1,2 @@
 # LeetCode
-some exercises from LeetCode.cn for study
+LeetCode上的练习和我的solution
