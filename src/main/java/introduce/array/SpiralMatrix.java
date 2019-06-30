@@ -14,11 +14,11 @@ class Solution {
         int row = matrix.length;
         int column = matrix[0].length;
         List<Integer> res = new ArrayList<Integer>(row * column);
-        // 当前索引
+        // current index
         int[] next = { 0, 0 };
-        // 0->右 1->下 2->左 3->上
+        // 0->right 1->down 2->left 3->up
         int mode = 0;
-        // 当前边界
+        // current boundary
         int[] boundary = { column - 1, row - 1, 0, 1 };
 
         for (int i = 0; i < row * column; i++) {
@@ -30,10 +30,10 @@ class Solution {
                 x = next[0];
                 y = next[1];
             } else {
-                // 改变方向
+                // change mode(direct)
                 mode = nextMode(mode);
                 if (mode == 0) {
-                    // 当四个方向都完成时，边界缩小1
+                    // shrink the boundary
                     boundary[0] -= 1;
                     boundary[1] -= 1;
                     boundary[2] += 1;
@@ -48,28 +48,28 @@ class Solution {
     private int[] nextIndex(int x, int y, int[] boundary, int mode) {
         switch (mode) {
         case 0:
-            // 右
+            // right
             if (y == boundary[0]) {
                 return null;
             } else {
                 return new int[] { x, y + 1 };
             }
         case 1:
-            // 下
+            // down
             if (x == boundary[1]) {
                 return null;
             } else {
                 return new int[] { x + 1, y };
             }
         case 2:
-            // 左
+            // left
             if (y == boundary[2]) {
                 return null;
             } else {
                 return new int[] { x, y - 1 };
             }
         case 3:
-            // 上
+            // up
             if (x == boundary[3]) {
                 return null;
             } else {

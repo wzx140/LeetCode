@@ -4,16 +4,16 @@ package main.java.introduce.array;
  * https://leetcode.com/explore/learn/card/array-and-string/201/introduction-to-array/1148/
  */
 public class PlusOne {
-    // 这种方法不可以，因为会溢出
+    // converting array to number will overflow
     public int[] plusOne1(int[] digits) {
-        // array转化数字
+        // convert array to number
         int num = 0;
         for (int i = 0; i < digits.length; i++) {
             System.out.println(digits[digits.length - i - 1] * Math.pow(10, i));
             num += digits[digits.length - i - 1] * Math.pow(10, i);
         }
         num += 1;
-        // 数字转化array
+        // convert number to array
         int bit = String.valueOf(num).length();
         int[] res = new int[bit];
         for (int i = bit - 1; i >= 0; i--) {
@@ -35,16 +35,16 @@ public class PlusOne {
                 digit += 1;
             }
             if (digit >= 10) {
-                // 进位
+                // carry
                 UnRes[i] = 0;
                 carry = true;
             } else {
-                // 不进位
+                // not carry
                 UnRes[i] = digit;
                 carry = false;
             }
         }
-        // 最高位进位问题
+        // highest bit carry
         if (carry) {
             for (int i = 1; i < carryRes.length; i++) {
                 carryRes[i] = UnRes[i - 1];
