@@ -6,9 +6,9 @@ import java.util.List;
 /**
  * https://leetcode.com/explore/learn/card/array-and-string/202/introduction-to-2d-array/1168/
  */
-class Solution {
+public class SpiralMatrix {
     public List<Integer> spiralOrder(int[][] matrix) {
-        if(matrix==null||matrix.length==0){
+        if (matrix == null || matrix.length == 0) {
             return new ArrayList<Integer>();
         }
         int row = matrix.length;
@@ -89,7 +89,7 @@ class Solution {
     }
 
     public static void main(String[] args) {
-        Solution solution = new Solution();
+        SpiralMatrix solution = new SpiralMatrix();
         int[][] matrix = { { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 } };
         List<Integer> res = solution.spiralOrder(matrix);
         System.out.println(res);

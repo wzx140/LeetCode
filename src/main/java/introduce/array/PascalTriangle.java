@@ -6,7 +6,7 @@ import java.util.ArrayList;
 /**
  * https://leetcode.com/explore/learn/card/array-and-string/202/introduction-to-2d-array/1170/
  */
-class PascalTraiangle {
+public class PascalTriangle {
     public List<List<Integer>> generate(int numRows) {
         if (numRows <= 0) {
             return new ArrayList<List<Integer>>();
@@ -32,7 +32,7 @@ class PascalTraiangle {
     }
 
     public static void main(String[] args) {
-        PascalTraiangle pascalTraiangle = new PascalTraiangle();
+        PascalTriangle pascalTraiangle = new PascalTriangle();
         System.out.println(pascalTraiangle.generate(5));
     }
 }
