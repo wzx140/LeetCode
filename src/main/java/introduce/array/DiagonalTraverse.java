@@ -130,19 +130,4 @@ public class DiagonalTraverse {
         }
         return res;
     }
-
-    public static void main(String[] args) {
-        int[][] a = { { 1, 2, 3, 4, 5 } };
-        DiagonalTraverse diagonalTraverse = new DiagonalTraverse();
-        int[] res1 = diagonalTraverse.findDiagonalOrder1(a);
-        for (int i = 0; i < res1.length; i++) {
-            System.out.println(res1[i]);
-        }
-        System.out.println();
-        int[] res2 = diagonalTraverse.findDiagonalOrder2(a);
-        for (int i = 0; i < res2.length; i++) {
-            System.out.println(res2[i]);
-        }
-    }
-
 }

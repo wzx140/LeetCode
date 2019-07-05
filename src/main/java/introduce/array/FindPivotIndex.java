@@ -55,11 +55,4 @@ public class FindPivotIndex {
         }
         return -1;
     }
-
-    public static void main(String[] args) {
-        FindPivotIndex findPivotIndex = new FindPivotIndex();
-        int[] nums = { -1, -1, 0, 1, 1, 0 };
-        System.out.println(findPivotIndex.pivotIndex1(nums));
-        System.out.println(findPivotIndex.pivotIndex2(nums));
-    }
 }

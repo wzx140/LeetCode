@@ -30,9 +30,4 @@ public class PascalTriangle {
         }
         return res;
     }
-
-    public static void main(String[] args) {
-        PascalTriangle pascalTraiangle = new PascalTriangle();
-        System.out.println(pascalTraiangle.generate(5));
-    }
 }

@@ -65,11 +65,4 @@ public class AddBinary {
         }
         return String.valueOf(res);
     }
-
-    public static void main(String[] args) {
-        AddBinary solution = new AddBinary();
-        System.out.println(solution.addBinary1("1111", "1"));
-        System.out.println(solution.addBinary2("1111", "1"));
-    }
-
 }

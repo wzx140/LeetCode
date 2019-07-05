@@ -87,11 +87,4 @@ public class SpiralMatrix {
             return 0;
         }
     }
-
-    public static void main(String[] args) {
-        SpiralMatrix solution = new SpiralMatrix();
-        int[][] matrix = { { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 } };
-        List<Integer> res = solution.spiralOrder(matrix);
-        System.out.println(res);
-    }
 }

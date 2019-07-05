@@ -21,10 +21,4 @@ public class ArrayPartitionI {
         }
         return sum;
     }
-
-    public static void main(String[] args) {
-        int[] nums = {2, 3, 1, 3, 6, 2};
-        ArrayPartitionI solution = new ArrayPartitionI();
-        System.out.println(solution.arrayPairSum(nums));
-    }
 }

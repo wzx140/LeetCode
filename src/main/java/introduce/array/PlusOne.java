@@ -9,7 +9,6 @@ public class PlusOne {
         // convert array to number
         int num = 0;
         for (int i = 0; i < digits.length; i++) {
-            System.out.println(digits[digits.length - i - 1] * Math.pow(10, i));
             num += digits[digits.length - i - 1] * Math.pow(10, i);
         }
         num += 1;
@@ -53,15 +52,6 @@ public class PlusOne {
             return carryRes;
         } else {
             return UnRes;
-        }
-    }
-
-    public static void main(String[] args) {
-        PlusOne plusOne = new PlusOne();
-        int[] a = { 1, 2, 3, 4 };
-        int[] res = plusOne.plusOne2(a);
-        for (int num : res) {
-            System.out.print(num);
         }
     }
 }

@@ -24,11 +24,4 @@ public class LargestNumberAtLeastTwiceofOthers {
             return -1;
         }
     }
-
-    public static void main(String[] args) {
-        LargestNumberAtLeastTwiceofOthers largestNumberAtLeastTwiceofOthers = new LargestNumberAtLeastTwiceofOthers();
-        int[] a = { 0, 0, 4, 3 };
-        System.out.println(largestNumberAtLeastTwiceofOthers.dominantIndex(a));
-    }
-
 }
