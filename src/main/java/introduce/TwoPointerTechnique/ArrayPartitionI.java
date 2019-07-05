@@ -1,4 +1,4 @@
-package main.java.introduce.TwoPointerTechnique;
+package introduce.TwoPointerTechnique;
 
 import java.util.ArrayList;
 import java.util.Collections;

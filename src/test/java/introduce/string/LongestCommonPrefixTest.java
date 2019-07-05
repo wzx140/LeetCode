@@ -1,4 +1,4 @@
-package main.java.introduce.string;
+package introduce.string;
 
 import org.junit.Test;
 

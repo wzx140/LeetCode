@@ -1,9 +1,8 @@
-package main.java.introduce.array;
+package introduce.array;
 
-import org.junit.Before;
 import org.junit.Test;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 public class FindPivotIndexTest {
     private int[] a = {1, 7, 3, 6, 5, 6};
