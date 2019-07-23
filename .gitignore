@@ -162,8 +162,14 @@ dmypy.json
 ### Python Patch ###
 .venv/
 
-# vscode
-.vscode
+# vs
+*.sln
+*.sdf
+*.suo
+*.vcxproj
+*.filters
+*.user
+src/main/c++/x64
 # End of https://www.gitignore.io/api/c++,python,jupyternotebook
 /.idea/
 out
