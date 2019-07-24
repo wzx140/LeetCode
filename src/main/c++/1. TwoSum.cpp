@@ -1,5 +1,4 @@
 #include <iostream>
-#include <Utills.h>
 #include <vector>
 #include <map>
 #include <iostream>
@@ -63,15 +62,4 @@ vector<int> twoSum3(vector<int>& nums, int target){
 		}
 	}
 	return res;
-}
-
-int main(int argc, char *argv[]){
-	vector<int> a;
-	a.push_back(2);
-	a.push_back(7);
-	a.push_back(11);
-	a.push_back(15);
-	demonstrate::printVector(a);
-	demonstrate::printVector(twoSum3(a,9));
-	return 0;
 }

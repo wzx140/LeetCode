@@ -173,3 +173,7 @@ src/main/c++/x64
 # End of https://www.gitignore.io/api/c++,python,jupyternotebook
 /.idea/
 out
+*.opensdf
+UnitTest/
+Debug/
+ipch/
