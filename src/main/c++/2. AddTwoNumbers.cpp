@@ -6,7 +6,7 @@ ListNode* AddTwoNumbers::addTwoNumbers1(ListNode* l1, ListNode* l2) {
 	int carry = 0;
 	ListNode * res = new ListNode(0);
 	ListNode * temp = res;
-	while (l1 != NULL && l2 != NULL){
+	while (l1 != NULL || l2 != NULL){
 		int num1 = 0;
 		int num2 = 0;
 		if(l1 != NULL){
