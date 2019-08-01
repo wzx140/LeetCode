@@ -15,3 +15,9 @@ public:
 	int lengthOfLongestSubstring2(string s);
 	int lengthOfLongestSubstring3(string s);
 };
+
+class MedianOfTwoSortedArrays {
+public:
+	double findMedianSortedArrays1(vector<int>& nums1, vector<int>& nums2);
+	double findMedianSortedArrays2(vector<int>& nums1, vector<int>& nums2) ;
+};

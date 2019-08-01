@@ -177,3 +177,7 @@ out
 UnitTest/
 Debug/
 ipch/
+TestResults/
+packages/
+.vs/
+Test/
