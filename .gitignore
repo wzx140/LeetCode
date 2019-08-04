@@ -180,4 +180,4 @@ ipch/
 TestResults/
 packages/
 .vs/
-Test/
+packages.config
