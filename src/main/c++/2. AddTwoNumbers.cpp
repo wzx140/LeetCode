@@ -1,7 +1,12 @@
-#include "Utills.h"
+﻿#include "Utills.h"
 using namespace data;
 #include "Header.h"
 
+/**
+ * https://leetcode.com/problems/add-two-numbers/
+ */
+
+// time: O(max(m,n)) space:O(max(m,n)).
 ListNode* AddTwoNumbers::addTwoNumbers1(ListNode* l1, ListNode* l2) {
 	int carry = 0;
 	ListNode * res = new ListNode(0);

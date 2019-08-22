@@ -1,14 +1,18 @@
-#include "Header.h"
+﻿#include "Header.h"
 #include <limits>
 #include <algorithm>
 
-// find the middle two elements
+/**
+ * https://leetcode.com/problems/median-of-two-sorted-arrays/
+ */
+
+// 找出数组中间的两个值 time:O(m+n) space:O(1)
 double MedianOfTwoSortedArrays::findMedianSortedArrays1(vector<int>& nums1, vector<int>& nums2){
 	int length1 = nums1.size();
 	int length2 = nums2.size();
 	int length = length1 + length2;
 
-	// save the middle two elements
+	// 中间的两个元素
 	int middle1 = 0;
 	int middle2 = 0;
 
@@ -16,7 +20,7 @@ double MedianOfTwoSortedArrays::findMedianSortedArrays1(vector<int>& nums1, vect
 	int j = 0;
 	int count = 0;
 	while(count <= length / 2){
-		// prevent overflow
+		// 初始化为最大值
 		int num1 = std::numeric_limits<int>::max();
 		int num2 = std::numeric_limits<int>::max();
 		if(i < length1){
@@ -53,7 +57,7 @@ double MedianOfTwoSortedArrays::findMedianSortedArrays1(vector<int>& nums1, vect
 
 }
 
-// use binary search
+// 使用二分搜索  time:O(log(m+n) space:O(1)
 double MedianOfTwoSortedArrays::findMedianSortedArrays2(vector<int>& nums1, vector<int>& nums2){
 	if(nums1.size() > nums2.size()){
 		std::swap(nums1, nums2);
@@ -62,7 +66,7 @@ double MedianOfTwoSortedArrays::findMedianSortedArrays2(vector<int>& nums1, vect
 	int length1 = nums1.size();
 	int length2 = nums2.size();
 
-	//  The length of the smaller length array is zero
+	//  较小的长度为0的情况
 	if(length1 == 0){
 		return length2 % 2 ? nums2[length2 / 2] : (nums2[length2 / 2] + nums2[length2 / 2 - 1]) / 2.0;
 	}
@@ -71,7 +75,7 @@ double MedianOfTwoSortedArrays::findMedianSortedArrays2(vector<int>& nums1, vect
 	int j = 0;
 
 	int left = 0;
-	// i search in 0~length1 not in 0~length1-1
+	// i在0~length1中搜索，而不是0~length1-1
 	int right = length1;
 	int delta = (length1 + length2 + 1) / 2;
 	while(left <= right){
@@ -86,7 +90,7 @@ double MedianOfTwoSortedArrays::findMedianSortedArrays2(vector<int>& nums1, vect
 		}
 	}
 
-	// special boundary condition
+	// 边界条件
 	int maxLeft = 0;
 	if(i == 0){
 		maxLeft = nums2[j - 1];

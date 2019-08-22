@@ -1,4 +1,4 @@
-#pragma once
+﻿#pragma once
 #include <vector>
 #include <iostream>
 
@@ -50,4 +50,3 @@ namespace data{
 		ListNode(int x) : val(x), next(NULL) {}
 	};
 }
-
