@@ -1,4 +1,4 @@
-#pragma once
+﻿#pragma once
 #include <string>
 #include "Utills.h"
 using namespace data;
@@ -19,5 +19,13 @@ public:
 class MedianOfTwoSortedArrays {
 public:
 	double findMedianSortedArrays1(vector<int>& nums1, vector<int>& nums2);
-	double findMedianSortedArrays2(vector<int>& nums1, vector<int>& nums2) ;
+	double findMedianSortedArrays2(vector<int>& nums1, vector<int>& nums2);
+};
+
+class LongestPalindromicSubstring {
+public:
+	string longestPalindrome1(string s);
+	string longestPalindrome2(string s);
+	string longestPalindrome3(string s);
+	string longestPalindrome4(string s);
 };
