@@ -9,7 +9,11 @@ using std::make_pair;
  * https://leetcode.com/problems/longest-substring-without-repeating-characters/
  */
 
- // 虫取法，使用vector time:O(n2) space:O(n)
+/**
+ * 虫取法，使用vector
+ * time:O(n2)
+ * space:O(n)
+ */
 int LongestSubstringWithoutRepeatingCharacters::lengthOfLongestSubstring1(string s) {
 	int maxLength = 0;
 	int length = s.length();
@@ -41,7 +45,11 @@ int LongestSubstringWithoutRepeatingCharacters::lengthOfLongestSubstring1(string
 	return maxLength;
 }
 
-// 用哈希表代替vector time:O(n) space:O(n)
+/**
+ * 用哈希表代替vector
+ * time:O(n)
+ * space:O(n)
+ */
 int LongestSubstringWithoutRepeatingCharacters::lengthOfLongestSubstring2(string s) {
 	int maxLength = 0;
 	int length = s.length();
@@ -65,7 +73,11 @@ int LongestSubstringWithoutRepeatingCharacters::lengthOfLongestSubstring2(string
 	return maxLength;
 }
 
-// 用int数组代替哈希表 time:O(n) space:O(m)取决于字符集大小
+/**
+ * 用int数组代替哈希表
+ * time:O(n)
+ * space:O(m) 取决于字符集大小
+ */
 int LongestSubstringWithoutRepeatingCharacters::lengthOfLongestSubstring3(string s) {
 	int maxLength = 0;
 	int length = s.length();

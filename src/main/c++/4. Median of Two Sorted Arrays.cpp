@@ -6,7 +6,11 @@
  * https://leetcode.com/problems/median-of-two-sorted-arrays/
  */
 
-// 找出数组中间的两个值 time:O(m+n) space:O(1)
+/**
+ * 找出数组中间的两个值
+ * time:O(m+n)
+ * space:O(1)
+ */
 double MedianOfTwoSortedArrays::findMedianSortedArrays1(vector<int>& nums1, vector<int>& nums2){
 	int length1 = nums1.size();
 	int length2 = nums2.size();
@@ -57,7 +61,11 @@ double MedianOfTwoSortedArrays::findMedianSortedArrays1(vector<int>& nums1, vect
 
 }
 
-// 使用二分搜索  time:O(log(m+n) space:O(1)
+/**
+ * 使用二分搜索
+ * time:O(log(m+n)
+ * space:O(1)
+ */
 double MedianOfTwoSortedArrays::findMedianSortedArrays2(vector<int>& nums1, vector<int>& nums2){
 	if(nums1.size() > nums2.size()){
 		std::swap(nums1, nums2);

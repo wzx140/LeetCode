@@ -10,7 +10,11 @@ using std::map;
  * https://leetcode.com/problems/two-sum/
  */
 
-// 暴力法 time:O(n2) space:O(1)
+/**
+ * 暴力法
+ * time:O(n2)
+ * space:O(1)
+ */
 vector<int> twoSum1(vector<int>& nums, int target) {
 	vector<int> res;
 	for (int i = 0; i < nums.size() - 1; i++) {
@@ -25,8 +29,11 @@ vector<int> twoSum1(vector<int>& nums, int target) {
 	return res;
 }
 
-
-// 哈希表 time:O(n) space:O(n)
+/**
+ * 哈希表
+ * time:O(n)
+ * space:O(n)
+ */
 vector<int> twoSum2(vector<int>& nums, int target) {
 	vector<int> res;
 	// 值 - 索引
@@ -46,8 +53,11 @@ vector<int> twoSum2(vector<int>& nums, int target) {
 	return res;
 }
 
-
-// 哈希表，只使用一个循环 time:O(n) space:O(n)
+/**
+ * 哈希表，只使用一个循环
+ * time:O(n)
+ * space:O(n)
+ */
 vector<int> twoSum3(vector<int>& nums, int target) {
 	vector<int> res;
 	// 值 - 索引

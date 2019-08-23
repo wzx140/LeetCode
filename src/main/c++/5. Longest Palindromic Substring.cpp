@@ -5,7 +5,11 @@
 using std::max;
 using std::reverse;
 
-// 超出时间限制 time:O(n3) space:O(n)
+/**
+ * 暴力法，超出时间限制
+ * time:O(n3)
+ * space:O(n)
+ */
 string LongestPalindromicSubstring::longestPalindrome1(string s) {
 	int length = s.length();
 	int maxStart = 0;
@@ -28,7 +32,11 @@ string LongestPalindromicSubstring::longestPalindrome1(string s) {
 	return s.substr(maxStart, maxEnd - maxStart + 1);
 }
 
-// 逆转字符串，找到最长公共子串 time:O(n2) space:O(n2)
+/**
+ * 逆转字符串，找到最长公共子串
+ * time:O(n2)
+ * space:O(n2)
+ */
 string LongestPalindromicSubstring::longestPalindrome2(string s) {
 	int length = s.length();
 	string reverseS = s;
@@ -62,7 +70,11 @@ string LongestPalindromicSubstring::longestPalindrome2(string s) {
 	return s.substr(startIndex, maxLength);
 }
 
-// 动态规划，保存字符串是否是回文，避免重复判断 time:O(n2) space:O(n2)
+/**
+ * 动态规划，保存字符串是否是回文，避免重复判断
+ * time:O(n2)
+ * space:O(n2)
+ */
 string LongestPalindromicSubstring::longestPalindrome3(string s) {
 	int length = s.length();
 	vector<vector<bool>> matrix(length, vector<bool>(length, false));	// 保存 p(i,j)是否是回文
@@ -122,7 +134,11 @@ int expend(string s, int start, int end) {
 	return end - start - 1;
 }
 
-// 中心拓展算法
+/**
+ * 中心拓展算法
+ * time:O(n2)
+ * space:O(1)
+ */
 string LongestPalindromicSubstring::longestPalindrome4(string s) {
 	int length = s.length();
 
