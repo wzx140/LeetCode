@@ -29,3 +29,9 @@ public:
 	string longestPalindrome3(string s);
 	string longestPalindrome4(string s);
 };
+
+class ReverseInteger {
+public:
+	int reverse1(int x);
+	int reverse2(int x);
+};
