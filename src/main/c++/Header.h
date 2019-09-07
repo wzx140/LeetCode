@@ -42,3 +42,10 @@ public:
 	string convert2(string s, int numRows);
 	string convert3(string s, int numRows);
 };
+
+class PalindromeNumber{
+public:
+	bool isPalindrome1(int x);
+	bool isPalindrome2(int x);
+	bool isPalindrome3(int x);
+};
