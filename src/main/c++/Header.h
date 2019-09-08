@@ -49,3 +49,9 @@ public:
 	bool isPalindrome2(int x);
 	bool isPalindrome3(int x);
 };
+
+class ContainerWithMostWater {
+public:
+	int maxArea1(vector<int>& height);
+	int maxArea2(vector<int>& height);
+};
