@@ -55,3 +55,9 @@ public:
 	int maxArea1(vector<int>& height);
 	int maxArea2(vector<int>& height);
 };
+
+class IntegerToRoman {
+public:
+	string intToRoman1(int num);
+	string intToRoman2(int num);
+};
