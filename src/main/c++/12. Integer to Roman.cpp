@@ -11,7 +11,7 @@ using std::map;
 
  /**
   * 直接由高到低判断，并对罗马数字进行组合
-  * time:O(1)
+  * time:O(logn)
   * space:O(1)
   */
 string IntegerToRoman::intToRoman1(int num) {
@@ -129,7 +129,7 @@ string IntegerToRoman::intToRoman1(int num) {
 
 /**
   * 更简洁的方式
-  * time:O(1)
+  * time:time:O(logn)
   * space:O(1)
   */
 string IntegerToRoman::intToRoman2(int num) {

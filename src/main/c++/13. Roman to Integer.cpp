@@ -9,8 +9,9 @@ using std::map;
  */
 
  /**
-  *
-  *
+  * 直接由高到低判断，并对罗马数字进行组合
+  * time:O(logn)
+  * space:O(1)
   */
 int RomanToInteger::romanToInt(string s) {
 	// 映射表
