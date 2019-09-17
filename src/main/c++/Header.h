@@ -66,3 +66,9 @@ class RomanToInteger {
 public:
 	int romanToInt(string s);
 };
+
+class Sum3 {
+public:
+	vector<vector<int>> threeSum1(vector<int>& nums);
+	vector<vector<int>> threeSum2(vector<int>& nums);
+};
