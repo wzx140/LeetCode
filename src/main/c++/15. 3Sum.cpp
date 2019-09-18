@@ -52,7 +52,7 @@ vector<vector<int>> Sum3::threeSum1(vector<int>& nums) {
 			// 哈希表搜索
 			map<int, int>::iterator it = hashMap.find(dest);
 			if (it != hashMap.end() && it->second != i && it->second != j && !isDuplication(nums.at(i), nums.at(j), solutions)) {
-				solutions.push_back({ nums.at(left) ,nums.at(right),nums.at(i) });
+				solutions.push_back({ it->first ,nums.at(j),nums.at(i) });
 			}
 		}
 	}
