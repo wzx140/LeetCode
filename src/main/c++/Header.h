@@ -77,3 +77,8 @@ class Sum3Closest {
 public:
 	int threeSumClosest1(vector<int>& nums, int target);
 };
+
+class Atoi {
+public:
+	int myAtoi1(string str);
+};
