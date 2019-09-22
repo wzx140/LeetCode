@@ -82,3 +82,9 @@ class Atoi {
 public:
 	int myAtoi1(string str);
 };
+
+class LCPN {
+public:
+	vector<string> letterCombinations1(string digits);
+	vector<string> letterCombinations2(string digits);
+};
