@@ -4,6 +4,13 @@
 using namespace data;
 using std::string;
 
+class Sum2 {
+public:
+	vector<int> twoSum1(vector<int>& nums, int target);
+	vector<int> twoSum2(vector<int>& nums, int target);
+	vector<int> twoSum3(vector<int>& nums, int target);
+};
+
 class AddTwoNumbers {
 public:
 	ListNode* addTwoNumbers1(ListNode* l1, ListNode* l2);
@@ -70,7 +77,6 @@ public:
 class Sum3 {
 public:
 	vector<vector<int>> threeSum1(vector<int>& nums);
-	vector<vector<int>> threeSum2(vector<int>& nums);
 };
 
 class Sum3Closest {
@@ -87,4 +93,10 @@ class LCPN {
 public:
 	vector<string> letterCombinations1(string digits);
 	vector<string> letterCombinations2(string digits);
+};
+
+class Sum4 {
+public:
+	vector<vector<int>> fourSum1(vector<int>& nums, int target);
+	vector<vector<int>> fourSum2(vector<int>& nums, int target);
 };

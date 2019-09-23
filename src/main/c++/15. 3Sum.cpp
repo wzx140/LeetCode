@@ -2,70 +2,30 @@
 
 #include <algorithm>
 #include <map>
+#include <unordered_set>
+#include <sstream>
+#include <array>
 
 using std::map;
 using std::sort;
+using std::unordered_set;
+using std::stringstream;
 
 /**
  * https://leetcode.com/problems/3sum/
  */
 
- /** 判断是否重复，两个元素一样即为重复 */
-bool isDuplication(int num1, int num2, vector<vector<int>>& nums) {
-	if (num1 != num2) {
-		for (const auto& item : nums) {
-			if (find(item.begin(), item.end(), num1) != item.end() && find(item.begin(), item.end(), num2) != item.end()) {
-				return true;
-			}
-		}
-	} else {
-		for (const auto& item : nums) {
-			if (count(item.begin(), item.end(), num1) >= 2) {
-				return true;
-			}
-		}
-	}
-	return false;
-}
+ /**
+  * 由于可能存在重复元素，所以不能使用哈希搜索
+  */
+
 
 /**
- * 每次先确定两个数，再用哈希表查找第三个数，超出时间限制，原因是有很多重复判断的情况
- * time:O(n^2)
- * space:O(n)
- */
-vector<vector<int>> Sum3::threeSum1(vector<int>& nums) {
-	int length = nums.size();
-	vector<vector<int>> solutions;
-
-	// 值 - 索引
-	map<int, int> hashMap;
-	for (int i = 0; i < nums.size(); i++) {
-		hashMap[nums[i]] = i;
-	}
-
-	for (int i = 0; i < length - 1; i++) {
-		for (int j = i + 1; j < length; j++) {
-
-			// 目标数
-			int dest = -(nums.at(i) + nums.at(j));
-
-			// 哈希表搜索
-			map<int, int>::iterator it = hashMap.find(dest);
-			if (it != hashMap.end() && it->second != i && it->second != j && !isDuplication(nums.at(i), nums.at(j), solutions)) {
-				solutions.push_back({ it->first ,nums.at(j),nums.at(i) });
-			}
-		}
-	}
-
-	return solutions;
-}
-
-/**
- * 每次先确定一个数，用双指针查找剩下的数（排序后）,难点是判断重复
+ * 每次先确定一个数，用双指针查找剩下的数（排序后），注意判断重复
  * time:O(n^2)
  * space:O(1)
  */
-vector<vector<int>> Sum3::threeSum2(vector<int>& nums) {
+vector<vector<int>> Sum3::threeSum1(vector<int>& nums) {
 
 	int length = nums.size();
 	vector<vector<int>> solutions;

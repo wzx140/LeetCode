@@ -1,9 +1,9 @@
-﻿#include <iostream>
-#include <vector>
-#include <map>
-#include <iostream>
+﻿#include "Header.h"
 
-using std::vector;
+#include <map>
+#include <algorithm>
+
+using std::sort;
 using std::map;
 
 /**
@@ -11,11 +11,15 @@ using std::map;
  */
 
 /**
- * 暴力法
- * time:O(n2)
- * space:O(1)
+ * 不能使用双指针，因为排序后元素的原始索引将丢失
  */
-vector<int> twoSum1(vector<int>& nums, int target) {
+
+ /**
+  * 暴力法
+  * time:O(n2)
+  * space:O(1)
+  */
+vector<int> Sum2::twoSum1(vector<int>& nums, int target) {
 	vector<int> res;
 	for (int i = 0; i < nums.size() - 1; i++) {
 		for (int j = i + 1; j < nums.size(); j++) {
@@ -34,7 +38,7 @@ vector<int> twoSum1(vector<int>& nums, int target) {
  * time:O(n)
  * space:O(n)
  */
-vector<int> twoSum2(vector<int>& nums, int target) {
+vector<int> Sum2::twoSum2(vector<int>& nums, int target) {
 	vector<int> res;
 	// 值 - 索引
 	map<int, int> hashMap;
@@ -58,7 +62,7 @@ vector<int> twoSum2(vector<int>& nums, int target) {
  * time:O(n)
  * space:O(n)
  */
-vector<int> twoSum3(vector<int>& nums, int target) {
+vector<int> Sum2::twoSum3(vector<int>& nums, int target) {
 	vector<int> res;
 	// 值 - 索引
 	map<int, int> hashMap;
