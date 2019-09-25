@@ -98,5 +98,9 @@ public:
 class Sum4 {
 public:
 	vector<vector<int>> fourSum1(vector<int>& nums, int target);
-	vector<vector<int>> fourSum2(vector<int>& nums, int target);
+};
+
+class RNEL {
+public:
+	ListNode* removeNthFromEnd1(ListNode* head, int n);
 };
