@@ -104,3 +104,8 @@ class RNEL {
 public:
 	ListNode* removeNthFromEnd1(ListNode* head, int n);
 };
+
+class ValidParentheses {
+public:
+	bool isValid1(string s);
+};
