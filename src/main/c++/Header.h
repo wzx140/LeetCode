@@ -109,3 +109,9 @@ class ValidParentheses {
 public:
 	bool isValid1(string s);
 };
+
+class MTSL {
+public:
+	ListNode* mergeTwoLists1(ListNode* l1, ListNode* l2);
+	ListNode* mergeTwoLists2(ListNode* l1, ListNode* l2);
+};
