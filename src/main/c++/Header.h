@@ -115,3 +115,10 @@ public:
 	ListNode* mergeTwoLists1(ListNode* l1, ListNode* l2);
 	ListNode* mergeTwoLists2(ListNode* l1, ListNode* l2);
 };
+
+class GenerateParenthesis {
+public:
+	vector<string> generateParenthesis1(int n);
+	vector<string> generateParenthesis2(int n);
+	vector<string> generateParenthesis3(int n);
+};
