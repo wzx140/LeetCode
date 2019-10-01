@@ -122,3 +122,9 @@ public:
 	vector<string> generateParenthesis2(int n);
 	vector<string> generateParenthesis3(int n);
 };
+
+class SNP {
+public:
+	ListNode* swapPairs1(ListNode* head);
+	ListNode* swapPairs2(ListNode* head);
+};
