@@ -128,3 +128,9 @@ public:
 	ListNode* swapPairs1(ListNode* head);
 	ListNode* swapPairs2(ListNode* head);
 };
+
+class RDSA {
+public:
+	int removeDuplicates1(vector<int>& nums);
+	int removeDuplicates2(vector<int>& nums);
+};
