@@ -134,3 +134,10 @@ public:
 	int removeDuplicates1(vector<int>& nums);
 	int removeDuplicates2(vector<int>& nums);
 };
+
+class RemoveElement {
+public:
+	int removeElement1(vector<int>& nums, int val);
+	int removeElement2(vector<int>& nums, int val);
+	int removeElement3(vector<int>& nums, int val);
+};
