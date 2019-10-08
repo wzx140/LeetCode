@@ -25,10 +25,10 @@ protected:
 		res2.insert(1);
 		res2.insert(2);
 
-		res2.insert(-2);
-		res2.insert(0);
-		res2.insert(0);
-		res2.insert(2);
+		res3.insert(-2);
+		res3.insert(0);
+		res3.insert(0);
+		res3.insert(2);
 	}
 
 	void TearDown() override {}
