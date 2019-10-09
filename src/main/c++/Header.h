@@ -141,3 +141,15 @@ public:
 	int removeElement2(vector<int>& nums, int val);
 	int removeElement3(vector<int>& nums, int val);
 };
+
+class ImplementStrStr {
+public:
+	int strStr1(string haystack, string needle);
+	int strStr2(string haystack, string needle);
+};
+
+class DivideTwoIntegers {
+public:
+	int divide1(int dividend, int divisor);
+};
+
