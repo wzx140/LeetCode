@@ -154,3 +154,9 @@ public:
 	int divide2(int dividend, int divisor);
 	int divide3(int dividend, int divisor);
 };
+
+class NextPermutation {
+public:
+	void nextPermutation1(vector<int>& nums);
+	void nextPermutation2(vector<int>& nums);
+};
