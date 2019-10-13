@@ -160,3 +160,9 @@ public:
 	void nextPermutation1(vector<int>& nums);
 	void nextPermutation2(vector<int>& nums);
 };
+
+class SRSA {
+public:
+	int search1(vector<int>& nums, int target);
+	int search2(vector<int>& nums, int target);
+};
