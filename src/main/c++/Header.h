@@ -179,3 +179,8 @@ public:
 	vector<int> sortArray8(vector<int>& nums);
 	vector<int> sortArray9(vector<int>& nums);
 };
+
+class MergeKSortedLists {
+public:
+	ListNode* mergeKLists1(vector<ListNode*>& lists);
+};
