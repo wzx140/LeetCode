@@ -3,22 +3,20 @@
 
 class RNELTest : public ::testing::Test {
 protected:
-	void SetUp() override {}
+	void SetUp() override {
+		vector<int> source = { 1,2,3,4,5 };
+		list = buildNodeList(source);
+		answer = {1,2,3,5};
+	}
 
 	void TearDown() override {}
+	ListNode* list;
+	vector<int> answer;
 };
 
 TEST_F(RNELTest, removeNthFromEnd1Test) {
-	ListNode * list = new ListNode(1);
-	list->next = new ListNode(2);
-	list->next->next = new ListNode(3);
-	list->next->next->next = new ListNode(4);
-	list->next->next->next->next = new ListNode(5);
 
 	RNEL solution = RNEL();
 	ListNode * res = solution.removeNthFromEnd1(list, 2);
-	EXPECT_EQ(1, res->val);
-	EXPECT_EQ(2, res->next->val);
-	EXPECT_EQ(3, res->next->next->val);
-	EXPECT_EQ(5, res->next->next->next->val);
+	EXPECT_EQ(answer, decompositeNodeList(res));
 }

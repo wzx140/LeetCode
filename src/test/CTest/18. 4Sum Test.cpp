@@ -8,12 +8,7 @@ using std::unordered_set;
 class Sum4Test : public ::testing::Test {
 protected:
 	void SetUp() override {
-		source.emplace_back(-1);
-		source.emplace_back(0);
-		source.emplace_back(1);
-		source.emplace_back(0);
-		source.emplace_back(-2);
-		source.emplace_back(2);
+		source = { -1,0,1,0,-2,2 };
 
 		res1.insert(-1);
 		res1.insert(0);
@@ -43,7 +38,7 @@ protected:
 
 TEST_F(Sum4Test, fourSum1Test) {
 	Sum4 solution;
-	auto solutions = solution.fourSum1(source,0);
+	auto solutions = solution.fourSum1(source, 0);
 	unordered_set<int> solution1;
 	unordered_set<int> solution2;
 	unordered_set<int> solution3;
@@ -60,9 +55,9 @@ TEST_F(Sum4Test, fourSum1Test) {
 	solution3.insert(solutions.at(2).at(2));
 	solution3.insert(solutions.at(2).at(3));
 
-	if (res1 == solution1&&res2==solution2) {
+	if (res1 == solution1 && res2 == solution2) {
 		EXPECT_TRUE(res3 == solution3);
-	} else if(res1==solution1 && res2 == solution3){
+	} else if (res1 == solution1 && res2 == solution3) {
 		EXPECT_TRUE(res3 == solution2);
 	} else if (res1 == solution2 && res2 == solution1) {
 		EXPECT_TRUE(res3 == solution3);

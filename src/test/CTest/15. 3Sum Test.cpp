@@ -8,12 +8,7 @@ using std::unordered_set;
 class Sum3Test : public ::testing::Test {
 protected:
 	void SetUp() override {
-		source.emplace_back(-1);
-		source.emplace_back(0);
-		source.emplace_back(1);
-		source.emplace_back(2);
-		source.emplace_back(-1);
-		source.emplace_back(-4);
+		source = { -1,0,1,2,-1,-4 };
 
 		res1.insert(-1);
 		res1.insert(-1);

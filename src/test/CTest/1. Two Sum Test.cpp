@@ -8,10 +8,7 @@ using std::unordered_set;
 class Sum2Test : public ::testing::Test {
 protected:
 	void SetUp() override {
-		this->source.push_back(2);
-		this->source.push_back(7);
-		this->source.push_back(11);
-		this->source.push_back(15);
+		this->source = { 2,7,11,15 };
 
 		so.insert(0);
 		so.insert(1);

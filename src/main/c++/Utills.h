@@ -49,4 +49,22 @@ namespace data{
 		ListNode *next;
 		ListNode(int x) : val(x), next(NULL) {}
 	};
+	inline ListNode* buildNodeList(vector<int>& source) {
+		ListNode* pre = new ListNode(0);
+		ListNode* last = pre;
+		for (int i = 0; i < source.size() ; i++){
+			ListNode* temp = new ListNode(source[i]);
+			last->next = temp;
+			last = last->next;
+		}
+		return pre->next;
+	}
+	inline vector<int> decompositeNodeList(ListNode* source) {
+		vector<int> res;
+		while (source != NULL) {
+			res.push_back(source->val);
+			source = source->next;
+		}
+		return res;
+	}
 }

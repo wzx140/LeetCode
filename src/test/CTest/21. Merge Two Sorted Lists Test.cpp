@@ -3,43 +3,30 @@
 
 class MTSLTest : public ::testing::Test {
 protected:
-	void SetUp() override {}
+	void SetUp() override {
+		vector<int> source1 = { 1,2,4 };
+		vector<int> source2 = { 1,3,4 };
+		list1 = buildNodeList(source1);
+		list2 = buildNodeList(source2);
+		answer = { 1,1,2,3,4,4 };
+	}
 
 	void TearDown() override {}
+	ListNode* list1;
+	ListNode* list2;
+	vector<int> answer;
 };
 
 TEST_F(MTSLTest, mergeTwoLists1Test) {
-	ListNode * list1 = new ListNode(1);
-	list1->next = new ListNode(2);
-	list1->next->next = new ListNode(4);
-	ListNode *list2 = new ListNode(1);
-	list2->next = new ListNode(3);
-	list2->next->next = new ListNode(4);
 
 	MTSL solution = MTSL();
 	ListNode * res = solution.mergeTwoLists1(list1, list2);
-	EXPECT_EQ(1, res->val);
-	EXPECT_EQ(1, res->next->val);
-	EXPECT_EQ(2, res->next->next->val);
-	EXPECT_EQ(3, res->next->next->next->val);
-	EXPECT_EQ(4, res->next->next->next->next->val);
-	EXPECT_EQ(4, res->next->next->next->next->next->val);
+	EXPECT_EQ(answer,decompositeNodeList(res));
 }
 
 TEST_F(MTSLTest, mergeTwoLists2Test) {
-	ListNode * list1 = new ListNode(1);
-	list1->next = new ListNode(2);
-	list1->next->next = new ListNode(4);
-	ListNode *list2 = new ListNode(1);
-	list2->next = new ListNode(3);
-	list2->next->next = new ListNode(4);
 
 	MTSL solution = MTSL();
 	ListNode * res = solution.mergeTwoLists2(list1, list2);
-	EXPECT_EQ(1, res->val);
-	EXPECT_EQ(1, res->next->val);
-	EXPECT_EQ(2, res->next->next->val);
-	EXPECT_EQ(3, res->next->next->next->val);
-	EXPECT_EQ(4, res->next->next->next->next->val);
-	EXPECT_EQ(4, res->next->next->next->next->next->val);
+	EXPECT_EQ(answer, decompositeNodeList(res));
 }
