@@ -188,3 +188,8 @@ class MergeKSortedLists {
 public:
 	ListNode* mergeKLists1(vector<ListNode*>& lists);
 };
+
+class FFLP {
+public:
+	vector<int> searchRange1(vector<int>& nums, int target);
+};
