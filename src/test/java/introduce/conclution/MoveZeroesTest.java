@@ -1,6 +1,7 @@
 package introduce.conclution;
 
 import org.junit.Test;
+import per.wzx.introduce.conclution.MoveZeroes;
 
 import static org.junit.Assert.*;
 

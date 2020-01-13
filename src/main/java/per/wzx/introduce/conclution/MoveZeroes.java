@@ -1,4 +1,4 @@
-package introduce.conclution;
+package per.wzx.introduce.conclution;
 
 //
 public class MoveZeroes {

@@ -1,4 +1,4 @@
-package introduce.array;
+package per.wzx.introduce.array;
 
 import java.util.ArrayList;
 import java.util.List;

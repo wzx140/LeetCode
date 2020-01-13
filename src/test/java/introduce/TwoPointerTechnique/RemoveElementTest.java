@@ -4,6 +4,7 @@ import org.junit.Test;
 
 import java.util.ArrayList;
 import java.util.List;
+import per.wzx.introduce.TwoPointerTechnique.RemoveElement;
 
 import static org.junit.Assert.assertTrue;
 

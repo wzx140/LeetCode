@@ -1,6 +1,7 @@
 package introduce.string;
 
 import org.junit.Test;
+import per.wzx.introduce.string.AddBinary;
 
 import static org.junit.Assert.*;
 

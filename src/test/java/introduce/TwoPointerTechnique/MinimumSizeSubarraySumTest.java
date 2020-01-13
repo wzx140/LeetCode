@@ -1,6 +1,7 @@
 package introduce.TwoPointerTechnique;
 
 import org.junit.Test;
+import per.wzx.introduce.TwoPointerTechnique.MinimumSizeSubarraySum;
 
 import static org.junit.Assert.*;
 

@@ -3,6 +3,7 @@ package introduce.conclution;
 import org.junit.Test;
 
 import java.util.List;
+import per.wzx.introduce.conclution.PascalTriangleII;
 
 import static org.junit.Assert.assertEquals;
 

@@ -1,4 +1,4 @@
-package introduce.conclution;
+package per.wzx.introduce.conclution;
 
 // https://leetcode.com/explore/learn/card/array-and-string/204/conclusion/1173/
 public class RemoveDuplicatesFromSortedArray {

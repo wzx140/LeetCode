@@ -1,6 +1,7 @@
 package introduce.string;
 
 import org.junit.Test;
+import per.wzx.introduce.string.LongestCommonPrefix;
 
 import static org.junit.Assert.*;
 

@@ -4,6 +4,10 @@
 using namespace data;
 using std::string;
 
+/**
+ * 为了方便，所以把所有题的头文件都放到一起
+ */
+
 class Sum2 {
 public:
 	vector<int> twoSum1(vector<int>& nums, int target);

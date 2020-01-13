@@ -6,6 +6,9 @@ using std::cout;
 using std::endl;
 using std::vector;
 
+/**
+ * 打印矩阵和向量
+ */
 namespace demonstrate{
 	inline void printMatrix(vector<vector<int>> &matrix){
 		for(int i=0; i<matrix.size(); i++){
@@ -24,25 +27,9 @@ namespace demonstrate{
 	}
 }
 
-namespace search{
-
-	inline int binarySearch(int begin, int end, vector<int> &nums, int target){
-		int res = -1;
-		while (begin <= end){
-			int middle = begin + (end - begin);
-			if(nums[middle] > target){
-				end = middle - 1;
-			}else if(nums[middle] < target){
-				begin = middle + 1;
-			}else if(nums[middle] == target){
-				res = middle;
-				break;
-			}
-		}
-		return res;
-	}
-}
-
+/**
+ * 链表结构
+ */
 namespace data{
 	struct ListNode {
 		int val;

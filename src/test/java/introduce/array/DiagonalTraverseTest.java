@@ -1,8 +1,9 @@
 package introduce.array;
 
-import org.junit.Test;
-
 import static org.junit.Assert.assertArrayEquals;
+
+import org.junit.Test;
+import per.wzx.introduce.array.DiagonalTraverse;
 
 public class DiagonalTraverseTest {
     private int[][] a = {{1, 2, 3, 4, 5}};

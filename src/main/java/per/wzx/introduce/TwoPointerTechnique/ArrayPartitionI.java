@@ -1,4 +1,4 @@
-package introduce.TwoPointerTechnique;
+package per.wzx.introduce.TwoPointerTechnique;
 
 import java.util.ArrayList;
 import java.util.Collections;

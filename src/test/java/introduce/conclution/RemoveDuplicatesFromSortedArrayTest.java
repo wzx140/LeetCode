@@ -1,6 +1,7 @@
 package introduce.conclution;
 
 import org.junit.Test;
+import per.wzx.introduce.conclution.RemoveDuplicatesFromSortedArray;
 
 import static org.junit.Assert.assertEquals;
 
