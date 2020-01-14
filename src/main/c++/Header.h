@@ -193,3 +193,8 @@ class FFLP {
 public:
 	vector<int> searchRange1(vector<int>& nums, int target);
 };
+
+class SearchInsertPosition {
+public:
+	int searchInsert1(vector<int>& nums, int target);
+};
