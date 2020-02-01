@@ -198,3 +198,9 @@ class SearchInsertPosition {
 public:
 	int searchInsert1(vector<int>& nums, int target);
 };
+
+class ValidSudoku {
+public:
+	bool isValidSudoku1(vector<vector<char>>& board);
+	bool isValidSudoku2(vector<vector<char>>& board);
+};
