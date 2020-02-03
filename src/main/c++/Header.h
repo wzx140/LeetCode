@@ -209,3 +209,8 @@ class SudokuSolver {
 public:
 	void solveSudoku1(vector<vector<char>>& board);
 };
+
+class CountSay{
+public:
+	string countAndSay1(int n);
+};
