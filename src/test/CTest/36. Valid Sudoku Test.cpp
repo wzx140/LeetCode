@@ -1,4 +1,4 @@
-﻿#include "pch.h"
+﻿#include "gtest/gtest.h"
 #include "../../main/c++/Header.h"
 
 class ValidSudokuTest : public ::testing::Test {
@@ -34,14 +34,14 @@ protected:
 	vector<vector<char>> source2;
 };
 
-TEST_F(ValidSudokuTest, search1Test) {
+TEST_F(ValidSudokuTest, isValidSudoku1Test) {
 
 	ValidSudoku solution;
 	EXPECT_TRUE(solution.isValidSudoku1(source1));
 	EXPECT_FALSE(solution.isValidSudoku1(source2));
 }
 
-TEST_F(ValidSudokuTest, search2Test) {
+TEST_F(ValidSudokuTest, isValidSudoku2Test) {
 
 	ValidSudoku solution;
 	EXPECT_TRUE(solution.isValidSudoku2(source1));

@@ -1,4 +1,4 @@
-﻿#include "pch.h"
+﻿#include "gtest/gtest.h"
 #include "../../main/c++/Header.h"
 
 class RomanToIntegerTest : public ::testing::Test {

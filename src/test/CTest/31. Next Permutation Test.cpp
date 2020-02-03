@@ -1,4 +1,4 @@
-﻿#include "pch.h"
+﻿#include "gtest/gtest.h"
 #include "../../main/c++/Header.h"
 
 class NextPermutationTest : public ::testing::Test {

@@ -1,4 +1,4 @@
-﻿#include "pch.h"
+﻿#include "gtest/gtest.h"
 #include "../../main/c++/Header.h"
 
 class SudokuSolverTest : public ::testing::Test {
@@ -34,7 +34,7 @@ protected:
 	vector<vector<char>> res;
 };
 
-TEST_F(SudokuSolverTest, search1Test) {
+TEST_F(SudokuSolverTest, solveSudoku1Test) {
 
 	SudokuSolver solution;
 	solution.solveSudoku1(source);

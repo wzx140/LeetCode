@@ -1,4 +1,4 @@
-﻿#include "pch.h"
+﻿#include "gtest/gtest.h"
 #include "../../main/c++/Header.h"
 
 class SearchInsertPositionTest : public ::testing::Test {
@@ -12,7 +12,7 @@ protected:
 	vector<int> source;
 };
 
-TEST_F(SearchInsertPositionTest, search1Test) {
+TEST_F(SearchInsertPositionTest, searchInsert1Test) {
 
 	SearchInsertPosition solution = SearchInsertPosition();
 	EXPECT_EQ(2, solution.searchInsert1(source, 5));

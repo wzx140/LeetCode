@@ -1,4 +1,4 @@
-﻿#include "pch.h"
+﻿#include "gtest/gtest.h"
 #include "../../main/c++/Header.h"
 
 class FFLPTest : public ::testing::Test {
@@ -16,7 +16,7 @@ protected:
 	vector<int> res2;
 };
 
-TEST_F(FFLPTest, search1Test) {
+TEST_F(FFLPTest, searchRange1Test) {
 
 	FFLP solution = FFLP();
 	EXPECT_EQ(res1, solution.searchRange1(source, 8));
