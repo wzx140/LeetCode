@@ -214,3 +214,8 @@ class CountSay{
 public:
 	string countAndSay1(int n);
 };
+
+class CombinationSum {
+public:
+	vector<vector<int>> combinationSum1(vector<int>& candidates, int target);
+};
