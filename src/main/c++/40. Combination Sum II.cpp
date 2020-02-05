@@ -1,12 +1,13 @@
 ﻿#include "Header.h"
 
+#include <vector>
 #include <algorithm>
 
 using std::vector;
 using std::sort;
 
 /**
- * https://leetcode.com/problems/combination-sum/
+ * https://leetcode.com/problems/combination-sum-ii/
  */
 
  /**
@@ -17,26 +18,32 @@ using std::sort;
   * @param solution	当前解法
   * @param res	所有解法的集合
   */
-void CombinationSum::dfs(const vector<int>& candidates, int target, int start, vector<int>& solution, vector<vector<int>>& res) {
+void CombinationSum2::dfs(const vector<int>& candidates, int target, int start, vector<int>& solution, vector<vector<int>>& res) {
 	if (target == 0) {
 		res.push_back(solution);
 		return;
 	}
-	if (target < candidates[start]) {
+	if (start >= candidates.size() || target < candidates[start]) {
 		return;
 	}
 
 	for (int i = start; i < candidates.size(); i++) {
+		// 防止重复
+		if (i != start && candidates[i] == candidates[i - 1]) {
+			continue;
+		}
+
 		solution.push_back(candidates[i]);
-		dfs(candidates, target - candidates[i], i, solution, res);
+		dfs(candidates, target - candidates[i], i + 1, solution, res);
 		solution.pop_back();
+
 	}
 }
 
 /**
- * 深搜
+ * 与第39题类似
  */
-vector<vector<int>> CombinationSum::combinationSum1(vector<int>& candidates, int target) {
+vector<vector<int>> CombinationSum2::combinationSum1(vector<int>& candidates, int target) {
 	vector<vector<int>> res;
 	vector<int> solution;
 	sort(candidates.begin(), candidates.end());

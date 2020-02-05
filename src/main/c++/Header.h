@@ -54,7 +54,7 @@ public:
 	string convert3(string s, int numRows);
 };
 
-class PalindromeNumber{
+class PalindromeNumber {
 public:
 	bool isPalindrome1(int x);
 	bool isPalindrome2(int x);
@@ -210,7 +210,7 @@ public:
 	void solveSudoku1(vector<vector<char>>& board);
 };
 
-class CountSay{
+class CountSay {
 public:
 	string countAndSay1(int n);
 };
@@ -218,4 +218,12 @@ public:
 class CombinationSum {
 public:
 	vector<vector<int>> combinationSum1(vector<int>& candidates, int target);
+	void dfs(const vector<int>& candidates, int target, int start, vector<int>& solution, vector<vector<int>>& res);
+};
+
+class CombinationSum2 {
+public:
+	vector<vector<int>> combinationSum1(vector<int>& candidates, int target);
+	void dfs(const vector<int>& candidates, int target, int start, vector<int>& solution, vector<vector<int>>& res);
+	bool binarySearch(const vector<int>& candidates, int end, int target);
 };
