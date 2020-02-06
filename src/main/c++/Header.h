@@ -225,5 +225,10 @@ class CombinationSum2 {
 public:
 	vector<vector<int>> combinationSum1(vector<int>& candidates, int target);
 	void dfs(const vector<int>& candidates, int target, int start, vector<int>& solution, vector<vector<int>>& res);
-	bool binarySearch(const vector<int>& candidates, int end, int target);
+};
+
+class FirstMissingPositive {
+public:
+	int firstMissingPositive1(vector<int>& nums);
+	int firstMissingPositive2(vector<int>& nums);
 };
