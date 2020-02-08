@@ -232,3 +232,10 @@ public:
 	int firstMissingPositive1(vector<int>& nums);
 	int firstMissingPositive2(vector<int>& nums);
 };
+
+class TrappingRainWater {
+public:
+	int trap1(vector<int>& height);
+	int trap2(vector<int>& height);
+	int trap3(vector<int>& height);
+};
