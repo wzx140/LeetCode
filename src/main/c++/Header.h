@@ -239,3 +239,8 @@ public:
 	int trap2(vector<int>& height);
 	int trap3(vector<int>& height);
 };
+
+class MultiplyStrings {
+public:
+	string multiply1(string num1, string num2);
+};
