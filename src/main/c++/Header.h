@@ -244,3 +244,9 @@ class MultiplyStrings {
 public:
 	string multiply1(string num1, string num2);
 };
+
+class JumpGame2 {
+public:
+	int jump1(vector<int>& nums);
+	int jump2(vector<int>& nums);
+};
