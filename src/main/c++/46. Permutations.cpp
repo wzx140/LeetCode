@@ -13,7 +13,7 @@ using std::swap;
  /**
   * 深搜+回溯
   * time:O(\sum_1^N(P(N,k)))
-  * space:O(\sum_1^N(P(N,k)))
+  * space:O(n)
   */
 vector<vector<int>> Permutations::permute1(vector<int>& nums) {
 	vector<vector<int>> perms;
@@ -36,10 +36,11 @@ void Permutations::dfs1(vector<int>& nums, vector<int>& indexes, vector<vector<i
 	}
 
 	for (int i = 0; i < indexes.size(); i++) {
-		perm.push_back(nums[indexes[i]]);
-		vector<int> temp = indexes;
-		temp.erase(temp.begin() + i);
-		dfs1(nums, temp, perms, perm);
+		int index = indexes[i];
+		perm.push_back(nums[index]);
+		indexes.erase(indexes.begin() + i);
+		dfs1(nums, indexes, perms, perm);
+		indexes.insert(indexes.begin() + i, index);
 		perm.pop_back();
 	}
 }
