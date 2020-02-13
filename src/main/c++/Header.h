@@ -264,3 +264,10 @@ public:
 	vector<vector<int>> permuteUnique1(vector<int>& nums);
 	void dfs1(vector<int>& nums, vector<bool>& used, vector<vector<int>>& perms, vector<int>& perm);
 };
+
+class RotateImage {
+public:
+	void rotate1(vector<vector<int>>& matrix);
+	void rotate2(vector<vector<int>>& matrix);
+	void rotate3(vector<vector<int>>& matrix);
+};
