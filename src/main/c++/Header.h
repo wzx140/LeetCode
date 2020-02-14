@@ -271,3 +271,10 @@ public:
 	void rotate2(vector<vector<int>>& matrix);
 	void rotate3(vector<vector<int>>& matrix);
 };
+
+class GroupAnagrams {
+public:
+	vector<vector<string>> groupAnagrams1(vector<string>& strs);
+	vector<vector<string>> groupAnagrams2(vector<string>& strs);
+	unsigned int hash(string s);
+};
