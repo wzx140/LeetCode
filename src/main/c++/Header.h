@@ -292,3 +292,9 @@ public:
 	vector<vector<string>> solveNQueens1(int n);
 	void dfs(int row, int n, vector<bool>& cols, vector<bool>& diags, vector<bool>& backs, vector<string>& board, vector<vector<string>>& solutions);
 };
+
+class NQueens2 {
+public:
+	int totalNQueens1(int n);
+	void dfs(int row, int n, vector<bool>& cols, vector<bool>& diags, vector<bool>& backs, int& solution);
+};
