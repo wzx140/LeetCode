@@ -298,3 +298,12 @@ public:
 	int totalNQueens1(int n);
 	void dfs(int row, int n, vector<bool>& cols, vector<bool>& diags, vector<bool>& backs, int& solution);
 };
+
+class MaximumSubarray {
+public:
+	int maxSubArray1(vector<int>& nums);
+	int maxSubArray2(vector<int>& nums);
+	int maxSubArray3(vector<int>& nums);
+	int maxSubArray4(vector<int>& nums);
+	int divided(vector<int>& nums, int left, int right);
+};
