@@ -307,3 +307,9 @@ public:
 	int maxSubArray4(vector<int>& nums);
 	int divided(vector<int>& nums, int left, int right);
 };
+
+class SpiralMatrix {
+public:
+	vector<int> spiralOrder1(vector<vector<int>>& matrix);
+	vector<int> spiralOrder2(vector<vector<int>>& matrix);
+};
