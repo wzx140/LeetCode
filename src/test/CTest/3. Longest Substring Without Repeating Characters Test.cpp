@@ -1,5 +1,5 @@
 ﻿#include "gtest/gtest.h"
-#include "../../main/c++/Header.h"
+#include "../../main/c++/header/LongestSubstringWithoutRepeatingCharacters.h"
 
 class LongestSubstringWithoutRepeatingCharactersTest : public ::testing::Test {
 protected:
@@ -11,7 +11,7 @@ protected:
 };
 
 TEST_F(LongestSubstringWithoutRepeatingCharactersTest, lengthOfLongestSubstring1Test) {
-	LongestSubstringWithoutRepeatingCharacters solution = LongestSubstringWithoutRepeatingCharacters();
+	LongestSubstringWithoutRepeatingCharacters solution;	
 	EXPECT_EQ(6, solution.lengthOfLongestSubstring1("abcabckfdca"));
 	EXPECT_EQ(1, solution.lengthOfLongestSubstring1("bbbbb"));
 	EXPECT_EQ(3, solution.lengthOfLongestSubstring1("pwwkew"));
@@ -20,7 +20,7 @@ TEST_F(LongestSubstringWithoutRepeatingCharactersTest, lengthOfLongestSubstring1
 }
 
 TEST_F(LongestSubstringWithoutRepeatingCharactersTest, lengthOfLongestSubstring2Test) {
-	LongestSubstringWithoutRepeatingCharacters solution = LongestSubstringWithoutRepeatingCharacters();
+	LongestSubstringWithoutRepeatingCharacters solution;
 	EXPECT_EQ(6, solution.lengthOfLongestSubstring2("abcabckfdca"));
 	EXPECT_EQ(1, solution.lengthOfLongestSubstring2("bbbbb"));
 	EXPECT_EQ(3, solution.lengthOfLongestSubstring2("pwwkew"));
@@ -29,7 +29,7 @@ TEST_F(LongestSubstringWithoutRepeatingCharactersTest, lengthOfLongestSubstring2
 }
 
 TEST_F(LongestSubstringWithoutRepeatingCharactersTest, lengthOfLongestSubstring3Test) {
-	LongestSubstringWithoutRepeatingCharacters solution = LongestSubstringWithoutRepeatingCharacters();
+	LongestSubstringWithoutRepeatingCharacters solution;
 	EXPECT_EQ(6, solution.lengthOfLongestSubstring3("abcabckfdca"));
 	EXPECT_EQ(1, solution.lengthOfLongestSubstring3("bbbbb"));
 	EXPECT_EQ(3, solution.lengthOfLongestSubstring3("pwwkew"));

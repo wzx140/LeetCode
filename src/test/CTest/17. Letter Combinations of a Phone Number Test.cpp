@@ -1,5 +1,5 @@
 ﻿#include "gtest/gtest.h"
-#include "../../main/c++/Header.h"
+#include "../../main/c++/header/LCPN.h"
 
 #include <unordered_set>
 

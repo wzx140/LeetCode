@@ -1,4 +1,4 @@
-﻿#include "Header.h"
+#include "header/LCPN.h"
 
 #include <cmath>
 #include <algorithm>

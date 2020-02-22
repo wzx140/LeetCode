@@ -1,5 +1,10 @@
 ﻿#include "gtest/gtest.h"
-#include "../../main/c++/Header.h"
+#include "../../main/c++/header/AddTwoNumbers.h"
+#include "../../main/c++/header/Utill.h"
+
+#include <vector>
+
+using std::vector;
 
 class AddTwoNumbersTest : public ::testing::Test {
 protected:
@@ -8,18 +13,17 @@ protected:
 		vector<int> source2{ 5,6,4 };
 		num1 = buildNodeList(source1);
 		num2 = buildNodeList(source2);
-		answer = { 7,0,8 };
+		res = { 7,0,8 };
 	}
 
 	void TearDown() override {}
 	ListNode* num1;
 	ListNode* num2;
-	vector<int> answer;
+	vector<int> res;
 };
 
 TEST_F(AddTwoNumbersTest, addTwoNumbers1Test) {
 
-	AddTwoNumbers addTwoNumbers = AddTwoNumbers();
-	ListNode* res = addTwoNumbers.addTwoNumbers1(num1, num2);
-	EXPECT_EQ(answer, decompositeNodeList(res));
+	AddTwoNumbers solution;
+	EXPECT_EQ(res, decompositeNodeList(solution.addTwoNumbers1(num1, num2)));
 }

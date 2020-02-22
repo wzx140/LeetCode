@@ -1,5 +1,5 @@
 ﻿#include "gtest/gtest.h"
-#include "../../main/c++/Header.h"
+#include "../../main/c++/header/PalindromeNumber.h"
 
 class PalindromeNumberTest : public ::testing::Test {
 protected:

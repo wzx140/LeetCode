@@ -1,5 +1,5 @@
 ﻿#include "gtest/gtest.h"
-#include "../../main/c++/Header.h"
+#include "../../main/c++/header/GenerateParenthesis.h"
 
 #include <unordered_set>
 
@@ -21,7 +21,7 @@ protected:
 };
 
 TEST_F(GenerateParenthesisTest, generateParenthesis1Test) {
-	GenerateParenthesis solution = GenerateParenthesis();
+	GenerateParenthesis solution;
 	vector<string> res = solution.generateParenthesis1(3);
 
 	unordered_set<string> resSet(res.begin(),res.end());
@@ -29,7 +29,7 @@ TEST_F(GenerateParenthesisTest, generateParenthesis1Test) {
 }
 
 TEST_F(GenerateParenthesisTest, generateParenthesis2Test) {
-	GenerateParenthesis solution = GenerateParenthesis();
+	GenerateParenthesis solution;
 	vector<string> res = solution.generateParenthesis2(3);
 
 	unordered_set<string> resSet(res.begin(), res.end());
@@ -37,7 +37,7 @@ TEST_F(GenerateParenthesisTest, generateParenthesis2Test) {
 }
 
 TEST_F(GenerateParenthesisTest, generateParenthesis3Test) {
-	GenerateParenthesis solution = GenerateParenthesis();
+	GenerateParenthesis solution;
 	vector<string> res = solution.generateParenthesis3(3);
 
 	unordered_set<string> resSet(res.begin(), res.end());

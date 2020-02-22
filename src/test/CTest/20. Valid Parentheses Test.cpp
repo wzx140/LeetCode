@@ -1,5 +1,5 @@
 ﻿#include "gtest/gtest.h"
-#include "../../main/c++/Header.h"
+#include "../../main/c++/header/ValidParentheses.h"
 
 class ValidParenthesesTest : public ::testing::Test {
 protected:
@@ -9,7 +9,7 @@ protected:
 };
 
 TEST_F(ValidParenthesesTest, isValid1Test) {
-	ValidParentheses solution = ValidParentheses();
+	ValidParentheses solution;
 	EXPECT_TRUE(solution.isValid1("()"));
 	EXPECT_TRUE(solution.isValid1("()[]{}"));
 	EXPECT_FALSE(solution.isValid1("(]"));

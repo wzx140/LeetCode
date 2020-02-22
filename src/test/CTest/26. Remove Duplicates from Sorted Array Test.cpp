@@ -1,5 +1,5 @@
 ﻿#include "gtest/gtest.h"
-#include "../../main/c++/Header.h"
+#include "../../main/c++/header/RDSA.h"
 
 class RDSATest : public ::testing::Test {
 protected:
@@ -19,7 +19,7 @@ protected:
 
 TEST_F(RDSATest, removeDuplicates1Test) {
 
-	RDSA solution = RDSA();
+	RDSA solution;
 	EXPECT_EQ(2, solution.removeDuplicates1(this->source1));
 	EXPECT_EQ(this->res1.at(0), this->source1.at(0));
 	EXPECT_EQ(this->res1.at(1), this->source1.at(1));
@@ -34,7 +34,7 @@ TEST_F(RDSATest, removeDuplicates1Test) {
 
 TEST_F(RDSATest, removeDuplicates2Test) {
 
-	RDSA solution = RDSA();
+	RDSA solution;
 	EXPECT_EQ(2, solution.removeDuplicates2(this->source1));
 	EXPECT_EQ(this->res1.at(0), this->source1.at(0));
 	EXPECT_EQ(this->res1.at(1), this->source1.at(1));

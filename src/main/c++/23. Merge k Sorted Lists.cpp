@@ -1,11 +1,14 @@
-﻿#include "Header.h"
+﻿#include "header/Utill.h"
+#include "header/MergeKSortedLists.h"
 
 #include <cmath>
 #include <limits>
+#include <vector>
 
 using std::log;
 using std::pow;
 using std::numeric_limits;
+using std::vector;
 
 /**
  * https://leetcode.com/problems/merge-k-sorted-lists/

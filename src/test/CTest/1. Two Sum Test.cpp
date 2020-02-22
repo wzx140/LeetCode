@@ -1,5 +1,5 @@
 ﻿#include "gtest/gtest.h"
-#include "../../main/c++/Header.h"
+#include "../../main/c++/header/Sum2.h"
 
 #include <unordered_set>
 
@@ -21,19 +21,19 @@ protected:
 };
 
 TEST_F(Sum2Test, twoSum1Test) {
-	Sum2 solution = Sum2();
+	Sum2 solution;
 	vector<int> res = solution.twoSum1(this->source, 9);
 	EXPECT_TRUE(this->so == unordered_set<int>(res.begin(), res.end()));
 }
 
 TEST_F(Sum2Test, twoSum2Test) {
-	Sum2 solution = Sum2();
+	Sum2 solution;
 	vector<int> res = solution.twoSum2(this->source, 9);
 	EXPECT_TRUE(this->so == unordered_set<int>(res.begin(), res.end()));
 }
 
 TEST_F(Sum2Test, twoSum3Test) {
-	Sum2 solution = Sum2();
+	Sum2 solution;
 	vector<int> res = solution.twoSum3(this->source, 9);
 	EXPECT_TRUE(this->so == unordered_set<int>(res.begin(), res.end()));
 }

@@ -1,7 +1,5 @@
-﻿#include "Header.h"
-#include "Utills.h"
-
-using data::ListNode;
+﻿#include "header/SNP.h"
+#include "header/Utill.h"
 
 /**
  * https://leetcode.com/problems/swap-nodes-in-pairs/

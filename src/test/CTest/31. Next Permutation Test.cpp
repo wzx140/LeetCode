@@ -1,5 +1,5 @@
 ﻿#include "gtest/gtest.h"
-#include "../../main/c++/Header.h"
+#include "../../main/c++/header/NextPermutation.h"
 
 class NextPermutationTest : public ::testing::Test {
 protected:
@@ -26,7 +26,7 @@ protected:
 
 TEST_F(NextPermutationTest, nextPermutation1Test) {
 
-	NextPermutation solution = NextPermutation();
+	NextPermutation solution;
 	solution.nextPermutation1(source1);
 	solution.nextPermutation1(source2);
 	solution.nextPermutation1(source3);
@@ -38,7 +38,7 @@ TEST_F(NextPermutationTest, nextPermutation1Test) {
 
 TEST_F(NextPermutationTest, nextPermutation2Test) {
 
-	NextPermutation solution = NextPermutation();
+	NextPermutation solution;
 	solution.nextPermutation2(source1);
 	solution.nextPermutation2(source2);
 	solution.nextPermutation2(source3);

@@ -1,5 +1,5 @@
 ﻿#include "gtest/gtest.h"
-#include "../../main/c++/Header.h"
+#include "../../main/c++/header/FFLP.h"
 
 class FFLPTest : public ::testing::Test {
 protected:
@@ -18,7 +18,7 @@ protected:
 
 TEST_F(FFLPTest, searchRange1Test) {
 
-	FFLP solution = FFLP();
+	FFLP solution;
 	EXPECT_EQ(res1, solution.searchRange1(source, 8));
 	EXPECT_EQ(res2, solution.searchRange1(source, 6));
 }

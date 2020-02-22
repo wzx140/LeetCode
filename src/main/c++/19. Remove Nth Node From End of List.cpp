@@ -1,7 +1,5 @@
-﻿#include "Header.h"
-#include "Utills.h"
-
-using data::ListNode;
+﻿#include "header/RNEL.h"
+#include "header/Utill.h"
 
 /**
  * https://leetcode.com/problems/remove-nth-node-from-end-of-list/

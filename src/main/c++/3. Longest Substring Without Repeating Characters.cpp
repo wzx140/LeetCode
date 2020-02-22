@@ -1,9 +1,14 @@
-﻿#include "Header.h"
+﻿#include "header/LongestSubstringWithoutRepeatingCharacters.h"
+
 #include <algorithm>
 #include <unordered_map>
+#include <vector>
 
 using std::unordered_map;
 using std::make_pair;
+using std::vector;
+using std::find;
+using std::distance;
 
 /**
  * https://leetcode.com/problems/longest-substring-without-repeating-characters/

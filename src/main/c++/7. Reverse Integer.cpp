@@ -1,4 +1,8 @@
-﻿#include "Header.h"
+﻿#include "header/ReverseInteger.h"
+
+#include <limits>
+
+using std::numeric_limits;
 
 /**
  * https://leetcode.com/problems/reverse-integer/solution/

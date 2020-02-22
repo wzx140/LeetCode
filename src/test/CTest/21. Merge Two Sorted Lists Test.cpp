@@ -1,5 +1,6 @@
 ﻿#include "gtest/gtest.h"
-#include "../../main/c++/Header.h"
+#include "../../main/c++/header/MTSL.h"
+#include "../../main/c++/header/Utill.h"
 
 class MTSLTest : public ::testing::Test {
 protected:
@@ -19,14 +20,14 @@ protected:
 
 TEST_F(MTSLTest, mergeTwoLists1Test) {
 
-	MTSL solution = MTSL();
+	MTSL solution;
 	ListNode * res = solution.mergeTwoLists1(list1, list2);
 	EXPECT_EQ(answer,decompositeNodeList(res));
 }
 
 TEST_F(MTSLTest, mergeTwoLists2Test) {
 
-	MTSL solution = MTSL();
+	MTSL solution;
 	ListNode * res = solution.mergeTwoLists2(list1, list2);
 	EXPECT_EQ(answer, decompositeNodeList(res));
 }

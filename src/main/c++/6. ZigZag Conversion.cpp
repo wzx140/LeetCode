@@ -1,12 +1,14 @@
-﻿#include "Header.h"
+﻿#include "header/ZigZagConversion.h"
 
 #include <sstream>
 #include <string>
 #include <algorithm>
+#include <vector>
 
 using std::stringstream;
 using std::string;
 using std::min;
+using std::vector;
 
 /**
  * https://leetcode.com/problems/zigzag-conversion/

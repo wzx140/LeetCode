@@ -1,7 +1,5 @@
-﻿#include "Header.h"
-#include "Utills.h"
-
-using data::ListNode;
+﻿#include "header/MTSL.h"
+#include "header/Utill.h"
 
 /**
  * https://leetcode.com/problems/merge-two-sorted-lists/

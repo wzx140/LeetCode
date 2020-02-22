@@ -1,5 +1,5 @@
 ﻿#include "gtest/gtest.h"
-#include "../../main/c++/Header.h"
+#include "../../main/c++/header/CombinationSum.h"
 
 class CombinationSumTest : public ::testing::Test {
 protected:

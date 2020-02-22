@@ -1,5 +1,5 @@
 ﻿#include "gtest/gtest.h"
-#include "../../main/c++/Header.h"
+#include "../../main/c++/header/JumpGame.h"
 
 class JumpGameTest : public ::testing::Test {
 protected:

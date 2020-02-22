@@ -1,5 +1,5 @@
 ﻿#include "gtest/gtest.h"
-#include "../../main/c++/Header.h"
+#include "../../main/c++/header/SearchInsertPosition.h"
 
 class SearchInsertPositionTest : public ::testing::Test {
 protected:
@@ -14,7 +14,7 @@ protected:
 
 TEST_F(SearchInsertPositionTest, searchInsert1Test) {
 
-	SearchInsertPosition solution = SearchInsertPosition();
+	SearchInsertPosition solution;
 	EXPECT_EQ(2, solution.searchInsert1(source, 5));
 	EXPECT_EQ(1, solution.searchInsert1(source, 2));
 	EXPECT_EQ(4, solution.searchInsert1(source, 7));

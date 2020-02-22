@@ -1,5 +1,6 @@
 ﻿#include "gtest/gtest.h"
-#include "../../main/c++/Header.h"
+#include "../../main/c++/header/MergeKSortedLists.h"
+#include "../../main/c++/header/Utill.h"
 
 class MergeKSortedListsTest : public ::testing::Test {
 protected:
@@ -34,7 +35,7 @@ protected:
 
 TEST_F(MergeKSortedListsTest, mergeKLists1Test) {
 
-	MergeKSortedLists solution = MergeKSortedLists();
+	MergeKSortedLists solution;
 	ListNode* res1 = solution.mergeKLists1(list1);
 	EXPECT_EQ(answer1, decompositeNodeList(res1));
 	ListNode* res2 = solution.mergeKLists1(list2);

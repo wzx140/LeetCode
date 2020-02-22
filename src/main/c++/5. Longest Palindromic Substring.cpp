@@ -1,9 +1,11 @@
-﻿#include "Header.h"
+﻿#include "header/LongestPalindromicSubstring.h"
 
 #include <algorithm>
+#include <vector>
 
 using std::max;
 using std::reverse;
+using std::vector;
 
 /**
  * 暴力法，超出时间限制

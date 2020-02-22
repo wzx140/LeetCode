@@ -1,5 +1,6 @@
 ﻿#include "gtest/gtest.h"
-#include "../../main/c++/Header.h"
+#include "../../main/c++/header/RNEL.h"
+#include "../../main/c++/header/Utill.h"
 
 class RNELTest : public ::testing::Test {
 protected:
@@ -16,7 +17,7 @@ protected:
 
 TEST_F(RNELTest, removeNthFromEnd1Test) {
 
-	RNEL solution = RNEL();
+	RNEL solution;
 	ListNode * res = solution.removeNthFromEnd1(list, 2);
 	EXPECT_EQ(answer, decompositeNodeList(res));
 }

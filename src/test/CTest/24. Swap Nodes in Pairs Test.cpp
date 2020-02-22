@@ -1,5 +1,6 @@
 ﻿#include "gtest/gtest.h"
-#include "../../main/c++/Header.h"
+#include "../../main/c++/header/SNP.h"
+#include "../../main/c++/header/Utill.h"
 
 class SNPTest : public ::testing::Test {
 protected:
@@ -16,13 +17,13 @@ protected:
 };
 
 TEST_F(SNPTest, swapPairs1Test) {
-	SNP solution = SNP();
+	SNP solution;
 	ListNode* head = solution.swapPairs1(this->nodes);
 	EXPECT_EQ(answer, decompositeNodeList(head));
 }
 
 TEST_F(SNPTest, swapPairs2Test) {
-	SNP solution = SNP();
+	SNP solution;
 	ListNode* head = solution.swapPairs2(this->nodes);
 	EXPECT_EQ(answer, decompositeNodeList(head));
 }

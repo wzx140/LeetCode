@@ -1,5 +1,5 @@
 ﻿#include "gtest/gtest.h"
-#include "../../main/c++/Header.h"
+#include "../../main/c++/header/Atoi.h"
 
 class AtoiTest : public ::testing::Test {
 protected:
@@ -9,7 +9,7 @@ protected:
 };
 
 TEST_F(AtoiTest, myAtoi1Test) {
-	Atoi solution = Atoi();
+	Atoi solution;
 	EXPECT_EQ(42, solution.myAtoi1("42"));
 	EXPECT_EQ(-42, solution.myAtoi1("   -42"));
 	EXPECT_EQ(4193, solution.myAtoi1("4193 with words"));

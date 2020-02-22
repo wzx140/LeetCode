@@ -1,5 +1,5 @@
 ﻿#include "gtest/gtest.h"
-#include "../../main/c++/Header.h"
+#include "../../main/c++/header/RemoveElement.h"
 
 #include <algorithm>
 
@@ -26,7 +26,7 @@ protected:
 
 TEST_F(RemoveElementTest, removeElement1Test) {
 
-	RemoveElement solution = RemoveElement();
+	RemoveElement solution;
 	EXPECT_EQ(2, solution.removeElement1(this->source1, 3));
 	vector<int> solution1(this->source1.begin(), this->source1.end() - 2);
 	sort(solution1.begin(), solution1.end());
@@ -40,7 +40,7 @@ TEST_F(RemoveElementTest, removeElement1Test) {
 
 TEST_F(RemoveElementTest, removeElement2Test) {
 
-	RemoveElement solution = RemoveElement();
+	RemoveElement solution;
 	EXPECT_EQ(2, solution.removeElement2(this->source1, 3));
 	vector<int> solution1(this->source1.begin(), this->source1.end() - 2);
 	sort(solution1.begin(), solution1.end());
@@ -54,7 +54,7 @@ TEST_F(RemoveElementTest, removeElement2Test) {
 
 TEST_F(RemoveElementTest, removeElement3Test) {
 
-	RemoveElement solution = RemoveElement();
+	RemoveElement solution;
 	EXPECT_EQ(2, solution.removeElement3(this->source1, 3));
 	vector<int> solution1(this->source1.begin(), this->source1.end() - 2);
 	sort(solution1.begin(), solution1.end());

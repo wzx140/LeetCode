@@ -1,5 +1,5 @@
 ﻿#include "gtest/gtest.h"
-#include "../../main/c++/Header.h"
+#include "../../main/c++/header/TrappingRainWater.h"
 
 class TrappingRainWaterTest : public ::testing::Test {
 protected:

@@ -1,4 +1,4 @@
-﻿#include "Header.h"
+#include "header/NQueens2.h"
 
 #include <vector>
 #include <string>
