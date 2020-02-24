@@ -38,8 +38,6 @@ vector<vector<int>> MergeIntervals::merge1(vector<vector<int>>& intervals) {
 		lastLeft = left, lastRight = right;
 	}
 
-	if (res.empty() || res.back()[1] != lastRight) {
-		res.push_back({ lastLeft,lastRight });
-	}
+	res.push_back({ lastLeft,lastRight });
 	return res;
 }
