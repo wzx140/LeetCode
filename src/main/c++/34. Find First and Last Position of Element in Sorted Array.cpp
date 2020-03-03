@@ -1,4 +1,4 @@
-#include "header/FFLP.h"
+﻿#include "header/FFLP.h"
 
 #include <vector>
 #include <cmath>
@@ -10,12 +10,11 @@ using std::vector;
  */
 
  /**
-  * 先用二分搜索找最左端元素，再向右寻找到最右端元素
+  * https://masterwangzx.com/2020/03/03/binary-search/
   * time:O(logn)
   * space:O(1)
   */
 vector<int> FFLP::searchRange1(vector<int>& nums, int target) {
-
 	int length = nums.size();
 	if (length == 0) {
 		return { -1,-1 };
@@ -25,35 +24,34 @@ vector<int> FFLP::searchRange1(vector<int>& nums, int target) {
 	int lowerBound = -1;
 
 	// 寻找下界
-	int begin = 0;
-	int end = length - 1;
-	while (begin < end) {
-		int middle = (end - begin) / 2 + begin;
-
+	int start = 0;
+	int end = length;
+	while (start < end) {
+		int middle = (end - start) / 2 + start;
 		if (nums[middle] >= target) {
 			end = middle;
 		} else {
-			begin = middle + 1;
+			start = middle + 1;
 		}
 	}
-	lowerBound = begin;
-
-	if (begin > length - 1 || nums[begin] != target) {
-		return { -1,-1 };
+	if (start < length && nums[start] == target) {
+		lowerBound = start;
 	}
 
 	// 寻找上界
+	start = 0;
 	end = length - 1;
-	while (begin < end) {
-		int middle = ceil((end - begin) / 2. + begin);
-
-		if (nums[middle] > target) {
-			end = middle - 1;
+	while (start <= end) {
+		int middle = (end - start) / 2 + start;
+		if (nums[middle] <= target) {
+			start = middle + 1;
 		} else {
-			begin = middle;
+			end = middle - 1;
 		}
 	}
-	upperBound = end;
+	if (end >= 0 && nums[end] == target) {
+		upperBound = end;
+	}
 
 	return { lowerBound,upperBound };
 }
