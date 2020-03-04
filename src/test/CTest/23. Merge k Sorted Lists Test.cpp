@@ -1,6 +1,6 @@
 ﻿#include "gtest/gtest.h"
 #include "../../main/c++/header/MergeKSortedLists.h"
-#include "../../main/c++/header/Utill.h"
+#include "../../main/c++/header/Util.h"
 
 class MergeKSortedListsTest : public ::testing::Test {
 protected:

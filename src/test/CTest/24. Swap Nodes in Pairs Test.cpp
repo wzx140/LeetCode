@@ -1,6 +1,6 @@
 ﻿#include "gtest/gtest.h"
 #include "../../main/c++/header/SNP.h"
-#include "../../main/c++/header/Utill.h"
+#include "../../main/c++/header/Util.h"
 
 class SNPTest : public ::testing::Test {
 protected:

@@ -1,6 +1,6 @@
 ﻿#include "gtest/gtest.h"
 #include "../../main/c++/header/AddTwoNumbers.h"
-#include "../../main/c++/header/Utill.h"
+#include "../../main/c++/header/Util.h"
 
 #include <vector>
 

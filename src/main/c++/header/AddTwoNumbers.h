@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-#include "Utill.h";
+#include "Util.h";
 
 class AddTwoNumbers {
 public:

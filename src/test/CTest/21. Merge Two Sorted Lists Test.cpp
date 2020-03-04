@@ -1,6 +1,6 @@
 ﻿#include "gtest/gtest.h"
 #include "../../main/c++/header/MTSL.h"
-#include "../../main/c++/header/Utill.h"
+#include "../../main/c++/header/Util.h"
 
 class MTSLTest : public ::testing::Test {
 protected:

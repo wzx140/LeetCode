@@ -1,6 +1,6 @@
 ﻿#include "gtest/gtest.h"
 #include "../../main/c++/header/RNEL.h"
-#include "../../main/c++/header/Utill.h"
+#include "../../main/c++/header/Util.h"
 
 class RNELTest : public ::testing::Test {
 protected:
