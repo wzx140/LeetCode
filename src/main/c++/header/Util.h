@@ -69,6 +69,20 @@ struct TreeNode {
 	TreeNode(int x) : val(x), left(NULL), right(NULL) {}
 };
 
+inline bool treeEquals(TreeNode* tree1, TreeNode* tree2) {
+	if (tree1 == NULL && tree2 == NULL) {
+		return true;
+	}
+	if (!tree1 || !tree2) {
+		return false;
+	}
+	if (tree1->val == tree2->val) {
+		return treeEquals(tree1->left, tree2->left) && treeEquals(tree1->right, tree2->right);
+	} else {
+		return false;
+	}
+}
+
 inline TreeNode* buildTree(vector<float>& source) {
 	TreeNode* root = NULL;
 	if (source.empty()) {
