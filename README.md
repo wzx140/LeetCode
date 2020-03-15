@@ -1,6 +1,5 @@
 # LeetCode
 - 二分搜索:[目标数及上下界查找](https://masterwangzx.com/2020/03/03/binary-search/)
-
     - [34. Find First and Last Position of Element in Sorted Array](src/main/c++/34.&#32;Find&#32;First&#32;and&#32;Last&#32;Position&#32;of&#32;Element&#32;in&#32;Sorted&#32;Array.cpp)
 - 二叉树遍历：前中后序遍历，[递归迭代模式](https://masterwangzx.com/2019/03/16/binary-tree/#%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E9%81%8D%E5%8E%86)
     - [前序遍历](src/main/c++/144.&#32;Binary&#32;Tree&#32;Preorder&#32;Traversal.cpp)
@@ -12,3 +11,11 @@
     - [先跟+后跟](src/main/c++/889.&#32;Construct&#32;Binary&#32;Tree&#32;from&#32;Preorder&#32;and&#32;Postorder&#32;Traversal.cpp)
 - [动归](https://labuladong.gitbook.io/algo/di-ling-zhang-bi-du-xi-lie/dong-tai-gui-hua-xiang-jie-jin-jie)
     - [322. Coin Change](src/main/c++/322.&#32;Coin&#32;Change.cpp)
+    - 子序列、字符串问题
+        - 一维dp
+            - [300. Longest Increasing Subsequence](src/main/c++/300.&#32;Longest&#32;Increasing&#32;Subsequence.cpp)
+        - 二维dp
+            - [1143. Longest Common Subsequence](src/main/c++/1143.&#32;Longest&#32;Common&#32;Subsequence.cpp)
+            - [72. Edit Distance](src/main/c++/72.&#32;Edit&#32;Distance.cpp)
+    - 背包问题
+        - [416. Partition Equal Subset Sum](src/main/c++/416.&#32;Partition&#32;Equal&#32;Subset&#32;Sum.cpp)
