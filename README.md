@@ -11,6 +11,7 @@
     - [先跟+后跟](src/main/c++/889.&#32;Construct&#32;Binary&#32;Tree&#32;from&#32;Preorder&#32;and&#32;Postorder&#32;Traversal.cpp)
 - [动归](https://labuladong.gitbook.io/algo/di-ling-zhang-bi-du-xi-lie/dong-tai-gui-hua-xiang-jie-jin-jie)
     - [322. Coin Change](src/main/c++/322.&#32;Coin&#32;Change.cpp)
+    - [887. Super Egg Drop](src/main/c++/887.&#32;Super&#32;Egg&#32;Drop.cpp)
     - 子序列、字符串问题
         - 一维dp
             - [300. Longest Increasing Subsequence](src/main/c++/300.&#32;Longest&#32;Increasing&#32;Subsequence.cpp)
