@@ -12,6 +12,10 @@
 - [动归](https://labuladong.gitbook.io/algo/di-ling-zhang-bi-du-xi-lie/dong-tai-gui-hua-xiang-jie-jin-jie)
     - [322. Coin Change](src/main/c++/322.&#32;Coin&#32;Change.cpp)
     - [887. Super Egg Drop](src/main/c++/887.&#32;Super&#32;Egg&#32;Drop.cpp)
+    - [877. Stone Game](src/main/c++/877.&#32;Stone&#32;Game.cpp)
+    - 区间问题(贪心)
+        - [435. Non-overlapping Intervals](src/main/c++/435.&#32;Non-overlapping&#32;Intervals.cpp)
+        - [887. Super Egg Drop](src/main/c++/452.&#32;Minimum&#32;Number&#32;of&#32;Arrows&#32;to&#32;Burst&#32;Balloons.cpp)
     - 子序列、字符串问题
         - 一维dp
             - [300. Longest Increasing Subsequence](src/main/c++/300.&#32;Longest&#32;Increasing&#32;Subsequence.cpp)
