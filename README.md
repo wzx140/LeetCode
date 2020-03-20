@@ -22,6 +22,7 @@
         - 二维dp
             - [1143. Longest Common Subsequence](src/main/c++/1143.&#32;Longest&#32;Common&#32;Subsequence.cpp)
             - [72. Edit Distance](src/main/c++/72.&#32;Edit&#32;Distance.cpp)
+            - [10. Regular Expression Matching](src/main/c++/10.&#32;Regular&#32;Expression&#32;Matching.cpp)
     - 背包问题
         - [416. Partition Equal Subset Sum](src/main/c++/416.&#32;Partition&#32;Equal&#32;Subset&#32;Sum.cpp)
     - [股票问题](https://labuladong.gitbook.io/algo/dong-tai-gui-hua-xi-lie/tuan-mie-gu-piao-wen-ti)
