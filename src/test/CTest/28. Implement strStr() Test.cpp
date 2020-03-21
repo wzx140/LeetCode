@@ -18,3 +18,10 @@ TEST_F(ImplementStrStrTest, strStr1Test) {
 	EXPECT_EQ(2, solution.strStr1("hello", "ll"));
 	EXPECT_EQ(-1, solution.strStr1("aaaaa", "bba"));
 }
+
+TEST_F(ImplementStrStrTest, strStr2Test) {
+
+	ImplementStrStr solution;
+	EXPECT_EQ(2, solution.strStr2("hello", "ll"));
+	EXPECT_EQ(-1, solution.strStr2("aaaaa", "bba"));
+}
