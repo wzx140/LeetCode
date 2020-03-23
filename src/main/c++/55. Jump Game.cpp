@@ -1,13 +1,20 @@
-#include "header/JumpGame.h"
+﻿#include "header/JumpGame.h"
 
 #include <vector>
 #include <algorithm>
 
 using std::vector;
 using std::min;
+using std::max;
 
 /**
  * https://leetcode.com/problems/jump-game/
+ */
+
+/**
+ * dp[i]:能否从i位置跳到终点
+ * i处单次跳跃到达的范围内的点是否能到达终点
+ * 递推公式：for j in (i, i+nums[i]): if(dp[j]){dp[i]=true;break;}
  */
 
  /**
@@ -71,20 +78,16 @@ bool JumpGame::canJump2(vector<int>& nums) {
  * space:O(1)
  */
 bool JumpGame::canJump3(vector<int>& nums) {
-	int len = nums.size();
-	// 上一次可以跳到终点的位置
-	int lastPos = len - 1;
-
-	// 从右往左
-	for (int i = len - 2; i >= 0; i--) {
-		int maxJump = i + nums[i];
-		for (int next = i + 1; next <= maxJump; next++) {
-			if (next >= lastPos) {
-				lastPos = i;
-				break;
-			}
+	int n = nums.size();
+	int farthest = 0;
+	for (int i = 0; i < n - 1; i++) {
+		// 不能跳到该位置
+		if (farthest < i) {
+			return false;
 		}
-	}
 
-	return lastPos == 0;
+		// 不断计算能跳到的最远距离
+		farthest = max(farthest, i + nums[i]);
+	}
+	return farthest >= n - 1;
 }

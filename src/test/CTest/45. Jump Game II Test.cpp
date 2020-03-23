@@ -4,7 +4,7 @@
 class JumpGame2Test : public ::testing::Test {
 protected:
 	void SetUp() override {
-		source1 = { 2,3,1,1,4 };
+		source1 = { 2, 3, 1, 1, 4 };
 		source2 = { 1, 2, 1, 1, 1 };
 	}
 

@@ -1,14 +1,10 @@
-#include "header/JumpGame2.h"
+﻿#include "header/JumpGame2.h"
 
 #include <vector>
-#include <queue>
-#include <map>
-#include <cmath>
+#include <algorithm>
 
-using std::pair;
-using std::make_pair;
 using std::vector;
-using std::queue;
+using std::min;
 using std::max;
 
 /**
@@ -16,35 +12,30 @@ using std::max;
  */
 
  /**
-  * bfs
-  * time:O(n)
-  * space:O(n)
+  * dp[i]:从i跳到终点的跳步数
+  * i处单次跳跃到达的范围内的点更新dp[i]
+  * 递推公式：for j in (i, i+nums[i]): dp[i]=min(dp[i],dp[j]+1);
   */
+
+  /**
+   * 动态规划，超时
+   * time:O(n^2)
+   * space:O(n)
+   */
 int JumpGame2::jump1(vector<int>& nums) {
-	int des = nums.size() - 1;
+	int len = nums.size();
+	vector<int> dp(len, len);
+	dp[len - 1] = 0;
 
-	queue<pair<int, int>> open;
-	open.push(make_pair(0, 0));
-	// 上一跳，所能到达的最远距离
-	int last = 0;
-	while (!open.empty()) {
-		int index = open.front().first;
-		int step = open.front().second;
-		open.pop();
-
-		if (index >= des) {
-			return step;
+	for (int i = len - 2; i >= 0; i--) {
+		for (int step = 1; step <= nums[i]; step++) {
+			if (i + step < len) {
+				dp[i] = min(dp[i], dp[i + step] + 1);
+			}
 		}
-
-		// 所有在上一跳所能到达的最远距离内的跳跃都不必要做
-		int cur = last - index;
-		for (int i = nums[index]; i > cur; i--) {
-			open.push(make_pair(index + i, step + 1));
-		}
-		last = nums[index] + index;
 	}
 
-	return 0;
+	return dp[0];
 }
 
 /**
@@ -53,24 +44,20 @@ int JumpGame2::jump1(vector<int>& nums) {
  * space:O(1)
  */
 int JumpGame2::jump2(vector<int>& nums) {
-	int step = 0;
-	// 上一次所能到达的最大范围
-	int last = 0;
-	// 当前所能到达的最大范围
-	int cur = 0;
-	int length = nums.size();
+	int len = nums.size();
+	int farthest = 0;
+	// 上一跳的最远距离
+	int end = 0;
+	int jumps = 0;
+	for (int i = 0; i < len - 1; i++) {
+		// 每次选择跳到的最远距离
+		farthest = max(farthest, i + nums[i]);
 
-	for (int i = 0; i < length - 1; i++) {
-		if (i > last) {
-			step++;
-			last = cur;
-		}
-		cur = max(cur, i + nums[i]);
-		if (cur >= length - 1) {
-			// 执行最后一跳到达终点
-			return step + 1;
+		// 如果上一跳只能到达这里，只能开启下一条
+		if (end == i) {
+			jumps++;
+			end = farthest;
 		}
 	}
-	// 单一元素的集合
-	return 0;
+	return jumps;
 }
