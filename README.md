@@ -18,9 +18,12 @@
 - [中根+后根](src/main/c++/106.&#32;Construct&#32;Binary&#32;Tree&#32;from&#32;Inorder&#32;and&#32;Postorder&#32;Traversal.cpp)
 - [先跟+后跟](src/main/c++/889.&#32;Construct&#32;Binary&#32;Tree&#32;from&#32;Preorder&#32;and&#32;Postorder&#32;Traversal.cpp)
 
-## [优先队列](https://masterwangzx.com/2019/10/25/min-heap)
+### [优先队列](https://masterwangzx.com/2019/10/25/min-heap)
 
 - [347. Top K Frequent Elements](src/main/c++/347.&#32;Top&#32;K&#32;Frequent&#32;Elements.cpp)
+
+## 其他数据结构
+- [146. LRU Cache](src/main/c++/146.&#32;LRU&#32;Cache.cpp)
 
 ## [动归](https://labuladong.gitbook.io/algo/di-ling-zhang-bi-du-xi-lie/dong-tai-gui-hua-xiang-jie-jin-jie)
 - [322. Coin Change](src/main/c++/322.&#32;Coin&#32;Change.cpp)
