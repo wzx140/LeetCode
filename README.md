@@ -6,6 +6,14 @@
 - [34. Find First and Last Position of Element in Sorted Array](src/main/c++/34.&#32;Find&#32;First&#32;and&#32;Last&#32;Position&#32;of&#32;Element&#32;in&#32;Sorted&#32;Array.cpp)
 
 ## 二叉树
+
+### 递归
+- [100. Same Tree](src/main/c++/100.&#32;Same&#32;Tree.cpp)
+- [101. Symmetric Tree](src/main/c++/101.&#32;Symmetric&#32;Tree.cpp)
+- [104. Maximum Depth of Binary Tree](src/main/c++/104.&#32;Maximum&#32;Depth&#32;of&#32;Binary&#32;Tree.cpp)
+- [111. Minimum Depth of Binary Tree](src/main/c++/111.&#32;Minimum&#32;Depth&#32;of&#32;Binary&#32;Tree.cpp)
+- [222. Count Complete Tree Nodes](src/main/c++/222.&#32;Count&#32;Complete&#32;Tree&#32;Nodes.cpp)
+
 ### [前中后序遍历](https://masterwangzx.com/2019/03/16/binary-tree/#%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E9%81%8D%E5%8E%86)
 
 - [前序遍历](src/main/c++/144.&#32;Binary&#32;Tree&#32;Preorder&#32;Traversal.cpp)
@@ -21,6 +29,8 @@
 ### [优先队列](https://masterwangzx.com/2019/10/25/min-heap)
 
 - [347. Top K Frequent Elements](src/main/c++/347.&#32;Top&#32;K&#32;Frequent&#32;Elements.cpp)
+
+### 二叉搜索树
 
 ## 其他数据结构
 - [146. LRU Cache](src/main/c++/146.&#32;LRU&#32;Cache.cpp)
