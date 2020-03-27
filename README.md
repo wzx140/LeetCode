@@ -30,9 +30,14 @@
 
 ### [优先队列](https://masterwangzx.com/2019/10/25/min-heap)
 
-- [347. Top K Frequent Elements](src/main/c++/347.&#32;Top&#32;K&#32;Frequent&#32;Elements.cpp)
+[347. Top K Frequent Elements](src/main/c++/347.&#32;Top&#32;K&#32;Frequent&#32;Elements.cpp)
 
 ### 二叉搜索树
+- [98. Validate Binary Search Tree](src/main/c++/98.&#32;Validate&#32;Binary&#32;Search&#32;Tree.cpp)
+- [700. Search in a Binary Search Tree](src/main/c++/700.&#32;Search&#32;in&#32;a&#32;Binary&#32;Search&#32;Tree.cpp)
+- [701. Insert into a Binary Search Tree](src/main/c++/701.&#32;Insert&#32;into&#32;a&#32;Binary&#32;Search&#32;Tree.cpp)
+- [450. Delete Node in a BST](src/main/c++/450.&#32;Delete&#32;Node&#32;in&#32;a&#32;BST.cpp)
+
 
 ## 其他数据结构
 - [146. LRU Cache](src/main/c++/146.&#32;LRU&#32;Cache.cpp)
