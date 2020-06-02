@@ -4,6 +4,7 @@ import java.util.List;
 
 /**
  * 链表数据结构
+ *
  * @author wzx
  */
 public class ListNode {
@@ -42,5 +43,7 @@ public class ListNode {
       sb.append(node.val).append(',');
       node = node.next;
     }
+    sb.setLength(sb.length() - 1);
+    System.out.println(sb.toString());
   }
 }
