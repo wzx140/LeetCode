@@ -9,6 +9,10 @@ import com.wzx.entity.ListNode;
  */
 public class No206ReverseLinkedList {
 
+  /**
+   * time: O(n)
+   * space: O(1)
+   */
   public ListNode reverseList1(ListNode head) {
     if (head == null || head.next == null) {
       return head;

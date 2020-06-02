@@ -9,6 +9,10 @@ import com.wzx.entity.ListNode;
  */
 public class No92ReverseLinkedList2 {
 
+  /**
+   * time: O(n)
+   * space: O(1)
+   */
   public ListNode reverseBetween(ListNode head, int m, int n) {
     ListNode start = head;
     ListNode preStart = head;
