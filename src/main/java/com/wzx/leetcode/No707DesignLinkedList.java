@@ -1,5 +1,10 @@
 package com.wzx.leetcode;
 
+/**
+ * https://leetcode.com/problems/design-linked-list/
+ *
+ * @author wzx
+ */
 public class No707DesignLinkedList {
 
   static class MyLinkedList {

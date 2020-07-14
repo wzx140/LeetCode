@@ -2,6 +2,11 @@ package com.wzx.leetcode;
 
 import com.wzx.entity.ListNode;
 
+/**
+ * https://leetcode.com/problems/merge-two-sorted-lists/
+ *
+ * @author wzx
+ */
 public class No21MergeTwoSortedLists {
 
   /**
