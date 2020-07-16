@@ -1,5 +1,6 @@
 package com.wzx.entity;
 
+import java.util.LinkedList;
 import java.util.List;
 
 /**
@@ -34,6 +35,17 @@ public class ListNode {
       prev.next = cur;
       prev = cur;
     }
+  }
+
+  public List<Integer> toArray() {
+    List<Integer> res = new LinkedList<>();
+    ListNode node = this;
+    while (node != null) {
+      res.add(node.val);
+      node = node.next;
+    }
+
+    return res;
   }
 
   public void print() {
