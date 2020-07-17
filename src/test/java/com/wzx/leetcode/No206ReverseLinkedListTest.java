@@ -2,30 +2,28 @@ package com.wzx.leetcode;
 
 
 import com.wzx.entity.ListNode;
-import java.util.Arrays;
-import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
+import java.util.Arrays;
+
+import static org.junit.Assert.assertEquals;
+
 public class No206ReverseLinkedListTest {
 
-  private final ListNode node = new ListNode();
+  private ListNode node = null;
 
   @Before
-  public void setUp() throws Exception {
-    node.build(Arrays.asList(1, 2, 3, 4, 5));
+  public void setUp() {
+    node = ListNode.build(Arrays.asList(1, 2, 3, 4, 5));
   }
 
   @Test
   public void reverseList1Test() {
     No206ReverseLinkedList solution = new No206ReverseLinkedList();
+
     ListNode head = solution.reverseList1(this.node);
-    Assert.assertEquals(5, head.val);
-    Assert.assertEquals(4, head.next.val);
-    Assert.assertEquals(3, head.next.next.val);
-    Assert.assertEquals(2, head.next.next.next.val);
-    Assert.assertEquals(1, head.next.next.next.next.val);
-    Assert.assertNull(head.next.next.next.next.next);
+    assertEquals(Arrays.asList(5, 4, 3, 2, 1), head.toArray());
   }
 
 }

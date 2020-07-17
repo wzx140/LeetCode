@@ -11,17 +11,17 @@ import static org.junit.Assert.assertEquals;
 
 public class No2AddTwoNumbersTest {
 
-    private final ListNode num11 = new ListNode();
-    private final ListNode num12 = new ListNode();
-    private final ListNode num21 = new ListNode();
-    private final ListNode num22 = new ListNode();
+    private ListNode num11 = null;
+    private ListNode num12 = null;
+    private ListNode num21 = null;
+    private ListNode num22 = null;
 
     @Before
     public void setUp() {
-        num11.build(Arrays.asList(2, 4, 3));
-        num12.build(Arrays.asList(5, 6, 4));
-        num21.build(Collections.singletonList(5));
-        num22.build(Collections.singletonList(5));
+        num11 = ListNode.build(Arrays.asList(2, 4, 3));
+        num12 = ListNode.build(Arrays.asList(5, 6, 4));
+        num21 = ListNode.build(Collections.singletonList(5));
+        num22 = ListNode.build(Collections.singletonList(5));
     }
 
     @Test

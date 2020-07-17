@@ -25,16 +25,16 @@ public class ListNode {
     this.next = next;
   }
 
-  public void build(List<Integer> data) {
-    ListNode cur = null;
-    ListNode prev = null;
-    this.val = data.get(0);
-    prev = this;
-    for (int i = 1; i < data.size(); i++) {
-      cur = new ListNode(data.get(i));
-      prev.next = cur;
-      prev = cur;
+  public static ListNode build(List<Integer> data) {
+    ListNode sentinel = new ListNode();
+    ListNode pre = sentinel;
+    for (int num : data) {
+      ListNode node = new ListNode(num);
+      pre.next = node;
+      pre = node;
     }
+
+    return sentinel.next;
   }
 
   public List<Integer> toArray() {

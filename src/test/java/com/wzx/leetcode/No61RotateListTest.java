@@ -10,13 +10,13 @@ import static org.junit.Assert.*;
 
 public class No61RotateListTest {
 
-    ListNode node1 = new ListNode();
-    ListNode node2 = new ListNode();
+    private ListNode node1 = null;
+    private ListNode node2 = null;
 
     @Before
     public void setUp() {
-        node1.build(Arrays.asList(1, 2, 3, 4, 5));
-        node2.build(Arrays.asList(0, 1, 2));
+        node1 = ListNode.build(Arrays.asList(1, 2, 3, 4, 5));
+        node2 = ListNode.build(Arrays.asList(0, 1, 2));
     }
 
     @Test
