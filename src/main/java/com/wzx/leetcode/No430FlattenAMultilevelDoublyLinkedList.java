@@ -1,9 +1,8 @@
 package com.wzx.leetcode;
 
-import com.wzx.entity.Node;
-
 import java.util.Deque;
 import java.util.LinkedList;
+import java.util.List;
 
 public class No430FlattenAMultilevelDoublyLinkedList {
 
@@ -75,5 +74,65 @@ public class No430FlattenAMultilevelDoublyLinkedList {
 
         head.prev = null;
         return head;
+    }
+
+    /**
+     * 多级双向链表
+     */
+    public static class Node {
+        public int val;
+        public Node prev;
+        public Node next;
+        public Node child;
+
+        public Node() {
+        }
+
+        public Node(int val) {
+            this.val = val;
+        }
+
+        public static Node build(List<Integer> data) {
+            Node sentinel = new Node();
+            Node pre = sentinel;
+
+            int offset = 0;
+            int subSize = 0;
+            for (Integer num : data) {
+                if (num == null) {
+                    offset++;
+                    continue;
+                }
+
+                Node node = new Node(num);
+                if (offset != 0) {
+                    int prevStep = subSize - offset;
+                    while (prevStep-- > 0) pre = pre.prev;
+                    pre.child = node;
+
+                    offset = 0;
+                    subSize = 0;
+                } else {
+                    pre.next = node;
+                    node.prev = pre;
+                }
+                subSize++;
+                pre = node;
+            }
+            sentinel.next.prev = null;
+
+            return sentinel.next;
+        }
+
+        public List<Integer> toArray() {
+            List<Integer> res = new LinkedList<>();
+            Node node = this;
+            while (node != null) {
+                res.add(node.val);
+                node = node.next;
+            }
+
+            return res;
+        }
     }
 }

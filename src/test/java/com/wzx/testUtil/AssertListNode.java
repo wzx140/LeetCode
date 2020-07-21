@@ -1,6 +1,6 @@
 package com.wzx.testUtil;
 
-import com.wzx.entity.Node;
+import com.wzx.leetcode.No430FlattenAMultilevelDoublyLinkedList.Node;
 
 import static org.junit.Assert.assertEquals;
 

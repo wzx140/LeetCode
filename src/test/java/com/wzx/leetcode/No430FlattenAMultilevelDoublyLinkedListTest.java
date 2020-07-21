@@ -1,6 +1,6 @@
 package com.wzx.leetcode;
 
-import com.wzx.entity.Node;
+import com.wzx.leetcode.No430FlattenAMultilevelDoublyLinkedList.Node;
 import org.junit.Before;
 import org.junit.Test;
 
