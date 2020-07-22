@@ -45,8 +45,19 @@
 - [450. Delete Node in a BST](src/main/c++/450.&#32;Delete&#32;Node&#32;in&#32;a&#32;BST.cpp)
 
 ## 链表
+> PreviousNode, CurrentNode, NextNode, head, tail and sentinel nodes
 - [206. Reverse Linked List](src/main/java/com/wzx/leetcode/No206ReverseLinkedList.java)
 - [92. Reverse Linked List II](src/main/java/com/wzx/leetcode/No92ReverseLinkedList2.java)
+- [141. LinkedListCycle](src/main/java/com/wzx/leetcode/No141LinkedListCycle.java)
+- [142. LinkedListCycle2](src/main/java/com/wzx/leetcode/No142LinkedListCycle2.java)
+- [2. AddTwoNumbers](src/main/java/com/wzx/leetcode/No2AddTwoNumbers.java)
+- [445. AddTwoNumbers2](src/main/java/com/wzx/leetcode/No445AddTwoNumbers2.java)
+- [21. MergeTwoSortedLists](src/main/java/com/wzx/leetcode/No21MergeTwoSortedLists.java)
+- [61. RotateList](src/main/java/com/wzx/leetcode/No61RotateList.java)
+- [138. CopyListWithRandomPointer](src/main/java/com/wzx/leetcode/No138CopyListWithRandomPointer.java)
+- [160. IntersectionOfTwoLinkedLists](src/main/java/com/wzx/leetcode/No160IntersectionOfTwoLinkedLists.java)
+- [430. FlattenAMultilevelDoublyLinkedList](src/main/java/com/wzx/leetcode/No430FlattenAMultilevelDoublyLinkedList.java)
+- [707. DesignLinkedList](src/main/java/com/wzx/leetcode/No707DesignLinkedList.java)
 
 ## 其他数据结构
 - [146. LRU Cache](src/main/c++/146.&#32;LRU&#32;Cache.cpp)
