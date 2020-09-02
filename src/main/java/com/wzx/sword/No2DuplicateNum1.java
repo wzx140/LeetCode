@@ -5,6 +5,8 @@ import java.util.HashSet;
 import java.util.Set;
 
 /**
+ * n位，元素大小在[0, n-1]的数组中重复的数字，找出其中一个
+ *
  * @author wzx
  */
 public class No2DuplicateNum1 {
@@ -43,7 +45,8 @@ public class No2DuplicateNum1 {
   }
 
   /**
-   * 由于数字在0~n-1之间，以数组下标作为标记，可以作为重复判断的依据
+   * 由于数字在0~n-1之间，以数组下标作为标记，可以作为重复判断的依据。
+   * 每次常数时间复杂度内都可以将某一元素放到正确的位置，所以最差情况下时间复杂度为O(n)
    *
    * time: O(n)
    * space: O(1)

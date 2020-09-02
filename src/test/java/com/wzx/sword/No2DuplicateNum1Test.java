@@ -6,8 +6,8 @@ import static org.junit.Assert.*;
 
 public class No2DuplicateNum1Test {
 
-  int[] array1 = new int[]{3, 0, 2, 1, 3, 2};
-  int[] array2 = new int[]{4, 0, 2, 1, 3, 5};
+  private final int[] array1 = new int[]{3, 0, 2, 1, 3, 2};
+  private final int[] array2 = new int[]{4, 0, 2, 1, 3, 5};
 
   @Test
   public void findDuplicate1() {
