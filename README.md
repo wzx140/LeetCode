@@ -1,9 +1,9 @@
 [toc]
 
-# LeetCode
 ## 二分搜索
 - [34. Find First and Last Position of Element in Sorted Array](src/main/c++/34.&#32;Find&#32;First&#32;and&#32;Last&#32;Position&#32;of&#32;Element&#32;in&#32;Sorted&#32;Array.cpp)
     - [上下界查找](https://masterwangzx.com/2020/03/03/binary-search/)
+- [二维数组中的查找](src/main/java/com/wzx/sword/No3TwoDimensionalArraySearch.java)
 
 ## 二叉树
 
@@ -58,6 +58,7 @@
 - [160. IntersectionOfTwoLinkedLists](src/main/java/com/wzx/leetcode/No160IntersectionOfTwoLinkedLists.java)
 - [430. FlattenAMultilevelDoublyLinkedList](src/main/java/com/wzx/leetcode/No430FlattenAMultilevelDoublyLinkedList.java)
 - [707. DesignLinkedList](src/main/java/com/wzx/leetcode/No707DesignLinkedList.java)
+- [从未到头打印链表](src/main/java/com/wzx/sword/No5PrintListNode.java)
 
 ## 其他数据结构
 - [146. LRU Cache](src/main/c++/146.&#32;LRU&#32;Cache.cpp)
@@ -98,3 +99,12 @@
 - [198. House Robber](src/main/c++/198.&#32;House&#32;Robber.cpp)
 - [213. House Robber II](src/main/c++/213.&#32;House&#32;Robber&#32;II.cpp)
 - [337. House Robber III](src/main/c++/337.&#32;House&#32;Robber&#32;III.cpp)
+
+## 双指针
+- [替换空格](src/main/java/com/wzx/sword/No4ReplaceWhiteSpace.java)
+
+## 数组
+- [数组中的重复数字](src/main/java/com/wzx/sword/No2DuplicateNum2.java)：利用数组下标保存对应关系
+
+## 其他
+- [单例模式](src/main/java/com/wzx/sword/No1Singleton.java)
