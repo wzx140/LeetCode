@@ -15,6 +15,7 @@
 - [104. Maximum Depth of Binary Tree](src/main/c++/104.&#32;Maximum&#32;Depth&#32;of&#32;Binary&#32;Tree.cpp)
 - [111. Minimum Depth of Binary Tree](src/main/c++/111.&#32;Minimum&#32;Depth&#32;of&#32;Binary&#32;Tree.cpp)
 - [222. Count Complete Tree Nodes](src/main/c++/222.&#32;Count&#32;Complete&#32;Tree&#32;Nodes.cpp)
+- [斐波那契数组](src/main/java/com/wzx/sword/No9FibonacciSequence.java)
 
 ### 遍历
 
@@ -103,8 +104,9 @@
 ## 双指针
 - [替换空格](src/main/java/com/wzx/sword/No4ReplaceWhiteSpace.java)
 
-## 数组
-- [数组中的重复数字](src/main/java/com/wzx/sword/No2DuplicateNum2.java)：利用数组下标保存对应关系
+## 重复数组
+- [数组中的重复数字](src/main/java/com/wzx/sword/No2DuplicateNum2.java)
+- [316. Remove Duplicate Letters](src/main/java/com/wzx/leetcode/No316RemoveDuplicateLetters.java)
 
 ## 其他
 - [单例模式](src/main/java/com/wzx/sword/No1Singleton.java)
