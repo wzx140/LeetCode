@@ -1,12 +1,11 @@
 [toc]
 
-## 二分搜索
-- [34. Find First and Last Position of Element in Sorted Array](src/main/c++/34.&#32;Find&#32;First&#32;and&#32;Last&#32;Position&#32;of&#32;Element&#32;in&#32;Sorted&#32;Array.cpp)
-    - [上下界查找](https://masterwangzx.com/2020/03/03/binary-search/)
-- [二维数组中的查找](src/main/java/com/wzx/sword/No3TwoDimensionalArraySearch.java)
+
+# 数据结构
+## 数组
+- [数组中的重复数字1](src/main/java/com/wzx/sword/No2DuplicateNum1.java)
 
 ## 二叉树
-
 ### 递归
 - [100. Same Tree](src/main/c++/100.&#32;Same&#32;Tree.cpp)
 - [101. Symmetric Tree](src/main/c++/101.&#32;Symmetric&#32;Tree.cpp)
@@ -18,26 +17,17 @@
 - [斐波那契数组](src/main/java/com/wzx/sword/No9FibonacciSequence.java)
 
 ### 遍历
-
-- [144. Binary Tree Preorder Traversal](src/main/c++/144.&#32;Binary&#32;Tree&#32;Preorder&#32;Traversal.cpp)
-    - [前序遍历](https://masterwangzx.com/2019/03/16/binary-tree/#%E5%89%8D%E5%BA%8F%E9%81%8D%E5%8E%86)
-- [94. Binary Tree Inorder Traversal](src/main/c++/94.&#32;Binary&#32;Tree&#32;Inorder&#32;Traversal.cpp)
-    - [中序遍历](https://masterwangzx.com/2019/03/16/binary-tree/#%E4%B8%AD%E5%BA%8F%E9%81%8D%E5%8E%86)
-- [145. Binary Tree Postorder Traversal](src/main/c++/145.&#32;Binary&#32;Tree&#32;Postorder&#32;Traversal.cpp)
-    - [后序遍历](https://masterwangzx.com/2019/03/16/binary-tree/#%E5%90%8E%E5%BA%8F%E9%81%8D%E5%8E%86)
+- [144. Binary Tree Preorder Traversal](src/main/c++/144.&#32;Binary&#32;Tree&#32;Preorder&#32;Traversal.cpp): [前序遍历](https://masterwangzx.com/2019/03/16/binary-tree/#%E5%89%8D%E5%BA%8F%E9%81%8D%E5%8E%86)
+- [94. Binary Tree Inorder Traversal](src/main/c++/94.&#32;Binary&#32;Tree&#32;Inorder&#32;Traversal.cpp): [中序遍历](https://masterwangzx.com/2019/03/16/binary-tree/#%E4%B8%AD%E5%BA%8F%E9%81%8D%E5%8E%86)
+- [145. Binary Tree Postorder Traversal](src/main/c++/145.&#32;Binary&#32;Tree&#32;Postorder&#32;Traversal.cpp): [后序遍历](https://masterwangzx.com/2019/03/16/binary-tree/#%E5%90%8E%E5%BA%8F%E9%81%8D%E5%8E%86)
 
 ### 重建
-
-- [105. Construct Binary Tree from Preorder and Inorder Traversal](src/main/c++/105.&#32;Construct&#32;Binary&#32;Tree&#32;from&#32;Preorder&#32;and&#32;Inorder&#32;Traversal.cpp)
-    - [先跟+中根](https://masterwangzx.com/2019/03/16/binary-tree/#%E5%85%88%E8%B7%9F%E4%B8%AD%E6%A0%B9)
-- [106. Construct Binary Tree from Inorder and Postorder Traversal](src/main/c++/106.&#32;Construct&#32;Binary&#32;Tree&#32;from&#32;Inorder&#32;and&#32;Postorder&#32;Traversal.cpp)
-    - [中根+后跟](https://masterwangzx.com/2019/03/16/binary-tree/#%E4%B8%AD%E6%A0%B9%E5%90%8E%E6%A0%B9)
-- [889. Construct Binary Tree from Preorder and Postorder Traversal](src/main/c++/889.&#32;Construct&#32;Binary&#32;Tree&#32;from&#32;Preorder&#32;and&#32;Postorder&#32;Traversal.cpp)
-    - [先跟+后跟](https://masterwangzx.com/2019/03/16/binary-tree/#%E5%85%88%E6%A0%B9%E5%90%8E%E6%A0%B9)
+- [105. Construct Binary Tree from Preorder and Inorder Traversal](src/main/c++/105.&#32;Construct&#32;Binary&#32;Tree&#32;from&#32;Preorder&#32;and&#32;Inorder&#32;Traversal.cpp): [先跟+中根](https://masterwangzx.com/2019/03/16/binary-tree/#%E5%85%88%E8%B7%9F%E4%B8%AD%E6%A0%B9)
+- [106. Construct Binary Tree from Inorder and Postorder Traversal](src/main/c++/106.&#32;Construct&#32;Binary&#32;Tree&#32;from&#32;Inorder&#32;and&#32;Postorder&#32;Traversal.cpp): [中根+后跟](https://masterwangzx.com/2019/03/16/binary-tree/#%E4%B8%AD%E6%A0%B9%E5%90%8E%E6%A0%B9)
+- [889. Construct Binary Tree from Preorder and Postorder Traversal](src/main/c++/889.&#32;Construct&#32;Binary&#32;Tree&#32;from&#32;Preorder&#32;and&#32;Postorder&#32;Traversal.cpp): [先跟+后跟](https://masterwangzx.com/2019/03/16/binary-tree/#%E5%85%88%E6%A0%B9%E5%90%8E%E6%A0%B9)
 
 ### 优先队列
-- [347. Top K Frequent Elements](src/main/c++/347.&#32;Top&#32;K&#32;Frequent&#32;Elements.cpp)
-    - [最小堆](https://masterwangzx.com/2019/10/25/min-heap)
+- [347. Top K Frequent Elements](src/main/c++/347.&#32;Top&#32;K&#32;Frequent&#32;Elements.cpp): [最小堆](https://masterwangzx.com/2019/10/25/min-heap)
 
 ### 二叉搜索树
 - [98. Validate Binary Search Tree](src/main/c++/98.&#32;Validate&#32;Binary&#32;Search&#32;Tree.cpp)
@@ -47,6 +37,7 @@
 
 ## 链表
 > PreviousNode, CurrentNode, NextNode, head, tail and sentinel nodes
+
 - [206. Reverse Linked List](src/main/java/com/wzx/leetcode/No206ReverseLinkedList.java)
 - [92. Reverse Linked List II](src/main/java/com/wzx/leetcode/No92ReverseLinkedList2.java)
 - [141. LinkedListCycle](src/main/java/com/wzx/leetcode/No141LinkedListCycle.java)
@@ -61,9 +52,13 @@
 - [707. DesignLinkedList](src/main/java/com/wzx/leetcode/No707DesignLinkedList.java)
 - [从未到头打印链表](src/main/java/com/wzx/sword/No5PrintListNode.java)
 
+## 栈
+- [316. Remove Duplicate Letters](src/main/java/com/wzx/leetcode/No316RemoveDuplicateLetters.java)
+
 ## 其他数据结构
 - [146. LRU Cache](src/main/c++/146.&#32;LRU&#32;Cache.cpp)
 
+# 算法
 ## [动态规划](https://labuladong.gitbook.io/algo/di-ling-zhang-bi-du-xi-lie/dong-tai-gui-hua-xiang-jie-jin-jie)
 - [322. Coin Change](src/main/c++/322.&#32;Coin&#32;Change.cpp)
 - [887. Super Egg Drop](src/main/c++/887.&#32;Super&#32;Egg&#32;Drop.cpp)
@@ -101,12 +96,15 @@
 - [213. House Robber II](src/main/c++/213.&#32;House&#32;Robber&#32;II.cpp)
 - [337. House Robber III](src/main/c++/337.&#32;House&#32;Robber&#32;III.cpp)
 
+## 二分搜索
+- [34. Find First and Last Position of Element in Sorted Array](src/main/c++/34.&#32;Find&#32;First&#32;and&#32;Last&#32;Position&#32;of&#32;Element&#32;in&#32;Sorted&#32;Array.cpp): [上下界查找](https://masterwangzx.com/2020/03/03/binary-search/)
+- [二维数组中的查找](src/main/java/com/wzx/sword/No3TwoDimensionalArraySearch.java)
+- [数组中的重复数字2](src/main/java/com/wzx/sword/No2DuplicateNum2.java)
+
 ## 双指针
 - [替换空格](src/main/java/com/wzx/sword/No4ReplaceWhiteSpace.java)
+- [26. Remove Duplicates from Sorted Array](src/main/java/com/wzx/leetcode/No26RemoveDuplicatesFromSortedArray.java)
+- [82. Remove Duplicates from Sorted List II](src/main/java/com/wzx/leetcode/No82RemoveDuplicatesFromSortedList2.java)
 
-## 重复数组
-- [数组中的重复数字](src/main/java/com/wzx/sword/No2DuplicateNum2.java)
-- [316. Remove Duplicate Letters](src/main/java/com/wzx/leetcode/No316RemoveDuplicateLetters.java)
-
-## 其他
+# 其他
 - [单例模式](src/main/java/com/wzx/sword/No1Singleton.java)
