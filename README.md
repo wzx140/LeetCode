@@ -79,6 +79,7 @@
     - [1143. Longest Common Subsequence](src/main/c++/1143.&#32;Longest&#32;Common&#32;Subsequence.cpp)
     - [72. Edit Distance](src/main/c++/72.&#32;Edit&#32;Distance.cpp)
     - [10. Regular Expression Matching](src/main/c++/10.&#32;Regular&#32;Expression&#32;Matching.cpp)
+    - [1312. Minimum Insertion Steps to Make a String Palindrome](src/main/java/com/wzx/leetcode/No1312MinimumInsertionStepsToMakeAStringPalindrome.java)
 
 ### 背包问题
 - [416. Partition Equal Subset Sum](src/main/c++/416.&#32;Partition&#32;Equal&#32;Subset&#32;Sum.cpp)
@@ -100,6 +101,7 @@
 - [34. Find First and Last Position of Element in Sorted Array](src/main/c++/34.&#32;Find&#32;First&#32;and&#32;Last&#32;Position&#32;of&#32;Element&#32;in&#32;Sorted&#32;Array.cpp): [上下界查找](https://masterwangzx.com/2020/03/03/binary-search/)
 - [二维数组中的查找](src/main/java/com/wzx/sword/No3TwoDimensionalArraySearch.java)
 - [数组中的重复数字2](src/main/java/com/wzx/sword/No2DuplicateNum2.java)
+- [旋转数组的最小数字](src/main/java/com/wzx/sword/No10RotateMinNum.java)
 
 ## 双指针
 - [替换空格](src/main/java/com/wzx/sword/No4ReplaceWhiteSpace.java)
