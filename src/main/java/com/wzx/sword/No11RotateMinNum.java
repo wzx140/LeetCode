@@ -5,7 +5,7 @@ package com.wzx.sword;
  *
  * @author wzx
  */
-public class No10RotateMinNum {
+public class No11RotateMinNum {
 
   /**
    * 二分搜索

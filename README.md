@@ -14,7 +14,6 @@
 - [104. Maximum Depth of Binary Tree](src/main/c++/104.&#32;Maximum&#32;Depth&#32;of&#32;Binary&#32;Tree.cpp)
 - [111. Minimum Depth of Binary Tree](src/main/c++/111.&#32;Minimum&#32;Depth&#32;of&#32;Binary&#32;Tree.cpp)
 - [222. Count Complete Tree Nodes](src/main/c++/222.&#32;Count&#32;Complete&#32;Tree&#32;Nodes.cpp)
-- [斐波那契数组](src/main/java/com/wzx/sword/No9FibonacciSequence.java)
 
 ### 遍历
 - [144. Binary Tree Preorder Traversal](src/main/c++/144.&#32;Binary&#32;Tree&#32;Preorder&#32;Traversal.cpp): [前序遍历](https://masterwangzx.com/2019/03/16/binary-tree/#%E5%89%8D%E5%BA%8F%E9%81%8D%E5%8E%86)
@@ -101,7 +100,7 @@
 - [34. Find First and Last Position of Element in Sorted Array](src/main/c++/34.&#32;Find&#32;First&#32;and&#32;Last&#32;Position&#32;of&#32;Element&#32;in&#32;Sorted&#32;Array.cpp): [上下界查找](https://masterwangzx.com/2020/03/03/binary-search/)
 - [二维数组中的查找](src/main/java/com/wzx/sword/No3TwoDimensionalArraySearch.java)
 - [数组中的重复数字2](src/main/java/com/wzx/sword/No2DuplicateNum2.java)
-- [旋转数组的最小数字](src/main/java/com/wzx/sword/No10RotateMinNum.java)
+- [旋转数组的最小数字](src/main/java/com/wzx/sword/No11RotateMinNum.java)
 
 ## 双指针
 - [替换空格](src/main/java/com/wzx/sword/No4ReplaceWhiteSpace.java)
@@ -110,3 +109,8 @@
 
 # 其他
 - [单例模式](src/main/java/com/wzx/sword/No1Singleton.java)
+
+## 斐波那契
+- [斐波那契数组](src/main/java/com/wzx/sword/No9FibonacciSequence.java)
+- [变态青蛙跳](src/main/java/com/wzx/sword/No10StepUp.java)
+- [矩形覆盖](src/test/java/com/wzx/sword/No12MatrixCoverageTest.java)
