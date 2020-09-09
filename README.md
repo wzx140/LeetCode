@@ -107,6 +107,10 @@
 - [26. Remove Duplicates from Sorted Array](src/main/java/com/wzx/leetcode/No26RemoveDuplicatesFromSortedArray.java)
 - [82. Remove Duplicates from Sorted List II](src/main/java/com/wzx/leetcode/No82RemoveDuplicatesFromSortedList2.java)
 
+## 深搜
+- [矩阵中的路径](src/main/java/com/wzx/sword/No13MatrixPath.java)
+- [机器人的运动范围](src/main/java/com/wzx/sword/No14RobotMovementRange.java)
+
 # 其他
 - [单例模式](src/main/java/com/wzx/sword/No1Singleton.java)
 
