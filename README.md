@@ -122,3 +122,7 @@
 
 ## 差分数组
 - [1109. Corporate Flight Bookings](src/main/java/com/wzx/leetcode/No1109CorporateFlightBookings.java)
+
+## 位运算
+- [二进制中1的个数](src/main/java/com/wzx/sword/No16NumOfOneInBinary.java)
+- [数值的整数次方](src/main/java/com/wzx/sword/No17IntegerPower.java)
