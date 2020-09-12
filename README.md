@@ -106,6 +106,7 @@
 ## 双指针
 - [替换空格](src/main/java/com/wzx/sword/No4ReplaceWhiteSpace.java)
 - [26. Remove Duplicates from Sorted Array](src/main/java/com/wzx/leetcode/No26RemoveDuplicatesFromSortedArray.java)
+- [83. Remove Duplicates from Sorted List](src/main/java/com/wzx/leetcode/No83RemoveDuplicatesFromSortedList.java)
 - [82. Remove Duplicates from Sorted List II](src/main/java/com/wzx/leetcode/No82RemoveDuplicatesFromSortedList2.java)
 
 ## 深搜
@@ -126,3 +127,6 @@
 ## 位运算
 - [二进制中1的个数](src/main/java/com/wzx/sword/No16NumOfOneInBinary.java)
 - [数值的整数次方](src/main/java/com/wzx/sword/No17IntegerPower.java)
+
+## 大数表达
+- [打印1~n位数字](src/main/java/com/wzx/sword/No18PrintMaximumNDigits.java)
