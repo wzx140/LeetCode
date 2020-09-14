@@ -115,6 +115,7 @@
 
 # 其他
 - [单例模式](src/main/java/com/wzx/sword/No1Singleton.java)
+- [表示数值的字符串](src/main/java/com/wzx/sword/No19StringRepresentingNumericValue.java)
 
 ## 斐波那契
 - [斐波那契数组](src/main/java/com/wzx/sword/No9FibonacciSequence.java)
