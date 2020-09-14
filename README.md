@@ -104,6 +104,8 @@
 - [旋转数组的最小数字](src/main/java/com/wzx/sword/No11RotateMinNum.java)
 
 ## 双指针
+- [调整数组顺序使奇数位于偶数前面1](src/main/java/com/wzx/sword/No20AdjustArrayOrder1.java)
+- [调整数组顺序使奇数位于偶数前面2](src/main/java/com/wzx/sword/No21AdjustArrayOrder2.java)
 - [替换空格](src/main/java/com/wzx/sword/No4ReplaceWhiteSpace.java)
 - [26. Remove Duplicates from Sorted Array](src/main/java/com/wzx/leetcode/No26RemoveDuplicatesFromSortedArray.java)
 - [83. Remove Duplicates from Sorted List](src/main/java/com/wzx/leetcode/No83RemoveDuplicatesFromSortedList.java)
