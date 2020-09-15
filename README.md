@@ -78,7 +78,7 @@
 - 二维dp
     - [1143. Longest Common Subsequence](src/main/c++/1143.&#32;Longest&#32;Common&#32;Subsequence.cpp)
     - [72. Edit Distance](src/main/c++/72.&#32;Edit&#32;Distance.cpp)
-    - [10. Regular Expression Matching](src/main/c++/10.&#32;Regular&#32;Expression&#32;Matching.cpp)
+    - [10. Regular Expression Matching](src/main/java/com/wzx/leetcode/No10RegularExpressionMatching.java)
     - [1312. Minimum Insertion Steps to Make a String Palindrome](src/main/java/com/wzx/leetcode/No1312MinimumInsertionStepsToMakeAStringPalindrome.java)
 
 ### 背包问题
