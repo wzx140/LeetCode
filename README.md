@@ -49,7 +49,11 @@
 - [160. IntersectionOfTwoLinkedLists](src/main/java/com/wzx/leetcode/No160IntersectionOfTwoLinkedLists.java)
 - [430. FlattenAMultilevelDoublyLinkedList](src/main/java/com/wzx/leetcode/No430FlattenAMultilevelDoublyLinkedList.java)
 - [707. DesignLinkedList](src/main/java/com/wzx/leetcode/No707DesignLinkedList.java)
-- [从未到头打印链表](src/main/java/com/wzx/sword/No5PrintListNode.java)
+- [从尾到头打印链表](src/main/java/com/wzx/sword/No5PrintListNode.java)
+- [26. Remove Duplicates from Sorted Array](src/main/java/com/wzx/leetcode/No26RemoveDuplicatesFromSortedArray.java)
+- [83. Remove Duplicates from Sorted List](src/main/java/com/wzx/leetcode/No83RemoveDuplicatesFromSortedList.java)
+- [82. Remove Duplicates from Sorted List II](src/main/java/com/wzx/leetcode/No82RemoveDuplicatesFromSortedList2.java)
+- [19. Remove Nth Node From End of List](src/main/java/com/wzx/leetcode/No19RemoveNthNodeFromEndOfList.java)
 
 ## 栈
 - [316. Remove Duplicate Letters](src/main/java/com/wzx/leetcode/No316RemoveDuplicateLetters.java)
@@ -107,6 +111,12 @@
 - [调整数组顺序使奇数位于偶数前面1](src/main/java/com/wzx/sword/No20AdjustArrayOrder1.java)
 - [调整数组顺序使奇数位于偶数前面2](src/main/java/com/wzx/sword/No21AdjustArrayOrder2.java)
 - [替换空格](src/main/java/com/wzx/sword/No4ReplaceWhiteSpace.java)
+
+### 快慢指针
+- [141. LinkedListCycle](src/main/java/com/wzx/leetcode/No141LinkedListCycle.java)
+- [19. Remove Nth Node From End of List](src/main/java/com/wzx/leetcode/No19RemoveNthNodeFromEndOfList.java)
+- [141. LinkedListCycle](src/main/java/com/wzx/leetcode/No141LinkedListCycle.java)
+- [142. LinkedListCycle2](src/main/java/com/wzx/leetcode/No142LinkedListCycle2.java)
 - [26. Remove Duplicates from Sorted Array](src/main/java/com/wzx/leetcode/No26RemoveDuplicatesFromSortedArray.java)
 - [83. Remove Duplicates from Sorted List](src/main/java/com/wzx/leetcode/No83RemoveDuplicatesFromSortedList.java)
 - [82. Remove Duplicates from Sorted List II](src/main/java/com/wzx/leetcode/No82RemoveDuplicatesFromSortedList2.java)

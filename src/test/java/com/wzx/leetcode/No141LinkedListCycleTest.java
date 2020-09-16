@@ -34,4 +34,12 @@ public class No141LinkedListCycleTest {
         assertTrue(solution.hasCycle1(node2));
         assertFalse(solution.hasCycle1(node3));
     }
+
+    @Test
+    public void hasCycle2Test() {
+        No141LinkedListCycle solution = new No141LinkedListCycle();
+        assertTrue(solution.hasCycle2(node1));
+        assertTrue(solution.hasCycle2(node2));
+        assertFalse(solution.hasCycle2(node3));
+    }
 }

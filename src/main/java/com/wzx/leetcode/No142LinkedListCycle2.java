@@ -3,7 +3,7 @@ package com.wzx.leetcode;
 import com.wzx.entity.ListNode;
 
 /**
- * https://leetcode.com/problems/linked-list-cycle/
+ * https://leetcode.com/problems/linked-list-cycle-ii/
  *
  * @author wzx
  */
