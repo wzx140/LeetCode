@@ -130,6 +130,10 @@
 - [单例模式](src/main/java/com/wzx/sword/No1Singleton.java)
 - [表示数值的字符串](src/main/java/com/wzx/sword/No19StringRepresentingNumericValue.java)
 
+## [水塘抽样](https://labuladong.gitbook.io/algo/gao-pin-mian-shi-xi-lie/shui-tang-chou-yang)
+- [382. Linked List Random Node](src/main/java/com/wzx/leetcode/No382LinkedListRandomNode.java)
+- [398. Random Pick Index](src/main/java/com/wzx/leetcode/No398RandomPickIndex.java)
+
 ## 斐波那契
 - [斐波那契数组](src/main/java/com/wzx/sword/No9FibonacciSequence.java)
 - [变态青蛙跳](src/main/java/com/wzx/sword/No10StepUp.java)

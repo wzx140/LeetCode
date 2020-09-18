@@ -1,0 +1,38 @@
+package com.wzx.leetcode;
+
+import java.util.Random;
+
+/**
+ * https://leetcode.com/problems/random-pick-index/
+ *
+ * @author wzx
+ */
+public class No398RandomPickIndex {
+
+  private final int[] nums;
+  private final Random rand = new Random();
+
+  public No398RandomPickIndex(int[] nums) {
+    this.nums = nums;
+  }
+
+  /**
+   * 水塘抽样
+   *
+   * time: O(n)
+   * space: O(1)
+   */
+  public int pick(int target) {
+    int res = 0;
+    int len = 0;
+
+    for (int i = 0; i < nums.length; i++) {
+      int num = nums[i];
+      if (num == target && rand.nextInt(++len) < 1) {
+        res = i;
+      }
+    }
+
+    return res;
+  }
+}
