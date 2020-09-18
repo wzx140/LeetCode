@@ -66,4 +66,18 @@ public class TreeNode {
 
     return root;
   }
+
+  public TreeNode cloneThis() {
+    return dfs(this);
+  }
+
+  private static TreeNode dfs(TreeNode node) {
+    if (node == null) return null;
+
+    TreeNode cloneNode = new TreeNode(node.val);
+    cloneNode.left = dfs(node.left);
+    cloneNode.right = dfs(node.right);
+
+    return cloneNode;
+  }
 }

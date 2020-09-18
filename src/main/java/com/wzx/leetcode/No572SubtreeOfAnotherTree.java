@@ -13,7 +13,7 @@ public class No572SubtreeOfAnotherTree {
    * 看两棵拓展二叉树的先根序列是否是包含关系，主要扩充结点需要区分左右
    * <p>
    * time: O(m+n+mn)
-   * space: O(max(logn, logm)) 递归栈的空间复杂度应该是树高
+   * space: O(max(n, m)) 递归栈的空间复杂度应该是最坏的树高
    */
   public boolean isSubtree1(TreeNode s, TreeNode t) {
     StringBuilder sb1 = new StringBuilder();
@@ -42,7 +42,7 @@ public class No572SubtreeOfAnotherTree {
    * 深搜对比
    *
    * time: O(mn)
-   * space: O(logm) 第一棵树的深度
+   * space: O(m) 第一棵树的深度最坏为m
    */
   public boolean isSubtree2(TreeNode s, TreeNode t) {
 
