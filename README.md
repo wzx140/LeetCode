@@ -29,6 +29,7 @@
 
 ### 优先队列
 - [347. Top K Frequent Elements](src/main/c++/347.&#32;Top&#32;K&#32;Frequent&#32;Elements.cpp): [最小堆](https://masterwangzx.com/2019/10/25/min-heap)
+- [295. Find Median from Data Stream](src/main/java/com/wzx/leetcode/No295FindMedianFromDataStream.java)
 
 ### 二叉搜索树
 - [98. Validate Binary Search Tree](src/main/c++/98.&#32;Validate&#32;Binary&#32;Search&#32;Tree.cpp)
