@@ -60,6 +60,7 @@
 
 ## 栈
 - [316. Remove Duplicate Letters](src/main/java/com/wzx/leetcode/No316RemoveDuplicateLetters.java)
+- [20. Valid Parentheses](src/main/java/com/wzx/leetcode/No20ValidParentheses.java)
 
 ## 其他数据结构
 - [146. LRU Cache](src/main/c++/146.&#32;LRU&#32;Cache.cpp)
@@ -131,6 +132,8 @@
 # 其他
 - [单例模式](src/main/java/com/wzx/sword/No1Singleton.java)
 - [表示数值的字符串](src/main/java/com/wzx/sword/No19StringRepresentingNumericValue.java)
+- [921. Minimum Add to Make Parentheses Valid](src/main/java/com/wzx/leetcode/No921MinimumAddToMakeParenthesesValid.java)
+- [1541. Minimum Insertions to Balance a Parentheses String](src/main/java/com/wzx/leetcode/No1541MinimumInsertionsToBalanceAParenthesesString.java)
 
 ## [水塘抽样](https://labuladong.gitbook.io/algo/gao-pin-mian-shi-xi-lie/shui-tang-chou-yang)
 - [382. Linked List Random Node](src/main/java/com/wzx/leetcode/No382LinkedListRandomNode.java)
