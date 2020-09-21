@@ -61,6 +61,7 @@
 ## 栈
 - [316. Remove Duplicate Letters](src/main/java/com/wzx/leetcode/No316RemoveDuplicateLetters.java)
 - [20. Valid Parentheses](src/main/java/com/wzx/leetcode/No20ValidParentheses.java)
+- [包含min函数的栈](src/main/java/com/wzx/sword/No24MinStack.java)
 
 ## 其他数据结构
 - [146. LRU Cache](src/main/c++/146.&#32;LRU&#32;Cache.cpp)
@@ -132,6 +133,7 @@
 # 其他
 - [单例模式](src/main/java/com/wzx/sword/No1Singleton.java)
 - [表示数值的字符串](src/main/java/com/wzx/sword/No19StringRepresentingNumericValue.java)
+- [顺时针打印矩阵](src/main/java/com/wzx/sword/No23PrintMatrixClockwise.java)
 - [921. Minimum Add to Make Parentheses Valid](src/main/java/com/wzx/leetcode/No921MinimumAddToMakeParenthesesValid.java)
 - [1541. Minimum Insertions to Balance a Parentheses String](src/main/java/com/wzx/leetcode/No1541MinimumInsertionsToBalanceAParenthesesString.java)
 
