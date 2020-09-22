@@ -36,6 +36,7 @@
 - [700. Search in a Binary Search Tree](src/main/c++/700.&#32;Search&#32;in&#32;a&#32;Binary&#32;Search&#32;Tree.cpp)
 - [701. Insert into a Binary Search Tree](src/main/c++/701.&#32;Insert&#32;into&#32;a&#32;Binary&#32;Search&#32;Tree.cpp)
 - [450. Delete Node in a BST](src/main/c++/450.&#32;Delete&#32;Node&#32;in&#32;a&#32;BST.cpp)
+- [二叉搜索树的后序遍历序列](src/main/java/com/wzx/sword/No26PostOrderTraversalSequenceOfBinarySearchTree.java)
 
 ## 链表
 > PreviousNode, CurrentNode, NextNode, head, tail and sentinel nodes
@@ -62,6 +63,7 @@
 - [316. Remove Duplicate Letters](src/main/java/com/wzx/leetcode/No316RemoveDuplicateLetters.java)
 - [20. Valid Parentheses](src/main/java/com/wzx/leetcode/No20ValidParentheses.java)
 - [包含min函数的栈](src/main/java/com/wzx/sword/No24MinStack.java)
+- [栈的压入、弹出序列](src/main/java/com/wzx/sword/No25StackSequence.java)
 
 ## 其他数据结构
 - [146. LRU Cache](src/main/c++/146.&#32;LRU&#32;Cache.cpp)
