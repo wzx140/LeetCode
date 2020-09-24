@@ -65,6 +65,9 @@
 - [包含min函数的栈](src/main/java/com/wzx/sword/No24MinStack.java)
 - [栈的压入、弹出序列](src/main/java/com/wzx/sword/No25StackSequence.java)
 
+## 字典树
+- [211. Design Add and Search Words Data Structure](src/main/java/com/wzx/leetcode/No211DesignAddAndSearchWordsDataStructure.java)
+
 ## 其他数据结构
 - [146. LRU Cache](src/main/c++/146.&#32;LRU&#32;Cache.cpp)
 
