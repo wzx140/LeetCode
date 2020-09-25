@@ -10,6 +10,8 @@
 - [572. Subtree of Another Tree](src/main/java/com/wzx/leetcode/No572SubtreeOfAnotherTree.java)
 - [100. Same Tree](src/main/c++/100.&#32;Same&#32;Tree.cpp)
 - [101. Symmetric Tree](src/main/c++/101.&#32;Symmetric&#32;Tree.cpp)
+- [654. Maximum Binary Tree](src/main/java/com/wzx/leetcode/No654MaximumBinaryTree.java)
+- [114. Flatten Binary Tree to Linked List](src/main/java/com/wzx/leetcode/No114FlattenBinaryTreeToLinkedList.java)
 - [二叉树的镜像](src/main/java/com/wzx/sword/No22MirrorOfBinaryTree.java)
 - [110. Balanced Binary Tree](src/main/c++/110.&#32;Balanced&#32;Binary&#32;Tree.cpp)
 - [112. Path Sum](src/main/c++/112.&#32;Path&#32;Sum.cpp)
