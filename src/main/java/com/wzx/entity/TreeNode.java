@@ -1,7 +1,8 @@
 package com.wzx.entity;
 
-import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
+import java.util.Queue;
 
 /**
  * 二叉树数据结构
@@ -37,31 +38,22 @@ public class TreeNode {
 
     TreeNode root = new TreeNode(source.get(0));
     // 上一层的所有节点
-    List<TreeNode> nodes = new ArrayList<>(source.size());
-    nodes.add(root);
-    // 上一层开始结点的偏移量
-    int preLayer = 0;
-    // 当前层的偏移量
+    Queue<TreeNode> queue = new LinkedList<>();
+    queue.add(root);
     int cur = 1;
     while (cur < source.size()) {
 
-      int tmp = cur;
-      for (int i = preLayer; i < nodes.size(); i++) {
-        TreeNode parent = nodes.get(i);
-
-        if (cur < source.size() && source.get(cur) != null) {
-          parent.left = new TreeNode(source.get(cur));
-          nodes.add(parent.left);
-        }
-        cur++;
-        if (cur < source.size() && source.get(cur) != null) {
-          parent.right = new TreeNode(source.get(cur));
-          nodes.add(parent.right);
-        }
-        cur++;
+      TreeNode parent = queue.poll();
+      if (cur < source.size() && source.get(cur) != null) {
+        parent.left = new TreeNode(source.get(cur));
+        queue.add(parent.left);
       }
-
-      preLayer = tmp;
+      cur++;
+      if (cur < source.size() && source.get(cur) != null) {
+        parent.right = new TreeNode(source.get(cur));
+        queue.add(parent.right);
+      }
+      cur++;
     }
 
     return root;

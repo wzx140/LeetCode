@@ -15,7 +15,7 @@ public class No27BinaryTreeSumPathOfTargetNum {
    * 递归
    *
    * time: O(n)
-   * space: O(n)
+   * space: O(h) 树高
    */
   public static ArrayList<ArrayList<Integer>> FindPath(TreeNode root, int target) {
     ArrayList<ArrayList<Integer>> res = new ArrayList<>();

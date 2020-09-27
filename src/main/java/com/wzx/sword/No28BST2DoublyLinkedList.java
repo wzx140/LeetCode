@@ -14,6 +14,9 @@ public class No28BST2DoublyLinkedList {
 
   /**
    * 前序遍历中更改指针，用全局变量pre保存前序遍历的前一个结点
+   *
+   * time: O(n)
+   * space: O(h) 树高
    */
   public static TreeNode Convert(TreeNode pRootOfTree) {
     if (pRootOfTree == null) return null;
