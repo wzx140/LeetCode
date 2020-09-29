@@ -145,11 +145,13 @@
 ## 深搜
 - [矩阵中的路径](src/main/java/com/wzx/sword/No13MatrixPath.java)
 - [机器人的运动范围](src/main/java/com/wzx/sword/No14RobotMovementRange.java)
+- [字符串的排列](src/main/java/com/wzx/sword/No30StringArrangement.java)
 
 # 其他
 - [单例模式](src/main/java/com/wzx/sword/No1Singleton.java)
 - [表示数值的字符串](src/main/java/com/wzx/sword/No19StringRepresentingNumericValue.java)
 - [顺时针打印矩阵](src/main/java/com/wzx/sword/No23PrintMatrixClockwise.java)
+- [数组中出现次数超过一半的数字](src/main/java/com/wzx/sword/No31MoreThanHalfOfTheOccurrences.java)
 - [921. Minimum Add to Make Parentheses Valid](src/main/java/com/wzx/leetcode/No921MinimumAddToMakeParenthesesValid.java)
 - [1541. Minimum Insertions to Balance a Parentheses String](src/main/java/com/wzx/leetcode/No1541MinimumInsertionsToBalanceAParenthesesString.java)
 
