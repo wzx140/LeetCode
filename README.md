@@ -155,6 +155,9 @@
 - [921. Minimum Add to Make Parentheses Valid](src/main/java/com/wzx/leetcode/No921MinimumAddToMakeParenthesesValid.java)
 - [1541. Minimum Insertions to Balance a Parentheses String](src/main/java/com/wzx/leetcode/No1541MinimumInsertionsToBalanceAParenthesesString.java)
 
+## 排序
+- [最小的k个数](src/main/java/com/wzx/sword/No32TheSmallestNumberOfK.java)
+
 ## [水塘抽样](https://labuladong.gitbook.io/algo/gao-pin-mian-shi-xi-lie/shui-tang-chou-yang)
 - [382. Linked List Random Node](src/main/java/com/wzx/leetcode/No382LinkedListRandomNode.java)
 - [398. Random Pick Index](src/main/java/com/wzx/leetcode/No398RandomPickIndex.java)

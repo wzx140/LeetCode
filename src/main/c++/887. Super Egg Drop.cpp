@@ -49,15 +49,3 @@ int SuperEggDrop::superEggDrop1(int K, int N) {
 
 	return dp[N][K - 1];
 }
-
-/**
- * 优化
- * https://labuladong.gitbook.io/algo/dong-tai-gui-hua-xi-lie/gao-lou-reng-ji-dan-jin-jie
- * time:O(NK)
- * space:O(NK)
- */
-int SuperEggDrop::superEggDrop2(int K, int N) {
-	
-	// todo: 未完成
-	return 0;
-}
