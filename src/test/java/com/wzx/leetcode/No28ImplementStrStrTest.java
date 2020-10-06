@@ -37,12 +37,4 @@ public class No28ImplementStrStrTest {
     assertEquals(-1, solution.strStr3(haystack2, needle2));
     assertEquals(0, solution.strStr3(haystack3, needle3));
   }
-
-  @Test
-  public void strStr4() {
-    No28ImplementStrStr solution = new No28ImplementStrStr();
-    assertEquals(2, solution.strStr4(haystack1, needle1));
-    assertEquals(-1, solution.strStr4(haystack2, needle2));
-    assertEquals(0, solution.strStr4(haystack3, needle3));
-  }
 }

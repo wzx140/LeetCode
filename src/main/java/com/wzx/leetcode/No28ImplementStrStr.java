@@ -1,5 +1,7 @@
 package com.wzx.leetcode;
 
+import java.util.Arrays;
+
 /**
  * https://leetcode.com/problems/implement-strstr/
  *
@@ -52,30 +54,33 @@ public class No28ImplementStrStr {
   /**
    * BM算法
    * <p>
-   * time: O(n)
-   * space: O(1)
+   * time: O(m+n)
+   * space: O(n)
    */
   public int strStr2(String haystack, String needle) {
     if (needle.isEmpty()) return 0;
+    // bmBc: 坏字符对应的匹配串后移距离
+    int[] bmBc = getBmBc(needle);
+    // bmGs: 好后缀位置对应的匹配串后移距离
+    int[] bmGs = getBmGs(needle);
+    int n = haystack.length();
+    int m = needle.length();
 
-    // haystack当前匹配起始位置
+    // 主串的当前匹配起始位置
     int matchBegin = 0;
-    while (matchBegin <= haystack.length() - needle.length()) {
-      // 当前后缀匹配中第一个不相同的字符在haystack中的索引
-      int mismatchIndex = matchBegin + needle.length() - 1;
-      while (mismatchIndex >= matchBegin
-              && needle.charAt(mismatchIndex - matchBegin) == haystack.charAt(mismatchIndex))
+    while (matchBegin <= n - m) {
+      // 坏字符在匹配串中的索引
+      int mismatchIndex = m - 1;
+      while (mismatchIndex >= 0
+              && needle.charAt(mismatchIndex) == haystack.charAt(mismatchIndex + matchBegin))
         mismatchIndex--;
 
-      if (mismatchIndex == matchBegin - 1) {
+      if (mismatchIndex == -1) {
+        // 没有找到坏字符，说明完全匹配
         return matchBegin;
       } else {
         // 移动最长的那个距离
-        int i1 = badCharMove(needle, haystack, mismatchIndex, matchBegin);
-        int i2 = goodSuffixMove(needle, haystack,
-                matchBegin + mismatchIndex + 1,
-                matchBegin + needle.length() - 1);
-        matchBegin += Math.max(i1, i2);
+        matchBegin += Math.max(bmBc[needle.charAt(mismatchIndex) - 'a'], bmGs[mismatchIndex]);
       }
     }
     return -1;
@@ -89,17 +94,17 @@ public class No28ImplementStrStr {
    * GTAGCGGCG                          GTAGCGGCG
    * <p>
    * 在匹配串中从后至前找到与坏字符匹配的位置才是下一次可能的匹配位置
-   *
-   * @param mismatchIndex 坏字符在haystack中的索引
-   * @param matchBegin    当前匹配开始索引
    */
-  private int badCharMove(String needle, String haystack, int mismatchIndex, int matchBegin) {
-    char badChar = haystack.charAt(mismatchIndex);
-    for (int i = mismatchIndex - matchBegin - 1; i >= 0; i--) {
-      if (needle.charAt(i) == badChar) return mismatchIndex - matchBegin - i;
+  private int[] getBmBc(String needle) {
+    int[] bmBc = new int[26];
+    int m = needle.length();
+    Arrays.fill(bmBc, m);
+    // 从左往右遍历，那么最终map会存放最靠右的索引位置
+    for (int i = 0; i < m; i++) {
+      // i处字符移动到匹配串尾部的距离
+      bmBc[needle.charAt(i) - 'a'] = m - 1 - i;
     }
-    // 如果没有找到相等的，则移动整个匹配串长度
-    return needle.length();
+    return bmBc;
   }
 
   /**
@@ -114,42 +119,43 @@ public class No28ImplementStrStr {
    * |            ^^^                          ^^^
    * |      CGAGCGGCG                           CGAGCGGCG
    * 若在匹配串中找不到好后缀，则在开头找好后缀的后缀(其前缀相当于被跳过)
-   *
-   * @param begin haystack中好后缀的开始索引
-   * @param end   haystack中好后缀的结束索引
    */
-  private int goodSuffixMove(String needle, String haystack, int begin, int end) {
-    // fixme: this is a bug
-    // 没有好后缀
-    if (begin > end) return -1;
-
-    // 好后缀开始位置
-    int suffixBegin = end + 1;
-    for (int i = end; i >= begin && needle.charAt(i - begin) == haystack.charAt(i); i--) {
-      suffixBegin--;
+  private int[] getBmGs(String needle) {
+    int m = needle.length();
+    // 先建立suffix数组
+    int[] suffix = new int[m];
+    suffix[m - 1] = m;
+    for (int i = m - 2; i >= 0; i--) {
+      int j = i;
+      while (j >= 0 && needle.charAt(j) == needle.charAt(m - 1 - i + j)) j--;
+      suffix[i] = i - j;
     }
 
-    // 每次偏移并寻找与好后缀匹配的位置
-    for (int curSuffixBegin = suffixBegin; curSuffixBegin < end + 1; curSuffixBegin++) {
-      boolean match = true;
-      for (int j = 0; j < end - curSuffixBegin + 1; j++) {
-        if (needle.charAt(j) != haystack.charAt(j + curSuffixBegin)) {
-          match = false;
-          break;
+    int[] bmGs = new int[m];
+    // 以下三种情况，越靠后说明优先级越高
+    // 没有任何匹配的子串或者前缀
+    Arrays.fill(bmGs, m);
+    // 找到一个好后缀的前缀匹配的模式串前缀
+    for (int i = m - 1; i >= 0; i--) {
+      if (suffix[i] == i + 1) {
+        for (int j = 0; j < m - 1 - i; j++) {
+          bmGs[j] = m - 1 - i;
         }
       }
-
-      if (match) return curSuffixBegin - begin;
     }
-    // 如果没有匹配到好后缀，则移动整个匹配串长度
-    return needle.length();
+    // 模式串中有子串匹配上好后缀
+    for (int i = 0; i <= m - 2; i++) {
+      bmGs[m - 1 - suffix[i]] = m - 1 - i;
+    }
+
+    return bmGs;
   }
 
   /**
-   * KMP next数组
+   * KMP
    * <p>
-   * time: O(n)
-   * space: O(m)
+   * time: O(m+n)
+   * space: O(n)
    */
   public int strStr3(String haystack, String needle) {
     if (needle.isEmpty()) return 0;
@@ -198,14 +204,6 @@ public class No28ImplementStrStr {
     }
 
     return next;
-  }
-
-  /**
-   * KMP 有限状态机
-   */
-  public int strStr4(String haystack, String needle) {
-    // todo
-    return 0;
   }
 
 }
