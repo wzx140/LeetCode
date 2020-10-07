@@ -142,6 +142,8 @@
 - [26. Remove Duplicates from Sorted Array](src/main/java/com/wzx/leetcode/No26RemoveDuplicatesFromSortedArray.java)
 - [83. Remove Duplicates from Sorted List](src/main/java/com/wzx/leetcode/No83RemoveDuplicatesFromSortedList.java)
 - [82. Remove Duplicates from Sorted List II](src/main/java/com/wzx/leetcode/No82RemoveDuplicatesFromSortedList2.java)
+- [27. Remove Element](src/main/java/com/wzx/leetcode/No27RemoveElement.java)
+- [283. Move Zeroes](src/main/java/com/wzx/leetcode/No283MoveZeroes.java)
 
 ## 深搜
 - [矩阵中的路径](src/main/java/com/wzx/sword/No13MatrixPath.java)
