@@ -88,6 +88,7 @@
 - [435. Non-overlapping Intervals](src/main/c++/435.&#32;Non-overlapping&#32;Intervals.cpp)
 - [887. Super Egg Drop](src/main/c++/452.&#32;Minimum&#32;Number&#32;of&#32;Arrows&#32;to&#32;Burst&#32;Balloons.cpp)
 - [剪绳子](src/main/java/com/wzx/sword/No15CutTheRope.java)
+- [53. maximum subarray](src/main/java/com/wzx/leetcode/No53MaximumSubarray.java)
 
 #### 区间问题
 - [1288. Remove Covered Intervals](src/main/java/com/wzx/leetcode/No1288RemoveCoveredIntervals.java)
@@ -157,6 +158,7 @@
 - [数组中出现次数超过一半的数字](src/main/java/com/wzx/sword/No31MoreThanHalfOfTheOccurrences.java)
 - [921. Minimum Add to Make Parentheses Valid](src/main/java/com/wzx/leetcode/No921MinimumAddToMakeParenthesesValid.java)
 - [1541. Minimum Insertions to Balance a Parentheses String](src/main/java/com/wzx/leetcode/No1541MinimumInsertionsToBalanceAParenthesesString.java)
+- [1~n整数中1出现的次数](src/main/java/com/wzx/sword/No33NumberOfOccurrencesOf1InAnInteger.java)
 
 ## 排序
 - [最小的k个数](src/main/java/com/wzx/sword/No32TheSmallestNumberOfK.java)
