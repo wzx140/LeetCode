@@ -81,6 +81,7 @@
 ## [动态规划](https://labuladong.gitbook.io/algo/di-ling-zhang-bi-du-xi-lie/dong-tai-gui-hua-xiang-jie-jin-jie)
 - [把数字翻译成字符串](src/main/java/com/wzx/sword/No36TranslateNumbersIntoStrings.java)
 - [礼物的最大值](src/main/java/com/wzx/sword/No37MaximumGift.java)
+- [最长不含重复字符的子字符串](src/main/java/com/wzx/sword/No38TheLongestSubstringWithoutRepeatedCharacters.java)
 - [322. Coin Change](src/main/c++/322.&#32;Coin&#32;Change.cpp)
 - [887. Super Egg Drop](src/main/c++/887.&#32;Super&#32;Egg&#32;Drop.cpp)
 - [877. Stone Game](src/main/c++/877.&#32;Stone&#32;Game.cpp)
@@ -147,6 +148,9 @@
 - [82. Remove Duplicates from Sorted List II](src/main/java/com/wzx/leetcode/No82RemoveDuplicatesFromSortedList2.java)
 - [27. Remove Element](src/main/java/com/wzx/leetcode/No27RemoveElement.java)
 - [283. Move Zeroes](src/main/java/com/wzx/leetcode/No283MoveZeroes.java)
+
+### 滑动窗口
+- [最长不含重复字符的子字符串](src/main/java/com/wzx/sword/No38TheLongestSubstringWithoutRepeatedCharacters.java)
 
 ## 深搜
 - [矩阵中的路径](src/main/java/com/wzx/sword/No13MatrixPath.java)

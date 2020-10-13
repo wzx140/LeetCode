@@ -44,6 +44,8 @@ public class No37MaximumGift {
 
   /**
    * 动态规划
+   * dp[i][j]: 从左上角走到(i,j)的最大礼物值
+   * 递推公式: dp[i][j] = grid[i][j] + max(dp[i - 1][j], dp[i][j - 1])
    * <p>
    * time: O(n)
    * space: O(n)
