@@ -74,6 +74,10 @@
 ## 字典树
 - [211. Design Add and Search Words Data Structure](src/main/java/com/wzx/leetcode/No211DesignAddAndSearchWordsDataStructure.java)
 
+## 哈希表
+- [第一个只出现一次的字符](src/main/java/com/wzx/sword/No39TheFirstCharacterThatAppearsOnlyOnce.java)
+- [数组中出现次数超过一半的数字](src/main/java/com/wzx/sword/No31MoreThanHalfOfTheOccurrences.java)
+
 ## 其他数据结构
 - [146. LRU Cache](src/main/c++/146.&#32;LRU&#32;Cache.cpp)
 
@@ -86,6 +90,7 @@
 - [887. Super Egg Drop](src/main/c++/887.&#32;Super&#32;Egg&#32;Drop.cpp)
 - [877. Stone Game](src/main/c++/877.&#32;Stone&#32;Game.cpp)
 - [28. Implement strStr()](src/main/java/com/wzx/leetcode/No28ImplementStrStr.java): [字符串匹配算法](https://masterwangzx.com/2020/10/03/str-match/)
+- [264. ugly number II](src/main/java/com/wzx/leetcode/No264UglyNumberII.java)
 
 ### 贪心
 - [435. Non-overlapping Intervals](src/main/c++/435.&#32;Non-overlapping&#32;Intervals.cpp)
