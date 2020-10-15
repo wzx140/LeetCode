@@ -1,6 +1,7 @@
 package com.wzx.leetcode;
 
 import com.wzx.entity.ListNode;
+
 import java.util.HashSet;
 import java.util.Set;
 
@@ -35,9 +36,9 @@ public class No160IntersectionOfTwoLinkedLists {
 
   /**
    * 双指针，从整体上来看，两个指针分别将两组链表都跑一遍，就能找到交叉点
-   *
-   * time: O(1)
-   * space: O(n)
+   * <p>
+   * time: O(m+n)
+   * space: O(1)
    */
   public ListNode getIntersectionNode2(ListNode headA, ListNode headB) {
     if (headA == null || headB == null) {
