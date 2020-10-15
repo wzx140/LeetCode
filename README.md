@@ -177,6 +177,7 @@
 
 ## 排序
 - [最小的k个数](src/main/java/com/wzx/sword/No32TheSmallestNumberOfK.java)
+- [数组中的逆序对](src/main/java/com/wzx/sword/No40ReversedPairsInTheArray.java)
 
 ## [水塘抽样](https://labuladong.gitbook.io/algo/gao-pin-mian-shi-xi-lie/shui-tang-chou-yang)
 - [382. Linked List Random Node](src/main/java/com/wzx/leetcode/No382LinkedListRandomNode.java)
