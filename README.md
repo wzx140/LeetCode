@@ -133,7 +133,7 @@
 - [337. House Robber III](src/main/c++/337.&#32;House&#32;Robber&#32;III.cpp)
 
 ## 二分搜索
-- [34. Find First and Last Position of Element in Sorted Array](src/main/c++/34.&#32;Find&#32;First&#32;and&#32;Last&#32;Position&#32;of&#32;Element&#32;in&#32;Sorted&#32;Array.cpp): [上下界查找](https://masterwangzx.com/2020/03/03/binary-search/)
+- [34. Find First and Last Position of Element in Sorted Array](src/main/java/com/wzx/leetcode/No34FindFirstAndLastPositionOfElementInSortedArray.java): [上下界查找](https://masterwangzx.com/2020/03/03/binary-search/)
 - [二维数组中的查找](src/main/java/com/wzx/sword/No3TwoDimensionalArraySearch.java)
 - [数组中的重复数字2](src/main/java/com/wzx/sword/No2DuplicateNum2.java)
 - [旋转数组的最小数字](src/main/java/com/wzx/sword/No11RotateMinNum.java)
