@@ -3,7 +3,7 @@
 
 # 数据结构
 ## 数组
-- [数组中的重复数字1](src/main/java/com/wzx/sword/No2DuplicateNum1.java)
+- [offer3. 数组中的重复数字1](src/main/java/com/wzx/sword/No3DuplicateNum.java)
 
 ## 二叉树
 ### 递归
@@ -27,6 +27,7 @@
 - [145. Binary Tree Postorder Traversal](src/main/c++/145.&#32;Binary&#32;Tree&#32;Postorder&#32;Traversal.cpp): [后序遍历](https://masterwangzx.com/2019/03/16/binary-tree/#%E5%90%8E%E5%BA%8F%E9%81%8D%E5%8E%86)
 - [序列化二叉树](src/main/java/com/wzx/sword/No29SerializedBinaryTree.java)
 - [二叉搜索树的第k大节点](src/main/java/com/wzx/sword/No41TheKLargestNodeOfTheBinarySearchTree.java)
+- [offer8. 二叉树的下一个节点](src/main/java/com/wzx/sword/No8BinaryTreeNextNode.java)
 
 ### 重建
 - [105. Construct Binary Tree from Preorder and Inorder Traversal](src/main/java/com/wzx/leetcode/No105ConstructBinaryTreeFromPreorderAndInorderTraversal.java): [先跟+中根](https://masterwangzx.com/2019/03/16/binary-tree/#%E5%85%88%E8%B7%9F%E4%B8%AD%E6%A0%B9)
@@ -60,7 +61,7 @@
 - [160. IntersectionOfTwoLinkedLists](src/main/java/com/wzx/leetcode/No160IntersectionOfTwoLinkedLists.java)
 - [430. FlattenAMultilevelDoublyLinkedList](src/main/java/com/wzx/leetcode/No430FlattenAMultilevelDoublyLinkedList.java)
 - [707. DesignLinkedList](src/main/java/com/wzx/leetcode/No707DesignLinkedList.java)
-- [从尾到头打印链表](src/main/java/com/wzx/sword/No5PrintListNode.java)
+- [offer6. 从尾到头打印链表](src/main/java/com/wzx/sword/No6PrintListNode.java)
 - [26. Remove Duplicates from Sorted Array](src/main/java/com/wzx/leetcode/No26RemoveDuplicatesFromSortedArray.java)
 - [83. Remove Duplicates from Sorted List](src/main/java/com/wzx/leetcode/No83RemoveDuplicatesFromSortedList.java)
 - [82. Remove Duplicates from Sorted List II](src/main/java/com/wzx/leetcode/No82RemoveDuplicatesFromSortedList2.java)
@@ -69,6 +70,7 @@
 ## 栈
 - [316. Remove Duplicate Letters](src/main/java/com/wzx/leetcode/No316RemoveDuplicateLetters.java)
 - [20. Valid Parentheses](src/main/java/com/wzx/leetcode/No20ValidParentheses.java)
+- [offer9. 用两个栈实现队列](src/main/java/com/wzx/sword/No9TwoStackImplementQueue.java)
 - [包含min函数的栈](src/main/java/com/wzx/sword/No24MinStack.java)
 - [栈的压入、弹出序列](src/main/java/com/wzx/sword/No25StackSequence.java)
 
@@ -135,14 +137,14 @@
 
 ## 二分搜索
 - [34. Find First and Last Position of Element in Sorted Array](src/main/java/com/wzx/leetcode/No34FindFirstAndLastPositionOfElementInSortedArray.java): [上下界查找](https://masterwangzx.com/2020/03/03/binary-search/)
-- [二维数组中的查找](src/main/java/com/wzx/sword/No3TwoDimensionalArraySearch.java)
-- [数组中的重复数字2](src/main/java/com/wzx/sword/No2DuplicateNum2.java)
+- [offer4. 二维数组中的查找](src/main/java/com/wzx/sword/No4TwoDimensionalArraySearch.java)
+- [offer3. 数组中的重复数字2](src/main/java/com/wzx/sword/No3DuplicateNum2.java)
 - [旋转数组的最小数字](src/main/java/com/wzx/sword/No11RotateMinNum.java)
 
 ## 双指针
 - [调整数组顺序使奇数位于偶数前面1](src/main/java/com/wzx/sword/No20AdjustArrayOrder1.java)
 - [调整数组顺序使奇数位于偶数前面2](src/main/java/com/wzx/sword/No21AdjustArrayOrder2.java)
-- [替换空格](src/main/java/com/wzx/sword/No4ReplaceWhiteSpace.java)
+- [offer5. 替换空格](src/main/java/com/wzx/sword/No5ReplaceWhiteSpace.java)
 
 ### 快慢指针
 - [141. LinkedListCycle](src/main/java/com/wzx/leetcode/No141LinkedListCycle.java)
@@ -164,7 +166,7 @@
 - [字符串的排列](src/main/java/com/wzx/sword/No30StringArrangement.java)
 
 # 其他
-- [单例模式](src/main/java/com/wzx/sword/No1Singleton.java)
+- [offer1.单例模式](src/main/java/com/wzx/sword/No1Singleton.java)
 - [表示数值的字符串](src/main/java/com/wzx/sword/No19StringRepresentingNumericValue.java)
 - [数组中出现次数超过一半的数字](src/main/java/com/wzx/sword/No31MoreThanHalfOfTheOccurrences.java)
 - [921. Minimum Add to Make Parentheses Valid](src/main/java/com/wzx/leetcode/No921MinimumAddToMakeParenthesesValid.java)

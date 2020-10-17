@@ -5,22 +5,24 @@ import java.util.HashSet;
 import java.util.Set;
 
 /**
- * n位，元素大小在[0, n-1]的数组中重复的数字，找出其中一个
+ * https://leetcode-cn.com/problems/shu-zu-zhong-zhong-fu-de-shu-zi-lcof/
  *
  * @author wzx
  */
-public class No2DuplicateNum1 {
+public class No3DuplicateNum {
 
   /**
+   * 先排序再查找
+   *
    * time: O(nlogn)
    * space: O(1)
    */
-  public static int findDuplicate1(int[] intArray) {
-    Arrays.sort(intArray);
+  public int findRepeatNumber1(int[] nums) {
+    Arrays.sort(nums);
 
-    for (int i = 1; i < intArray.length; i++) {
-      if (intArray[i] == intArray[i - 1]) {
-        return intArray[i];
+    for (int i = 1; i < nums.length; i++) {
+      if (nums[i] == nums[i - 1]) {
+        return nums[i];
       }
     }
 
@@ -28,12 +30,14 @@ public class No2DuplicateNum1 {
   }
 
   /**
+   * 哈希表
+   *
    * time: O(n)
    * space: O(n)
    */
-  public static int findDuplicate2(int[] intArray) {
+  public int findRepeatNumber2(int[] nums) {
     Set<Integer> numSet = new HashSet<>();
-    for (int num : intArray) {
+    for (int num : nums) {
       if (numSet.contains(num)) {
         return num;
       } else {
@@ -51,17 +55,17 @@ public class No2DuplicateNum1 {
    * time: O(n)
    * space: O(1)
    */
-  public static int findDuplicate3(int[] intArray) {
-    for (int i = 0; i < intArray.length; i++) {
+  public int findRepeatNumber3(int[] nums) {
+    for (int i = 0; i < nums.length; i++) {
       // 重复直到当前下标与值对应
-      while (i != intArray[i]) {
-        int num = intArray[i];
-        if (num == intArray[num]) {
+      while (i != nums[i]) {
+        int num = nums[i];
+        if (num == nums[num]) {
           return num;
         } else {
           // 当前下标的值移动到它应该在的下标位置
-          intArray[i] = intArray[num];
-          intArray[num] = num;
+          nums[i] = nums[num];
+          nums[num] = num;
         }
       }
     }

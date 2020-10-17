@@ -7,7 +7,7 @@ import com.wzx.entity.TreeNode;
  *
  * @author wzx
  */
-public class No7BinaryTreeNextNode {
+public class No8BinaryTreeNextNode {
 
   /**
    * |     0

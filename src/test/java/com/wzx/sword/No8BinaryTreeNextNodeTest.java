@@ -6,7 +6,7 @@ import org.junit.Test;
 
 import static org.junit.Assert.*;
 
-public class No7BinaryTreeNextNodeTest {
+public class No8BinaryTreeNextNodeTest {
   private TreeNode tree1 = null;
   private TreeNode tree2 = null;
   private TreeNode tree3 = null;
@@ -53,16 +53,16 @@ public class No7BinaryTreeNextNodeTest {
 
   @Test
   public void getNext() {
-    assertNull(No7BinaryTreeNextNode.GetNext(null));
+    assertNull(No8BinaryTreeNextNode.GetNext(null));
 
-    assertEquals(tree1.left.right, No7BinaryTreeNextNode.GetNext(tree1.left));
-    assertEquals(tree1, No7BinaryTreeNextNode.GetNext(tree1.left.right));
+    assertEquals(tree1.left.right, No8BinaryTreeNextNode.GetNext(tree1.left));
+    assertEquals(tree1, No8BinaryTreeNextNode.GetNext(tree1.left.right));
 
-    assertEquals(tree2, No7BinaryTreeNextNode.GetNext(tree2.left.right));
-    assertEquals(tree2.right, No7BinaryTreeNextNode.GetNext(tree2.right.left));
+    assertEquals(tree2, No8BinaryTreeNextNode.GetNext(tree2.left.right));
+    assertEquals(tree2.right, No8BinaryTreeNextNode.GetNext(tree2.right.left));
 
-    assertEquals(tree3.left, No7BinaryTreeNextNode.GetNext(tree3.left.left));
+    assertEquals(tree3.left, No8BinaryTreeNextNode.GetNext(tree3.left.left));
 
-    assertEquals(tree4.right.right, No7BinaryTreeNextNode.GetNext(tree4.right));
+    assertEquals(tree4.right.right, No8BinaryTreeNextNode.GetNext(tree4.right));
   }
 }

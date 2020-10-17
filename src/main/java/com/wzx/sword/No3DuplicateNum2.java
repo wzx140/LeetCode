@@ -8,7 +8,7 @@ import java.util.Set;
  *
  * @author wzx
  */
-public class No2DuplicateNum2 {
+public class No3DuplicateNum2 {
 
   /**
    * time: O(n)

@@ -1,11 +1,11 @@
 package com.wzx.sword;
 
 /**
- * https://www.nowcoder.com/practice/4060ac7e3e404ad1a894ef3e17650423
+ * https://leetcode-cn.com/problems/ti-huan-kong-ge-lcof/
  *
  * @author wzx
  */
-public class No4ReplaceWhiteSpace {
+public class No5ReplaceWhiteSpace {
 
   /**
    * 从左往右
@@ -13,7 +13,7 @@ public class No4ReplaceWhiteSpace {
    * time: O(n^2)
    * space: O(1)
    */
-  public static String replaceSpace1(StringBuffer str) {
+  public String replaceSpace1(StringBuffer str) {
     for (int i = 0; i < str.length(); i++) {
       if (str.charAt(i) == ' ') {
         int length = str.length();
@@ -36,7 +36,7 @@ public class No4ReplaceWhiteSpace {
    * time: O(n)
    * space: O(1)
    */
-  public static String replaceSpace2(StringBuffer str) {
+  public String replaceSpace2(StringBuffer str) {
     int size = str.length();
     // 填充字符串
     int exSize = size;
