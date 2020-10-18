@@ -166,7 +166,7 @@
 - [字符串的排列](src/main/java/com/wzx/sword/No30StringArrangement.java)
 
 # 其他
-- [offer1.单例模式](src/main/java/com/wzx/sword/No1Singleton.java)
+- [offer1. 单例模式](src/main/java/com/wzx/sword/No1Singleton.java)
 - [表示数值的字符串](src/main/java/com/wzx/sword/No19StringRepresentingNumericValue.java)
 - [数组中出现次数超过一半的数字](src/main/java/com/wzx/sword/No31MoreThanHalfOfTheOccurrences.java)
 - [921. Minimum Add to Make Parentheses Valid](src/main/java/com/wzx/leetcode/No921MinimumAddToMakeParenthesesValid.java)
@@ -197,6 +197,7 @@
 ## 位运算
 - [二进制中1的个数](src/main/java/com/wzx/sword/No16NumOfOneInBinary.java)
 - [数值的整数次方](src/main/java/com/wzx/sword/No17IntegerPower.java)
+- [offer56. 数组中数字出现的次数](src/main/java/com/wzx/sword/No56NumberOfOccurrencesOfNumberInNumber.java)
 
 ## 大数表达
 - [打印1~n位数字](src/main/java/com/wzx/sword/No18PrintMaximumNDigits.java)
