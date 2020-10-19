@@ -80,6 +80,8 @@
 ## 哈希表
 - [第一个只出现一次的字符](src/main/java/com/wzx/sword/No39TheFirstCharacterThatAppearsOnlyOnce.java)
 - [数组中出现次数超过一半的数字](src/main/java/com/wzx/sword/No31MoreThanHalfOfTheOccurrences.java)
+- [1. tow sum](src/main/java/com/wzx/leetcode/No1TwoSum.java)
+- [15. three sum](src/main/java/com/wzx/leetcode/No15ThreeSum.java)
 
 ## 其他数据结构
 - [146. LRU Cache](src/main/c++/146.&#32;LRU&#32;Cache.cpp)
@@ -159,6 +161,10 @@
 
 ### 滑动窗口
 - [最长不含重复字符的子字符串](src/main/java/com/wzx/sword/No38TheLongestSubstringWithoutRepeatedCharacters.java)
+
+### 左右指针
+- [167. two sum II - input array is sorted](src/main/java/com/wzx/leetcode/No167TwoSum2InputArrayIsSorted.java)
+- [15. three sum](src/main/java/com/wzx/leetcode/No15ThreeSum.java)
 
 ## 深搜
 - [矩阵中的路径](src/main/java/com/wzx/sword/No13MatrixPath.java)
