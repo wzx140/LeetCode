@@ -165,6 +165,8 @@
 ### 左右指针
 - [167. two sum II - input array is sorted](src/main/java/com/wzx/leetcode/No167TwoSum2InputArrayIsSorted.java)
 - [15. three sum](src/main/java/com/wzx/leetcode/No15ThreeSum.java)
+- [16. three sum closest](src/main/java/com/wzx/leetcode/No16ThreeSumClosest.java)
+- [923. three sum with multiplicity](src/main/java/com/wzx/leetcode/No923ThreeSumWithMultiplicity.java)
 
 ## 深搜
 - [矩阵中的路径](src/main/java/com/wzx/sword/No13MatrixPath.java)
