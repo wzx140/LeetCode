@@ -74,6 +74,12 @@
 - [包含min函数的栈](src/main/java/com/wzx/sword/No24MinStack.java)
 - [栈的压入、弹出序列](src/main/java/com/wzx/sword/No25StackSequence.java)
 
+### 单调栈
+> 每次新元素入栈后，栈内的元素都保持有序（单调递增或单调递减）
+
+- [496. Next Greater Element I](src/main/java/com/wzx/leetcode/No496NextGreaterElement1.java)
+- [503. Next Greater Element II](src/main/java/com/wzx/leetcode/No503NextGreaterElement2.java)
+
 ## 字典树
 - [211. Design Add and Search Words Data Structure](src/main/java/com/wzx/leetcode/No211DesignAddAndSearchWordsDataStructure.java)
 
@@ -82,6 +88,7 @@
 - [数组中出现次数超过一半的数字](src/main/java/com/wzx/sword/No31MoreThanHalfOfTheOccurrences.java)
 - [1. tow sum](src/main/java/com/wzx/leetcode/No1TwoSum.java)
 - [15. three sum](src/main/java/com/wzx/leetcode/No15ThreeSum.java)
+- [454. 4Sum II](src/main/java/com/wzx/leetcode/No454FourSum2.java)
 
 ## 其他数据结构
 - [146. LRU Cache](src/main/c++/146.&#32;LRU&#32;Cache.cpp)
@@ -164,9 +171,10 @@
 
 ### 左右指针
 - [167. two sum II - input array is sorted](src/main/java/com/wzx/leetcode/No167TwoSum2InputArrayIsSorted.java)
-- [15. three sum](src/main/java/com/wzx/leetcode/No15ThreeSum.java)
-- [16. three sum closest](src/main/java/com/wzx/leetcode/No16ThreeSumClosest.java)
-- [923. three sum with multiplicity](src/main/java/com/wzx/leetcode/No923ThreeSumWithMultiplicity.java)
+- [15. 3sum](src/main/java/com/wzx/leetcode/No15ThreeSum.java)
+- [16. 3sum closest](src/main/java/com/wzx/leetcode/No16ThreeSumClosest.java)
+- [923. 3sum with multiplicity](src/main/java/com/wzx/leetcode/No923ThreeSumWithMultiplicity.java)
+- [18. 4Sum](src/main/java/com/wzx/leetcode/No18FourSum.java)
 
 ## 深搜
 - [矩阵中的路径](src/main/java/com/wzx/sword/No13MatrixPath.java)
