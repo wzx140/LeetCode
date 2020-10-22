@@ -7,7 +7,7 @@ import java.util.Arrays;
  *
  * @author wzx
  */
-public class No56NumberOfOccurrencesOfNumberInNumber {
+public class No56NumberOfOccurrencesOfNumbersInTheArray1 {
 
   /**
    * 先排序再寻找相邻不重复的元素

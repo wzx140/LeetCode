@@ -168,6 +168,7 @@
 
 ### 滑动窗口
 - [最长不含重复字符的子字符串](src/main/java/com/wzx/sword/No38TheLongestSubstringWithoutRepeatedCharacters.java)
+- [offer57. 和为s的连续正数序列](src/main/java/com/wzx/sword/No57NSum.java)
 
 ### 左右指针
 - [167. two sum II - input array is sorted](src/main/java/com/wzx/leetcode/No167TwoSum2InputArrayIsSorted.java)
@@ -213,7 +214,8 @@
 ## 位运算
 - [二进制中1的个数](src/main/java/com/wzx/sword/No16NumOfOneInBinary.java)
 - [数值的整数次方](src/main/java/com/wzx/sword/No17IntegerPower.java)
-- [offer56. 数组中数字出现的次数](src/main/java/com/wzx/sword/No56NumberOfOccurrencesOfNumberInNumber.java)
+- [offer56. 数组中数字出现的次数1](src/main/java/com/wzx/sword/No56NumberOfOccurrencesOfNumbersInTheArray1.java)
+- [offer56. 数组中数字出现的次数2](src/main/java/com/wzx/sword/No56NumberOfOccurrencesOfNumbersInTheArray2.java)
 
 ## 大数表达
 - [打印1~n位数字](src/main/java/com/wzx/sword/No18PrintMaximumNDigits.java)
