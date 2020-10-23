@@ -169,6 +169,7 @@
 ### 滑动窗口
 - [最长不含重复字符的子字符串](src/main/java/com/wzx/sword/No38TheLongestSubstringWithoutRepeatedCharacters.java)
 - [offer57. 和为s的连续正数序列](src/main/java/com/wzx/sword/No57NSum.java)
+- [offer58. 翻转单词顺序](src/main/java/com/wzx/sword/No58ReverseWordOrder.java)
 
 ### 左右指针
 - [167. two sum II - input array is sorted](src/main/java/com/wzx/leetcode/No167TwoSum2InputArrayIsSorted.java)
