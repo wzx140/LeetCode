@@ -177,6 +177,7 @@
 - [16. 3sum closest](src/main/java/com/wzx/leetcode/No16ThreeSumClosest.java)
 - [923. 3sum with multiplicity](src/main/java/com/wzx/leetcode/No923ThreeSumWithMultiplicity.java)
 - [18. 4Sum](src/main/java/com/wzx/leetcode/No18FourSum.java)
+- [42. trapping rain water](src/main/java/com/wzx/leetcode/No42TrappingRainWater.java)
 
 ## 深搜
 - [矩阵中的路径](src/main/java/com/wzx/sword/No13MatrixPath.java)
