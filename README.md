@@ -71,7 +71,6 @@
 - [316. Remove Duplicate Letters](src/main/java/com/wzx/leetcode/No316RemoveDuplicateLetters.java)
 - [20. Valid Parentheses](src/main/java/com/wzx/leetcode/No20ValidParentheses.java)
 - [offer9. 用两个栈实现队列](src/main/java/com/wzx/sword/No9TwoStackImplementQueue.java)
-- [包含min函数的栈](src/main/java/com/wzx/sword/No24MinStack.java)
 - [栈的压入、弹出序列](src/main/java/com/wzx/sword/No25StackSequence.java)
 
 ### 单调栈
@@ -79,6 +78,11 @@
 
 - [496. Next Greater Element I](src/main/java/com/wzx/leetcode/No496NextGreaterElement1.java)
 - [503. Next Greater Element II](src/main/java/com/wzx/leetcode/No503NextGreaterElement2.java)
+- [offer30. 包含min函数的栈](src/main/java/com/wzx/sword/No30MinStack.java)
+
+### 单调队列
+- [offer59. 滑动窗口的最大值](src/main/java/com/wzx/sword/No59MaximumSlidingWindow.java)
+- [offer59. 队列的最大值](src/main/java/com/wzx/sword/No59MaximumValueOfTheQueue.java)
 
 ## 字典树
 - [211. Design Add and Search Words Data Structure](src/main/java/com/wzx/leetcode/No211DesignAddAndSearchWordsDataStructure.java)
