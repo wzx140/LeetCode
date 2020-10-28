@@ -107,6 +107,7 @@
 - [877. Stone Game](src/main/c++/877.&#32;Stone&#32;Game.cpp)
 - [28. Implement strStr()](src/main/java/com/wzx/leetcode/No28ImplementStrStr.java): [字符串匹配算法](https://masterwangzx.com/2020/10/03/str-match/)
 - [264. ugly number II](src/main/java/com/wzx/leetcode/No264UglyNumberII.java)
+- [Offer60. n个骰子的点数](src/main/java/com/wzx/sword/No60NumberOfNDice.java)
 
 ### 贪心
 - [435. Non-overlapping Intervals](src/main/c++/435.&#32;Non-overlapping&#32;Intervals.cpp)
