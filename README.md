@@ -195,12 +195,14 @@
 - [数组中出现次数超过一半的数字](src/main/java/com/wzx/sword/No31MoreThanHalfOfTheOccurrences.java)
 - [921. Minimum Add to Make Parentheses Valid](src/main/java/com/wzx/leetcode/No921MinimumAddToMakeParenthesesValid.java)
 - [1541. Minimum Insertions to Balance a Parentheses String](src/main/java/com/wzx/leetcode/No1541MinimumInsertionsToBalanceAParenthesesString.java)
+- [offer61. 扑克牌中的顺子](src/main/java/com/wzx/sword/No61StraightInPlayingCards.java)
 
 ## 找规律
 - [1~n整数中1出现的次数](src/main/java/com/wzx/sword/No33NumberOfOccurrencesOf1InAnInteger.java)
 - [顺时针打印矩阵](src/main/java/com/wzx/sword/No23PrintMatrixClockwise.java)
 - [数字序列中某一位的数字](src/main/java/com/wzx/sword/No34ADigitInASequenceOfNumbers.java)
 - [把数组排成最小的数](src/main/java/com/wzx/sword/No35ArrangeTheArrayIntoTheSmallestNumber.java)
+- [offer62. 圆圈中最后剩下的数字](src/main/java/com/wzx/sword/No62TheLastRemainingNumberInTheCircle.java): 约瑟夫环
 
 ## 排序
 - [最小的k个数](src/main/java/com/wzx/sword/No32TheSmallestNumberOfK.java)
