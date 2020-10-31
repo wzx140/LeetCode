@@ -225,6 +225,8 @@
 - [数值的整数次方](src/main/java/com/wzx/sword/No17IntegerPower.java)
 - [offer56. 数组中数字出现的次数1](src/main/java/com/wzx/sword/No56NumberOfOccurrencesOfNumbersInTheArray1.java)
 - [offer56. 数组中数字出现的次数2](src/main/java/com/wzx/sword/No56NumberOfOccurrencesOfNumbersInTheArray2.java)
+- [offer64. 求1+2+…+n](src/main/java/com/wzx/sword/No64Solve1ton.java)
+- [offer65. 不用加减乘除做加法](src/main/java/com/wzx/sword/No65NoAddSubtractMultiplyDivide.java)
 
 ## 大数表达
 - [打印1~n位数字](src/main/java/com/wzx/sword/No18PrintMaximumNDigits.java)
