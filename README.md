@@ -203,6 +203,7 @@
 - [数字序列中某一位的数字](src/main/java/com/wzx/sword/No34ADigitInASequenceOfNumbers.java)
 - [把数组排成最小的数](src/main/java/com/wzx/sword/No35ArrangeTheArrayIntoTheSmallestNumber.java)
 - [offer62. 圆圈中最后剩下的数字](src/main/java/com/wzx/sword/No62TheLastRemainingNumberInTheCircle.java): 约瑟夫环
+- [offer66. 构建乘积数组](src/main/java/com/wzx/sword/No66BuildAnArrayOfProducts.java)
 
 ## 排序
 - [最小的k个数](src/main/java/com/wzx/sword/No32TheSmallestNumberOfK.java)
