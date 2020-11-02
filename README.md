@@ -28,6 +28,7 @@
 - [序列化二叉树](src/main/java/com/wzx/sword/No29SerializedBinaryTree.java)
 - [二叉搜索树的第k大节点](src/main/java/com/wzx/sword/No41TheKLargestNodeOfTheBinarySearchTree.java)
 - [offer8. 二叉树的下一个节点](src/main/java/com/wzx/sword/No8BinaryTreeNextNode.java)
+- [offer68. 二叉树的最近公共祖先](src/main/java/com/wzx/sword/No68NearestCommonAncestorOfBinaryTree.java)
 
 ### 重建
 - [105. Construct Binary Tree from Preorder and Inorder Traversal](src/main/java/com/wzx/leetcode/No105ConstructBinaryTreeFromPreorderAndInorderTraversal.java): [先跟+中根](https://masterwangzx.com/2019/03/16/binary-tree/#%E5%85%88%E8%B7%9F%E4%B8%AD%E6%A0%B9)
@@ -45,6 +46,7 @@
 - [701. Insert into a Binary Search Tree](src/main/c++/701.&#32;Insert&#32;into&#32;a&#32;Binary&#32;Search&#32;Tree.cpp)
 - [450. Delete Node in a BST](src/main/c++/450.&#32;Delete&#32;Node&#32;in&#32;a&#32;BST.cpp)
 - [二叉搜索树的后序遍历序列](src/main/java/com/wzx/sword/No26PostOrderTraversalSequenceOfBinarySearchTree.java)
+- [offer68. 二叉搜索树的最近公共祖先](src/main/java/com/wzx/sword/No68NearestCommonAncestorOfBinarySearchTree.java)
 
 ## 链表
 > PreviousNode, CurrentNode, NextNode, head, tail and sentinel nodes
