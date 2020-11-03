@@ -8,10 +8,17 @@ import java.util.Set;
  *
  * @author wzx
  */
-public class No14RobotMovementRange {
-  public static int movingCount(int threshold, int rows, int cols) {
-    Set<Integer> visit = new HashSet<>(rows * cols);
-    return recursion(threshold, 0, 0, rows, cols, visit);
+public class No13RobotMovementRange {
+
+  /**
+   * 深搜+备忘录
+   * <p>
+   * time: O(mn)
+   * space: O(mn)
+   */
+  public int movingCount(int m, int n, int k) {
+    Set<Integer> visit = new HashSet<>(m * n);
+    return recursion(k, 0, 0, m, n, visit);
   }
 
   /**
@@ -25,7 +32,7 @@ public class No14RobotMovementRange {
    * @param visit     已访问数组
    * @return 当前状态所能访问格子的数量
    */
-  public static int recursion(int threshold, int row, int col, int rows, int cols, Set<Integer> visit) {
+  private int recursion(int threshold, int row, int col, int rows, int cols, Set<Integer> visit) {
     if (row < 0 || row >= rows || col < 0 || col >= cols) return 0;
     int index = row * cols + col;
     if (visit.contains(index) || getSum(row) + getSum(col) > threshold) return 0;
@@ -40,7 +47,7 @@ public class No14RobotMovementRange {
   /**
    * 获得数位和
    */
-  private static int getSum(int digit) {
+  private int getSum(int digit) {
     int sum = 0;
     while (digit != 0) {
       sum += (digit % 10);

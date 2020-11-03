@@ -114,7 +114,7 @@
 ### 贪心
 - [435. Non-overlapping Intervals](src/main/c++/435.&#32;Non-overlapping&#32;Intervals.cpp)
 - [887. Super Egg Drop](src/main/c++/452.&#32;Minimum&#32;Number&#32;of&#32;Arrows&#32;to&#32;Burst&#32;Balloons.cpp)
-- [剪绳子](src/main/java/com/wzx/sword/No15CutTheRope.java)
+- [offer14. 剪绳子](src/main/java/com/wzx/sword/No14CutTheRope.java)
 - [53. maximum subarray](src/main/java/com/wzx/leetcode/No53MaximumSubarray.java)
 
 #### 区间问题
@@ -155,7 +155,7 @@
 - [34. Find First and Last Position of Element in Sorted Array](src/main/java/com/wzx/leetcode/No34FindFirstAndLastPositionOfElementInSortedArray.java): [上下界查找](https://masterwangzx.com/2020/03/03/binary-search/)
 - [offer4. 二维数组中的查找](src/main/java/com/wzx/sword/No4TwoDimensionalArraySearch.java)
 - [offer3. 数组中的重复数字2](src/main/java/com/wzx/sword/No3DuplicateNum2.java)
-- [旋转数组的最小数字](src/main/java/com/wzx/sword/No11RotateMinNum.java)
+- [offer11. 旋转数组的最小数字](src/main/java/com/wzx/sword/No11RotateMinNum.java)
 
 ## 双指针
 - [调整数组顺序使奇数位于偶数前面1](src/main/java/com/wzx/sword/No20AdjustArrayOrder1.java)
@@ -187,8 +187,8 @@
 - [42. trapping rain water](src/main/java/com/wzx/leetcode/No42TrappingRainWater.java)
 
 ## 深搜
-- [矩阵中的路径](src/main/java/com/wzx/sword/No13MatrixPath.java)
-- [机器人的运动范围](src/main/java/com/wzx/sword/No14RobotMovementRange.java)
+- [offer12. 矩阵中的路径](src/main/java/com/wzx/sword/No12MatrixPath.java)
+- [offer13. 机器人的运动范围](src/main/java/com/wzx/sword/No13RobotMovementRange.java)
 - [字符串的排列](src/main/java/com/wzx/sword/No30StringArrangement.java)
 
 # 其他
@@ -216,8 +216,8 @@
 - [398. Random Pick Index](src/main/java/com/wzx/leetcode/No398RandomPickIndex.java)
 
 ## 斐波那契
-- [斐波那契数组](src/main/java/com/wzx/sword/No9FibonacciSequence.java)
-- [变态青蛙跳](src/main/java/com/wzx/sword/No10StepUp.java)
+- [offer10. 斐波那契数组](src/main/java/com/wzx/sword/No10FibonacciSequence.java)
+- [offer10. 变态青蛙跳](src/main/java/com/wzx/sword/No10StepUp.java)
 - [矩形覆盖](src/test/java/com/wzx/sword/No12MatrixCoverageTest.java)
 
 ## 差分数组
