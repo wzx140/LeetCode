@@ -1,11 +1,11 @@
 package com.wzx.sword;
 
 /**
- * https://www.nowcoder.com/practice/8ee967e43c2c4ec193b040ea7fbb10b8
+ * https://leetcode-cn.com/problems/er-jin-zhi-zhong-1de-ge-shu-lcof/
  *
  * @author wzx
  */
-public class No16NumOfOneInBinary {
+public class No15NumOfOneInBinary {
 
   /**
    * 不断右移与1做按位与，注意>>对于负数是高位补1
@@ -13,7 +13,7 @@ public class No16NumOfOneInBinary {
    * time: O(n)
    * space: O(1)
    */
-  public static int NumberOf1(int n) {
+  public int hammingWeight1(int n) {
     int num = 0;
 
     while (n != 0) {
@@ -30,7 +30,7 @@ public class No16NumOfOneInBinary {
    * time: O(n)
    * space: O(1)
    */
-  public static int NumberOf2(int n) {
+  public int hammingWeight2(int n) {
     int cnt = 0;
 
     while (n != 0) {

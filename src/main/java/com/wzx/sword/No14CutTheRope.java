@@ -1,7 +1,7 @@
 package com.wzx.sword;
 
 /**
- * https://www.nowcoder.com/practice/57d85990ba5b440ab888fc72b0751bf8
+ * https://leetcode-cn.com/problems/jian-sheng-zi-lcof/
  *
  * @author wzx
  */
