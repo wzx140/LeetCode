@@ -11,12 +11,12 @@
 - [100. Same Tree](src/main/c++/100.&#32;Same&#32;Tree.cpp)
 - [101. Symmetric Tree](src/main/c++/101.&#32;Symmetric&#32;Tree.cpp)
 - [654. Maximum Binary Tree](src/main/java/com/wzx/leetcode/No654MaximumBinaryTree.java)
-- [二叉搜索树与双向链表](src/main/java/com/wzx/sword/No28BST2DoublyLinkedList.java)
+- [offer36. 二叉搜索树与双向链表](src/main/java/com/wzx/sword/No36BST2DoublyLinkedList.java)
 - [114. Flatten Binary Tree to Linked List](src/main/java/com/wzx/leetcode/No114FlattenBinaryTreeToLinkedList.java)
-- [二叉树的镜像](src/main/java/com/wzx/sword/No22MirrorOfBinaryTree.java)
+- [offer27. 二叉树的镜像](src/main/java/com/wzx/sword/No27MirrorOfBinaryTree.java)
 - [110. Balanced Binary Tree](src/main/c++/110.&#32;Balanced&#32;Binary&#32;Tree.cpp)
 - [112. Path Sum](src/main/c++/112.&#32;Path&#32;Sum.cpp)
-- [二叉树中和为某一值的路径](src/main/java/com/wzx/sword/No27BinaryTreeSumPathOfTargetNum.java)
+- [offer34. 二叉树中和为某一值的路径](src/main/java/com/wzx/sword/No34BinaryTreeSumPathOfTargetNum.java)
 - [104. Maximum Depth of Binary Tree](src/main/java/com/wzx/leetcode/No104MaximumDepthOfBinaryTree.java)
 - [111. Minimum Depth of Binary Tree](src/main/java/com/wzx/leetcode/No111MinimumDepthOfBinaryTree.java)
 - [222. Count Complete Tree Nodes](src/main/c++/222.&#32;Count&#32;Complete&#32;Tree&#32;Nodes.cpp)
@@ -25,8 +25,8 @@
 - [144. Binary Tree Preorder Traversal](src/main/c++/144.&#32;Binary&#32;Tree&#32;Preorder&#32;Traversal.cpp): [前序遍历](https://masterwangzx.com/2019/03/16/binary-tree/#%E5%89%8D%E5%BA%8F%E9%81%8D%E5%8E%86)
 - [94. Binary Tree Inorder Traversal](src/main/c++/94.&#32;Binary&#32;Tree&#32;Inorder&#32;Traversal.cpp): [中序遍历](https://masterwangzx.com/2019/03/16/binary-tree/#%E4%B8%AD%E5%BA%8F%E9%81%8D%E5%8E%86)
 - [145. Binary Tree Postorder Traversal](src/main/c++/145.&#32;Binary&#32;Tree&#32;Postorder&#32;Traversal.cpp): [后序遍历](https://masterwangzx.com/2019/03/16/binary-tree/#%E5%90%8E%E5%BA%8F%E9%81%8D%E5%8E%86)
-- [序列化二叉树](src/main/java/com/wzx/sword/No29SerializedBinaryTree.java)
-- [二叉搜索树的第k大节点](src/main/java/com/wzx/sword/No41TheKLargestNodeOfTheBinarySearchTree.java)
+- [offer37. 序列化二叉树](src/main/java/com/wzx/sword/No37SerializedBinaryTree.java)
+- [offer54. 二叉搜索树的第k大节点](src/main/java/com/wzx/sword/No54TheKLargestNodeOfTheBinarySearchTree.java)
 - [offer8. 二叉树的下一个节点](src/main/java/com/wzx/sword/No8BinaryTreeNextNode.java)
 - [offer68. 二叉树的最近公共祖先](src/main/java/com/wzx/sword/No68NearestCommonAncestorOfBinaryTree.java)
 
@@ -34,7 +34,7 @@
 - [105. Construct Binary Tree from Preorder and Inorder Traversal](src/main/java/com/wzx/leetcode/No105ConstructBinaryTreeFromPreorderAndInorderTraversal.java): [先跟+中根](https://masterwangzx.com/2019/03/16/binary-tree/#%E5%85%88%E8%B7%9F%E4%B8%AD%E6%A0%B9)
 - [106. Construct Binary Tree from Inorder and Postorder Traversal](src/main/java/com/wzx/leetcode/No106ConstructBinaryTreeFromInorderAndPostorderTraversal.java): [中根+后跟](https://masterwangzx.com/2019/03/16/binary-tree/#%E4%B8%AD%E6%A0%B9%E5%90%8E%E6%A0%B9)
 - [889. Construct Binary Tree from Preorder and Postorder Traversal](src/main/java/com/wzx/leetcode/No889ConstructBinaryTreeFromPreorderAndPostorderTraversal.java): [先跟+后跟](https://masterwangzx.com/2019/03/16/binary-tree/#%E5%85%88%E6%A0%B9%E5%90%8E%E6%A0%B9)
-- [序列化二叉树](src/main/java/com/wzx/sword/No29SerializedBinaryTree.java)
+- [offer37. 序列化二叉树](src/main/java/com/wzx/sword/No37SerializedBinaryTree.java)
 
 ### 优先队列
 - [347. Top K Frequent Elements](src/main/c++/347.&#32;Top&#32;K&#32;Frequent&#32;Elements.cpp): [最小堆](https://masterwangzx.com/2019/10/25/min-heap)
@@ -45,7 +45,7 @@
 - [700. Search in a Binary Search Tree](src/main/c++/700.&#32;Search&#32;in&#32;a&#32;Binary&#32;Search&#32;Tree.cpp)
 - [701. Insert into a Binary Search Tree](src/main/c++/701.&#32;Insert&#32;into&#32;a&#32;Binary&#32;Search&#32;Tree.cpp)
 - [450. Delete Node in a BST](src/main/c++/450.&#32;Delete&#32;Node&#32;in&#32;a&#32;BST.cpp)
-- [二叉搜索树的后序遍历序列](src/main/java/com/wzx/sword/No26PostOrderTraversalSequenceOfBinarySearchTree.java)
+- [offer33. 二叉搜索树的后序遍历序列](src/main/java/com/wzx/sword/No33PostOrderTraversalSequenceOfBinarySearchTree.java)
 - [offer68. 二叉搜索树的最近公共祖先](src/main/java/com/wzx/sword/No68NearestCommonAncestorOfBinarySearchTree.java)
 
 ## 链表
@@ -73,7 +73,7 @@
 - [316. Remove Duplicate Letters](src/main/java/com/wzx/leetcode/No316RemoveDuplicateLetters.java)
 - [20. Valid Parentheses](src/main/java/com/wzx/leetcode/No20ValidParentheses.java)
 - [offer9. 用两个栈实现队列](src/main/java/com/wzx/sword/No9TwoStackImplementQueue.java)
-- [栈的压入、弹出序列](src/main/java/com/wzx/sword/No25StackSequence.java)
+- [offer31. 栈的压入、弹出序列](src/main/java/com/wzx/sword/No31StackSequence.java)
 
 ### 单调栈
 > 每次新元素入栈后，栈内的元素都保持有序（单调递增或单调递减）
@@ -90,8 +90,8 @@
 - [211. Design Add and Search Words Data Structure](src/main/java/com/wzx/leetcode/No211DesignAddAndSearchWordsDataStructure.java)
 
 ## 哈希表
-- [第一个只出现一次的字符](src/main/java/com/wzx/sword/No39TheFirstCharacterThatAppearsOnlyOnce.java)
-- [数组中出现次数超过一半的数字](src/main/java/com/wzx/sword/No31MoreThanHalfOfTheOccurrences.java)
+- [offer50. 第一个只出现一次的字符](src/main/java/com/wzx/sword/No50TheFirstCharacterThatAppearsOnlyOnce.java)
+- [offer39. 数组中出现次数超过一半的数字](src/main/java/com/wzx/sword/No39MoreThanHalfOfTheOccurrences.java)
 - [1. tow sum](src/main/java/com/wzx/leetcode/No1TwoSum.java)
 - [15. three sum](src/main/java/com/wzx/leetcode/No15ThreeSum.java)
 - [454. 4Sum II](src/main/java/com/wzx/leetcode/No454FourSum2.java)
@@ -101,9 +101,9 @@
 
 # 算法
 ## [动态规划](https://labuladong.gitbook.io/algo/di-ling-zhang-bi-du-xi-lie/dong-tai-gui-hua-xiang-jie-jin-jie)
-- [把数字翻译成字符串](src/main/java/com/wzx/sword/No36TranslateNumbersIntoStrings.java)
-- [礼物的最大值](src/main/java/com/wzx/sword/No37MaximumGift.java)
-- [最长不含重复字符的子字符串](src/main/java/com/wzx/sword/No38TheLongestSubstringWithoutRepeatedCharacters.java)
+- [offer46. 把数字翻译成字符串](src/main/java/com/wzx/sword/No46TranslateNumbersIntoStrings.java)
+- [offer47. 礼物的最大值](src/main/java/com/wzx/sword/No47MaximumGift.java)
+- [offer48. 最长不含重复字符的子字符串](src/main/java/com/wzx/sword/No48TheLongestSubstringWithoutRepeatedCharacters.java)
 - [322. Coin Change](src/main/c++/322.&#32;Coin&#32;Change.cpp)
 - [887. Super Egg Drop](src/main/c++/887.&#32;Super&#32;Egg&#32;Drop.cpp)
 - [877. Stone Game](src/main/c++/877.&#32;Stone&#32;Game.cpp)
@@ -120,7 +120,7 @@
 #### 区间问题
 - [1288. Remove Covered Intervals](src/main/java/com/wzx/leetcode/No1288RemoveCoveredIntervals.java)
 - [56. Merge Intervals](src/main/java/com/wzx/leetcode/No56MergeIntervals.java)
-- [986. Interval List Intersections](https://leetcode.com/problems/interval-list-intersections/)
+- [986. Interval List Intersections](src/main/java/com/wzx/leetcode/No986IntervalListIntersections.java)
 
 #### 跳跃游戏
 - [55. Jump Game](src/main/c++/55.&#32;Jump&#32;Game.cpp)
@@ -158,8 +158,7 @@
 - [offer11. 旋转数组的最小数字](src/main/java/com/wzx/sword/No11RotateMinNum.java)
 
 ## 双指针
-- [调整数组顺序使奇数位于偶数前面1](src/main/java/com/wzx/sword/No20AdjustArrayOrder1.java)
-- [调整数组顺序使奇数位于偶数前面2](src/main/java/com/wzx/sword/No21AdjustArrayOrder2.java)
+- [offer21. 调整数组顺序使奇数位于偶数前面](src/main/java/com/wzx/sword/No21AdjustArrayOrder.java)
 - [offer5. 替换空格](src/main/java/com/wzx/sword/No5ReplaceWhiteSpace.java)
 
 ### 快慢指针
@@ -174,7 +173,7 @@
 - [283. Move Zeroes](src/main/java/com/wzx/leetcode/No283MoveZeroes.java)
 
 ### 滑动窗口
-- [最长不含重复字符的子字符串](src/main/java/com/wzx/sword/No38TheLongestSubstringWithoutRepeatedCharacters.java)
+- [offer48. 最长不含重复字符的子字符串](src/main/java/com/wzx/sword/No48TheLongestSubstringWithoutRepeatedCharacters.java)
 - [offer57. 和为s的连续正数序列](src/main/java/com/wzx/sword/No57NSum.java)
 - [offer58. 翻转单词顺序](src/main/java/com/wzx/sword/No58ReverseWordOrder.java)
 
@@ -189,27 +188,27 @@
 ## 深搜
 - [offer12. 矩阵中的路径](src/main/java/com/wzx/sword/No12MatrixPath.java)
 - [offer13. 机器人的运动范围](src/main/java/com/wzx/sword/No13RobotMovementRange.java)
-- [字符串的排列](src/main/java/com/wzx/sword/No30StringArrangement.java)
+- [offer38. 字符串的排列](src/main/java/com/wzx/sword/No38StringArrangement.java)
 
 # 其他
 - [offer1. 单例模式](src/main/java/com/wzx/sword/No1Singleton.java)
 - [offer20. 表示数值的字符串](src/main/java/com/wzx/sword/No20StringRepresentingNumericValue.java)
-- [数组中出现次数超过一半的数字](src/main/java/com/wzx/sword/No31MoreThanHalfOfTheOccurrences.java)
+- [offer39. 数组中出现次数超过一半的数字](src/main/java/com/wzx/sword/No39MoreThanHalfOfTheOccurrences.java)
 - [921. Minimum Add to Make Parentheses Valid](src/main/java/com/wzx/leetcode/No921MinimumAddToMakeParenthesesValid.java)
 - [1541. Minimum Insertions to Balance a Parentheses String](src/main/java/com/wzx/leetcode/No1541MinimumInsertionsToBalanceAParenthesesString.java)
 - [offer61. 扑克牌中的顺子](src/main/java/com/wzx/sword/No61StraightInPlayingCards.java)
 
 ## 找规律
-- [1~n整数中1出现的次数](src/main/java/com/wzx/sword/No33NumberOfOccurrencesOf1InAnInteger.java)
-- [顺时针打印矩阵](src/main/java/com/wzx/sword/No23PrintMatrixClockwise.java)
-- [数字序列中某一位的数字](src/main/java/com/wzx/sword/No34ADigitInASequenceOfNumbers.java)
-- [把数组排成最小的数](src/main/java/com/wzx/sword/No35ArrangeTheArrayIntoTheSmallestNumber.java)
+- [offer43. 1~n整数中1出现的次数](src/main/java/com/wzx/sword/No43NumberOfOccurrencesOf1InAnInteger.java)
+- [offer29. 顺时针打印矩阵](src/main/java/com/wzx/sword/No29PrintMatrixClockwise.java)
+- [offer44. 数字序列中某一位的数字](src/main/java/com/wzx/sword/No44ADigitInASequenceOfNumbers.java)
+- [offer45. 把数组排成最小的数](src/main/java/com/wzx/sword/No45ArrangeTheArrayIntoTheSmallestNumber.java)
 - [offer62. 圆圈中最后剩下的数字](src/main/java/com/wzx/sword/No62TheLastRemainingNumberInTheCircle.java): 约瑟夫环
 - [offer66. 构建乘积数组](src/main/java/com/wzx/sword/No66BuildAnArrayOfProducts.java)
 
 ## 排序
-- [最小的k个数](src/main/java/com/wzx/sword/No32TheSmallestNumberOfK.java)
-- [数组中的逆序对](src/main/java/com/wzx/sword/No40ReversedPairsInTheArray.java)
+- [offer40. 最小的k个数](src/main/java/com/wzx/sword/No40TheSmallestNumberOfK.java)
+- [offer51. 数组中的逆序对](src/main/java/com/wzx/sword/No51ReversedPairsInTheArray.java)
 
 ## [水塘抽样](https://labuladong.gitbook.io/algo/gao-pin-mian-shi-xi-lie/shui-tang-chou-yang)
 - [382. Linked List Random Node](src/main/java/com/wzx/leetcode/No382LinkedListRandomNode.java)
@@ -218,7 +217,7 @@
 ## 斐波那契
 - [offer10. 斐波那契数组](src/main/java/com/wzx/sword/No10FibonacciSequence.java)
 - [offer10. 变态青蛙跳](src/main/java/com/wzx/sword/No10StepUp.java)
-- [矩形覆盖](src/test/java/com/wzx/sword/No12MatrixCoverageTest.java)
+- [offer12. 矩形覆盖](src/main/java/com/wzx/sword/No12MatrixCoverage.java)
 
 ## 差分数组
 - [1109. Corporate Flight Bookings](src/main/java/com/wzx/leetcode/No1109CorporateFlightBookings.java)
