@@ -193,7 +193,7 @@
 
 # 其他
 - [offer1. 单例模式](src/main/java/com/wzx/sword/No1Singleton.java)
-- [表示数值的字符串](src/main/java/com/wzx/sword/No19StringRepresentingNumericValue.java)
+- [offer20. 表示数值的字符串](src/main/java/com/wzx/sword/No20StringRepresentingNumericValue.java)
 - [数组中出现次数超过一半的数字](src/main/java/com/wzx/sword/No31MoreThanHalfOfTheOccurrences.java)
 - [921. Minimum Add to Make Parentheses Valid](src/main/java/com/wzx/leetcode/No921MinimumAddToMakeParenthesesValid.java)
 - [1541. Minimum Insertions to Balance a Parentheses String](src/main/java/com/wzx/leetcode/No1541MinimumInsertionsToBalanceAParenthesesString.java)
