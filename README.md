@@ -41,8 +41,8 @@
 - [295. Find Median from Data Stream](src/main/java/com/wzx/leetcode/No295FindMedianFromDataStream.java)
 
 ### 二叉搜索树
-- [98. Validate Binary Search Tree](src/main/c++/98.&#32;Validate&#32;Binary&#32;Search&#32;Tree.cpp)
-- [700. Search in a Binary Search Tree](src/main/c++/700.&#32;Search&#32;in&#32;a&#32;Binary&#32;Search&#32;Tree.cpp)
+- [98. Validate Binary Search Tree](src/main/java/com/wzx/leetcode/No98ValidateBinarySearchTree.java)
+- [700. Search in a Binary Search Tree](src/main/java/com/wzx/leetcode/No700SearchInABinarySearchTree.java)
 - [701. Insert into a Binary Search Tree](src/main/c++/701.&#32;Insert&#32;into&#32;a&#32;Binary&#32;Search&#32;Tree.cpp)
 - [450. Delete Node in a BST](src/main/c++/450.&#32;Delete&#32;Node&#32;in&#32;a&#32;BST.cpp)
 - [offer33. 二叉搜索树的后序遍历序列](src/main/java/com/wzx/sword/No33PostOrderTraversalSequenceOfBinarySearchTree.java)
