@@ -43,8 +43,8 @@
 ### 二叉搜索树
 - [98. Validate Binary Search Tree](src/main/java/com/wzx/leetcode/No98ValidateBinarySearchTree.java)
 - [700. Search in a Binary Search Tree](src/main/java/com/wzx/leetcode/No700SearchInABinarySearchTree.java)
-- [701. Insert into a Binary Search Tree](src/main/c++/701.&#32;Insert&#32;into&#32;a&#32;Binary&#32;Search&#32;Tree.cpp)
-- [450. Delete Node in a BST](src/main/c++/450.&#32;Delete&#32;Node&#32;in&#32;a&#32;BST.cpp)
+- [701. Insert into a Binary Search Tree](src/main/java/com/wzx/leetcode/No701InsertIntoABinarySearchTree.java)
+- [450. Delete Node in a BST](src/main/java/com/wzx/leetcode/No450DeleteNodeInABST.java)
 - [offer33. 二叉搜索树的后序遍历序列](src/main/java/com/wzx/sword/No33PostOrderTraversalSequenceOfBinarySearchTree.java)
 - [offer68. 二叉搜索树的最近公共祖先](src/main/java/com/wzx/sword/No68NearestCommonAncestorOfBinarySearchTree.java)
 
