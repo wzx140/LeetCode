@@ -29,6 +29,7 @@
 - [offer54. 二叉搜索树的第k大节点](src/main/java/com/wzx/sword/No54TheKLargestNodeOfTheBinarySearchTree.java)
 - [offer8. 二叉树的下一个节点](src/main/java/com/wzx/sword/No8BinaryTreeNextNode.java)
 - [offer68. 二叉树的最近公共祖先](src/main/java/com/wzx/sword/No68NearestCommonAncestorOfBinaryTree.java)
+- [offer32. 从上到下打印二叉树 III](src/main/java/com/wzx/leetcode/No32PrintTheBinaryTreeFromTopToBottom3.java)
 
 ### 重建
 - [105. Construct Binary Tree from Preorder and Inorder Traversal](src/main/java/com/wzx/leetcode/No105ConstructBinaryTreeFromPreorderAndInorderTraversal.java): [先跟+中根](https://masterwangzx.com/2019/03/16/binary-tree/#%E5%85%88%E8%B7%9F%E4%B8%AD%E6%A0%B9)
@@ -156,6 +157,7 @@
 - [offer4. 二维数组中的查找](src/main/java/com/wzx/sword/No4TwoDimensionalArraySearch.java)
 - [offer3. 数组中的重复数字2](src/main/java/com/wzx/sword/No3DuplicateNum2.java)
 - [offer11. 旋转数组的最小数字](src/main/java/com/wzx/sword/No11RotateMinNum.java)
+- [offer53. 0～n-1中缺失的数字](src/main/java/com/wzx/leetcode/No53TheMissingNumbers.java)
 
 ## 双指针
 - [offer21. 调整数组顺序使奇数位于偶数前面](src/main/java/com/wzx/sword/No21AdjustArrayOrder.java)
