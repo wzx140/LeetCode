@@ -1,4 +1,4 @@
-package com.wzx.leetcode;
+package com.wzx.sword;
 
 import org.junit.Test;
 

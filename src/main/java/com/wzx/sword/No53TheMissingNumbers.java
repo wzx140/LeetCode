@@ -1,4 +1,4 @@
-package com.wzx.leetcode;
+package com.wzx.sword;
 
 /**
  * https://leetcode-cn.com/problems/que-shi-de-shu-zi-lcof/
