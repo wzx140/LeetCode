@@ -1,4 +1,42 @@
-[toc]
+* [数据结构](#%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84)
+  * [数组](#%E6%95%B0%E7%BB%84)
+  * [二叉树](#%E4%BA%8C%E5%8F%89%E6%A0%91)
+    * [递归](#%E9%80%92%E5%BD%92)
+    * [遍历](#%E9%81%8D%E5%8E%86)
+    * [重建](#%E9%87%8D%E5%BB%BA)
+    * [优先队列](#%E4%BC%98%E5%85%88%E9%98%9F%E5%88%97)
+    * [二叉搜索树](#%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91)
+  * [链表](#%E9%93%BE%E8%A1%A8)
+  * [栈](#%E6%A0%88)
+    * [单调栈](#%E5%8D%95%E8%B0%83%E6%A0%88)
+    * [单调队列](#%E5%8D%95%E8%B0%83%E9%98%9F%E5%88%97)
+  * [字典树](#%E5%AD%97%E5%85%B8%E6%A0%91)
+  * [哈希表](#%E5%93%88%E5%B8%8C%E8%A1%A8)
+  * [其他数据结构](#%E5%85%B6%E4%BB%96%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84)
+* [算法](#%E7%AE%97%E6%B3%95)
+  * [排序](#%E6%8E%92%E5%BA%8F)
+  * [<a href="https://labuladong\.gitbook\.io/algo/di\-ling\-zhang\-bi\-du\-xi\-lie/dong\-tai\-gui\-hua\-xiang\-jie\-jin\-jie" rel="nofollow">动态规划</a>](#%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92)
+    * [贪心](#%E8%B4%AA%E5%BF%83)
+      * [区间问题](#%E5%8C%BA%E9%97%B4%E9%97%AE%E9%A2%98)
+      * [跳跃游戏](#%E8%B7%B3%E8%B7%83%E6%B8%B8%E6%88%8F)
+    * [子序列、字符串问题](#%E5%AD%90%E5%BA%8F%E5%88%97%E5%AD%97%E7%AC%A6%E4%B8%B2%E9%97%AE%E9%A2%98)
+    * [背包问题](#%E8%83%8C%E5%8C%85%E9%97%AE%E9%A2%98)
+    * [<a href="https://labuladong\.gitbook\.io/algo/dong\-tai\-gui\-hua\-xi\-lie/tuan\-mie\-gu\-piao\-wen\-ti" rel="nofollow">股票问题</a>](#%E8%82%A1%E7%A5%A8%E9%97%AE%E9%A2%98)
+    * [打家劫舍](#%E6%89%93%E5%AE%B6%E5%8A%AB%E8%88%8D)
+  * [二分搜索](#%E4%BA%8C%E5%88%86%E6%90%9C%E7%B4%A2)
+  * [双指针](#%E5%8F%8C%E6%8C%87%E9%92%88)
+    * [快慢指针](#%E5%BF%AB%E6%85%A2%E6%8C%87%E9%92%88)
+    * [滑动窗口](#%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3)
+    * [左右指针](#%E5%B7%A6%E5%8F%B3%E6%8C%87%E9%92%88)
+  * [深搜](#%E6%B7%B1%E6%90%9C)
+* [其他](#%E5%85%B6%E4%BB%96)
+  * [找规律](#%E6%89%BE%E8%A7%84%E5%BE%8B)
+  * [排序](#%E6%8E%92%E5%BA%8F-1)
+  * [<a href="https://labuladong\.gitbook\.io/algo/gao\-pin\-mian\-shi\-xi\-lie/shui\-tang\-chou\-yang" rel="nofollow">水塘抽样</a>](#%E6%B0%B4%E5%A1%98%E6%8A%BD%E6%A0%B7)
+  * [斐波那契](#%E6%96%90%E6%B3%A2%E9%82%A3%E5%A5%91)
+  * [差分数组](#%E5%B7%AE%E5%88%86%E6%95%B0%E7%BB%84)
+  * [位运算](#%E4%BD%8D%E8%BF%90%E7%AE%97)
+  * [大数表达](#%E5%A4%A7%E6%95%B0%E8%A1%A8%E8%BE%BE)
 
 
 # 数据结构
@@ -38,7 +76,7 @@
 - [offer37. 序列化二叉树](src/main/java/com/wzx/sword/No37SerializedBinaryTree.java)
 
 ### 优先队列
-- [347. Top K Frequent Elements](src/main/c++/347.&#32;Top&#32;K&#32;Frequent&#32;Elements.cpp): [最小堆](https://masterwangzx.com/2019/10/25/min-heap)
+- [347. Top K Frequent Elements](src/main/java/com/wzx/leetcode/No347TopKFrequentElements.java): [最小堆](https://masterwangzx.com/2019/10/25/min-heap)
 - [295. Find Median from Data Stream](src/main/java/com/wzx/leetcode/No295FindMedianFromDataStream.java)
 
 ### 二叉搜索树
