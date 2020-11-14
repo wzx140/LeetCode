@@ -14,7 +14,6 @@
   * [哈希表](#%E5%93%88%E5%B8%8C%E8%A1%A8)
   * [其他数据结构](#%E5%85%B6%E4%BB%96%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84)
 * [算法](#%E7%AE%97%E6%B3%95)
-  * [排序](#%E6%8E%92%E5%BA%8F)
   * [<a href="https://labuladong\.gitbook\.io/algo/di\-ling\-zhang\-bi\-du\-xi\-lie/dong\-tai\-gui\-hua\-xiang\-jie\-jin\-jie" rel="nofollow">动态规划</a>](#%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92)
     * [贪心](#%E8%B4%AA%E5%BF%83)
       * [区间问题](#%E5%8C%BA%E9%97%B4%E9%97%AE%E9%A2%98)
@@ -139,9 +138,6 @@
 - [146. LRU Cache](src/main/c++/146.&#32;LRU&#32;Cache.cpp)
 
 # 算法
-## 排序
-- [912. Sort an Array.cpp](src/main/c++/912.&#32;Sort&#32;an&#32;Array.cpp): [内排序算法](https://masterwangzx.com/2019/11/26/inner-sort/)
-- [310. Minimum Height Trees](src/main/java/com/wzx/leetcode/No310MinimumHeightTrees.java): [拓扑排序](https://masterwangzx.com/2018/10/09/python-animal-system/)
 
 ## [动态规划](https://labuladong.gitbook.io/algo/di-ling-zhang-bi-du-xi-lie/dong-tai-gui-hua-xiang-jie-jin-jie)
 - [offer46. 把数字翻译成字符串](src/main/java/com/wzx/sword/No46TranslateNumbersIntoStrings.java)
@@ -251,6 +247,8 @@
 - [offer66. 构建乘积数组](src/main/java/com/wzx/sword/No66BuildAnArrayOfProducts.java)
 
 ## 排序
+- [912. Sort an Array.cpp](src/main/c++/912.&#32;Sort&#32;an&#32;Array.cpp): [内排序算法](https://masterwangzx.com/2019/11/26/inner-sort/)
+- [310. Minimum Height Trees](src/main/java/com/wzx/leetcode/No310MinimumHeightTrees.java): [拓扑排序](https://masterwangzx.com/2018/10/09/python-animal-system/)
 - [offer40. 最小的k个数](src/main/java/com/wzx/sword/No40TheSmallestNumberOfK.java)
 - [offer51. 数组中的逆序对](src/main/java/com/wzx/sword/No51ReversedPairsInTheArray.java)
 

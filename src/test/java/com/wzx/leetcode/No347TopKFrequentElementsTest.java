@@ -12,9 +12,16 @@ public class No347TopKFrequentElementsTest {
   private final int[] res2 = {1};
 
   @Test
-  public void topKFrequent() {
+  public void topKFrequent1() {
     No347TopKFrequentElements solution = new No347TopKFrequentElements();
-    assertArrayEquals(res1, solution.topKFrequent(nums1, 2));
-    assertArrayEquals(res2, solution.topKFrequent(nums2, 1));
+    assertArrayEquals(res1, solution.topKFrequent1(nums1, 2));
+    assertArrayEquals(res2, solution.topKFrequent1(nums2, 1));
+  }
+
+  @Test
+  public void topKFrequent2() {
+    No347TopKFrequentElements solution = new No347TopKFrequentElements();
+    assertArrayEquals(res1, solution.topKFrequent2(nums1, 2));
+    assertArrayEquals(res2, solution.topKFrequent2(nums2, 1));
   }
 }
