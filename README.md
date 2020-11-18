@@ -136,7 +136,7 @@
 - [454. 4Sum II](src/main/java/com/wzx/leetcode/No454FourSum2.java)
 
 ## 其他数据结构
-- [146. LRU Cache](src/main/c++/146.&#32;LRU&#32;Cache.cpp)
+- [146. LRU Cache](src/main/java/com/wzx/leetcode/No146LRUCache.java)
 
 # 算法
 
