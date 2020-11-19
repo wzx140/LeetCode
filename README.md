@@ -246,6 +246,7 @@
 - [offer45. 把数组排成最小的数](src/main/java/com/wzx/sword/No45ArrangeTheArrayIntoTheSmallestNumber.java)
 - [offer62. 圆圈中最后剩下的数字](src/main/java/com/wzx/sword/No62TheLastRemainingNumberInTheCircle.java): 约瑟夫环
 - [offer66. 构建乘积数组](src/main/java/com/wzx/sword/No66BuildAnArrayOfProducts.java)
+- [391. Perfect Rectangle](src/main/java/com/wzx/leetcode/No391PerfectRectangle.java)
 
 ## 排序
 - [912. Sort an Array.cpp](src/main/c++/912.&#32;Sort&#32;an&#32;Array.cpp): [内排序算法](https://masterwangzx.com/2019/11/26/inner-sort/)
