@@ -145,7 +145,7 @@
 - [offer47. 礼物的最大值](src/main/java/com/wzx/sword/No47MaximumGift.java)
 - [offer48. 最长不含重复字符的子字符串](src/main/java/com/wzx/sword/No48TheLongestSubstringWithoutRepeatedCharacters.java)
 - [322. Coin Change](src/main/java/com/wzx/leetcode/No322CoinChange.java)
-- [887. Super Egg Drop](src/main/c++/887.&#32;Super&#32;Egg&#32;Drop.cpp)
+- [887. Super Egg Drop](src/main/java/com/wzx/leetcode/No887SuperEggDrop.java)
 - [877. Stone Game](src/main/c++/877.&#32;Stone&#32;Game.cpp)
 - [28. Implement strStr()](src/main/java/com/wzx/leetcode/No28ImplementStrStr.java): [字符串匹配算法](https://masterwangzx.com/2020/10/03/str-match/)
 - [264. ugly number II](src/main/java/com/wzx/leetcode/No264UglyNumberII.java)
