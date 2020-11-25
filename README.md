@@ -146,14 +146,14 @@
 - [offer48. 最长不含重复字符的子字符串](src/main/java/com/wzx/sword/No48TheLongestSubstringWithoutRepeatedCharacters.java)
 - [322. Coin Change](src/main/java/com/wzx/leetcode/No322CoinChange.java)
 - [887. Super Egg Drop](src/main/java/com/wzx/leetcode/No887SuperEggDrop.java)
-- [877. Stone Game](src/main/c++/877.&#32;Stone&#32;Game.cpp)
+- [877. Stone Game](src/main/java/com/wzx/leetcode/No877StoneGame.java)
 - [28. Implement strStr()](src/main/java/com/wzx/leetcode/No28ImplementStrStr.java): [字符串匹配算法](https://masterwangzx.com/2020/10/03/str-match/)
 - [264. ugly number II](src/main/java/com/wzx/leetcode/No264UglyNumberII.java)
 - [Offer60. n个骰子的点数](src/main/java/com/wzx/sword/No60NumberOfNDice.java)
 
 ### 贪心
-- [435. Non-overlapping Intervals](src/main/c++/435.&#32;Non-overlapping&#32;Intervals.cpp)
-- [887. Super Egg Drop](src/main/c++/452.&#32;Minimum&#32;Number&#32;of&#32;Arrows&#32;to&#32;Burst&#32;Balloons.cpp)
+- [435. Non-overlapping Intervals](src/main/java/com/wzx/leetcode/No435NonOverlappingIntervals.java)
+- [452. Minimum Number of Arrows to Burst Balloons.cpp](src/main/c++/452.&#32;Minimum&#32;Number&#32;of&#32;Arrows&#32;to&#32;Burst&#32;Balloons.cpp)
 - [offer14. 剪绳子](src/main/java/com/wzx/sword/No14CutTheRope.java)
 - [53. maximum subarray](src/main/java/com/wzx/leetcode/No53MaximumSubarray.java)
 
