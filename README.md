@@ -153,7 +153,7 @@
 
 ### 贪心
 - [435. Non-overlapping Intervals](src/main/java/com/wzx/leetcode/No435NonOverlappingIntervals.java)
-- [452. Minimum Number of Arrows to Burst Balloons.cpp](src/main/c++/452.&#32;Minimum&#32;Number&#32;of&#32;Arrows&#32;to&#32;Burst&#32;Balloons.cpp)
+- [452. Minimum Number of Arrows to Burst Balloons](src/main/java/com/wzx/leetcode/No452MinimumNumberOfArrowsToBurstBalloons.java)
 - [offer14. 剪绳子](src/main/java/com/wzx/sword/No14CutTheRope.java)
 - [53. maximum subarray](src/main/java/com/wzx/leetcode/No53MaximumSubarray.java)
 
@@ -196,7 +196,7 @@
 - [offer4. 二维数组中的查找](src/main/java/com/wzx/sword/No4TwoDimensionalArraySearch.java)
 - [offer3. 数组中的重复数字2](src/main/java/com/wzx/sword/No3DuplicateNum2.java)
 - [offer11. 旋转数组的最小数字](src/main/java/com/wzx/sword/No11RotateMinNum.java)
-- [offer53. 0～n-1中缺失的数字](src/main/java/com/wzx/leetcode/No53TheMissingNumbers.java)
+- [offer53. 0～n-1中缺失的数字](src/main/java/com/wzx/sword/No53TheMissingNumbers.java)
 
 ## 双指针
 - [offer21. 调整数组顺序使奇数位于偶数前面](src/main/java/com/wzx/sword/No21AdjustArrayOrder.java)
