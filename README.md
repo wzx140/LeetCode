@@ -162,15 +162,13 @@ Created by [gh-md-toc](https://github.com/ekalinin/github-markdown-toc.go)
 - [452. Minimum Number of Arrows to Burst Balloons](src/main/java/com/wzx/leetcode/No452MinimumNumberOfArrowsToBurstBalloons.java)
 - [offer14. 剪绳子](src/main/java/com/wzx/sword/No14CutTheRope.java)
 - [53. maximum subarray](src/main/java/com/wzx/leetcode/No53MaximumSubarray.java)
+- [55. Jump Game](src/main/java/com/wzx/leetcode/No55JumpGame.java)
+- [45. Jump Game II](src/main/java/com/wzx/leetcode/No45JumpGameII.java)
 
 #### 区间问题
 - [1288. Remove Covered Intervals](src/main/java/com/wzx/leetcode/No1288RemoveCoveredIntervals.java)
 - [56. Merge Intervals](src/main/java/com/wzx/leetcode/No56MergeIntervals.java)
 - [986. Interval List Intersections](src/main/java/com/wzx/leetcode/No986IntervalListIntersections.java)
-
-#### 跳跃游戏
-- [55. Jump Game](src/main/c++/55.&#32;Jump&#32;Game.cpp)
-- [45. Jump Game II](src/main/c++/45.&#32;Jump&#32;Game&#32;II.cpp)
 
 ### 子序列、字符串问题
 - 一维dp
