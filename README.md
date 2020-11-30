@@ -168,7 +168,7 @@ Created by [gh-md-toc](https://github.com/ekalinin/github-markdown-toc.go)
 #### 区间问题
 - [1288. Remove Covered Intervals](src/main/java/com/wzx/leetcode/No1288RemoveCoveredIntervals.java)
 - [56. Merge Intervals](src/main/java/com/wzx/leetcode/No56MergeIntervals.java)
-- [986. Interval List Intersections](src/main/java/com/wzx/leetcode/No986IntervalListIntersections.java)
+- [986. Interval List Intersections](src/main/java/com/wzx/leetcode/No986IntervalListIntersections.java)q
 
 ### 子序列、字符串问题
 - 一维dp
@@ -229,6 +229,13 @@ Created by [gh-md-toc](https://github.com/ekalinin/github-markdown-toc.go)
 - [923. 3sum with multiplicity](src/main/java/com/wzx/leetcode/No923ThreeSumWithMultiplicity.java)
 - [18. 4Sum](src/main/java/com/wzx/leetcode/No18FourSum.java)
 - [42. trapping rain water](src/main/java/com/wzx/leetcode/No42TrappingRainWater.java)
+
+## 回溯
+- [offer12. 矩阵中的路径](src/main/java/com/wzx/sword/No12MatrixPath.java)
+- [offer38. 字符串的排列](src/main/java/com/wzx/sword/No38StringArrangement.java)
+- [46. Permutations](src/main/java/com/wzx/leetcode/No46Permutations.java)
+- [51. N-Queens](src/main/java/com/wzx/leetcode/No51NQueens.java)
+- [52. N-Queens II](src/main/java/com/wzx/leetcode/No52NQueens2.java)
 
 ## 深搜
 - [offer12. 矩阵中的路径](src/main/java/com/wzx/sword/No12MatrixPath.java)

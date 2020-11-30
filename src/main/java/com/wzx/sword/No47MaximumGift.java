@@ -8,7 +8,7 @@ package com.wzx.sword;
 public class No47MaximumGift {
 
   /**
-   * 回溯+备忘录
+   * 深搜+备忘录
    * <p>
    * time: O(n)
    * space: O(n)
