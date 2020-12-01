@@ -20,7 +20,6 @@ Table of Contents
   * [动态规划](#%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92)
     * [贪心](#%E8%B4%AA%E5%BF%83)
       * [区间问题](#%E5%8C%BA%E9%97%B4%E9%97%AE%E9%A2%98)
-      * [跳跃游戏](#%E8%B7%B3%E8%B7%83%E6%B8%B8%E6%88%8F)
     * [子序列、字符串问题](#%E5%AD%90%E5%BA%8F%E5%88%97%E5%AD%97%E7%AC%A6%E4%B8%B2%E9%97%AE%E9%A2%98)
     * [背包问题](#%E8%83%8C%E5%8C%85%E9%97%AE%E9%A2%98)
     * [股票问题](#%E8%82%A1%E7%A5%A8%E9%97%AE%E9%A2%98)
@@ -30,7 +29,8 @@ Table of Contents
     * [快慢指针](#%E5%BF%AB%E6%85%A2%E6%8C%87%E9%92%88)
     * [滑动窗口](#%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3)
     * [左右指针](#%E5%B7%A6%E5%8F%B3%E6%8C%87%E9%92%88)
-  * [深搜](#%E6%B7%B1%E6%90%9C)
+  * [深搜, 回溯](#%E6%B7%B1%E6%90%9C-%E5%9B%9E%E6%BA%AF)
+  * [广搜](#%E5%B9%BF%E6%90%9C)
   * [分治](#%E5%88%86%E6%B2%BB)
 * [其他](#%E5%85%B6%E4%BB%96)
   * [找规律](#%E6%89%BE%E8%A7%84%E5%BE%8B)
@@ -39,10 +39,8 @@ Table of Contents
   * [斐波那契](#%E6%96%90%E6%B3%A2%E9%82%A3%E5%A5%91)
   * [差分数组](#%E5%B7%AE%E5%88%86%E6%95%B0%E7%BB%84)
   * [位运算](#%E4%BD%8D%E8%BF%90%E7%AE%97)
-  * [大数表达](#%E5%A4%A7%E6%95%B0%E8%A1%A8%E8%BE%BE)
 
 Created by [gh-md-toc](https://github.com/ekalinin/github-markdown-toc.go)
-
 
 # 数据结构
 ## 数组
@@ -230,17 +228,19 @@ Created by [gh-md-toc](https://github.com/ekalinin/github-markdown-toc.go)
 - [18. 4Sum](src/main/java/com/wzx/leetcode/No18FourSum.java)
 - [42. trapping rain water](src/main/java/com/wzx/leetcode/No42TrappingRainWater.java)
 
-## 回溯
+## 深搜, 回溯
 - [offer12. 矩阵中的路径](src/main/java/com/wzx/sword/No12MatrixPath.java)
 - [offer38. 字符串的排列](src/main/java/com/wzx/sword/No38StringArrangement.java)
 - [46. Permutations](src/main/java/com/wzx/leetcode/No46Permutations.java)
+- [47. Permutations II](src/main/java/com/wzx/leetcode/No47Permutations2.java)
 - [51. N-Queens](src/main/java/com/wzx/leetcode/No51NQueens.java)
 - [52. N-Queens II](src/main/java/com/wzx/leetcode/No52NQueens2.java)
-
-## 深搜
-- [offer12. 矩阵中的路径](src/main/java/com/wzx/sword/No12MatrixPath.java)
 - [offer13. 机器人的运动范围](src/main/java/com/wzx/sword/No13RobotMovementRange.java)
-- [offer38. 字符串的排列](src/main/java/com/wzx/sword/No38StringArrangement.java)
+- [offer17. 打印从1到最大的n位数](src/main/java/com/wzx/sword/No17PrintMaximumNDigits.java)
+
+## 广搜
+- [111. Minimum Depth of Binary Tree](src/main/java/com/wzx/leetcode/No111MinimumDepthOfBinaryTree.java)
+- [752. Open the Lock](src/main/java/com/wzx/leetcode/No752OpenTheLock.java)
 
 ## [分治](https://mp.weixin.qq.com/s/fcCJFk89w953gXDjnlZFIA)
 - [241. Different Ways to Add Parentheses](src/main/java/com/wzx/leetcode/No241DifferentWaysToAddParentheses.java)
@@ -288,6 +288,3 @@ Created by [gh-md-toc](https://github.com/ekalinin/github-markdown-toc.go)
 - [offer56. 数组中数字出现的次数2](src/main/java/com/wzx/sword/No56NumberOfOccurrencesOfNumbersInTheArray2.java)
 - [offer64. 求1+2+…+n](src/main/java/com/wzx/sword/No64Solve1ton.java)
 - [offer65. 不用加减乘除做加法](src/main/java/com/wzx/sword/No65NoAddSubtractMultiplyDivide.java)
-
-## 大数表达
-- [offer17. 打印从1到最大的n位数](src/main/java/com/wzx/sword/No17PrintMaximumNDigits.java)
