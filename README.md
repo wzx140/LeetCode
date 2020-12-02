@@ -216,6 +216,9 @@ Created by [gh-md-toc](https://github.com/ekalinin/github-markdown-toc.go)
 - [283. Move Zeroes](src/main/java/com/wzx/leetcode/No283MoveZeroes.java)
 
 ### 滑动窗口
+- [76. Minimum Window Substring](src/main/java/com/wzx/leetcode/No76MinimumWindowSubstring.java)
+- [438. Find All Anagrams in a String](src/main/java/com/wzx/leetcode/No438FindAllAnagramsInAString.java)
+- [567. Permutation in String](src/main/java/com/wzx/leetcode/No567PermutationInString.java)
 - [offer48. 最长不含重复字符的子字符串](src/main/java/com/wzx/sword/No48TheLongestSubstringWithoutRepeatedCharacters.java)
 - [offer57. 和为s的连续正数序列](src/main/java/com/wzx/sword/No57NSum.java)
 - [offer58. 翻转单词顺序](src/main/java/com/wzx/sword/No58ReverseWordOrder.java)
