@@ -14,6 +14,7 @@ public class No15ThreeSumTest {
   private final int[] nums1 = {-1, 0, 1, 2, -1, -4};
   private final int[] nums2 = {0, 0, 0, 0};
   private final int[] nums3 = {-1, 0, 1, 0};
+  private final int[] nums4 = {-4, -2, -2, -2, 0, 1, 2, 2, 2, 3, 3, 4, 4, 6, 6};
   private final List<List<Integer>> res1 = new ArrayList<>();
   private final List<List<Integer>> res2 = new ArrayList<>();
   private final List<List<Integer>> res3 = new ArrayList<>();
@@ -27,22 +28,12 @@ public class No15ThreeSumTest {
   }
 
   @Test
-  public void threeSum1() {
+  public void threeSum() {
     No15ThreeSum solution = new No15ThreeSum();
-    assertEquals(res1, solution.threeSum1(nums1));
-    assertEquals(res2, solution.threeSum1(nums2));
-    assertEquals(res3, solution.threeSum1(nums3));
-    assertEquals(new ArrayList<ArrayList<Integer>>(), solution.threeSum1(new int[0]));
-    assertEquals(new ArrayList<ArrayList<Integer>>(), solution.threeSum1(new int[]{0}));
-  }
-
-  @Test
-  public void threeSum2() {
-    No15ThreeSum solution = new No15ThreeSum();
-    assertEquals(res1, solution.threeSum2(nums1));
-    assertEquals(res2, solution.threeSum2(nums2));
-    assertEquals(res3, solution.threeSum2(nums3));
-    assertEquals(new ArrayList<ArrayList<Integer>>(), solution.threeSum2(new int[0]));
-    assertEquals(new ArrayList<ArrayList<Integer>>(), solution.threeSum2(new int[]{0}));
+    assertEquals(res1, solution.threeSum(nums1));
+    assertEquals(res2, solution.threeSum(nums2));
+    assertEquals(res3, solution.threeSum(nums3));
+    assertEquals(new ArrayList<ArrayList<Integer>>(), solution.threeSum(new int[0]));
+    assertEquals(new ArrayList<ArrayList<Integer>>(), solution.threeSum(new int[]{0}));
   }
 }

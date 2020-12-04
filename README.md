@@ -136,7 +136,6 @@ Created by [gh-md-toc](https://github.com/ekalinin/github-markdown-toc.go)
 - [offer50. 第一个只出现一次的字符](src/main/java/com/wzx/sword/No50TheFirstCharacterThatAppearsOnlyOnce.java)
 - [offer39. 数组中出现次数超过一半的数字](src/main/java/com/wzx/sword/No39MoreThanHalfOfTheOccurrences.java)
 - [1. tow sum](src/main/java/com/wzx/leetcode/No1TwoSum.java)
-- [15. three sum](src/main/java/com/wzx/leetcode/No15ThreeSum.java)
 - [454. 4Sum II](src/main/java/com/wzx/leetcode/No454FourSum2.java)
 
 ## 其他数据结构
@@ -225,7 +224,7 @@ Created by [gh-md-toc](https://github.com/ekalinin/github-markdown-toc.go)
 
 ### 左右指针
 - [167. two sum II - input array is sorted](src/main/java/com/wzx/leetcode/No167TwoSum2InputArrayIsSorted.java)
-- [15. 3sum](src/main/java/com/wzx/leetcode/No15ThreeSum.java)
+- [15. 3sum](src/main/java/com/wzx/leetcode/No15ThreeSum.java) NSum问题总结
 - [16. 3sum closest](src/main/java/com/wzx/leetcode/No16ThreeSumClosest.java)
 - [923. 3sum with multiplicity](src/main/java/com/wzx/leetcode/No923ThreeSumWithMultiplicity.java)
 - [18. 4Sum](src/main/java/com/wzx/leetcode/No18FourSum.java)

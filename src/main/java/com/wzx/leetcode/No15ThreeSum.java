@@ -9,79 +9,60 @@ import java.util.*;
  */
 public class No15ThreeSum {
 
+
   /**
-   * 哈希表
+   * 在two sum的基础上套n-2层循环就是nsum解
    * <p>
    * time: O(n^2)
    * space: O(n)
    */
-  public List<List<Integer>> threeSum1(int[] nums) {
-    Map<Integer, Integer> numCnt = new HashMap<>();
-    Arrays.stream(nums).forEach(x -> numCnt.merge(x, 1, Integer::sum));
-
-    // 防止重复，使用set
-    Set<List<Integer>> resSet = new HashSet<>();
-
-    // 先确定一个数，再使用2sum的哈希表方法
+  public List<List<Integer>> threeSum(int[] nums) {
+    Arrays.sort(nums);
+    List<List<Integer>> res = new LinkedList<>();
+    // 跳过重复的元素
     for (int i = 0; i < nums.length - 2; i++) {
-      int remain2 = -nums[i];
-      for (int j = i + 1; j < nums.length; j++) {
-        int remain1 = remain2 - nums[j];
-        if (numCnt.getOrDefault(remain1, 0) != 0) {
-          // 防止重复添加数字
-          int dupDegree = 1;
-          if (remain1 == nums[j]) dupDegree++;
-          if (remain1 == nums[i]) dupDegree++;
-          if (numCnt.get(remain1) < dupDegree) continue;
-
-          // 防止重复,排序数组
-          List<Integer> res = Arrays.asList(nums[i], remain1, nums[j]);
-          Collections.sort(res);
-          resSet.add(res);
-        }
+      // two sum的结果加上当前元素即是3sum的解
+      List<List<Integer>> solutions = twoSumTarget(nums, i + 1, -nums[i]);
+      for (List<Integer> solution : solutions) {
+        solution.add(0, nums[i]);
       }
+      res.addAll(solutions);
+      // 防止重复，第一个数和前一个搜索值重复
+      while (i < nums.length - 2 && nums[i] == nums[i + 1]) i++;
     }
 
-    return new ArrayList<>(resSet);
+    return res;
   }
 
   /**
-   * 左右指针
-   * <p>
-   * time: O(n^2)
-   * space: O(n)
+   * [start, end]内求出多组不重复two sum解的一般解决方法(左右指针)
    */
-  public List<List<Integer>> threeSum2(int[] nums) {
-    Arrays.sort(nums);
+  public List<List<Integer>> twoSumTarget(int[] nums, int start, int target) {
+    int left = start, right = nums.length - 1;
     List<List<Integer>> res = new LinkedList<>();
-
-    // 先确定一个数，再使用2sum的左右指针
-    for (int i = 0; i < nums.length - 2; i++) {
-      // 防止重复，第一个数和前一个搜索值重复
-      if (i > 0 && nums[i] == nums[i - 1]) continue;
-
-      int remain2 = -nums[i];
-      int left = i + 1, right = nums.length - 1;
-      while (left < right) {
-        // 防止重复，防止第二个数和前一个搜索值重复
-        if (left > i + 1 && nums[left] == nums[left - 1]){
-          left++;
-          continue;
-        }
-
-        int sum = nums[left] + nums[right];
-        if (sum > remain2) {
-          right--;
-        } else if (sum < remain2) {
-          left++;
-        } else {
-          res.add(Arrays.asList(nums[i], nums[left], nums[right]));
-          // 两个数固定，那么第三数一定已经确定了
-          left++;
-        }
+    while (left < right) {
+      int sum = nums[left] + nums[right];
+      if (sum > target) {
+        right--;
+        // 跳过重复的元素
+        while (left < right && nums[right] == nums[right + 1]) right--;
+      } else if (sum < target) {
+        left++;
+        // 跳过重复的元素
+        while (left < right && nums[left] == nums[left - 1]) left++;
+      } else {
+        // 找到two sum
+        List<Integer> solution = new LinkedList<>();
+        solution.add(nums[left]);
+        solution.add(nums[right]);
+        res.add(solution);
+        left++;
+        right--;
+        // 跳过重复的元素
+        while (left < right && nums[left] == nums[left - 1]) left++;
+        while (left < right && nums[right] == nums[right + 1]) right--;
       }
     }
-
     return res;
   }
 }
