@@ -147,7 +147,6 @@ Created by [gh-md-toc](https://github.com/ekalinin/github-markdown-toc.go)
 - [offer46. 把数字翻译成字符串](src/main/java/com/wzx/sword/No46TranslateNumbersIntoStrings.java)
 - [offer47. 礼物的最大值](src/main/java/com/wzx/sword/No47MaximumGift.java)
 - [offer48. 最长不含重复字符的子字符串](src/main/java/com/wzx/sword/No48TheLongestSubstringWithoutRepeatedCharacters.java)
-- [322. Coin Change](src/main/java/com/wzx/leetcode/No322CoinChange.java)
 - [887. Super Egg Drop](src/main/java/com/wzx/leetcode/No887SuperEggDrop.java)
 - [877. Stone Game](src/main/java/com/wzx/leetcode/No877StoneGame.java)
 - [28. Implement strStr()](src/main/java/com/wzx/leetcode/No28ImplementStrStr.java): [字符串匹配算法](https://masterwangzx.com/2020/10/03/str-match/)
@@ -177,7 +176,9 @@ Created by [gh-md-toc](https://github.com/ekalinin/github-markdown-toc.go)
     - [1312. Minimum Insertion Steps to Make a String Palindrome](src/main/java/com/wzx/leetcode/No1312MinimumInsertionStepsToMakeAStringPalindrome.java)
 
 ### 背包问题
-- [416. Partition Equal Subset Sum](src/main/c++/416.&#32;Partition&#32;Equal&#32;Subset&#32;Sum.cpp)
+- [322. Coin Change](src/main/java/com/wzx/leetcode/No322CoinChange.java): 完全背包
+- [518. Coin Change 2](src/main/java/com/wzx/leetcode/No518CoinChange2.java): 完全背包
+- [416. Partition Equal Subset Sum](src/main/java/com/wzx/leetcode/No416PartitionEqualSubsetSum.java): 0-1背包    
 
 ### [股票问题](https://labuladong.gitbook.io/algo/dong-tai-gui-hua-xi-lie/tuan-mie-gu-piao-wen-ti)
 - [121. Best Time to Buy and Sell Stock](src/main/java/com/wzx/leetcode/No121BestTimeToBuyAndSellStock.java)
