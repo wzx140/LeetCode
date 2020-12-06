@@ -118,6 +118,11 @@ Created by [gh-md-toc](https://github.com/ekalinin/github-markdown-toc.go)
 - [offer9. 用两个栈实现队列](src/main/java/com/wzx/sword/No9TwoStackImplementQueue.java)
 - [offer31. 栈的压入、弹出序列](src/main/java/com/wzx/sword/No31StackSequence.java)
 
+### 计算器
+- [224. Basic Calculator](src/main/java/com/wzx/leetcode/No224BasicCalculator.java)
+- [227. Basic Calculator II](src/main/java/com/wzx/leetcode/No227BasicCalculator2.java)
+- [772. Basic Calculator III](src/main/java/com/wzx/leetcode/No772BasicCalculator3.java)
+
 ### 单调栈
 > 每次新元素入栈后，栈内的元素都保持有序（单调递增或单调递减）
 
