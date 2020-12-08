@@ -184,6 +184,7 @@ Created by [gh-md-toc](https://github.com/ekalinin/github-markdown-toc.go)
 - [322. Coin Change](src/main/java/com/wzx/leetcode/No322CoinChange.java): 完全背包
 - [518. Coin Change 2](src/main/java/com/wzx/leetcode/No518CoinChange2.java): 完全背包
 - [416. Partition Equal Subset Sum](src/main/java/com/wzx/leetcode/No416PartitionEqualSubsetSum.java): 0-1背包    
+- [494. Target Sum](src/main/java/com/wzx/leetcode/No494TargetSum.java): 0-1背包
 
 ### [股票问题](https://labuladong.gitbook.io/algo/dong-tai-gui-hua-xi-lie/tuan-mie-gu-piao-wen-ti)
 - [121. Best Time to Buy and Sell Stock](src/main/java/com/wzx/leetcode/No121BestTimeToBuyAndSellStock.java)

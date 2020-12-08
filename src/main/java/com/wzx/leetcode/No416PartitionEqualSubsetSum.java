@@ -14,8 +14,8 @@ public class No416PartitionEqualSubsetSum {
    * dp[n][i]: 前i个数是否可以组合成n
    * dp[n][i]=dp[n-nums[i]][i-1]||dp[n][i-1] 是否组合nums[i]
    * <p>
-   * time: O(n^2)
-   * space: O(n^2)
+   * time: O(S*n)
+   * space: O(S*n)
    */
   public boolean canPartition(int[] nums) {
     int sum = Arrays.stream(nums).sum();

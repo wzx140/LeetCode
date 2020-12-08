@@ -10,8 +10,8 @@ public class No518CoinChange2 {
   /**
    * dp[n][i]: 使用前i个硬币组合成n的方法数
    * 递推公式: dp[n][i]=dp[n-nums[i]][i]+dp[n][i-1]  不取与取nums[i]硬币
-   * time: O(n^2)
-   * space: O(n^2)
+   * time: O(S*n)
+   * space: O(S*n)
    */
   public int change(int amount, int[] coins) {
     int[][] dp = new int[amount + 1][coins.length + 1];
