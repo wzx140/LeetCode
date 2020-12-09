@@ -176,7 +176,7 @@ Created by [gh-md-toc](https://github.com/ekalinin/github-markdown-toc.go)
     - [300. Longest Increasing Subsequence](src/main/c++/300.&#32;Longest&#32;Increasing&#32;Subsequence.cpp)
 - 二维dp
     - [1143. Longest Common Subsequence](src/main/c++/1143.&#32;Longest&#32;Common&#32;Subsequence.cpp)
-    - [72. Edit Distance](src/main/c++/72.&#32;Edit&#32;Distance.cpp)
+    - [72. Edit Distance](src/main/java/com/wzx/leetcode/No72EditDistance.java)
     - [10. Regular Expression Matching](src/main/java/com/wzx/leetcode/No10RegularExpressionMatching.java)
     - [1312. Minimum Insertion Steps to Make a String Palindrome](src/main/java/com/wzx/leetcode/No1312MinimumInsertionStepsToMakeAStringPalindrome.java)
 
