@@ -171,14 +171,19 @@ Created by [gh-md-toc](https://github.com/ekalinin/github-markdown-toc.go)
 - [56. Merge Intervals](src/main/java/com/wzx/leetcode/No56MergeIntervals.java)
 - [986. Interval List Intersections](src/main/java/com/wzx/leetcode/No986IntervalListIntersections.java)q
 
-### 子序列、字符串问题
-- 一维dp
-    - [300. Longest Increasing Subsequence](src/main/c++/300.&#32;Longest&#32;Increasing&#32;Subsequence.cpp)
-- 二维dp
-    - [1143. Longest Common Subsequence](src/main/c++/1143.&#32;Longest&#32;Common&#32;Subsequence.cpp)
-    - [72. Edit Distance](src/main/java/com/wzx/leetcode/No72EditDistance.java)
-    - [10. Regular Expression Matching](src/main/java/com/wzx/leetcode/No10RegularExpressionMatching.java)
-    - [1312. Minimum Insertion Steps to Make a String Palindrome](src/main/java/com/wzx/leetcode/No1312MinimumInsertionStepsToMakeAStringPalindrome.java)
+### 子序列问题
+> 非连续
+
+- [300. Longest Increasing Subsequence](src/main/java/com/wzx/leetcode/No300LongestIncreasingSubsequence.java)
+- [354. Russian Doll Envelopes](src/main/java/com/wzx/leetcode/No354RussianDollEnvelopes.java)
+
+### 子串问题
+> 连续
+
+- [1143. Longest Common Subsequence](src/main/c++/1143.&#32;Longest&#32;Common&#32;Subsequence.cpp)
+- [72. Edit Distance](src/main/java/com/wzx/leetcode/No72EditDistance.java)
+- [10. Regular Expression Matching](src/main/java/com/wzx/leetcode/No10RegularExpressionMatching.java)
+- [1312. Minimum Insertion Steps to Make a String Palindrome](src/main/java/com/wzx/leetcode/No1312MinimumInsertionStepsToMakeAStringPalindrome.java)
 
 ### 背包问题
 - [322. Coin Change](src/main/java/com/wzx/leetcode/No322CoinChange.java): 完全背包
