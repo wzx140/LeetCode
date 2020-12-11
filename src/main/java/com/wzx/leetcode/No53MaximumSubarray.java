@@ -1,5 +1,7 @@
 package com.wzx.leetcode;
 
+import java.util.Arrays;
+
 /**
  * https://leetcode.com/problems/maximum-subarray/
  *
@@ -8,7 +10,26 @@ package com.wzx.leetcode;
 public class No53MaximumSubarray {
 
   /**
-   * 贪心，当子序列和小于0时，这部分子序列可以舍去
+   * 动态规划
+   * dp[i]: 以第i个元素结尾的最大子串
+   * 递推公式: dp[i] = max(nums[i], nums[i]+dp[i-1])
+   * <p>
+   * time: O(n)
+   * space: O(1)
+   */
+  public int maxSubArray1(int[] nums) {
+    int[] dp = new int[nums.length + 1];
+    dp[0] = 0;
+
+    for (int i = 1; i <= nums.length; i++) {
+      dp[i] = Math.max(nums[i - 1], nums[i - 1] + dp[i - 1]);
+    }
+
+    return Arrays.stream(dp).skip(1).max().orElse(0);
+  }
+
+  /**
+   * 贪心，当子序列和小于0时，这部分子序列可以舍去，也可以由上一种动态规划的状态压缩推导而来
    * <p>
    * cur: 当前可能最大的子序列和；res: 最大子序列和
    * 递推公式: cur>0, cur=cur+num(即使num小于0使整个子序列和变小，仍期待后面出现一个稍大的数可以抵消这次变小)
@@ -17,7 +38,7 @@ public class No53MaximumSubarray {
    * time: O(n)
    * space: O(1)
    */
-  public int maxSubArray1(int[] nums) {
+  public int maxSubArray2(int[] nums) {
     int cur = 0;
     int res = Integer.MIN_VALUE;
     for (int num : nums) {
@@ -38,7 +59,7 @@ public class No53MaximumSubarray {
    * time: O(nlogn)
    * space: O(logn)
    */
-  public int maxSubArray2(int[] nums) {
+  public int maxSubArray3(int[] nums) {
 
     return help(nums, 0, nums.length - 1);
   }

@@ -31,4 +31,14 @@ public class No53MaximumSubarrayTest {
     assertEquals(-1, solution.maxSubArray2(array4));
     assertEquals(-2147483647, solution.maxSubArray2(array5));
   }
+
+  @Test
+  public void maxSubArray3() {
+    No53MaximumSubarray solution = new No53MaximumSubarray();
+    assertEquals(6, solution.maxSubArray3(array1));
+    assertEquals(1, solution.maxSubArray3(array2));
+    assertEquals(0, solution.maxSubArray3(array3));
+    assertEquals(-1, solution.maxSubArray3(array4));
+    assertEquals(-2147483647, solution.maxSubArray3(array5));
+  }
 }
