@@ -172,17 +172,19 @@ Created by [gh-md-toc](https://github.com/ekalinin/github-markdown-toc.go)
 - [986. Interval List Intersections](src/main/java/com/wzx/leetcode/No986IntervalListIntersections.java)q
 
 ### 子序列问题
-> 非连续
+> 非连续, dp数组定义
 - [300. Longest Increasing Subsequence](src/main/java/com/wzx/leetcode/No300LongestIncreasingSubsequence.java)
 - [354. Russian Doll Envelopes](src/main/java/com/wzx/leetcode/No354RussianDollEnvelopes.java)
 - [53. Maximum subarray](src/main/java/com/wzx/leetcode/No53MaximumSubarray.java)
 - [1143. Longest Common Subsequence](src/main/java/com/wzx/leetcode/No1143LongestCommonSubsequence.java)
+- [516. Longest Palindromic Subsequence](src/main/java/com/wzx/leetcode/No516LongestPalindromicSubsequence.java)
 
 ### 子串问题
-> 连续
+> 连续, dp数组定义
 - [72. Edit Distance](src/main/java/com/wzx/leetcode/No72EditDistance.java)
 - [10. Regular Expression Matching](src/main/java/com/wzx/leetcode/No10RegularExpressionMatching.java)
 - [1312. Minimum Insertion Steps to Make a String Palindrome](src/main/java/com/wzx/leetcode/No1312MinimumInsertionStepsToMakeAStringPalindrome.java)
+- [5. Longest Palindromic Substring](src/main/java/com/wzx/leetcode/No5LongestPalindromicSubstring.java)
 
 ### 背包问题
 - [322. Coin Change](src/main/java/com/wzx/leetcode/No322CoinChange.java): 完全背包
@@ -240,6 +242,7 @@ Created by [gh-md-toc](https://github.com/ekalinin/github-markdown-toc.go)
 - [923. 3sum with multiplicity](src/main/java/com/wzx/leetcode/No923ThreeSumWithMultiplicity.java)
 - [18. 4Sum](src/main/java/com/wzx/leetcode/No18FourSum.java)
 - [42. trapping rain water](src/main/java/com/wzx/leetcode/No42TrappingRainWater.java)
+- [5. Longest Palindromic Substring](src/main/java/com/wzx/leetcode/No5LongestPalindromicSubstring.java)
 
 ## 深搜, 回溯
 - [offer12. 矩阵中的路径](src/main/java/com/wzx/sword/No12MatrixPath.java)
