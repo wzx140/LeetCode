@@ -36,7 +36,7 @@ public class No76MinimumWindowSubstring {
       // 从右边扩大窗口
       right++;
       // 非target字符不会影响结果
-      if (target.containsKey(rightCh)) continue;
+      if (!target.containsKey(rightCh)) continue;
       // 更新window
       window.merge(rightCh, 1, Integer::sum);
       // 更新valid

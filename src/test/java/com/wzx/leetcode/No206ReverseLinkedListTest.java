@@ -23,7 +23,7 @@ public class No206ReverseLinkedListTest {
     No206ReverseLinkedList solution = new No206ReverseLinkedList();
 
     ListNode head = solution.reverseList1(this.node);
-    assertEquals(Arrays.asList(5, 4, 3, 2, 1), head.toArray());
+    assertEquals(Arrays.asList(5, 4, 3, 2, 1), head.toList());
   }
 
 }

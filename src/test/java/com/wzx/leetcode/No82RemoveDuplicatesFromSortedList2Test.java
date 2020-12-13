@@ -25,8 +25,8 @@ public class No82RemoveDuplicatesFromSortedList2Test {
   public void deleteDuplicates1() {
     No82RemoveDuplicatesFromSortedList2 solution = new No82RemoveDuplicatesFromSortedList2();
     ListNode node1 = solution.deleteDuplicates1(list1);
-    assertEquals(res1.toArray(), node1.toArray());
+    assertEquals(res1.toList(), node1.toList());
     ListNode node2 = solution.deleteDuplicates1(list2);
-    assertEquals(res2.toArray(), node2.toArray());
+    assertEquals(res2.toList(), node2.toList());
   }
 }

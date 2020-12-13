@@ -6,7 +6,7 @@ import org.junit.Test;
 
 import java.util.Arrays;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 public class No61RotateListTest {
 
@@ -23,19 +23,19 @@ public class No61RotateListTest {
     public void rotateRight1() {
         No61RotateList solution = new No61RotateList();
         ListNode res1 = solution.rotateRight1(node1, 2);
-        assertEquals(Arrays.asList(4, 5, 1, 2, 3), res1.toArray());
+        assertEquals(Arrays.asList(4, 5, 1, 2, 3), res1.toList());
 
         ListNode res2 = solution.rotateRight1(node2, 4);
-        assertEquals(Arrays.asList(2, 0, 1), res2.toArray());
+        assertEquals(Arrays.asList(2, 0, 1), res2.toList());
     }
 
     @Test
     public void rotateRight2() {
         No61RotateList solution = new No61RotateList();
         ListNode res1 = solution.rotateRight2(node1, 2);
-        assertEquals(Arrays.asList(4, 5, 1, 2, 3), res1.toArray());
+        assertEquals(Arrays.asList(4, 5, 1, 2, 3), res1.toList());
 
         ListNode res2 = solution.rotateRight2(node2, 4);
-        assertEquals(Arrays.asList(2, 0, 1), res2.toArray());
+        assertEquals(Arrays.asList(2, 0, 1), res2.toList());
     }
 }

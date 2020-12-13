@@ -37,7 +37,7 @@ public class ListNode {
     return sentinel.next;
   }
 
-  public List<Integer> toArray() {
+  public List<Integer> toList() {
     List<Integer> res = new LinkedList<>();
     ListNode node = this;
     while (node != null) {
@@ -48,7 +48,8 @@ public class ListNode {
     return res;
   }
 
-  public void print() {
+  @Override
+  public String toString() {
     ListNode node = this;
     StringBuilder sb = new StringBuilder();
     while (node != null) {
@@ -56,6 +57,6 @@ public class ListNode {
       node = node.next;
     }
     sb.setLength(sb.length() - 1);
-    System.out.println(sb.toString());
+    return sb.toString();
   }
 }

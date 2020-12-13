@@ -19,11 +19,11 @@ public class No83RemoveDuplicatesFromSortedListTest {
 
   @Test
   public void deleteDuplication1() {
-    assertEquals(Arrays.asList(1, 2, 3, 4, 5), No83RemoveDuplicatesFromSortedList.deleteDuplicates1(node1).toArray());
+    assertEquals(Arrays.asList(1, 2, 3, 4, 5), No83RemoveDuplicatesFromSortedList.deleteDuplicates1(node1).toList());
   }
 
   @Test
   public void deleteDuplication2() {
-    assertEquals(Arrays.asList(1, 2, 3, 4, 5), No83RemoveDuplicatesFromSortedList.deleteDuplicates2(node1).toArray());
+    assertEquals(Arrays.asList(1, 2, 3, 4, 5), No83RemoveDuplicatesFromSortedList.deleteDuplicates2(node1).toList());
   }
 }

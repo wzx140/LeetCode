@@ -22,6 +22,6 @@ public class No92ReverseLinkedList2Test {
         No92ReverseLinkedList2 solution = new No92ReverseLinkedList2();
         ListNode head = solution.reverseBetween(this.node, 2, 4);
 
-        assertEquals(Arrays.asList(1, 4, 3, 2, 5), head.toArray());
+        assertEquals(Arrays.asList(1, 4, 3, 2, 5), head.toList());
     }
 }

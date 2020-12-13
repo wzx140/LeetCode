@@ -1,5 +1,7 @@
 package com.wzx.entity;
 
+import com.wzx.leetcode.No32PrintTheBinaryTreeFromTopToBottom3;
+
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
@@ -59,17 +61,9 @@ public class TreeNode {
     return root;
   }
 
-  public TreeNode cloneThis() {
-    return dfs(this);
-  }
-
-  private static TreeNode dfs(TreeNode node) {
-    if (node == null) return null;
-
-    TreeNode cloneNode = new TreeNode(node.val);
-    cloneNode.left = dfs(node.left);
-    cloneNode.right = dfs(node.right);
-
-    return cloneNode;
+  @Override
+  public String toString() {
+    No32PrintTheBinaryTreeFromTopToBottom3 solution = new No32PrintTheBinaryTreeFromTopToBottom3();
+    return solution.levelOrder1(this).toString();
   }
 }

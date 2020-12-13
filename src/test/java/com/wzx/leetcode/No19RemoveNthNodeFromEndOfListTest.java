@@ -6,7 +6,7 @@ import org.junit.Test;
 
 import java.util.Arrays;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 public class No19RemoveNthNodeFromEndOfListTest {
 
@@ -22,6 +22,6 @@ public class No19RemoveNthNodeFromEndOfListTest {
   public void removeNthFromEnd() {
     No19RemoveNthNodeFromEndOfList solution = new No19RemoveNthNodeFromEndOfList();
     ListNode resList = solution.removeNthFromEnd(list, 2);
-    assertEquals(res.toArray(), resList.toArray());
+    assertEquals(res.toList(), resList.toList());
   }
 }

@@ -23,6 +23,6 @@ public class No21MergeTwoSortedListsTest {
     public void mergeTwoLists1() {
         No21MergeTwoSortedLists solution = new No21MergeTwoSortedLists();
         ListNode node = solution.mergeTwoLists1(node1, node2);
-        assertEquals(Arrays.asList(1, 1, 2, 3, 4, 4), node.toArray());
+        assertEquals(Arrays.asList(1, 1, 2, 3, 4, 4), node.toList());
     }
 }
