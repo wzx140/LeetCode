@@ -94,8 +94,10 @@ Created by [gh-md-toc](https://github.com/ekalinin/github-markdown-toc.go)
 ## 链表
 > PreviousNode, CurrentNode, NextNode, head, tail and sentinel nodes
 
+- [234. Palindrome Linked List](src/main/java/com/wzx/leetcode/No234PalindromeLinkedList.java)
 - [206. Reverse Linked List](src/main/java/com/wzx/leetcode/No206ReverseLinkedList.java)
 - [92. Reverse Linked List II](src/main/java/com/wzx/leetcode/No92ReverseLinkedList2.java)
+- [25. Reverse Nodes in k-Group](src/main/java/com/wzx/leetcode/No25ReverseNodesInKGroup.java)
 - [141. LinkedListCycle](src/main/java/com/wzx/leetcode/No141LinkedListCycle.java)
 - [142. LinkedListCycle2](src/main/java/com/wzx/leetcode/No142LinkedListCycle2.java)
 - [2. AddTwoNumbers](src/main/java/com/wzx/leetcode/No2AddTwoNumbers.java)
