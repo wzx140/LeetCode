@@ -5,8 +5,7 @@ import org.junit.Test;
 
 import java.util.Arrays;
 
-import static org.junit.Assert.assertNull;
-import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.*;
 
 public class No450DeleteNodeInABSTTest {
 
@@ -19,8 +18,8 @@ public class No450DeleteNodeInABSTTest {
   @Test
   public void deleteNode() {
     No450DeleteNodeInABST solution = new No450DeleteNodeInABST();
-    assertTrue(TreeNode.treeEquals(res1, solution.deleteNode(tree1, 3)));
-    assertTrue(TreeNode.treeEquals(res2, solution.deleteNode(tree2, 0)));
+    assertEquals(res1, solution.deleteNode(tree1, 3));
+    assertEquals(res2, solution.deleteNode(tree2, 0));
     assertNull(solution.deleteNode(null, 0));
   }
 }

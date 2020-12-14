@@ -15,6 +15,6 @@ public class No654MaximumBinaryTreeTest {
   @Test
   public void constructMaximumBinaryTree() {
     No654MaximumBinaryTree solution = new No654MaximumBinaryTree();
-    assertTrue(TreeNode.treeEquals(tree, solution.constructMaximumBinaryTree(nums)));
+    assertEquals(tree, solution.constructMaximumBinaryTree(nums));
   }
 }

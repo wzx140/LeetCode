@@ -5,7 +5,7 @@ import org.junit.Test;
 
 import java.util.Arrays;
 
-import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.assertEquals;
 
 public class No226InvertBinaryTreeTest {
 
@@ -15,6 +15,6 @@ public class No226InvertBinaryTreeTest {
   @Test
   public void invertTree() {
     No226InvertBinaryTree solution = new No226InvertBinaryTree();
-    assertTrue(TreeNode.treeEquals(res, solution.invertTree(tree)));
+    assertEquals(res, solution.invertTree(tree));
   }
 }

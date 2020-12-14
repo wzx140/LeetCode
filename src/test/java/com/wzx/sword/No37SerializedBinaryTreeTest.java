@@ -2,8 +2,10 @@ package com.wzx.sword;
 
 import com.wzx.entity.TreeNode;
 import org.junit.Test;
+
 import java.util.Arrays;
-import static org.junit.Assert.assertTrue;
+
+import static org.junit.Assert.assertEquals;
 
 public class No37SerializedBinaryTreeTest {
 
@@ -14,23 +16,23 @@ public class No37SerializedBinaryTreeTest {
   public void serialized1() {
     No37SerializedBinaryTree solution = new No37SerializedBinaryTree();
     No37SerializedBinaryTree.Codec1 codec = solution.new Codec1();
-    assertTrue(TreeNode.treeEquals(tree1, codec.deserialize(codec.serialize(tree1))));
-    assertTrue(TreeNode.treeEquals(tree2, codec.deserialize(codec.serialize(tree2))));
+    assertEquals(tree1, codec.deserialize(codec.serialize(tree1)));
+    assertEquals(tree2, codec.deserialize(codec.serialize(tree2)));
   }
 
   @Test
   public void serialized2() {
     No37SerializedBinaryTree solution = new No37SerializedBinaryTree();
     No37SerializedBinaryTree.Codec2 codec = solution.new Codec2();
-    assertTrue(TreeNode.treeEquals(tree1, codec.deserialize(codec.serialize(tree1))));
-    assertTrue(TreeNode.treeEquals(tree2, codec.deserialize(codec.serialize(tree2))));
+    assertEquals(tree1, codec.deserialize(codec.serialize(tree1)));
+    assertEquals(tree2, codec.deserialize(codec.serialize(tree2)));
   }
 
   @Test
   public void serialized3() {
     No37SerializedBinaryTree solution = new No37SerializedBinaryTree();
     No37SerializedBinaryTree.Codec3 codec = solution.new Codec3();
-    assertTrue(TreeNode.treeEquals(tree1, codec.deserialize(codec.serialize(tree1))));
-    assertTrue(TreeNode.treeEquals(tree2, codec.deserialize(codec.serialize(tree2))));
+    assertEquals(tree1, codec.deserialize(codec.serialize(tree1)));
+    assertEquals(tree2, codec.deserialize(codec.serialize(tree2)));
   }
 }

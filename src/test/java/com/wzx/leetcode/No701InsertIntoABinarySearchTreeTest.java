@@ -19,8 +19,8 @@ public class No701InsertIntoABinarySearchTreeTest {
   @Test
   public void insertIntoBST() {
     No701InsertIntoABinarySearchTree solution = new No701InsertIntoABinarySearchTree();
-    assertTrue(TreeNode.treeEquals(res1, solution.insertIntoBST(tree1, 5)));
-    assertTrue(TreeNode.treeEquals(res2, solution.insertIntoBST(tree2, 25)));
-    assertTrue(TreeNode.treeEquals(res3, solution.insertIntoBST(tree3, 5)));
+    assertEquals(res1, solution.insertIntoBST(tree1, 5));
+    assertEquals(res2, solution.insertIntoBST(tree2, 25));
+    assertEquals(res3, solution.insertIntoBST(tree3, 5));
   }
 }

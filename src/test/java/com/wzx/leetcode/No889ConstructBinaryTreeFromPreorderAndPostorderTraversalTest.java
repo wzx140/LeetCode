@@ -16,6 +16,6 @@ public class No889ConstructBinaryTreeFromPreorderAndPostorderTraversalTest {
   @Test
   public void constructFromPrePost() {
     No889ConstructBinaryTreeFromPreorderAndPostorderTraversal solution = new No889ConstructBinaryTreeFromPreorderAndPostorderTraversal();
-    assertTrue(TreeNode.treeEquals(tree, solution.constructFromPrePost(preorder, postorder)));
+    assertEquals(tree, solution.constructFromPrePost(preorder, postorder));
   }
 }

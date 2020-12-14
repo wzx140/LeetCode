@@ -6,7 +6,7 @@ import org.junit.Test;
 
 import java.util.Arrays;
 
-import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.assertEquals;
 
 public class No27MirrorOfBinaryTreeTest {
 
@@ -21,12 +21,12 @@ public class No27MirrorOfBinaryTreeTest {
   @Test
   public void mirror1() {
     No27MirrorOfBinaryTree solution = new No27MirrorOfBinaryTree();
-    assertTrue(TreeNode.treeEquals(target, solution.mirrorTree1(tree)));
+    assertEquals(target, solution.mirrorTree1(tree));
   }
 
   @Test
   public void mirror2() {
     No27MirrorOfBinaryTree solution = new No27MirrorOfBinaryTree();
-    assertTrue(TreeNode.treeEquals(target, solution.mirrorTree2(tree)));
+    assertEquals(target, solution.mirrorTree2(tree));
   }
 }

@@ -1,11 +1,12 @@
 package com.wzx.leetcode;
 
 import com.wzx.entity.TreeNode;
-import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
 import java.util.Arrays;
+
+import static org.junit.Assert.assertEquals;
 
 public class No114FlattenBinaryTreeToLinkedListTest {
 
@@ -21,13 +22,13 @@ public class No114FlattenBinaryTreeToLinkedListTest {
   public void flatten1() {
     No114FlattenBinaryTreeToLinkedList solution = new No114FlattenBinaryTreeToLinkedList();
     solution.flatten1(source);
-    Assert.assertTrue(TreeNode.treeEquals(flatten, source));
+    assertEquals(flatten, source);
   }
 
   @Test
   public void flatten2() {
     No114FlattenBinaryTreeToLinkedList solution = new No114FlattenBinaryTreeToLinkedList();
     solution.flatten2(source);
-    Assert.assertTrue(TreeNode.treeEquals(flatten, source));
+    assertEquals(flatten, source);
   }
 }

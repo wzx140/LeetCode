@@ -5,7 +5,7 @@ import org.junit.Test;
 
 import java.util.Arrays;
 
-import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.assertEquals;
 
 public class No105ConstructBinaryTreeFromPreorderAndInorderTraversalTest {
 
@@ -16,6 +16,6 @@ public class No105ConstructBinaryTreeFromPreorderAndInorderTraversalTest {
   @Test
   public void buildTree() {
     No105ConstructBinaryTreeFromPreorderAndInorderTraversal solution = new No105ConstructBinaryTreeFromPreorderAndInorderTraversal();
-    assertTrue(TreeNode.treeEquals(tree, solution.buildTree(preorder, inorder)));
+    assertEquals(tree, solution.buildTree(preorder, inorder));
   }
 }

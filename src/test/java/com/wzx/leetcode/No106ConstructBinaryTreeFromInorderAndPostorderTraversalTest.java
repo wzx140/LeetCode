@@ -16,6 +16,6 @@ public class No106ConstructBinaryTreeFromInorderAndPostorderTraversalTest {
   @Test
   public void buildTree() {
     No106ConstructBinaryTreeFromInorderAndPostorderTraversal solution = new No106ConstructBinaryTreeFromInorderAndPostorderTraversal();
-    assertTrue(TreeNode.treeEquals(tree, solution.buildTree(inorder, postorder)));
+    assertEquals(tree, solution.buildTree(inorder, postorder));
   }
 }
