@@ -35,6 +35,25 @@ public class TreeNode {
     }
   }
 
+  private static Integer hashCodeRecursion(TreeNode node) {
+    if (node == null) return 0;
+    return node.val * 31 + hashCodeRecursion(node.left) + hashCodeRecursion(node.right);
+  }
+
+  @Override
+  public boolean equals(Object o) {
+    if (this == o) return true;
+    if (o == null || getClass() != o.getClass()) return false;
+    TreeNode treeNode = (TreeNode) o;
+    return treeEquals(this, treeNode);
+  }
+
+  @Override
+  public int hashCode() {
+    return hashCodeRecursion(this);
+  }
+
+
   public static TreeNode buildTree(List<Integer> source) {
     if (source.isEmpty()) return null;
 
