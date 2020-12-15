@@ -91,6 +91,8 @@ Created by [gh-md-toc](https://github.com/ekalinin/github-markdown-toc.go)
 - [700. Search in a Binary Search Tree](src/main/java/com/wzx/leetcode/No700SearchInABinarySearchTree.java)
 - [701. Insert into a Binary Search Tree](src/main/java/com/wzx/leetcode/No701InsertIntoABinarySearchTree.java)
 - [450. Delete Node in a BST](src/main/java/com/wzx/leetcode/No450DeleteNodeInABST.java)
+- [538. Convert BST to Greater Tree](src/main/java/com/wzx/leetcode/No538ConvertBSTToGreaterTree.java)
+- [230. Kth Smallest Element in a BST](src/main/java/com/wzx/leetcode/No230KthSmallestElementInABST.java)
 - [offer33. 二叉搜索树的后序遍历序列](src/main/java/com/wzx/sword/No33PostOrderTraversalSequenceOfBinarySearchTree.java)
 - [offer68. 二叉搜索树的最近公共祖先](src/main/java/com/wzx/sword/No68NearestCommonAncestorOfBinarySearchTree.java)
 
