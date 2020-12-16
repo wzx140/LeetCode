@@ -276,6 +276,7 @@ Created by [gh-md-toc](https://github.com/ekalinin/github-markdown-toc.go)
 - [921. Minimum Add to Make Parentheses Valid](src/main/java/com/wzx/leetcode/No921MinimumAddToMakeParenthesesValid.java)
 - [1541. Minimum Insertions to Balance a Parentheses String](src/main/java/com/wzx/leetcode/No1541MinimumInsertionsToBalanceAParenthesesString.java)
 - [offer61. 扑克牌中的顺子](src/main/java/com/wzx/sword/No61StraightInPlayingCards.java)
+- [341. Flatten Nested List Iterator](src/main/java/com/wzx/leetcode/No341FlattenNestedListIterator.java)
 
 ## 找规律
 - [offer43. 1~n整数中1出现的次数](src/main/java/com/wzx/sword/No43NumberOfOccurrencesOf1InAnInteger.java)
