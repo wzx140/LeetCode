@@ -64,6 +64,7 @@ Created by [gh-md-toc](https://github.com/ekalinin/github-markdown-toc.go)
 - [222. Count Complete Tree Nodes](src/main/java/com/wzx/leetcode/No222CountCompleteTreeNodes.java)
 - [101. Symmetric Tree](src/main/java/com/wzx/leetcode/No101SymmetricTree.java)
 - [116. Populating Next Right Pointers in Each Node](src/main/java/com/wzx/leetcode/No116PopulatingNextRightPointersInEachNode.java)
+- [236. Lowest Common Ancestor of a Binary Tree](src/main/java/com/wzx/leetcode/No236LowestCommonAncestorOfABinaryTree.java)
 
 ### 遍历
 - [144. Binary Tree Preorder Traversal](src/main/java/com/wzx/leetcode/No144BinaryTreePreorderTraversal.java): [前序遍历](https://masterwangzx.com/2019/03/16/binary-tree/#%E5%89%8D%E5%BA%8F%E9%81%8D%E5%8E%86)
