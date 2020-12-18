@@ -97,6 +97,10 @@ Created by [gh-md-toc](https://github.com/ekalinin/github-markdown-toc.go)
 - [offer33. 二叉搜索树的后序遍历序列](src/main/java/com/wzx/sword/No33PostOrderTraversalSequenceOfBinarySearchTree.java)
 - [offer68. 二叉搜索树的最近公共祖先](src/main/java/com/wzx/sword/No68NearestCommonAncestorOfBinarySearchTree.java)
 
+### 并查集
+- [130. Surrounded Regions](src/main/java/com/wzx/leetcode/No130SurroundedRegions.java)
+- [990. Satisfiability of Equality Equations](src/main/java/com/wzx/leetcode/No990SatisfiabilityOfEqualityEquations.java)
+
 ## 链表
 > PreviousNode, CurrentNode, NextNode, head, tail and sentinel nodes
 
@@ -261,6 +265,7 @@ Created by [gh-md-toc](https://github.com/ekalinin/github-markdown-toc.go)
 - [52. N-Queens II](src/main/java/com/wzx/leetcode/No52NQueens2.java)
 - [offer13. 机器人的运动范围](src/main/java/com/wzx/sword/No13RobotMovementRange.java)
 - [offer17. 打印从1到最大的n位数](src/main/java/com/wzx/sword/No17PrintMaximumNDigits.java)
+- [130. Surrounded Regions](src/main/java/com/wzx/leetcode/No130SurroundedRegions.java)
 
 ## 广搜
 - [111. Minimum Depth of Binary Tree](src/main/java/com/wzx/leetcode/No111MinimumDepthOfBinaryTree.java)
