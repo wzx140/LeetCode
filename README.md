@@ -158,6 +158,7 @@ Created by [gh-md-toc](https://github.com/ekalinin/github-markdown-toc.go)
 ## 其他数据结构
 - [146. LRU Cache](src/main/java/com/wzx/leetcode/No146LRUCache.java)
 - [460. LFU Cache](src/main/java/com/wzx/leetcode/No460LFUCache.java)
+- [355. Design Twitter](src/main/java/com/wzx/leetcode/No355DesignTwitter.java)
 
 # 算法
 
