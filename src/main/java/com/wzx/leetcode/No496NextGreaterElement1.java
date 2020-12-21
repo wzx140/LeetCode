@@ -23,7 +23,7 @@ public class No496NextGreaterElement1 {
     Map<Integer, Integer> map = new HashMap<>(nums2.length);
     Deque<Integer> stack = new LinkedList<>();
 
-    // 栈内元素始终保持单调递增
+    // 从后往前遍历, 栈内元素始终保持单调递减
     for (int i = nums2.length - 1; i >= 0; i--) {
       // 保证栈内元素都比当前元素大
       while (!stack.isEmpty() && nums2[i] >= stack.peek()) stack.pop();
