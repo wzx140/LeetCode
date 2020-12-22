@@ -45,6 +45,8 @@ Created by [gh-md-toc](https://github.com/ekalinin/github-markdown-toc.go)
 # 数据结构
 ## 数组
 - [offer3. 数组中的重复数字1](src/main/java/com/wzx/sword/No3DuplicateNum.java)
+- [380. Insert Delete GetRandom O(1)](src/main/java/com/wzx/leetcode/No380InsertDeleteGetRandomO1.java)
+- [710. Random Pick with Blacklist](src/main/java/com/wzx/leetcode/No710RandomPickWithBlacklist.java)
 
 ## 二叉树
 ### 递归
