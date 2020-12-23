@@ -271,6 +271,9 @@ Created by [gh-md-toc](https://github.com/ekalinin/github-markdown-toc.go)
 - [offer13. 机器人的运动范围](src/main/java/com/wzx/sword/No13RobotMovementRange.java)
 - [offer17. 打印从1到最大的n位数](src/main/java/com/wzx/sword/No17PrintMaximumNDigits.java)
 - [130. Surrounded Regions](src/main/java/com/wzx/leetcode/No130SurroundedRegions.java)
+- [77. Combinations](src/main/java/com/wzx/leetcode/No77Combinations.java)
+- [78. Subsets](src/main/java/com/wzx/leetcode/No78Subsets.java)
+- [37. Sudoku Solver](src/main/java/com/wzx/leetcode/No37SudokuSolver.java)
 
 ## 广搜
 - [111. Minimum Depth of Binary Tree](src/main/java/com/wzx/leetcode/No111MinimumDepthOfBinaryTree.java)
