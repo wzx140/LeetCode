@@ -274,10 +274,12 @@ Created by [gh-md-toc](https://github.com/ekalinin/github-markdown-toc.go)
 - [77. Combinations](src/main/java/com/wzx/leetcode/No77Combinations.java)
 - [78. Subsets](src/main/java/com/wzx/leetcode/No78Subsets.java)
 - [37. Sudoku Solver](src/main/java/com/wzx/leetcode/No37SudokuSolver.java)
+- [22. Generate Parentheses](src/main/java/com/wzx/leetcode/No22GenerateParentheses.java)
 
 ## 广搜
 - [111. Minimum Depth of Binary Tree](src/main/java/com/wzx/leetcode/No111MinimumDepthOfBinaryTree.java)
 - [752. Open the Lock](src/main/java/com/wzx/leetcode/No752OpenTheLock.java)
+- [773. Sliding Puzzle](src/main/java/com/wzx/leetcode/No773SlidingPuzzle.java)
 
 ## [分治](https://mp.weixin.qq.com/s/fcCJFk89w953gXDjnlZFIA)
 - [241. Different Ways to Add Parentheses](src/main/java/com/wzx/leetcode/No241DifferentWaysToAddParentheses.java)
