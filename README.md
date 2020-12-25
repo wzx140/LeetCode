@@ -1,42 +1,46 @@
 Table of Contents
 =================
 
-* [数据结构](#%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84)
-  * [数组](#%E6%95%B0%E7%BB%84)
-  * [二叉树](#%E4%BA%8C%E5%8F%89%E6%A0%91)
-    * [递归](#%E9%80%92%E5%BD%92)
-    * [遍历](#%E9%81%8D%E5%8E%86)
-    * [重建](#%E9%87%8D%E5%BB%BA)
-    * [优先队列](#%E4%BC%98%E5%85%88%E9%98%9F%E5%88%97)
-    * [二叉搜索树](#%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91)
-  * [链表](#%E9%93%BE%E8%A1%A8)
-  * [栈](#%E6%A0%88)
-    * [单调栈](#%E5%8D%95%E8%B0%83%E6%A0%88)
-    * [单调队列](#%E5%8D%95%E8%B0%83%E9%98%9F%E5%88%97)
-  * [字典树](#%E5%AD%97%E5%85%B8%E6%A0%91)
-  * [哈希表](#%E5%93%88%E5%B8%8C%E8%A1%A8)
-  * [其他数据结构](#%E5%85%B6%E4%BB%96%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84)
-* [算法](#%E7%AE%97%E6%B3%95)
-  * [动态规划](#%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92)
-    * [贪心](#%E8%B4%AA%E5%BF%83)
-    * [子序列、字符串问题](#%E5%AD%90%E5%BA%8F%E5%88%97%E5%AD%97%E7%AC%A6%E4%B8%B2%E9%97%AE%E9%A2%98)
-    * [背包问题](#%E8%83%8C%E5%8C%85%E9%97%AE%E9%A2%98)
-    * [股票问题](#%E8%82%A1%E7%A5%A8%E9%97%AE%E9%A2%98)
-    * [打家劫舍](#%E6%89%93%E5%AE%B6%E5%8A%AB%E8%88%8D)
-  * [二分搜索](#%E4%BA%8C%E5%88%86%E6%90%9C%E7%B4%A2)
-  * [双指针](#%E5%8F%8C%E6%8C%87%E9%92%88)
-    * [快慢指针](#%E5%BF%AB%E6%85%A2%E6%8C%87%E9%92%88)
-    * [滑动窗口](#%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3)
-    * [左右指针](#%E5%B7%A6%E5%8F%B3%E6%8C%87%E9%92%88)
-  * [深搜, 回溯](#%E6%B7%B1%E6%90%9C-%E5%9B%9E%E6%BA%AF)
-  * [广搜](#%E5%B9%BF%E6%90%9C)
-  * [分治](#%E5%88%86%E6%B2%BB)
-* [其他](#%E5%85%B6%E4%BB%96)
-  * [找规律](#%E6%89%BE%E8%A7%84%E5%BE%8B)
-  * [排序](#%E6%8E%92%E5%BA%8F)
-  * [水塘抽样](#%E6%B0%B4%E5%A1%98%E6%8A%BD%E6%A0%B7)
-  * [斐波那契](#%E6%96%90%E6%B3%A2%E9%82%A3%E5%A5%91)
-  * [位运算](#%E4%BD%8D%E8%BF%90%E7%AE%97)
+* [Table of Contents](#table-of-contents)
+* [数据结构](#数据结构)
+  * [数组](#数组)
+  * [二叉树](#二叉树)
+    * [递归](#递归)
+    * [遍历](#遍历)
+    * [重建](#重建)
+    * [优先队列](#优先队列)
+    * [二叉搜索树](#二叉搜索树)
+    * [并查集](#并查集)
+  * [链表](#链表)
+  * [栈](#栈)
+    * [计算器](#计算器)
+    * [单调栈](#单调栈)
+    * [单调队列](#单调队列)
+  * [字典树](#字典树)
+  * [哈希表](#哈希表)
+  * [其他数据结构](#其他数据结构)
+* [算法](#算法)
+  * [动态规划](#动态规划)
+    * [贪心](#贪心)
+    * [子序列问题](#子序列问题)
+    * [子串问题](#子串问题)
+    * [背包问题](#背包问题)
+    * [股票问题](#股票问题)
+    * [打家劫舍](#打家劫舍)
+  * [二分搜索](#二分搜索)
+  * [双指针](#双指针)
+    * [快慢指针](#快慢指针)
+    * [滑动窗口](#滑动窗口)
+    * [左右指针](#左右指针)
+  * [深搜, 回溯](#深搜回溯)
+  * [广搜](#广搜)
+  * [分治](#分治)
+* [其他](#其他)
+  * [找规律](#找规律)
+  * [排序](#排序)
+  * [水塘抽样](#水塘抽样)
+  * [斐波那契](#斐波那契)
+  * [位运算](#位运算)
 
 Created by [gh-md-toc](https://github.com/ekalinin/github-markdown-toc.go)
 
@@ -165,7 +169,9 @@ Created by [gh-md-toc](https://github.com/ekalinin/github-markdown-toc.go)
 
 # 算法
 
-## [动态规划](https://labuladong.gitbook.io/algo/di-ling-zhang-bi-du-xi-lie/dong-tai-gui-hua-xiang-jie-jin-jie)
+## 动态规划
+> [动态规划](https://labuladong.gitbook.io/algo/di-ling-zhang-bi-du-xi-lie/dong-tai-gui-hua-xiang-jie-jin-jie)
+
 - [offer46. 把数字翻译成字符串](src/main/java/com/wzx/sword/No46TranslateNumbersIntoStrings.java)
 - [offer47. 礼物的最大值](src/main/java/com/wzx/sword/No47MaximumGift.java)
 - [offer48. 最长不含重复字符的子字符串](src/main/java/com/wzx/sword/No48TheLongestSubstringWithoutRepeatedCharacters.java)
@@ -209,7 +215,9 @@ Created by [gh-md-toc](https://github.com/ekalinin/github-markdown-toc.go)
 - [416. Partition Equal Subset Sum](src/main/java/com/wzx/leetcode/No416PartitionEqualSubsetSum.java): 0-1背包    
 - [494. Target Sum](src/main/java/com/wzx/leetcode/No494TargetSum.java): 0-1背包
 
-### [股票问题](https://labuladong.gitbook.io/algo/dong-tai-gui-hua-xi-lie/tuan-mie-gu-piao-wen-ti)
+### 股票问题
+> [股票问题](https://labuladong.gitbook.io/algo/dong-tai-gui-hua-xi-lie/tuan-mie-gu-piao-wen-ti)
+
 - [121. Best Time to Buy and Sell Stock](src/main/java/com/wzx/leetcode/No121BestTimeToBuyAndSellStock.java)
 - [122. Best Time to Buy and Sell Stock II](src/main/java/com/wzx/leetcode/No122BestTimeToBuyAndSellStock2.java)
 - [123. Best Time to Buy and Sell Stock III](src/main/java/com/wzx/leetcode/No123BestTimeToBuyAndSellStock3.java)
@@ -261,7 +269,7 @@ Created by [gh-md-toc](https://github.com/ekalinin/github-markdown-toc.go)
 - [42. trapping rain water](src/main/java/com/wzx/leetcode/No42TrappingRainWater.java)
 - [5. Longest Palindromic Substring](src/main/java/com/wzx/leetcode/No5LongestPalindromicSubstring.java)
 
-## 深搜, 回溯
+## 深搜回溯
 - [offer12. 矩阵中的路径](src/main/java/com/wzx/sword/No12MatrixPath.java)
 - [offer38. 字符串的排列](src/main/java/com/wzx/sword/No38StringArrangement.java)
 - [46. Permutations](src/main/java/com/wzx/leetcode/No46Permutations.java)
@@ -281,7 +289,9 @@ Created by [gh-md-toc](https://github.com/ekalinin/github-markdown-toc.go)
 - [752. Open the Lock](src/main/java/com/wzx/leetcode/No752OpenTheLock.java)
 - [773. Sliding Puzzle](src/main/java/com/wzx/leetcode/No773SlidingPuzzle.java)
 
-## [分治](https://mp.weixin.qq.com/s/fcCJFk89w953gXDjnlZFIA)
+## 分治
+> [分治](https://mp.weixin.qq.com/s/fcCJFk89w953gXDjnlZFIA)
+
 - [241. Different Ways to Add Parentheses](src/main/java/com/wzx/leetcode/No241DifferentWaysToAddParentheses.java)
 - [53. Maximum subarray](src/main/java/com/wzx/leetcode/No53MaximumSubarray.java)
 
@@ -309,7 +319,9 @@ Created by [gh-md-toc](https://github.com/ekalinin/github-markdown-toc.go)
 - [offer40. 最小的k个数](src/main/java/com/wzx/sword/No40TheSmallestNumberOfK.java)
 - [offer51. 数组中的逆序对](src/main/java/com/wzx/sword/No51ReversedPairsInTheArray.java)
 
-## [水塘抽样](https://labuladong.gitbook.io/algo/gao-pin-mian-shi-xi-lie/shui-tang-chou-yang)
+## 水塘抽样
+> [水塘抽样](https://labuladong.gitbook.io/algo/gao-pin-mian-shi-xi-lie/shui-tang-chou-yang)
+
 - [382. Linked List Random Node](src/main/java/com/wzx/leetcode/No382LinkedListRandomNode.java)
 - [398. Random Pick Index](src/main/java/com/wzx/leetcode/No398RandomPickIndex.java)
 
