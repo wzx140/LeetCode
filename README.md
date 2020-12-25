@@ -19,7 +19,6 @@ Table of Contents
 * [算法](#%E7%AE%97%E6%B3%95)
   * [动态规划](#%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92)
     * [贪心](#%E8%B4%AA%E5%BF%83)
-      * [区间问题](#%E5%8C%BA%E9%97%B4%E9%97%AE%E9%A2%98)
     * [子序列、字符串问题](#%E5%AD%90%E5%BA%8F%E5%88%97%E5%AD%97%E7%AC%A6%E4%B8%B2%E9%97%AE%E9%A2%98)
     * [背包问题](#%E8%83%8C%E5%8C%85%E9%97%AE%E9%A2%98)
     * [股票问题](#%E8%82%A1%E7%A5%A8%E9%97%AE%E9%A2%98)
@@ -37,7 +36,6 @@ Table of Contents
   * [排序](#%E6%8E%92%E5%BA%8F)
   * [水塘抽样](#%E6%B0%B4%E5%A1%98%E6%8A%BD%E6%A0%B7)
   * [斐波那契](#%E6%96%90%E6%B3%A2%E9%82%A3%E5%A5%91)
-  * [差分数组](#%E5%B7%AE%E5%88%86%E6%95%B0%E7%BB%84)
   * [位运算](#%E4%BD%8D%E8%BF%90%E7%AE%97)
 
 Created by [gh-md-toc](https://github.com/ekalinin/github-markdown-toc.go)
@@ -47,6 +45,8 @@ Created by [gh-md-toc](https://github.com/ekalinin/github-markdown-toc.go)
 - [offer3. 数组中的重复数字1](src/main/java/com/wzx/sword/No3DuplicateNum.java)
 - [380. Insert Delete GetRandom O(1)](src/main/java/com/wzx/leetcode/No380InsertDeleteGetRandomO1.java)
 - [710. Random Pick with Blacklist](src/main/java/com/wzx/leetcode/No710RandomPickWithBlacklist.java)
+- [1109. Corporate Flight Bookings](src/main/java/com/wzx/leetcode/No1109CorporateFlightBookings.java): 差分数组
+- [560. Subarray Sum Equals K](src/main/java/com/wzx/leetcode/No560SubarraySumEqualsK.java): 前缀和数组
 
 ## 二叉树
 ### 递归
@@ -183,7 +183,7 @@ Created by [gh-md-toc](https://github.com/ekalinin/github-markdown-toc.go)
 - [55. Jump Game](src/main/java/com/wzx/leetcode/No55JumpGame.java)
 - [45. Jump Game II](src/main/java/com/wzx/leetcode/No45JumpGameII.java)
 
-#### 区间问题
+区间问题
 - [1288. Remove Covered Intervals](src/main/java/com/wzx/leetcode/No1288RemoveCoveredIntervals.java)
 - [56. Merge Intervals](src/main/java/com/wzx/leetcode/No56MergeIntervals.java)
 - [986. Interval List Intersections](src/main/java/com/wzx/leetcode/No986IntervalListIntersections.java)q
@@ -317,9 +317,6 @@ Created by [gh-md-toc](https://github.com/ekalinin/github-markdown-toc.go)
 - [offer10. 斐波那契数组](src/main/java/com/wzx/sword/No10FibonacciSequence.java)
 - [offer10. 变态青蛙跳](src/main/java/com/wzx/sword/No10StepUp.java)
 - [offer12. 矩形覆盖](src/main/java/com/wzx/sword/No12MatrixCoverage.java)
-
-## 差分数组
-- [1109. Corporate Flight Bookings](src/main/java/com/wzx/leetcode/No1109CorporateFlightBookings.java)
 
 ## 位运算
 - [offer15. 二进制中1的个数](src/main/java/com/wzx/sword/No15NumOfOneInBinary.java)
