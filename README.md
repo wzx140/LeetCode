@@ -236,6 +236,7 @@ Created by [gh-md-toc](https://github.com/ekalinin/github-markdown-toc.go)
 - [offer3. 数组中的重复数字2](src/main/java/com/wzx/sword/No3DuplicateNum2.java)
 - [offer11. 旋转数组的最小数字](src/main/java/com/wzx/sword/No11RotateMinNum.java)
 - [offer53. 0～n-1中缺失的数字](src/main/java/com/wzx/sword/No53TheMissingNumbers.java)
+- [793. Preimage Size of Factorial Zeroes Function](src/main/java/com/wzx/leetcode/No793PreimageSizeOfFactorialZeroesFunction.java)
 
 ## 双指针
 - [offer21. 调整数组顺序使奇数位于偶数前面](src/main/java/com/wzx/sword/No21AdjustArrayOrder.java)
@@ -312,6 +313,7 @@ Created by [gh-md-toc](https://github.com/ekalinin/github-markdown-toc.go)
 - [offer62. 圆圈中最后剩下的数字](src/main/java/com/wzx/sword/No62TheLastRemainingNumberInTheCircle.java): 约瑟夫环
 - [offer66. 构建乘积数组](src/main/java/com/wzx/sword/No66BuildAnArrayOfProducts.java)
 - [391. Perfect Rectangle](src/main/java/com/wzx/leetcode/No391PerfectRectangle.java)
+- [172. Factorial Trailing Zeroes](src/main/java/com/wzx/leetcode/No172FactorialTrailingZeroes.java)
 
 ## 排序
 - [912. Sort an Array.cpp](src/main/c++/912.&#32;Sort&#32;an&#32;Array.cpp): [内排序算法](https://masterwangzx.com/2019/11/26/inner-sort/)
