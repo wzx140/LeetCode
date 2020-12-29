@@ -46,11 +46,18 @@ Created by [gh-md-toc](https://github.com/ekalinin/github-markdown-toc.go)
 
 # 数据结构
 ## 数组
-- [offer3. 数组中的重复数字1](src/main/java/com/wzx/sword/No3DuplicateNum.java)
 - [380. Insert Delete GetRandom O(1)](src/main/java/com/wzx/leetcode/No380InsertDeleteGetRandomO1.java)
 - [710. Random Pick with Blacklist](src/main/java/com/wzx/leetcode/No710RandomPickWithBlacklist.java)
 - [1109. Corporate Flight Bookings](src/main/java/com/wzx/leetcode/No1109CorporateFlightBookings.java): 差分数组
 - [560. Subarray Sum Equals K](src/main/java/com/wzx/leetcode/No560SubarraySumEqualsK.java): 前缀和数组
+
+重复与缺失
+- [offer3. 数组中的重复数字1](src/main/java/com/wzx/sword/No3DuplicateNum.java)
+- [offer56. 数组中数字出现的次数1](src/main/java/com/wzx/sword/No56NumberOfOccurrencesOfNumbersInTheArray1.java)
+- [offer56. 数组中数字出现的次数2](src/main/java/com/wzx/sword/No56NumberOfOccurrencesOfNumbersInTheArray2.java)
+- [offer39. 数组中出现次数超过一半的数字](src/main/java/com/wzx/sword/No39MoreThanHalfOfTheOccurrences.java)
+- [448. Find All Numbers Disappeared in an Array](src/main/java/com/wzx/leetcode/No448FindAllNumbersDisappearedInAnArray.java)
+- [645. Set Mismatch](src/main/java/com/wzx/leetcode/No645SetMismatch.java)
 
 ## 二叉树
 ### 递归
@@ -299,7 +306,6 @@ Created by [gh-md-toc](https://github.com/ekalinin/github-markdown-toc.go)
 # 其他
 - [offer1. 单例模式](src/main/java/com/wzx/sword/No1Singleton.java)
 - [offer20. 表示数值的字符串](src/main/java/com/wzx/sword/No20StringRepresentingNumericValue.java)
-- [offer39. 数组中出现次数超过一半的数字](src/main/java/com/wzx/sword/No39MoreThanHalfOfTheOccurrences.java)
 - [921. Minimum Add to Make Parentheses Valid](src/main/java/com/wzx/leetcode/No921MinimumAddToMakeParenthesesValid.java)
 - [1541. Minimum Insertions to Balance a Parentheses String](src/main/java/com/wzx/leetcode/No1541MinimumInsertionsToBalanceAParenthesesString.java)
 - [offer61. 扑克牌中的顺子](src/main/java/com/wzx/sword/No61StraightInPlayingCards.java)
