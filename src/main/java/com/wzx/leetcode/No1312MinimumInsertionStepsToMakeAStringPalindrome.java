@@ -20,13 +20,9 @@ public class No1312MinimumInsertionStepsToMakeAStringPalindrome {
    * time: O(n^2)
    * space: O(n^2)
    */
-  public int minInsertions1(String s) {
+  public int minInsertions(String s) {
     int length = s.length();
     int[][] dp = new int[length][length];
-    // 初始化
-//    for (int i = 0; i < length; i++) {
-//      dp[i][i] = 0;
-//    }
 
     // 由下至上，由左至右
     for (int i = length - 1; i >= 0; i--) {
@@ -40,17 +36,5 @@ public class No1312MinimumInsertionStepsToMakeAStringPalindrome {
     }
 
     return dp[0][length - 1];
-  }
-
-  /**
-   * 动态规划，状态压缩
-   * <p>
-   * time: O(n^2)
-   * space: O(n)
-   */
-  public int minInsertions2(String s) {
-    // todo
-
-    return -1;
   }
 }
