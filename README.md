@@ -1,7 +1,6 @@
 Table of Contents
 =================
 
-* [Table of Contents](#table-of-contents)
 * [数据结构](#数据结构)
   * [数组](#数组)
   * [二叉树](#二叉树)
