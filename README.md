@@ -244,10 +244,12 @@ Created by [gh-md-toc](https://github.com/ekalinin/github-markdown-toc.go)
 - [offer11. 旋转数组的最小数字](src/main/java/com/wzx/sword/No11RotateMinNum.java)
 - [offer53. 0～n-1中缺失的数字](src/main/java/com/wzx/sword/No53TheMissingNumbers.java)
 - [793. Preimage Size of Factorial Zeroes Function](src/main/java/com/wzx/leetcode/No793PreimageSizeOfFactorialZeroesFunction.java)
+- [392. Is Subsequence](src/main/java/com/wzx/leetcode/No392IsSubsequence.java)
 
 ## 双指针
 - [offer21. 调整数组顺序使奇数位于偶数前面](src/main/java/com/wzx/sword/No21AdjustArrayOrder.java)
 - [offer5. 替换空格](src/main/java/com/wzx/sword/No5ReplaceWhiteSpace.java)
+- [392. Is Subsequence](src/main/java/com/wzx/leetcode/No392IsSubsequence.java)
 
 ### 快慢指针
 - [141. LinkedListCycle](src/main/java/com/wzx/leetcode/No141LinkedListCycle.java)
@@ -312,6 +314,7 @@ Created by [gh-md-toc](https://github.com/ekalinin/github-markdown-toc.go)
 - [341. Flatten Nested List Iterator](src/main/java/com/wzx/leetcode/No341FlattenNestedListIterator.java)
 - [43. Multiply Strings](src/main/java/com/wzx/leetcode/No43MultiplyStrings.java)
 - [969. Pancake Sorting](src/main/java/com/wzx/leetcode/No969PancakeSorting.java)
+- [855. Exam Room](src/main/java/com/wzx/leetcode/No855ExamRoom.java)
 
 ## 找规律
 - [offer43. 1~n整数中1出现的次数](src/main/java/com/wzx/sword/No43NumberOfOccurrencesOf1InAnInteger.java)
