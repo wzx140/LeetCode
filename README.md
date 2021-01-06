@@ -45,6 +45,11 @@ Created by [gh-md-toc](https://github.com/ekalinin/github-markdown-toc.go)
 
 # 数据结构
 ## 数组
+> 原数组==[O(n)]==>前缀和数组==[O(1)]==>范围和==[O(n)]==>差分数组
+> 原数组<==[O(n)]==前缀和数组
+> 原数组<==[O(n)]==差分数组
+> 原数组<==[O(n^2)]==范围和
+
 - [380. Insert Delete GetRandom O(1)](src/main/java/com/wzx/leetcode/No380InsertDeleteGetRandomO1.java)
 - [710. Random Pick with Blacklist](src/main/java/com/wzx/leetcode/No710RandomPickWithBlacklist.java)
 - [1109. Corporate Flight Bookings](src/main/java/com/wzx/leetcode/No1109CorporateFlightBookings.java): 差分数组
