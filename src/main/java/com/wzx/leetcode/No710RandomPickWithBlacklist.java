@@ -5,8 +5,7 @@ import java.util.Map;
 import java.util.Random;
 
 /**
- * https://leetcode.com/problems/random-pick-with-blacklist/
- *
+ * @see <a href="https://leetcode.com/problems/random-pick-with-blacklist/">https://leetcode.com/problems/random-pick-with-blacklist/</a>
  * @author wzx
  */
 public class No710RandomPickWithBlacklist {

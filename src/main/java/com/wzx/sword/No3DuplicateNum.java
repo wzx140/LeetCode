@@ -13,7 +13,7 @@ public class No3DuplicateNum {
 
   /**
    * 先排序再查找
-   *
+   * <p>
    * time: O(nlogn)
    * space: O(1)
    */
@@ -31,7 +31,7 @@ public class No3DuplicateNum {
 
   /**
    * 哈希表
-   *
+   * <p>
    * time: O(n)
    * space: O(n)
    */
@@ -49,27 +49,26 @@ public class No3DuplicateNum {
   }
 
   /**
-   * 由于数字在0~n-1之间，以数组下标作为标记，可以作为重复判断的依据。
-   * 每次常数时间复杂度内都可以将某一元素放到正确的位置，所以最差情况下时间复杂度为O(n)
-   *
+   * 由于数字在0~n-1之间，以符号位替代哈希表记录已经出现的数字
+   * 对于0替换为n作为特殊处理
+   * <p>
    * time: O(n)
    * space: O(1)
    */
   public int findRepeatNumber3(int[] nums) {
     for (int i = 0; i < nums.length; i++) {
-      // 重复直到当前下标与值对应
-      while (i != nums[i]) {
-        int num = nums[i];
-        if (num == nums[num]) {
-          return num;
-        } else {
-          // 当前下标的值移动到它应该在的下标位置
-          nums[i] = nums[num];
-          nums[num] = num;
-        }
+      int num = Math.abs(nums[i]);
+      // 0替换为n
+      if (num == nums.length) num = 0;
+      if (nums[num] < 0) return num;
+
+      if (nums[num] == 0) {
+        // 0替换为n
+        nums[num] = -nums.length;
+      } else {
+        nums[num] = -nums[num];
       }
     }
-
     return -1;
   }
 }

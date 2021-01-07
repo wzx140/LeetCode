@@ -3,8 +3,7 @@ package com.wzx.leetcode;
 import java.util.*;
 
 /**
- * https://leetcode.com/problems/insert-delete-getrandom-o1/
- *
+ * @see <a href="https://leetcode.com/problems/insert-delete-getrandom-o1/">https://leetcode.com/problems/insert-delete-getrandom-o1/</a>
  * @author wzx
  */
 public class No380InsertDeleteGetRandomO1 {

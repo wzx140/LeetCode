@@ -1,8 +1,7 @@
 package com.wzx.leetcode;
 
 /**
- * https://leetcode.com/problems/corporate-flight-bookings/
- *
+ * @see <a href="https://leetcode.com/problems/corporate-flight-bookings/">https://leetcode.com/problems/corporate-flight-bookings/</a>
  * @author wzx
  */
 public class No1109CorporateFlightBookings {

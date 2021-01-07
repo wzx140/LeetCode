@@ -45,23 +45,23 @@ Created by [gh-md-toc](https://github.com/ekalinin/github-markdown-toc.go)
 
 # 数据结构
 ## 数组
-> 原数组==[O(n)]==>前缀和数组==[O(1)]==>范围和==[O(n)]==>差分数组
-> 原数组<==[O(n)]==前缀和数组
-> 原数组<==[O(n)]==差分数组
-> 原数组<==[O(n^2)]==范围和
+原数组==[O(n)]==>前缀和数组==[O(1)]==>范围和==[O(n)]==>差分数组  
+原数组<==[O(n)]==前缀和数组  
+原数组<==[O(n)]==差分数组  
+原数组<==[O(n^2)]==范围和
 
-- [380. Insert Delete GetRandom O(1)](src/main/java/com/wzx/leetcode/No380InsertDeleteGetRandomO1.java)
-- [710. Random Pick with Blacklist](src/main/java/com/wzx/leetcode/No710RandomPickWithBlacklist.java)
 - [1109. Corporate Flight Bookings](src/main/java/com/wzx/leetcode/No1109CorporateFlightBookings.java): 差分数组
 - [560. Subarray Sum Equals K](src/main/java/com/wzx/leetcode/No560SubarraySumEqualsK.java): 前缀和数组
+- [380. Insert Delete GetRandom O(1)](src/main/java/com/wzx/leetcode/No380InsertDeleteGetRandomO1.java)
+- [710. Random Pick with Blacklist](src/main/java/com/wzx/leetcode/No710RandomPickWithBlacklist.java)
 
-重复与缺失
+符号位替代哈希表
 - [offer3. 数组中的重复数字1](src/main/java/com/wzx/sword/No3DuplicateNum.java)
-- [offer56. 数组中数字出现的次数1](src/main/java/com/wzx/sword/No56NumberOfOccurrencesOfNumbersInTheArray1.java)
-- [offer56. 数组中数字出现的次数2](src/main/java/com/wzx/sword/No56NumberOfOccurrencesOfNumbersInTheArray2.java)
-- [offer39. 数组中出现次数超过一半的数字](src/main/java/com/wzx/sword/No39MoreThanHalfOfTheOccurrences.java)
 - [448. Find All Numbers Disappeared in an Array](src/main/java/com/wzx/leetcode/No448FindAllNumbersDisappearedInAnArray.java)
 - [645. Set Mismatch](src/main/java/com/wzx/leetcode/No645SetMismatch.java)
+
+众数
+- [offer39. 数组中出现次数超过一半的数字](src/main/java/com/wzx/sword/No39MoreThanHalfOfTheOccurrences.java)
 
 ## 二叉树
 ### 递归
@@ -349,6 +349,8 @@ Created by [gh-md-toc](https://github.com/ekalinin/github-markdown-toc.go)
 - [offer12. 矩形覆盖](src/main/java/com/wzx/sword/No12MatrixCoverage.java)
 
 ## 位运算
+- [offer56. 数组中数字出现的次数1](src/main/java/com/wzx/sword/No56NumberOfOccurrencesOfNumbersInTheArray1.java)
+- [offer56. 数组中数字出现的次数2](src/main/java/com/wzx/sword/No56NumberOfOccurrencesOfNumbersInTheArray2.java)
 - [offer15. 二进制中1的个数](src/main/java/com/wzx/sword/No15NumOfOneInBinary.java)
 - [offer16. 数值的整数次方](src/main/java/com/wzx/sword/No16IntegerPower.java)
 - [offer56. 数组中数字出现的次数1](src/main/java/com/wzx/sword/No56NumberOfOccurrencesOfNumbersInTheArray1.java)

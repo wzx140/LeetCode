@@ -77,11 +77,6 @@ public class No39MoreThanHalfOfTheOccurrences {
 
     }
 
-    cnt = 0;
-    for (int num : nums) {
-      if (num == cur) cnt++;
-    }
-
-    return cnt > nums.length / 2 ? cur : 0;
+    return cur;
   }
 }

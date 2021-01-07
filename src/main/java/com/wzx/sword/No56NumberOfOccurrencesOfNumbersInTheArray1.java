@@ -3,8 +3,7 @@ package com.wzx.sword;
 import java.util.Arrays;
 
 /**
- * https://leetcode-cn.com/problems/shu-zu-zhong-shu-zi-chu-xian-de-ci-shu-lcof/
- *
+ * @see <a href="https://leetcode-cn.com/problems/shu-zu-zhong-shu-zi-chu-xian-de-ci-shu-lcof/">https://leetcode-cn.com/problems/shu-zu-zhong-shu-zi-chu-xian-de-ci-shu-lcof/</a>
  * @author wzx
  */
 public class No56NumberOfOccurrencesOfNumbersInTheArray1 {
@@ -12,7 +11,7 @@ public class No56NumberOfOccurrencesOfNumbersInTheArray1 {
   /**
    * 先排序再寻找相邻不重复的元素
    * <p>
-   * time: O(n)
+   * time: O(nlogn)
    * space: O(1)
    */
   public int[] singleNumbers1(int[] nums) {

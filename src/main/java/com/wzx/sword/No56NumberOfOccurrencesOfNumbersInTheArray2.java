@@ -3,15 +3,14 @@ package com.wzx.sword;
 import java.util.Arrays;
 
 /**
- * https://leetcode-cn.com/problems/shu-zu-zhong-shu-zi-chu-xian-de-ci-shu-ii-lcof/
- *
+ * @see <a href="https://leetcode-cn.com/problems/shu-zu-zhong-shu-zi-chu-xian-de-ci-shu-ii-lcof/">https://leetcode-cn.com/problems/shu-zu-zhong-shu-zi-chu-xian-de-ci-shu-ii-lcof/</a>
  * @author wzx
  */
 public class No56NumberOfOccurrencesOfNumbersInTheArray2 {
 
   /**
    * 先排序，再查找
-   *
+   * <p>
    * time: O(nlogn)
    * space: O(1)
    */
@@ -28,7 +27,7 @@ public class No56NumberOfOccurrencesOfNumbersInTheArray2 {
 
   /**
    * 统计所有数字每位的计数，每位mod3就是那个不相同的数
-   *
+   * <p>
    * time: O(n)
    * space: O(32)
    */
@@ -49,10 +48,11 @@ public class No56NumberOfOccurrencesOfNumbersInTheArray2 {
     }
 
     int res = 0;
-    // 取余3后，就是那个不相同数的每位取值
+    // 不能被3整除的数位, 就是不相同数的1位
     for (int i = 0; i < 32; i++) {
-      res <<= 1;
-      res |= (cnt[31 - i] % 3);
+      if (cnt[i] % 3 != 0) {
+        res |= masks[i];
+      }
     }
 
     return res;
