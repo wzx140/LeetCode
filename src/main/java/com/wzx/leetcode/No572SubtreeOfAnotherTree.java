@@ -3,8 +3,7 @@ package com.wzx.leetcode;
 import com.wzx.entity.TreeNode;
 
 /**
- * https://leetcode.com/problems/subtree-of-another-tree/
- *
+ * @see <a href="https://leetcode.com/problems/subtree-of-another-tree/">https://leetcode.com/problems/subtree-of-another-tree/</a>
  * @author wzx
  */
 public class No572SubtreeOfAnotherTree {

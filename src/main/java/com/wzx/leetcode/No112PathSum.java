@@ -3,8 +3,7 @@ package com.wzx.leetcode;
 import com.wzx.entity.TreeNode;
 
 /**
- * https://leetcode.com/problems/path-sum/
- *
+ * @see <a href="https://leetcode.com/problems/path-sum/">https://leetcode.com/problems/path-sum/</a>
  * @author wzx
  */
 public class No112PathSum {

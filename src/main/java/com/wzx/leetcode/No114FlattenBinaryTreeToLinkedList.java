@@ -3,8 +3,7 @@ package com.wzx.leetcode;
 import com.wzx.entity.TreeNode;
 
 /**
- * https://leetcode.com/problems/flatten-binary-tree-to-linked-list/
- *
+ * @see <a href="https://leetcode.com/problems/flatten-binary-tree-to-linked-list/">https://leetcode.com/problems/flatten-binary-tree-to-linked-list/</a>
  * @author wzx
  */
 public class No114FlattenBinaryTreeToLinkedList {
@@ -17,17 +16,16 @@ public class No114FlattenBinaryTreeToLinkedList {
    * space: O(h) 树高
    */
   public void flatten1(TreeNode root) {
-    if (null == root) return;
-    TreeNode right = root.right;
-    TreeNode left = root.left;
+    if (root == null) return;
 
-    // 先展开左子树，再展开右子树
-    flatten1(left);
-    flatten1(right);
-    // 展开后的左子树接到右子树处
+    flatten1(root.left);
+    flatten1(root.right);
+    TreeNode left = root.left;
+    TreeNode right = root.right;
+    // 左子树移动到右子树位置
     root.left = null;
     root.right = left;
-    // 原右子树接到现右子树的末尾
+    // 右子树接在现右子树后面
     while (root.right != null) root = root.right;
     root.right = right;
   }

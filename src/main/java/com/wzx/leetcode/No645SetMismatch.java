@@ -4,8 +4,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 /**
- * https://leetcode.com/problems/set-mismatch/
- *
+ * @see <a href="https://leetcode.com/problems/set-mismatch/">https://leetcode.com/problems/set-mismatch/</a>
  * @author wzx
  */
 public class No645SetMismatch {

@@ -3,8 +3,7 @@ package com.wzx.sword;
 import com.wzx.entity.TreeNode;
 
 /**
- * https://leetcode-cn.com/problems/er-cha-sou-suo-shu-yu-shuang-xiang-lian-biao-lcof/
- *
+ * @see <a href="https://leetcode-cn.com/problems/er-cha-sou-suo-shu-yu-shuang-xiang-lian-biao-lcof/">https://leetcode-cn.com/problems/er-cha-sou-suo-shu-yu-shuang-xiang-lian-biao-lcof/</a>
  * @author wzx
  */
 public class No36BST2DoublyLinkedList {

@@ -3,6 +3,8 @@ package com.wzx.leetcode;
 import com.wzx.entity.TreeNode;
 
 /**
+ * @see <a href="https://leetcode.com/problems/invert-binary-tree/">https://leetcode.com/problems/invert-binary-tree/</a>
+ *
  * @author wzx
  */
 public class No226InvertBinaryTree {

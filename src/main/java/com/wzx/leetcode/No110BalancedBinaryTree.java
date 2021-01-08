@@ -3,8 +3,7 @@ package com.wzx.leetcode;
 import com.wzx.entity.TreeNode;
 
 /**
- * https://leetcode.com/problems/balanced-binary-tree/
- *
+ * @see <a href="https://leetcode.com/problems/balanced-binary-tree/">https://leetcode.com/problems/balanced-binary-tree/</a>
  * @author wzx
  */
 public class No110BalancedBinaryTree {

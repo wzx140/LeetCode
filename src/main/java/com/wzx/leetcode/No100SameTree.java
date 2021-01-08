@@ -3,8 +3,7 @@ package com.wzx.leetcode;
 import com.wzx.entity.TreeNode;
 
 /**
- * https://leetcode.com/problems/same-tree/
- *
+ * @see <a href="https://leetcode.com/problems/same-tree/">https://leetcode.com/problems/same-tree/</a>
  * @author wzx
  */
 public class No100SameTree {
