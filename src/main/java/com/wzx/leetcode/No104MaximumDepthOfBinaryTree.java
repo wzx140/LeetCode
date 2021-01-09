@@ -3,8 +3,7 @@ package com.wzx.leetcode;
 import com.wzx.entity.TreeNode;
 
 /**
- * https://leetcode.com/problems/maximum-depth-of-binary-tree/
- *
+ * @see <a href="https://leetcode.com/problems/maximum-depth-of-binary-tree/">https://leetcode.com/problems/maximum-depth-of-binary-tree/</a>
  * @author wzx
  */
 public class No104MaximumDepthOfBinaryTree {

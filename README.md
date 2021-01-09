@@ -300,6 +300,7 @@ Created by [gh-md-toc](https://github.com/ekalinin/github-markdown-toc.go)
 - [111. Minimum Depth of Binary Tree](src/main/java/com/wzx/leetcode/No111MinimumDepthOfBinaryTree.java)
 - [752. Open the Lock](src/main/java/com/wzx/leetcode/No752OpenTheLock.java)
 - [773. Sliding Puzzle](src/main/java/com/wzx/leetcode/No773SlidingPuzzle.java)
+- [111. Minimum Depth of Binary Tree](src/main/java/com/wzx/leetcode/No111MinimumDepthOfBinaryTree.java)
 
 ## 分治
 > [分治](https://mp.weixin.qq.com/s/fcCJFk89w953gXDjnlZFIA)

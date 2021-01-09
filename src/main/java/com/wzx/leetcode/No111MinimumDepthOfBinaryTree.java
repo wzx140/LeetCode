@@ -5,8 +5,7 @@ import com.wzx.entity.TreeNode;
 import java.util.*;
 
 /**
- * https://leetcode.com/problems/minimum-depth-of-binary-tree/
- *
+ * @see <a href="https://leetcode.com/problems/minimum-depth-of-binary-tree/">https://leetcode.com/problems/minimum-depth-of-binary-tree/</a>
  * @author wzx
  */
 public class No111MinimumDepthOfBinaryTree {
@@ -40,22 +39,22 @@ public class No111MinimumDepthOfBinaryTree {
     if (root == null) return 0;
 
     Deque<TreeNode> queue = new LinkedList<>();
-    int depth = 1;
+    int minDepth = 0;
     queue.addLast(root);
     while (!queue.isEmpty()) {
       int size = queue.size();
+      minDepth++;
       for (int i = 0; i < size; i++) {
         TreeNode node = queue.pollFirst();
         if (node.left == null && node.right == null) {
-          return depth;
+          return minDepth;
         }
 
         if (node.left != null) queue.addLast(node.left);
         if (node.right != null) queue.addLast(node.right);
       }
-      depth++;
     }
 
-    return depth;
+    return minDepth;
   }
 }

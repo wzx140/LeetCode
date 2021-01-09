@@ -1,8 +1,7 @@
 package com.wzx.leetcode;
 
 /**
- * https://leetcode.com/problems/populating-next-right-pointers-in-each-node/
- *
+ * @see <a href="https://leetcode.com/problems/populating-next-right-pointers-in-each-node/">https://leetcode.com/problems/populating-next-right-pointers-in-each-node/</a>
  * @author wzx
  */
 public class No116PopulatingNextRightPointersInEachNode {
@@ -20,6 +19,7 @@ public class No116PopulatingNextRightPointersInEachNode {
   }
 
   private void recursion(Node left, Node right) {
+    // 注意是完美二叉树
     if (left == null || right == null) return;
 
     left.next = right;

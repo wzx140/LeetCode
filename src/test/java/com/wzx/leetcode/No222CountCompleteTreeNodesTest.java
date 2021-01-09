@@ -22,10 +22,4 @@ public class No222CountCompleteTreeNodesTest {
     No222CountCompleteTreeNodes solution = new No222CountCompleteTreeNodes();
     assertEquals(6, solution.countNodes2(tree));
   }
-
-  @Test
-  public void countNodes3() {
-    No222CountCompleteTreeNodes solution = new No222CountCompleteTreeNodes();
-    assertEquals(6, solution.countNodes3(tree));
-  }
 }
