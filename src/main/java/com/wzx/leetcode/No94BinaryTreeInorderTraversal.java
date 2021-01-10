@@ -5,9 +5,8 @@ import com.wzx.entity.TreeNode;
 import java.util.*;
 
 /**
- * https://leetcode.com/problems/binary-tree-inorder-traversal/
- *
  * @author wzx
+ * @see <a href="https://leetcode.com/problems/binary-tree-inorder-traversal/">https://leetcode.com/problems/binary-tree-inorder-traversal/</a>
  */
 public class No94BinaryTreeInorderTraversal {
 

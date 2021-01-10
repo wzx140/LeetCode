@@ -3,9 +3,8 @@ package com.wzx.sword;
 import com.wzx.entity.TreeNode;
 
 /**
- * https://github.com/todorex/Coding-Interviews/blob/master/notes/%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E4%B8%8B%E4%B8%80%E4%B8%AA%E8%8A%82%E7%82%B9.md
- *
  * @author wzx
+ * @see <a href="https://www.nowcoder.com/practice/9023a0c988684a53960365b889ceaf5e">https://www.nowcoder.com/practice/9023a0c988684a53960365b889ceaf5e</a>
  */
 public class No8BinaryTreeNextNode {
 
@@ -26,17 +25,17 @@ public class No8BinaryTreeNextNode {
   public static TreeNode GetNext(TreeNode pNode) {
     if (null == pNode) return null;
 
-    TreeNode next = null;
+    TreeNode node = null;
     if (pNode.right != null) {
-      next = pNode.right;
-      while (next.left != null) next = next.left;
+      node = pNode.right;
+      while (node.left != null) node = node.left;
     } else {
-      next = pNode;
-      while (next.parent.left != next) next = next.parent;
-      next = next.parent;
+      node = pNode;
+      while (node.parent.left != node) node = node.parent;
+      node = node.parent;
     }
 
-    return next;
+    return node;
   }
 
 }

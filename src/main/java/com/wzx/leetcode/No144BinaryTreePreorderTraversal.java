@@ -7,9 +7,8 @@ import java.util.LinkedList;
 import java.util.List;
 
 /**
- * https://leetcode.com/problems/binary-tree-preorder-traversal/
- *
  * @author wzx
+ * @see <a href="https://leetcode.com/problems/binary-tree-preorder-traversal/">https://leetcode.com/problems/binary-tree-preorder-traversal/</a>
  */
 public class No144BinaryTreePreorderTraversal {
 

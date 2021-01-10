@@ -1,6 +1,6 @@
 package com.wzx.entity;
 
-import com.wzx.leetcode.No32PrintTheBinaryTreeFromTopToBottom3;
+import com.wzx.leetcode.No102BinaryTreeLevelOrderTraversal;
 
 import java.util.LinkedList;
 import java.util.List;
@@ -82,7 +82,7 @@ public class TreeNode {
 
   @Override
   public String toString() {
-    No32PrintTheBinaryTreeFromTopToBottom3 solution = new No32PrintTheBinaryTreeFromTopToBottom3();
-    return solution.levelOrder1(this).toString();
+    No102BinaryTreeLevelOrderTraversal solution = new No102BinaryTreeLevelOrderTraversal();
+    return solution.levelOrder(this).toString();
   }
 }

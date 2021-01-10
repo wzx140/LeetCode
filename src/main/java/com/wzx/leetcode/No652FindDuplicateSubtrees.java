@@ -8,9 +8,8 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * https://leetcode.com/problems/find-duplicate-subtrees/
- *
  * @author wzx
+ * @see <a href="https://leetcode.com/problems/find-duplicate-subtrees/">https://leetcode.com/problems/find-duplicate-subtrees/</a>
  */
 public class No652FindDuplicateSubtrees {
 

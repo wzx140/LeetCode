@@ -79,16 +79,15 @@ Created by [gh-md-toc](https://github.com/ekalinin/github-markdown-toc.go)
 - [101. Symmetric Tree](src/main/java/com/wzx/leetcode/No101SymmetricTree.java)
 - [116. Populating Next Right Pointers in Each Node](src/main/java/com/wzx/leetcode/No116PopulatingNextRightPointersInEachNode.java)
 - [236. Lowest Common Ancestor of a Binary Tree](src/main/java/com/wzx/leetcode/No236LowestCommonAncestorOfABinaryTree.java)
+- [652. Find Duplicate Subtrees](src/main/java/com/wzx/leetcode/No652FindDuplicateSubtrees.java)
 
 ### 遍历
-- [144. Binary Tree Preorder Traversal](src/main/java/com/wzx/leetcode/No144BinaryTreePreorderTraversal.java): [前序遍历](https://masterwangzx.com/2019/03/16/binary-tree/#%E5%89%8D%E5%BA%8F%E9%81%8D%E5%8E%86)
-- [94. Binary Tree Inorder Traversal](src/main/java/com/wzx/leetcode/No94BinaryTreeInorderTraversal.java): [中序遍历](https://masterwangzx.com/2019/03/16/binary-tree/#%E4%B8%AD%E5%BA%8F%E9%81%8D%E5%8E%86)
-- [145. Binary Tree Postorder Traversal](src/main/java/com/wzx/leetcode/No145BinaryTreePostorderTraversal.java): [后序遍历](https://masterwangzx.com/2019/03/16/binary-tree/#%E5%90%8E%E5%BA%8F%E9%81%8D%E5%8E%86)
-- [offer37. 序列化二叉树](src/main/java/com/wzx/sword/No37SerializedBinaryTree.java)
-- [652. Find Duplicate Subtrees](src/main/java/com/wzx/leetcode/No652FindDuplicateSubtrees.java)
-- [offer54. 二叉搜索树的第k大节点](src/main/java/com/wzx/sword/No54TheKLargestNodeOfTheBinarySearchTree.java)
+
+- [144. Binary Tree Preorder Traversal](src/main/java/com/wzx/leetcode/No144BinaryTreePreorderTraversal.java): [前序遍历](https://masterwangzx.com/2019/03/16/binary-tree/#前序遍历)
+- [94. Binary Tree Inorder Traversal](src/main/java/com/wzx/leetcode/No94BinaryTreeInorderTraversal.java): [中序遍历](https://masterwangzx.com/2019/03/16/binary-tree/#中序遍历)
+- [145. Binary Tree Postorder Traversal](src/main/java/com/wzx/leetcode/No145BinaryTreePostorderTraversal.java): [后序遍历](https://masterwangzx.com/2019/03/16/binary-tree/#后序遍历)
+- [102. Binary Tree Level Order Traversal](src/main/java/com/wzx/leetcode/No102BinaryTreeLevelOrderTraversal.java): [层序遍历](https://masterwangzx.com/2019/03/16/binary-tree/#层序遍历)
 - [offer8. 二叉树的下一个节点](src/main/java/com/wzx/sword/No8BinaryTreeNextNode.java)
-- [offer68. 二叉树的最近公共祖先](src/main/java/com/wzx/sword/No68NearestCommonAncestorOfBinaryTree.java)
 - [offer32. 从上到下打印二叉树 III](src/main/java/com/wzx/leetcode/No32PrintTheBinaryTreeFromTopToBottom3.java)
 
 ### 重建
@@ -110,6 +109,7 @@ Created by [gh-md-toc](https://github.com/ekalinin/github-markdown-toc.go)
 - [230. Kth Smallest Element in a BST](src/main/java/com/wzx/leetcode/No230KthSmallestElementInABST.java)
 - [offer33. 二叉搜索树的后序遍历序列](src/main/java/com/wzx/sword/No33PostOrderTraversalSequenceOfBinarySearchTree.java)
 - [offer36. 二叉搜索树与双向链表](src/main/java/com/wzx/sword/No36BST2DoublyLinkedList.java)
+- [offer54. 二叉搜索树的第k大节点](src/main/java/com/wzx/sword/No54TheKLargestNodeOfTheBinarySearchTree.java)
 - [offer68. 二叉搜索树的最近公共祖先](src/main/java/com/wzx/sword/No68NearestCommonAncestorOfBinarySearchTree.java)
 
 ### 并查集

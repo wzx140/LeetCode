@@ -7,7 +7,7 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 public class No32PrintTheBinaryTreeFromTopToBottom3Test {
 
@@ -27,16 +27,9 @@ public class No32PrintTheBinaryTreeFromTopToBottom3Test {
   );
 
   @Test
-  public void levelOrder1() {
+  public void levelOrder() {
     No32PrintTheBinaryTreeFromTopToBottom3 solution = new No32PrintTheBinaryTreeFromTopToBottom3();
-    assertEquals(res1, solution.levelOrder1(tree1));
-    assertEquals(res2, solution.levelOrder1(tree2));
-  }
-
-  @Test
-  public void levelOrder2() {
-    No32PrintTheBinaryTreeFromTopToBottom3 solution = new No32PrintTheBinaryTreeFromTopToBottom3();
-    assertEquals(res1, solution.levelOrder2(tree1));
-    assertEquals(res2, solution.levelOrder2(tree2));
+    assertEquals(res1, solution.levelOrder(tree1));
+    assertEquals(res2, solution.levelOrder(tree2));
   }
 }
