@@ -9,7 +9,7 @@ import static org.junit.Assert.assertEquals;
 
 public class No37SerializedBinaryTreeTest {
 
-  TreeNode tree1 = TreeNode.buildTree(Arrays.asList(1, 2, 3, null, 4, 5));
+  TreeNode tree1 = TreeNode.buildTree(Arrays.asList(1, 2, 3, null, null, 4, 5));
   TreeNode tree2 = TreeNode.buildTree(Arrays.asList(5, 4, null, 3, null, 2));
 
   @Test

@@ -5,8 +5,7 @@ import java.util.PriorityQueue;
 import java.util.Queue;
 
 /**
- * https://leetcode.com/problems/find-median-from-data-stream/
- *
+ * @see <a href="https://leetcode.com/problems/find-median-from-data-stream/">https://leetcode.com/problems/find-median-from-data-stream/</a>
  * @author wzx
  */
 public class No295FindMedianFromDataStream {

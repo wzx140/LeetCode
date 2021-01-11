@@ -6,8 +6,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/
- *
+ * @see <a href="https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/">https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/</a>
  * @author wzx
  */
 public class No106ConstructBinaryTreeFromInorderAndPostorderTraversal {

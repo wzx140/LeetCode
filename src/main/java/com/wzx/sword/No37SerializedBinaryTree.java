@@ -2,18 +2,19 @@ package com.wzx.sword;
 
 import com.wzx.entity.TreeNode;
 
+import java.util.Deque;
 import java.util.LinkedList;
-import java.util.Queue;
 
 /**
- * https://leetcode-cn.com/problems/xu-lie-hua-er-cha-shu-lcof
- *
  * @author wzx
+ * @see <a href="https://leetcode-cn.com/problems/xu-lie-hua-er-cha-shu-lcof">https://leetcode-cn.com/problems/xu-lie-hua-er-cha-shu-lcof</a>
  */
 public class No37SerializedBinaryTree {
 
   private int offset = 0;
-  private TreeNode getNextNode(String str) {
+  private String str = null;
+
+  private TreeNode getNextNode() {
     String num = "";
     char ch;
     while ((ch = str.charAt(offset++)) != '!') {
@@ -28,7 +29,7 @@ public class No37SerializedBinaryTree {
   /**
    * 扩充二叉树层序遍历
    */
-  public class Codec1{
+  public class Codec1 {
 
     /**
      * 层序遍历
@@ -37,18 +38,18 @@ public class No37SerializedBinaryTree {
      * space: O(n)
      */
     public String serialize(TreeNode root) {
-      Queue<TreeNode> queue = new LinkedList<>();
+      Deque<TreeNode> queue = new LinkedList<>();
       if (root != null) queue.add(root);
 
       StringBuilder sb = new StringBuilder();
       while (!queue.isEmpty()) {
-        TreeNode node = queue.poll();
+        TreeNode node = queue.pollLast();
         if (node == null) {
           sb.append('#');
         } else {
           sb.append(node.val).append('!');
-          queue.add(node.left);
-          queue.add(node.right);
+          queue.addFirst(node.left);
+          queue.addFirst(node.right);
         }
       }
 
@@ -64,26 +65,26 @@ public class No37SerializedBinaryTree {
     public TreeNode deserialize(String data) {
       if (data.isEmpty()) return null;
       offset = 0;
-      TreeNode root = getNextNode(data);
+      str = data;
+      TreeNode root = getNextNode();
 
       // 已反序列化的所有节点
-      Queue<TreeNode> queue = new LinkedList<>();
+      Deque<TreeNode> queue = new LinkedList<>();
       queue.add(root);
       while (offset < data.length()) {
-
-        TreeNode parent = queue.poll();
+        TreeNode node = queue.pollLast();
         // 左子结点
-        TreeNode left = getNextNode(data);
+        TreeNode left = getNextNode();
         if (left != null) {
-          parent.left = left;
-          queue.add(parent.left);
+          node.left = left;
+          queue.addFirst(node.left);
         }
         // 右子结点
         if (offset < data.length()) {
-          TreeNode right = getNextNode(data);
+          TreeNode right = getNextNode();
           if (right != null) {
-            parent.right = right;
-            queue.add(parent.right);
+            node.right = right;
+            queue.addFirst(node.right);
           }
         }
 
@@ -96,7 +97,7 @@ public class No37SerializedBinaryTree {
   /**
    * 扩充二叉树前序遍历
    */
-  public class Codec2{
+  public class Codec2 {
 
     /**
      * 前序遍历
@@ -133,14 +134,14 @@ public class No37SerializedBinaryTree {
     public TreeNode deserialize(String data) {
       if (data == null) return null;
       offset = 0;
+      str = data;
       return recursion(data);
     }
 
     private TreeNode recursion(String str) {
-
       if (offset >= str.length()) return null;
 
-      TreeNode node = getNextNode(str);
+      TreeNode node = getNextNode();
       if (node != null) {
         node.left = recursion(str);
         node.right = recursion(str);
@@ -153,7 +154,7 @@ public class No37SerializedBinaryTree {
   /**
    * 扩充二叉树后序遍历
    */
-  public class Codec3{
+  public class Codec3 {
 
     /**
      * 后序遍历
@@ -197,8 +198,8 @@ public class No37SerializedBinaryTree {
         if (data.charAt(i) == '!') {
           // 翻转数字
           int numStart = i;
-          while (numStart-- > 0){
-            if (data.charAt(numStart) == '!' || data.charAt(numStart) == '#'){
+          while (numStart-- > 0) {
+            if (data.charAt(numStart) == '!' || data.charAt(numStart) == '#') {
               numStart++;
               break;
             }
@@ -210,14 +211,15 @@ public class No37SerializedBinaryTree {
         }
       }
 
-      return recursion(sb.toString());
+      str = sb.toString();
+      return recursion(str);
     }
 
     private TreeNode recursion(String str) {
 
       if (offset >= str.length()) return null;
 
-      TreeNode node = getNextNode(str);
+      TreeNode node = getNextNode();
       if (node != null) {
         node.right = recursion(str);
         node.left = recursion(str);
