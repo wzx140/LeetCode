@@ -3,8 +3,7 @@ package com.wzx.leetcode;
 import com.wzx.entity.TreeNode;
 
 /**
- * https://leetcode.com/problems/kth-smallest-element-in-a-bst/
- *
+ * @see <a href="https://leetcode.com/problems/kth-smallest-element-in-a-bst/">https://leetcode.com/problems/kth-smallest-element-in-a-bst/</a>
  * @author wzx
  */
 public class No230KthSmallestElementInABST {

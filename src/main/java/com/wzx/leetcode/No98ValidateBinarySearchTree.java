@@ -3,8 +3,7 @@ package com.wzx.leetcode;
 import com.wzx.entity.TreeNode;
 
 /**
- * https://leetcode.com/problems/validate-binary-search-tree/
- *
+ * @see <a href="https://leetcode.com/problems/validate-binary-search-tree/">https://leetcode.com/problems/validate-binary-search-tree/</a>
  * @author wzx
  */
 public class No98ValidateBinarySearchTree {
@@ -16,14 +15,14 @@ public class No98ValidateBinarySearchTree {
    * space: O(n)
    */
   public boolean isValidBST(TreeNode root) {
+    // null标记初始值, 不能使用Integer.MAX_VALUE和Integer.MIN_VALUE作为初始值
     return recursion(root, null, null);
   }
 
   /**
-   * @param root 当前子树根结点
-   * @param max  当前子树的最大值
-   * @param min  当前子树的最小值
-   * @return 是否是合法BST
+   * root为当前子树根结点, 取值范围在(min, max)
+   * @param max: 右子树的最小值
+   * @param min: 左子树的最大值
    */
   private boolean recursion(TreeNode root, Integer max, Integer min) {
     if (root == null) return true;
@@ -31,6 +30,9 @@ public class No98ValidateBinarySearchTree {
     if (max != null && root.val > max) return false;
     if (min != null && root.val < min) return false;
 
-    return recursion(root.left, root.val, min) && recursion(root.right, max, root.val);
+    // 左子树的所有结点小于根结点值, 所以根结点值为左子树的最大值
+    return recursion(root.left, root.val, min)
+            // 右子树的所有结点大于根结点值, 所以根结点值为右子树的最小值
+            && recursion(root.right, max, root.val);
   }
 }

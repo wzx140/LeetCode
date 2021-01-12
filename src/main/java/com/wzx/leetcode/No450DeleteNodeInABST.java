@@ -3,8 +3,7 @@ package com.wzx.leetcode;
 import com.wzx.entity.TreeNode;
 
 /**
- * https://leetcode.com/problems/delete-node-in-a-bst/
- *
+ * @see <a href="https://leetcode.com/problems/delete-node-in-a-bst/">https://leetcode.com/problems/delete-node-in-a-bst/</a>
  * @author wzx
  */
 public class No450DeleteNodeInABST {

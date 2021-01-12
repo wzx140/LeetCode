@@ -3,8 +3,7 @@ package com.wzx.leetcode;
 import com.wzx.entity.TreeNode;
 
 /**
- * https://leetcode.com/problems/search-in-a-binary-search-tree/
- *
+ * @see <a href="https://leetcode.com/problems/search-in-a-binary-search-tree/">https://leetcode.com/problems/search-in-a-binary-search-tree/</a>
  * @author wzx
  */
 public class No700SearchInABinarySearchTree {

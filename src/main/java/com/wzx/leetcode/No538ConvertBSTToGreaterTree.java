@@ -3,8 +3,7 @@ package com.wzx.leetcode;
 import com.wzx.entity.TreeNode;
 
 /**
- * https://leetcode.com/problems/convert-bst-to-greater-tree/
- *
+ * @see <a href="https://leetcode.com/problems/convert-bst-to-greater-tree/">https://leetcode.com/problems/convert-bst-to-greater-tree/</a>
  * @author wzx
  */
 public class No538ConvertBSTToGreaterTree {
