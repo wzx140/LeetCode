@@ -1,14 +1,22 @@
 package com.wzx.leetcode;
 
+import com.wzx.entity.UF;
+
 /**
- * https://leetcode.com/problems/surrounded-regions/
- *
  * @author wzx
+ * @see <a href="https://leetcode.com/problems/surrounded-regions/">https://leetcode.com/problems/surrounded-regions/</a>
  */
 public class No130SurroundedRegions {
+  // 搜索的四个方向
+  private final int[][] dir = {
+          {0, 1},
+          {1, 0},
+          {0, -1},
+          {-1, 0}
+  };
 
   /**
-   * 从边缘深搜
+   * 从边缘深搜标记非被X包围的O
    * <p>
    * time: O(mn)
    * space: O(mn)
@@ -16,33 +24,28 @@ public class No130SurroundedRegions {
   public void solve1(char[][] board) {
     if (board.length == 0) return;
     // 标记四周的O连通区域
-    for (int i = 0; i < board[0].length; i++) {
-      dfs(board, 0, i);
+    for (int r = 0; r < board.length; r++) {
+      dfs(board, r, 0);
+      dfs(board, r, board[0].length - 1);
     }
-    for (int i = 0; i < board[0].length; i++) {
-      dfs(board, board.length - 1, i);
-    }
-    for (int i = 0; i < board.length; i++) {
-      dfs(board, i, 0);
-    }
-    for (int i = 0; i < board.length; i++) {
-      dfs(board, i, board[0].length - 1);
+    for (int c = 0; c < board[0].length; c++) {
+      dfs(board, 0, c);
+      dfs(board, board.length - 1, c);
     }
 
-    // 将被包围的O翻转
-    for (int i = 0; i < board.length; i++) {
-      for (int j = 0; j < board[0].length; j++) {
-        if (board[i][j] == 'O') board[i][j] = 'X';
-      }
-    }
-
-    // 将标记变回O
-    for (int i = 0; i < board.length; i++) {
-      for (int j = 0; j < board[0].length; j++) {
-        if (board[i][j] == '#') board[i][j] = 'O';
+    for (int r = 0; r < board.length; r++) {
+      for (int c = 0; c < board[0].length; c++) {
+        if (board[r][c] == '#') {
+          // 将标记变回O
+          board[r][c] = 'O';
+        } else if (board[r][c] == 'O') {
+          // 将被X包围的O翻转
+          board[r][c] = 'X';
+        }
       }
     }
   }
+
 
   /**
    * 标记O连通区域
@@ -61,53 +64,6 @@ public class No130SurroundedRegions {
     }
   }
 
-  private static class UF {
-    private int[] parent = null;
-    private int[] count = null;
-
-    public UF(int size) {
-      parent = new int[size];
-      count = new int[size];
-      for (int i = 0; i < size; i++) {
-        parent[i] = i;
-      }
-    }
-
-    /**
-     * 寻找根结点
-     */
-    public int find(int x) {
-      if (parent[x] == x) return x;
-      // 路径压缩
-      parent[x] = find(parent[x]);
-      return parent[x];
-    }
-
-    /**
-     * 连接两个树
-     */
-    public void union(int x, int y) {
-      int rootX = find(x);
-      int rootY = find(y);
-      if (rootX == rootY) {
-        return;
-      }
-
-      // 加权合并
-      if (count[rootX] < count[rootY]) {
-        int tmp = rootX;
-        rootX = rootY;
-        rootY = tmp;
-      }
-      parent[rootY] = rootX;
-      count[rootX] += count[rootY];
-    }
-
-    public boolean isConnect(int x, int y) {
-      return find(x) == find(y);
-    }
-  }
-
   /**
    * 并查集
    * <p>
@@ -116,38 +72,38 @@ public class No130SurroundedRegions {
    */
   public void solve2(char[][] board) {
     if (board.length == 0) return;
-    // 铺平board, 并增加dummy结点, 其子结点表示不被包围的O区域
-    UF uf = new UF(board.length * board[0].length + 1);
-    // 将边缘区域的O连接到dummy
-    int DUMMY = board.length * board[0].length;
-    for (int i = 0; i < board[0].length; i++) {
-      uf.union(DUMMY, i);
+    int m = board.length, n = board[0].length;
+    // 利用并查集保存O区域与外界的连通关系
+    UF uf = new UF(m * n + 1);
+    // 规定m*n为外界, 与m*n相连的O区域与外界连通
+    int OUTSIDE = m * n;
+
+    // 边缘的O和外界连通
+    for (int r = 0; r < m; r++) {
+      if (board[r][0] == 'O') uf.union(r * n, OUTSIDE);
+      if (board[r][n - 1] == 'O') uf.union(r * n + n - 1, OUTSIDE);
     }
-    for (int i = 0; i < board[0].length; i++) {
-      uf.union(DUMMY, (board.length - 1) * board[0].length + i);
+    for (int c = 0; c < n; c++) {
+      if (board[0][c] == 'O') uf.union(c, OUTSIDE);
+      if (board[m - 1][c] == 'O') uf.union((m - 1) * n + c, OUTSIDE);
     }
-    for (int i = 0; i < board.length; i++) {
-      uf.union(DUMMY, i * board[0].length);
-    }
-    for (int i = 0; i < board.length; i++) {
-      uf.union(DUMMY, i * board[0].length + board[0].length - 1);
-    }
-    // 将中间的O与其四周的O连接
-    for (int i = 1; i < board.length - 1; i++) {
-      for (int j = 1; j < board[0].length - 1; j++) {
-        if (board[i][j] == 'O') {
-          if (board[i - 1][j] == 'O') uf.union(i * board[0].length + j, (i - 1) * board[0].length + j);
-          if (board[i][j - 1] == 'O') uf.union(i * board[0].length + j, i * board[0].length + j - 1);
-          if (board[i + 1][j] == 'O') uf.union(i * board[0].length + j, (i + 1) * board[0].length + j);
-          if (board[i][j + 1] == 'O') uf.union(i * board[0].length + j, i * board[0].length + j + 1);
+    // 内部的O与其四周的O连通
+    for (int r = 1; r < m - 1; r++) {
+      for (int c = 1; c < n - 1; c++) {
+        if (board[r][c] == 'O') {
+          for (int i = 0; i < 4; i++) {
+            if (board[r + dir[i][0]][c + dir[i][1]] == 'O') {
+              uf.union(r * n + c, (r + dir[i][0]) * n + c + dir[i][1]);
+            }
+          }
         }
       }
     }
-    // 除了与DUMMY子结点外, 全部翻转为X
-    for (int i = 0; i < board.length; i++) {
-      for (int j = 0; j < board[0].length; j++) {
-        if (board[i][j] == 'O' && !uf.isConnect(DUMMY, i * board[0].length + j)) {
-          board[i][j] = 'X';
+    // 所有不与OUTSIDE连通的O翻转为X
+    for (int r = 0; r < m; r++) {
+      for (int c = 0; c < n; c++) {
+        if (board[r][c] == 'O' && !uf.isConnect(OUTSIDE, r * n + c)) {
+          board[r][c] = 'X';
         }
       }
     }

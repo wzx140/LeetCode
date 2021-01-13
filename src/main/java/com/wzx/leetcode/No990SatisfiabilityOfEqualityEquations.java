@@ -1,58 +1,12 @@
 package com.wzx.leetcode;
 
+import com.wzx.entity.UF;
+
 /**
- * https://leetcode.com/problems/satisfiability-of-equality-equations/
- *
+ * @see <a href="https://leetcode.com/problems/satisfiability-of-equality-equations/">https://leetcode.com/problems/satisfiability-of-equality-equations/</a>
  * @author wzx
  */
 public class No990SatisfiabilityOfEqualityEquations {
-
-  private static class UF {
-    private int[] parent = null;
-    private int[] count = null;
-
-    public UF(int size) {
-      parent = new int[size];
-      count = new int[size];
-      for (int i = 0; i < size; i++) {
-        parent[i] = i;
-      }
-    }
-
-    /**
-     * 寻找根结点
-     */
-    public int find(int x) {
-      if (parent[x] == x) return x;
-      // 路径压缩
-      parent[x] = find(parent[x]);
-      return parent[x];
-    }
-
-    /**
-     * 连接两个树
-     */
-    public void union(int x, int y) {
-      int rootX = find(x);
-      int rootY = find(y);
-      if (rootX == rootY) {
-        return;
-      }
-
-      // 加权合并
-      if (count[rootX] < count[rootY]) {
-        int tmp = rootX;
-        rootX = rootY;
-        rootY = tmp;
-      }
-      parent[rootY] = rootX;
-      count[rootX] += count[rootY];
-    }
-
-    public boolean isConnect(int x, int y) {
-      return find(x) == find(y);
-    }
-  }
 
   /**
    * 并查集
