@@ -40,6 +40,7 @@ public class Heap<E> {
     siftDown(0);
   }
 
+  @SuppressWarnings("unchecked")
   public E peek() {
     return (E) heap[0];
   }
@@ -47,6 +48,7 @@ public class Heap<E> {
   /**
    * 从第i个结点向下调整
    */
+  @SuppressWarnings("unchecked")
   private void siftDown(int i) {
     int parent = i;
     // i结点暂存
@@ -74,6 +76,7 @@ public class Heap<E> {
   /**
    * 从第i个结点向上调整
    */
+  @SuppressWarnings("unchecked")
   private void siftUp(int i) {
     int child = i;
     // i结点暂存

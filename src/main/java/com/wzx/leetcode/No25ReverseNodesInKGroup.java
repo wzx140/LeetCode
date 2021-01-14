@@ -3,8 +3,7 @@ package com.wzx.leetcode;
 import com.wzx.entity.ListNode;
 
 /**
- * https://leetcode.com/problems/reverse-nodes-in-k-group/
- *
+ * @see <a href="https://leetcode.com/problems/reverse-nodes-in-k-group/">https://leetcode.com/problems/reverse-nodes-in-k-group/</a>
  * @author wzx
  */
 public class No25ReverseNodesInKGroup {
@@ -16,32 +15,33 @@ public class No25ReverseNodesInKGroup {
    * space: O(n)
    */
   public ListNode reverseKGroup(ListNode head, int k) {
-    if (head == null) return null;
+    if(head == null) return null;
 
-    ListNode start = head;
-    ListNode end = head;
-
-    for (int i = 0; i < k; i++) {
+    // head: 当前group的head
+    // tail: 当前group的tail
+    ListNode tail = head;
+    for(int i = 0; i< k - 1; i++){
+      tail = tail.next;
       // 不足k个, 不需要反转
-      if (end == null) return head;
-      end = end.next;
+      if(tail == null) return head;
     }
-
-    // 反转链表
-    ListNode newHead = reverse(start, end);
-    // 反转后的链表结尾接的是下一个反转链表
-    start.next = reverseKGroup(end, k);
-    return newHead;
+    // new head = tail
+    // new tail = head
+    ListNode nextHead = reverse(head, tail);
+    // 逆转group之间的连接需要有后至前, 所以应用递归
+    head.next = reverseKGroup(nextHead, k);
+    return tail;
   }
 
-  private ListNode reverse(ListNode start, ListNode end) {
-    ListNode cur = start, pre = end;
-    while (cur != end) {
+  private ListNode reverse(ListNode head, ListNode tail){
+    ListNode pre = head, cur = pre.next;
+    while(pre != tail){
       ListNode next = cur.next;
       cur.next = pre;
       pre = cur;
       cur = next;
     }
-    return pre;
+    // 返回下一个group的head
+    return cur;
   }
 }

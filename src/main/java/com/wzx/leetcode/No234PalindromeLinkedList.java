@@ -3,8 +3,7 @@ package com.wzx.leetcode;
 import com.wzx.entity.ListNode;
 
 /**
- * https://leetcode.com/problems/palindrome-linked-list/
- *
+ * @see <a href="https://leetcode.com/problems/palindrome-linked-list/">https://leetcode.com/problems/palindrome-linked-list/</a>
  * @author wzx
  */
 public class No234PalindromeLinkedList {
@@ -48,8 +47,7 @@ public class No234PalindromeLinkedList {
     }
 
     // 比较回文
-    ListNode left = head;
-    ListNode right = pre;
+    ListNode left = head, right = pre;
     while (left != null && right != null) {
       if (left.val != right.val) return false;
       left = left.next;
