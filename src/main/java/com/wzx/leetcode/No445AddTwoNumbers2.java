@@ -2,13 +2,12 @@ package com.wzx.leetcode;
 
 import com.wzx.entity.ListNode;
 
-import java.util.ArrayDeque;
 import java.util.Deque;
+import java.util.LinkedList;
 
 /**
- * https://leetcode.com/problems/add-two-numbers-ii/
- *
  * @author wzx
+ * @see <a href="https://leetcode.com/problems/add-two-numbers-ii/">https://leetcode.com/problems/add-two-numbers-ii/</a>
  */
 public class No445AddTwoNumbers2 {
 
@@ -19,28 +18,26 @@ public class No445AddTwoNumbers2 {
    * space: O(m+n)
    */
   public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
-
-    Deque<Integer> stack1 = new ArrayDeque<>();
-    Deque<Integer> stack2 = new ArrayDeque<>();
+    Deque<Integer> stack1 = new LinkedList<>();
+    Deque<Integer> stack2 = new LinkedList<>();
     while (l1 != null) {
-      stack1.push(l1.val);
+      stack1.addFirst(l1.val);
       l1 = l1.next;
     }
     while (l2 != null) {
-      stack2.push(l2.val);
+      stack2.addFirst(l2.val);
       l2 = l2.next;
     }
 
     ListNode head = null;
     int carry = 0;
-
     while (!stack1.isEmpty() || !stack2.isEmpty()) {
-      int value1 = stack1.isEmpty() ? 0 : stack1.pop();
-      int value2 = stack2.isEmpty() ? 0 : stack2.pop();
+      int value1 = stack1.isEmpty() ? 0 : stack1.pollFirst();
+      int value2 = stack2.isEmpty() ? 0 : stack2.pollFirst();
       int res = value1 + value2 + carry;
+      carry = res / 10;
 
       ListNode newNode = new ListNode(res % 10);
-      carry = res / 10;
       newNode.next = head;
       head = newNode;
     }

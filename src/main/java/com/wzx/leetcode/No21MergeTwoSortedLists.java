@@ -3,27 +3,19 @@ package com.wzx.leetcode;
 import com.wzx.entity.ListNode;
 
 /**
- * https://leetcode.com/problems/merge-two-sorted-lists/
- *
  * @author wzx
+ * @see <a href="https://leetcode.com/problems/merge-two-sorted-lists/">https://leetcode.com/problems/merge-two-sorted-lists/</a>
  */
 public class No21MergeTwoSortedLists {
 
   /**
+   * 二路归并
    * time: O(n)
    * space: O(1)
    */
   public ListNode mergeTwoLists1(ListNode l1, ListNode l2) {
-
-    if (l1 == null) {
-      return l2;
-    }
-    if (l2 == null) {
-      return l1;
-    }
-
-    ListNode head = new ListNode();
-    ListNode node = head;
+    ListNode sent = new ListNode();
+    ListNode node = sent;
     while (l1 != null || l2 != null) {
       if (l1 == null) {
         node.next = l2;
@@ -32,19 +24,18 @@ public class No21MergeTwoSortedLists {
         node.next = l1;
         l1 = l1.next;
       } else {
-
-        if (l1.val < l2.val) {
-          node.next = l1;
-          l1 = l1.next;
-        } else {
-          node.next = l2;
-          l2 = l2.next;
+        if (l1.val > l2.val) {
+          ListNode tmp = l1;
+          l1 = l2;
+          l2 = tmp;
         }
+        node.next = l1;
+        l1 = l1.next;
 
       }
       node = node.next;
     }
 
-    return head.next;
+    return sent.next;
   }
 }

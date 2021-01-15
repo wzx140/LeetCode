@@ -6,8 +6,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 /**
- * https://leetcode.com/problems/linked-list-cycle/
- *
+ * @see <a href="https://leetcode.com/problems/linked-list-cycle/">https://leetcode.com/problems/linked-list-cycle/</a>
  * @author wzx
  */
 public class No141LinkedListCycle {

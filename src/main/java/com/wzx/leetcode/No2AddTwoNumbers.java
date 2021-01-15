@@ -3,8 +3,7 @@ package com.wzx.leetcode;
 import com.wzx.entity.ListNode;
 
 /**
- * https://leetcode.com/problems/add-two-numbers/
- *
+ * @see <a href="https://leetcode.com/problems/add-two-numbers/">https://leetcode.com/problems/add-two-numbers/</a>
  * @author wzx
  */
 public class No2AddTwoNumbers {
