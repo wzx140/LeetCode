@@ -4,22 +4,11 @@ import java.util.Deque;
 import java.util.LinkedList;
 import java.util.List;
 
+/**
+ * @author wzx
+ * @see <a href="https://leetcode.com/problems/flatten-a-multilevel-doubly-linked-list/">https://leetcode.com/problems/flatten-a-multilevel-doubly-linked-list/</a>
+ */
 public class No430FlattenAMultilevelDoublyLinkedList {
-
-    private Node flattenDfs(Node pre, Node cur) {
-        if (cur == null) return pre;
-
-        pre.next = cur;
-        cur.prev = pre;
-        Node next = cur.next;
-
-        // 优先连接cur节点和child节点
-        Node tail = flattenDfs(cur, cur.child);
-        cur.child = null;
-
-        // 最后将cur.next连到child子链表后
-        return flattenDfs(tail, next);
-    }
 
     /**
      * 递归
@@ -33,10 +22,26 @@ public class No430FlattenAMultilevelDoublyLinkedList {
         Node sentinel = new Node();
         sentinel.next = head;
         head.prev = sentinel;
-        flattenDfs(sentinel, head);
+        recursion(sentinel, head);
 
         head.prev = null;
         return head;
+    }
+
+    /**
+     * 双向连接pre和cur并展开cur.child
+     */
+    private Node recursion(Node pre, Node cur) {
+        if (cur == null) return pre;
+        // 双向连接pre和cur
+        pre.next = cur;
+        cur.prev = pre;
+        Node next = cur.next;
+        // 连接cur和child
+        Node tail = recursion(cur, cur.child);
+        cur.child = null;
+        // 将cur.next连到child子链表后
+        return recursion(tail, next);
     }
 
     /**

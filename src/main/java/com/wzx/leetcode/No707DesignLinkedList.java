@@ -1,8 +1,7 @@
 package com.wzx.leetcode;
 
 /**
- * https://leetcode.com/problems/design-linked-list/
- *
+ * @see <a href="https://leetcode.com/problems/design-linked-list/">https://leetcode.com/problems/design-linked-list/</a>
  * @author wzx
  */
 public class No707DesignLinkedList {
@@ -14,17 +13,13 @@ public class No707DesignLinkedList {
       public ListNode next;
       public ListNode pre;
 
-      public ListNode() {
-      }
-
       public ListNode(int val) {
         this.val = val;
       }
-
     }
 
-    private ListNode head = null;
-    private ListNode tail = null;
+    private final ListNode head;
+    private final ListNode tail;
     private int size = 0;
 
     /**
@@ -41,13 +36,9 @@ public class No707DesignLinkedList {
      * Get the value of the index-th node in the linked list. If the index is invalid, return -1.
      */
     public int get(int index) {
+      if (index < 0 || index >= size) return -1;
 
-      if (index < 0 || index >= size) {
-        return -1;
-      }
-
-      ListNode node = getCurNode(index);
-      return node.val;
+      return getCurNode(index).val;
     }
 
     /**
@@ -56,6 +47,7 @@ public class No707DesignLinkedList {
      */
     public void addAtHead(int val) {
       ListNode newNode = new ListNode(val);
+      // head <--> newNode <--> head.next
       head.next.pre = newNode;
       newNode.next = head.next;
       head.next = newNode;
@@ -69,6 +61,7 @@ public class No707DesignLinkedList {
      */
     public void addAtTail(int val) {
       ListNode newNode = new ListNode(val);
+      // tail.pre <--> newNode <--> tail
       tail.pre.next = newNode;
       newNode.pre = tail.pre;
       tail.pre = newNode;
@@ -83,19 +76,13 @@ public class No707DesignLinkedList {
      * greater than the length, the node will not be inserted.
      */
     public void addAtIndex(int index, int val) {
-
-      if (index > size) {
-        return;
-      }
-
-      if (index < 0) {
-        index = 0;
-      }
+      if(index > size || index < 0) return;
 
       ListNode node = getCurNode(index);
       ListNode newNode = new ListNode(val);
+      // node.pre <--> newNode <-> node
       newNode.pre = node.pre;
-      newNode.pre.next = newNode;
+      node.pre.next = newNode;
       newNode.next = node;
       node.pre = newNode;
 
@@ -106,25 +93,21 @@ public class No707DesignLinkedList {
      * Delete the index-th node in the linked list, if the index is valid.
      */
     public void deleteAtIndex(int index) {
-
-      if (index < 0 || index >= size) {
-        return;
-      }
+      if (index >= size || index < 0) return;
 
       ListNode node = getCurNode(index);
-      ListNode next = node.next;
+      // node.pre <--> node.next
       node.pre.next = node.next;
       node.next.pre = node.pre;
-
-      node.pre = null;
-      node.next = null;
-      node = null;
 
       size--;
     }
 
+    /**
+     * 根据index判断从head处遍历还是从tail处遍历
+     */
     private ListNode getCurNode(int index) {
-      ListNode node = null;
+      ListNode node;
       if (index < size - index) {
         node = head;
         while (index-- >= 0) {

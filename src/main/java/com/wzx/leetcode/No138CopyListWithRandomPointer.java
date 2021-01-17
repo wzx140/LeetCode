@@ -4,23 +4,30 @@ import java.util.*;
 import java.util.stream.Collectors;
 
 /**
- * https://leetcode.com/problems/copy-list-with-random-pointer/
- *
+ * @see <a href="https://leetcode.com/problems/copy-list-with-random-pointer/">https://leetcode.com/problems/copy-list-with-random-pointer/</a>
  * @author wzx
  */
 public class No138CopyListWithRandomPointer {
 
   /**
-   * 将带随机指针的链表看成图，带缓存的dfs，递归
+   * 将带随机指针的链表看成图(每个结点通过next和random和其他节点连接)，使用带备忘录的深搜
    * <p>
    * time: O(n)
    * space: O(n)
    */
   public Node copyRandomList1(Node head) {
-    if (head == null) return null;
-    Map<Node, Node> visit = new HashMap<>();
+    return recursion(head, new HashMap<>());
+  }
 
-    return dfs(head, visit);
+  private Node recursion(Node node, Map<Node, Node> memo){
+    if(node == null) return null;
+    if(memo.containsKey(node)) return memo.get(node);
+
+    Node newNode = new Node(node.val);
+    memo.put(node, newNode);
+    newNode.next = recursion(node.next, memo);
+    newNode.random = recursion(node.random, memo);
+    return newNode;
   }
 
   /**
@@ -48,6 +55,15 @@ public class No138CopyListWithRandomPointer {
     return newHead;
   }
 
+  private Node cloneNode(Node node, Map<Node, Node> visit) {
+    if (node == null) return null;
+    if (visit.containsKey(node)) return visit.get(node);
+
+    Node newNode = new Node(node.val);
+    visit.put(node, newNode);
+    return newNode;
+  }
+
   /**
    * 将clone后的节点放在当前节点后面，newNode.random = node.random.next
    * <p>
@@ -56,68 +72,37 @@ public class No138CopyListWithRandomPointer {
    */
   public Node copyRandomList3(Node head) {
     if (head == null) return null;
-
+    // 复制结点
     Node node = head;
-    Node newNode = null;
-    // clone并放到下一个
-    while (node != null) {
-      newNode = new Node(node.val);
-      Node next = node.next;
-      newNode.next = next;
+    while(node != null){
+      Node newNode = new Node(node.val);
+      // clone结点接到原结点后面
+      Node nextNode = node.next;
       node.next = newNode;
-
-      node = next;
+      newNode.next = nextNode;
+      // 遍历
+      node = nextNode;
     }
-
+    // 复制random
     node = head;
-    // 确定random
-    while (node != null) {
-      node.next.random = node.random != null ? node.random.next : null;
+    while(node != null){
+      Node newNode = node.next;
+      Node randomNode = node.random;
+      if(randomNode != null)  newNode.random = randomNode.next;
+
       node = node.next.next;
     }
+    // 分开两个链表
+    node = head;
+    Node newHead = node.next;
+    while(node != null){
+      Node newNode = node.next;
+      node.next = node.next.next;
+      if(newNode.next != null) newNode.next = newNode.next.next;
 
-    Node origin = head;
-    Node clone = head.next;
-    Node newHead = clone;
-    // 分开链表
-    while (origin != null) {
-      origin.next = origin.next.next;
-      clone.next = clone.next != null ? clone.next.next : null;
-
-      origin = origin.next;
-      clone = clone.next;
+      node = node.next;
     }
-
     return newHead;
-  }
-
-  private Node dfs(Node node, Map<Node, Node> visit) {
-    Node newNode = null;
-    if (visit.containsKey(node)) {
-      newNode = visit.get(node);
-    } else {
-      newNode = new Node(node.val);
-      visit.put(node, newNode);
-
-      if (node.next != null) {
-        newNode.next = dfs(node.next, visit);
-      }
-
-      if (node.random != null) {
-        newNode.random = dfs(node.random, visit);
-      }
-    }
-
-    return newNode;
-  }
-
-  private Node cloneNode(Node node, Map<Node, Node> visit) {
-    if (node == null) return null;
-    if (visit.containsKey(node)) return visit.get(node);
-
-    Node newNode = new Node(node.val);
-    visit.put(node, newNode);
-    return newNode;
   }
 
   public static class Node {

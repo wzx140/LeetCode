@@ -6,8 +6,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 /**
- * https://leetcode.com/problems/intersection-of-two-linked-lists/
- *
+ * @see <a href="https://leetcode.com/problems/intersection-of-two-linked-lists/">https://leetcode.com/problems/intersection-of-two-linked-lists/</a>
  * @author wzx
  */
 public class No160IntersectionOfTwoLinkedLists {

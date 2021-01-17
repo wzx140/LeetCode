@@ -1,9 +1,8 @@
 package com.wzx.leetcode;
 
-import com.wzx.leetcode.No138CopyListWithRandomPointer.Node;
 import org.junit.Before;
 import org.junit.Test;
-
+import com.wzx.leetcode.No138CopyListWithRandomPointer.Node;
 import java.util.Arrays;
 
 import static org.junit.Assert.assertEquals;
