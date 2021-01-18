@@ -6,15 +6,14 @@ import java.util.HashSet;
 import java.util.Set;
 
 /**
- * https://leetcode.com/problems/remove-duplicates-from-sorted-list/
- *
  * @author wzx
+ * @see <a href="https://leetcode.com/problems/remove-duplicates-from-sorted-list/">https://leetcode.com/problems/remove-duplicates-from-sorted-list/</a>
  */
 public class No83RemoveDuplicatesFromSortedList {
 
   /**
    * 哈希表
-   *
+   * <p>
    * time: O(n)
    * space: O(n)
    */
@@ -41,28 +40,24 @@ public class No83RemoveDuplicatesFromSortedList {
 
   /**
    * 快慢指针
-   *
+   * <p>
    * time: O(n)
    * space: O(1)
    */
   public static ListNode deleteDuplicates2(ListNode head) {
-    if (null == head || null == head.next) return head;
-
-    // 存储指针
-    ListNode store = head;
-    ListNode pre = head;
-    // 遍历指针
-    ListNode cur = head.next;
-    while (cur != null) {
-      // 从第二个元素开始值不相等则在存储指针位置赋值
-      if (cur.val != pre.val){
-        store = store.next;
-        store.val = cur.val;
+    if (head == null) return null;
+    ListNode preSlow = head, preFast = head, slow = head.next, fast = head.next;
+    while (fast != null) {
+      if (fast.val != preFast.val) {
+        slow.val = fast.val;
+        preSlow = slow;
+        slow = slow.next;
       }
-      cur = cur.next;
-      pre = pre.next;
+      preFast = fast;
+      fast = fast.next;
     }
-    store.next = null;
+    // 处理尾结点
+    preSlow.next = null;
 
     return head;
   }

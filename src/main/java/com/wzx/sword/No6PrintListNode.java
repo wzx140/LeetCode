@@ -2,14 +2,10 @@ package com.wzx.sword;
 
 import com.wzx.entity.ListNode;
 
-import java.util.ArrayDeque;
-import java.util.ArrayList;
-import java.util.Deque;
-import java.util.List;
+import java.util.*;
 
 /**
- * https://leetcode-cn.com/problems/cong-wei-dao-tou-da-yin-lian-biao-lcof/
- *
+ * @see <a href="https://leetcode-cn.com/problems/cong-wei-dao-tou-da-yin-lian-biao-lcof/">https://leetcode-cn.com/problems/cong-wei-dao-tou-da-yin-lian-biao-lcof/</a>
  * @author wzx
  */
 public class No6PrintListNode {
@@ -21,7 +17,7 @@ public class No6PrintListNode {
    * space: O(n)
    */
   public int[] reversePrint1(ListNode head) {
-    Deque<Integer> stack = new ArrayDeque<>();
+    Deque<Integer> stack = new LinkedList<>();
 
     while (head != null) {
       stack.push(head.val);

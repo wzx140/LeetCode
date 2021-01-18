@@ -1,8 +1,7 @@
 package com.wzx.leetcode;
 
 /**
- * https://leetcode.com/problems/remove-duplicates-from-sorted-array/
- *
+ * @see <a href="https://leetcode.com/problems/remove-duplicates-from-sorted-array/">https://leetcode.com/problems/remove-duplicates-from-sorted-array/</a>
  * @author wzx
  */
 public class No26RemoveDuplicatesFromSortedArray {

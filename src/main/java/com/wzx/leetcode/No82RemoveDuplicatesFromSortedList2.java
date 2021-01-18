@@ -3,9 +3,8 @@ package com.wzx.leetcode;
 import com.wzx.entity.ListNode;
 
 /**
- * https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/
- *
  * @author wzx
+ * @see <a href="https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/">https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/</a>
  */
 public class No82RemoveDuplicatesFromSortedList2 {
 
@@ -16,20 +15,15 @@ public class No82RemoveDuplicatesFromSortedList2 {
    * space: O(1)
    */
   public ListNode deleteDuplicates1(ListNode head) {
-    if (null == head || null == head.next) return head;
-
-    // 当前对比位置
-    ListNode fast = head;
-    ListNode preFast = null;
-    // 当前存储位置
-    ListNode preSlow = null;
-    ListNode slow = head;
-
+    if (head == null) return null;
+    // 哨兵处理头结点也被删除的情况
+    ListNode sent = new ListNode(-101);
+    sent.next = head;
+    ListNode preSlow = sent, preFast = sent, slow = head, fast = head;
     while (fast != null) {
       // 前后都不相同才是唯一的结点
-      if ((null == preFast || fast.val != preFast.val)
-              && (null == fast.next || fast.val != fast.next.val)) {
-
+      if (fast.val != preFast.val
+              && (fast.next == null || fast.val != fast.next.val)) {
         slow.val = fast.val;
         preSlow = slow;
         slow = slow.next;
@@ -37,14 +31,9 @@ public class No82RemoveDuplicatesFromSortedList2 {
       preFast = fast;
       fast = fast.next;
     }
+    // 处理尾结点
+    preSlow.next = null;
 
-    // 去除多余的结点
-    if (preSlow != null) {
-      preSlow.next = null;
-    } else {
-      return null;
-    }
-
-    return head;
+    return sent.next;
   }
 }
