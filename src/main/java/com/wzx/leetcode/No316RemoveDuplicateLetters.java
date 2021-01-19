@@ -3,10 +3,8 @@ package com.wzx.leetcode;
 import java.util.*;
 
 /**
- * https://leetcode.com/problems/remove-duplicate-letters/
- * the same as 1081
- *
  * @author wzx
+ * @see <a href="https://leetcode.com/problems/remove-duplicate-letters/">https://leetcode.com/problems/remove-duplicate-letters/</a>
  */
 public class No316RemoveDuplicateLetters {
 
@@ -17,46 +15,40 @@ public class No316RemoveDuplicateLetters {
    * space: O(n)
    */
   public String removeDuplicateLetters1(String s) {
-    // 当前元素之后的可用字母计数
-    Map<Character, Integer> map = new HashMap<>(s.length());
-    // 当前元素之前的访问过的字母
-    Set<Character> visit = new HashSet<>(s.length());
-    // 目标字符串的倒序
-    Deque<Character> stack = new ArrayDeque<>(s.length());
+    // 当前元素之后的可用字母计数, 防止字母缺失
+    Map<Character, Integer> cntMap = new HashMap<>();
+    // 当前元素之前的访问过的字母, 防止添加重复字母
+    Set<Character> visit = new HashSet<>();
+    // 目标字符串的倒序, 目的为快速访问和替换目标字符串的最后一位
+    Deque<Character> stack = new LinkedList<>();
+    char[] charArray = s.toCharArray();
 
     // 计数
-    for (int i = 0; i < s.length(); i++) {
-      char ch = s.charAt(i);
-      int num = map.getOrDefault(ch, 0);
-      map.put(ch, num + 1);
+    for (char ch : charArray) {
+      cntMap.merge(ch, 1, Integer::sum);
     }
 
-    for (int i = 0; i < s.length(); i++) {
-      char ch = s.charAt(i);
-      // 每访问一个字母，则在计数中减一
-      map.put(ch, map.get(ch) - 1);
-
-      // 不添加重复字母
-      if (!visit.contains(ch)) {
-        // 去除前面可替换的字典序较大的字母
-        while (!stack.isEmpty() &&
-                stack.peek() > ch &&
-                map.get(stack.peek()) != 0) {
-
-          visit.remove(stack.peek());
-          stack.pop();
-        }
-        stack.push(ch);
-        visit.add(ch);
+    for (char ch : charArray) {
+      // 每访问一个字母, 则在计数中减一
+      cntMap.compute(ch, (key, cnt) -> cnt - 1);
+      // 不可能添加重复字母, 因为重复的字母字典序相同, 不需要替换
+      if (visit.contains(ch)) continue;
+      // 去除前面可替换的字典序较大的字母
+      while (!stack.isEmpty() &&
+              stack.peekFirst() > ch &&
+              cntMap.get(stack.peekFirst()) != 0) {
+        visit.remove(stack.peekFirst());
+        stack.removeFirst();
       }
+      stack.addFirst(ch);
+      visit.add(ch);
     }
 
-    // 栈要逆序
     StringBuilder sb = new StringBuilder(stack.size());
     while (!stack.isEmpty()) {
-      sb.append(stack.pop());
+      sb.append(stack.pollFirst());
     }
-
+    // 栈要逆序
     return sb.reverse().toString();
   }
 }

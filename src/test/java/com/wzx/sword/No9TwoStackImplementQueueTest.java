@@ -13,7 +13,7 @@ public class No9TwoStackImplementQueueTest {
     assertEquals(3, queue.deleteHead());
     assertEquals(-1, queue.deleteHead());
 
-    queue.clear();
+    queue = new No9TwoStackImplementQueue.CQueue();
     assertEquals(-1, queue.deleteHead());
     queue.appendTail(5);
     queue.appendTail(2);

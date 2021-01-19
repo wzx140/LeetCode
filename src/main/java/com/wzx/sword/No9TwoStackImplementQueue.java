@@ -4,8 +4,7 @@ import java.util.Deque;
 import java.util.LinkedList;
 
 /**
- * https://www.nowcoder.com/practice/54275ddae22f475981afa2244dd448c6
- *
+ * @see <a href="https://leetcode-cn.com/problems/yong-liang-ge-zhan-shi-xian-dui-lie-lcof/">https://leetcode-cn.com/problems/yong-liang-ge-zhan-shi-xian-dui-lie-lcof/</a>
  * @author wzx
  */
 public class No9TwoStackImplementQueue {
@@ -24,7 +23,7 @@ public class No9TwoStackImplementQueue {
      * space: O(1)
      */
     public void appendTail(int value) {
-      stack1.push(value);
+      stack1.addFirst(value);
     }
 
     /**
@@ -36,16 +35,10 @@ public class No9TwoStackImplementQueue {
     public int deleteHead() {
       if (stack2.isEmpty()) {
         while (!stack1.isEmpty()) {
-          stack2.push(stack1.pop());
+          stack2.addFirst(stack1.pollFirst());
         }
       }
-
-      return stack2.isEmpty() ? -1 : stack2.pop();
-    }
-
-    public void clear(){
-      stack1.clear();
-      stack2.clear();
+      return stack2.isEmpty() ? -1 : stack2.pollFirst();
     }
   }
 }
