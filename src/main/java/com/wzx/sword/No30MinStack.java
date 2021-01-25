@@ -3,8 +3,7 @@ package com.wzx.sword;
 import java.util.*;
 
 /**
- * https://leetcode-cn.com/problems/bao-han-minhan-shu-de-zhan-lcof/
- *
+ * @see <a href="https://leetcode-cn.com/problems/bao-han-minhan-shu-de-zhan-lcof/">https://leetcode-cn.com/problems/bao-han-minhan-shu-de-zhan-lcof/</a>
  * @author wzx
  */
 public class No30MinStack {
@@ -32,7 +31,7 @@ public class No30MinStack {
 
     @SuppressWarnings("ConstantConditions")
     public void pop() {
-      int popValue = stack.removeFirst();
+      int popValue = stack.pollFirst();
       if (popValue == minStack.peekFirst()) minStack.removeFirst();
     }
 

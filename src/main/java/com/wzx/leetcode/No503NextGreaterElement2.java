@@ -4,8 +4,7 @@ import java.util.Deque;
 import java.util.LinkedList;
 
 /**
- * https://leetcode.com/problems/next-greater-element-ii/
- *
+ * @see <a href="https://leetcode.com/problems/next-greater-element-ii/">https://leetcode.com/problems/next-greater-element-ii/</a>
  * @author wzx
  */
 public class No503NextGreaterElement2 {
@@ -22,15 +21,21 @@ public class No503NextGreaterElement2 {
 
     // 先遍历拓展的数组
     for (int i = nums.length - 1; i >= 0; i--) {
-      while (!stack.isEmpty() && nums[i] > stack.peek()) stack.pop();
-      stack.push(nums[i]);
+      int num = nums[i];
+      while (!stack.isEmpty() && num >= stack.peekFirst()){
+        stack.removeFirst();
+      }
+      stack.addFirst(num);
     }
 
     // 遍历当前数组
     for (int i = nums.length - 1; i >= 0; i--) {
-      while (!stack.isEmpty() && nums[i] >= stack.peek()) stack.pop();
-      res[i] = stack.peek() == null ? -1 : stack.peek();
-      stack.push(nums[i]);
+      int num = nums[i];
+      while (!stack.isEmpty() && num >= stack.peekFirst()){
+        stack.removeFirst();
+      }
+      res[i] = stack.isEmpty() ? -1 : stack.peekFirst();
+      stack.addFirst(num);
     }
 
     return res;

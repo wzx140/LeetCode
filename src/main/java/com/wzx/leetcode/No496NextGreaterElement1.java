@@ -6,14 +6,13 @@ import java.util.LinkedList;
 import java.util.Map;
 
 /**
- * https://leetcode.com/problems/next-greater-element-i/
- *
+ * @see <a href="https://leetcode.com/problems/next-greater-element-i/">https://leetcode.com/problems/next-greater-element-i/</a>
  * @author wzx
  */
 public class No496NextGreaterElement1 {
 
   /**
-   * 单调栈
+   * 利用单调栈先求出元素与next greater numbers的映射关系
    *
    * time: O(n)
    * space: O(n)
@@ -25,11 +24,12 @@ public class No496NextGreaterElement1 {
 
     // 从后往前遍历, 栈内元素始终保持单调递减
     for (int i = nums2.length - 1; i >= 0; i--) {
+      int num = nums2[i];
       // 保证栈内元素都比当前元素大
-      while (!stack.isEmpty() && nums2[i] >= stack.peek()) stack.pop();
+      while (!stack.isEmpty() && num >= stack.peekFirst()) stack.removeFirst();
       // 栈顶的一个就是下一个更大元素
-      if (!stack.isEmpty()) map.put(nums2[i], stack.peek());
-      stack.push(nums2[i]);
+      if (!stack.isEmpty()) map.put(num, stack.peekFirst());
+      stack.addFirst(num);
     }
 
     for (int i = 0; i < nums1.length; i++) {

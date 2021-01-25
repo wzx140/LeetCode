@@ -4,8 +4,7 @@ import java.util.Deque;
 import java.util.LinkedList;
 
 /**
- * https://www.lintcode.com/problem/basic-calculator-iii/description
- *
+ * @see <a href="https://www.lintcode.com/problem/basic-calculator-iii/description">https://www.lintcode.com/problem/basic-calculator-iii/description</a>
  * @author wzx
  */
 public class No772BasicCalculator3 {
