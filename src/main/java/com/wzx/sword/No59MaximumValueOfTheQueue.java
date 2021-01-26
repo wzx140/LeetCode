@@ -4,15 +4,14 @@ import java.util.Deque;
 import java.util.LinkedList;
 
 /**
- * https://leetcode-cn.com/problems/dui-lie-de-zui-da-zhi-lcof/
- *
  * @author wzx
+ * @see <a href="https://leetcode-cn.com/problems/dui-lie-de-zui-da-zhi-lcof/">https://leetcode-cn.com/problems/dui-lie-de-zui-da-zhi-lcof/</a>
  */
 public class No59MaximumValueOfTheQueue {
 
   /**
    * 单调队列
-   *
+   * <p>
    * time: O(1)
    * space: O(n)
    */
@@ -38,13 +37,11 @@ public class No59MaximumValueOfTheQueue {
 
     @SuppressWarnings("ConstantConditions")
     public int pop_front() {
-      if (queue.isEmpty()) {
-        return -1;
-      } else {
-        int popValue = queue.removeFirst();
-        if (popValue == maxQueue.peekFirst()) maxQueue.removeFirst();
-        return popValue;
-      }
+      if (queue.isEmpty()) return -1;
+
+      int popValue = queue.removeFirst();
+      if (popValue == maxQueue.peekFirst()) maxQueue.removeFirst();
+      return popValue;
     }
   }
 }

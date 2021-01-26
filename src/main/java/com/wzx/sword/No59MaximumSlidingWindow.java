@@ -4,9 +4,8 @@ import java.util.Deque;
 import java.util.LinkedList;
 
 /**
- * https://leetcode-cn.com/problems/hua-dong-chuang-kou-de-zui-da-zhi-lcof/
- *
  * @author wzx
+ * @see <a href="https://leetcode-cn.com/problems/hua-dong-chuang-kou-de-zui-da-zhi-lcof/">https://leetcode-cn.com/problems/hua-dong-chuang-kou-de-zui-da-zhi-lcof/</a>
  */
 public class No59MaximumSlidingWindow {
 
@@ -21,22 +20,29 @@ public class No59MaximumSlidingWindow {
     if (nums.length == 0) return new int[0];
 
     int[] res = new int[nums.length - k + 1];
+    // 单调队列，队列元素单调递减，所以队首是滑动窗口的最大值
     Deque<Integer> queue = new LinkedList<>();
-
-    // 未形成窗口
+    // 初始化窗口
     for (int i = 0; i < k; i++) {
-      // 删除队列中比当前小的元素，保持单调性
-      while (!queue.isEmpty() && queue.peekLast() < nums[i]) queue.removeLast();
-      queue.addLast(nums[i]);
+      int num = nums[i];
+      // 比当前元素小的出队
+      while (!queue.isEmpty() && queue.peekLast() < num) {
+        queue.removeLast();
+      }
+      queue.addLast(num);
     }
     res[0] = queue.peekFirst();
-    // 窗口滑动
+    // 移动窗口
     for (int i = k; i < nums.length; i++) {
-      // 队列是按照数组顺序排列的，所以第一个元素可能是要滑出的元素
-      if (!queue.isEmpty() && queue.peekFirst() == nums[i - k]) queue.removeFirst();
-      // 删除队列中比当前小的元素，保持单调性
-      while (!queue.isEmpty() && queue.peekLast() < nums[i]) queue.removeLast();
-      queue.addLast(nums[i]);
+      int numAdd = nums[i];
+      int numDel = nums[i - k];
+      // 删除元素，维护单调队列
+      if (queue.peekFirst() == numDel) queue.removeFirst();
+      // 添加元素，维护单调队列，与初始化窗口的操作一致
+      while (!queue.isEmpty() && queue.peekLast() < numAdd) {
+        queue.removeLast();
+      }
+      queue.addLast(numAdd);
       res[i - k + 1] = queue.peekFirst();
     }
 
