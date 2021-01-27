@@ -5,9 +5,8 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 
 /**
- * https://leetcode.com/problems/lru-cache/
- *
  * @author wzx
+ * @see <a href="https://leetcode.com/problems/lru-cache/">https://leetcode.com/problems/lru-cache/</a>
  */
 public class No146LRUCache {
 
@@ -48,14 +47,19 @@ public class No146LRUCache {
   }
 
   /**
-   * 在哈希表的基础上使用双端链表维护访问顺序
+   * 双端链表
    */
-  public static class LRUCache2 {
-
-    // --- doubly linked list ---------------------------------------------------------------------
+  private static class DoublyList {
     // 首尾哨兵
     private final Node head;
     private final Node tail;
+
+    public DoublyList() {
+      this.head = new Node(0, 0);
+      this.tail = new Node(0, 0);
+      head.next = tail;
+      tail.prev = head;
+    }
 
     private void deleteNode(Node node) {
       // prev <-> node <-> next
@@ -64,7 +68,7 @@ public class No146LRUCache {
       node.next.prev = node.prev;
     }
 
-    private void addNodeNext2Head(Node node) {
+    private void add2Head(Node node) {
       // head <-> next
       // head <-> node <-> next
       head.next.prev = node;
@@ -73,55 +77,59 @@ public class No146LRUCache {
       node.prev = head;
     }
 
-    private void moveNode2Head(Node node) {
+    public void move2Head(Node node) {
       deleteNode(node);
-      addNodeNext2Head(node);
+      add2Head(node);
     }
 
-    private Node popTail() {
+    public Node popTail() {
       Node node = tail.prev;
       deleteNode(node);
       return node;
     }
+  }
 
-    // --- hashmap --------------------------------------------------------------------------------
+  /**
+   * 在哈希表的基础上使用双端链表维护访问顺序
+   */
+  public static class LRUCache2 {
     private final Map<Integer, Node> map;
-    private int size = 0;
+    private final DoublyList list;
     private final int capacity;
 
     public LRUCache2(int capacity) {
-      // 取threshold正好为capacity
-      map = new HashMap<>(capacity,1f);
+      map = new HashMap<>();
+      list = new DoublyList();
       this.capacity = capacity;
-      this.head  = new Node(0, 0);
-      this.tail= new Node(0, 0);
-      head.next = tail;
-      tail.prev = head;
     }
 
     public int get(int key) {
+      if (!map.containsKey(key)) return -1;
+
       Node node = map.get(key);
-      if (node == null) return -1;
-      moveNode2Head(node);
+      // 访问结点移到链表首部
+      list.move2Head(node);
       return node.val;
     }
 
     public void put(int key, int value) {
-      Node node = map.get(key);
-      if (node != null) {
+      // 添加或更新结点
+      Node node;
+      if(map.containsKey(key)){
+        node = map.get(key);
         node.val = value;
-        moveNode2Head(node);
-      } else {
-        Node newNode = new Node(key, value);
-        // 先删除，再添加，避免扩容
-        if (size == capacity) {
-          Node tail = popTail();
-          map.remove(tail.key);
-          size--;
-        }
-        map.put(key, newNode);
-        addNodeNext2Head(newNode);
-        size++;
+        // 更新结点移动到链表首部
+        list.move2Head(node);
+      }else{
+        node = new Node(key, value);
+        map.put(key, node);
+        // 新增结点添加到链表首部
+        list.add2Head(node);
+      }
+      // 删除多余尾部结点
+      if (map.size() > capacity) {
+        Node tail = list.popTail();
+        map.remove(tail.key);
       }
     }
   }
