@@ -148,7 +148,9 @@ Created by [gh-md-toc](https://github.com/ekalinin/github-markdown-toc.go)
 
 ### 单调栈
 > 从一个方向看数组，前方的元素会将后面的较小元素阻挡
+> 
 > 若从前往后看，却从后往前遍历，则需要记录下可以看到的元素到栈中，所以栈中的元素是单调的，就是单调栈
+> 
 > 每次新元素入栈后，不断弹出比新元素小(大)的栈顶元素
 
 - [496. Next Greater Element I](src/main/java/com/wzx/leetcode/No496NextGreaterElement1.java)
@@ -158,7 +160,9 @@ Created by [gh-md-toc](https://github.com/ekalinin/github-markdown-toc.go)
 
 ### 单调队列
 > 从一个方向看数组，前方的元素会将后面的较小元素阻挡
+> 
 > 若从后往前看，却从前往后遍历，则需要记录下可以看到的元素到队列中，所以栈中的元素是单调的，就是单调队列
+> 
 > 每次新元素入栈后，不断将比新元素小(大)的队尾元素出队
 
 - [offer59. 滑动窗口的最大值](src/main/java/com/wzx/sword/No59MaximumSlidingWindow.java)
