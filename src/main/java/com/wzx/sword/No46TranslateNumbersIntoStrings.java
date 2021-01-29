@@ -4,20 +4,16 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * https://leetcode-cn.com/problems/ba-shu-zi-fan-yi-cheng-zi-fu-chuan-lcof/
- *
  * @author wzx
+ * @see <a href="https://leetcode-cn.com/problems/ba-shu-zi-fan-yi-cheng-zi-fu-chuan-lcof/">https://leetcode-cn.com/problems/ba-shu-zi-fan-yi-cheng-zi-fu-chuan-lcof/</a>
  */
 public class No46TranslateNumbersIntoStrings {
 
   private int[] num2digits(int num) {
-    String numString = Integer.toString(num);
-    int[] digits = new int[numString.length()];
-    for (int i = 0; i < digits.length; i++) {
-      digits[i] = numString.charAt(i) - '0';
-    }
-
-    return digits;
+    return Integer.toString(num)
+            .chars()
+            .map(x -> x - '0')
+            .toArray();
   }
 
   /**
@@ -30,14 +26,14 @@ public class No46TranslateNumbersIntoStrings {
     return recursion1(num2digits(num), 0);
   }
 
-  private int recursion1(int[] digits, int offset) {
-    if (offset >= digits.length - 1) return 1;
+  private int recursion1(int[] nums, int offset) {
+    if (offset >= nums.length - 1) return 1;
 
-    int alpha = digits[offset] * 10 + digits[offset + 1];
+    int alpha = nums[offset] * 10 + nums[offset + 1];
     if (alpha >= 10 && alpha <= 25) {
-      return recursion1(digits, offset + 2) + recursion1(digits, offset + 1);
+      return recursion1(nums, offset + 2) + recursion1(nums, offset + 1);
     } else {
-      return recursion1(digits, offset + 1);
+      return recursion1(nums, offset + 1);
     }
   }
 
@@ -55,14 +51,14 @@ public class No46TranslateNumbersIntoStrings {
     return recursion2(digits, 0, memo);
   }
 
-  private int recursion2(int[] digits, int offset, Map<Integer, Integer> memo) {
+  private int recursion2(int[] nums, int offset, Map<Integer, Integer> memo) {
     if (memo.containsKey(offset)) return memo.get(offset);
 
-    int alpha = digits[offset] * 10 + digits[offset + 1];
+    int alpha = nums[offset] * 10 + nums[offset + 1];
     if (alpha >= 10 && alpha <= 25) {
-      memo.put(offset, recursion2(digits, offset + 2, memo) + recursion2(digits, offset + 1, memo));
+      memo.put(offset, recursion2(nums, offset + 2, memo) + recursion2(nums, offset + 1, memo));
     } else {
-      memo.put(offset, recursion2(digits, offset + 1, memo));
+      memo.put(offset, recursion2(nums, offset + 1, memo));
     }
 
     return memo.get(offset);
@@ -75,13 +71,14 @@ public class No46TranslateNumbersIntoStrings {
    * space: O(n)
    */
   public int translateNum3(int num) {
-    int[] digits = num2digits(num);
+    int[] nums = num2digits(num);
     // i个元素之前的组合个数
-    int[] dp = new int[digits.length + 1];
+    int[] dp = new int[nums.length + 1];
     dp[0] = 1;
     dp[1] = 1;
-    for (int i = 2; i <= digits.length; i++) {
-      int alpha = digits[i - 2] * 10 + digits[i - 1];
+    for (int i = 2; i < dp.length; i++) {
+      // dp数组比nums多一个哨兵位
+      int alpha = nums[i - 2] * 10 + nums[i - 1];
       if (alpha >= 10 && alpha <= 25) {
         dp[i] = dp[i - 1] + dp[i - 2];
       } else {
@@ -93,28 +90,27 @@ public class No46TranslateNumbersIntoStrings {
   }
 
   /**
-   * 动态规划
+   * 动态规划，状态压缩，贪心
    * <p>
    * time: O(n)
    * space: O(n)
    */
   public int translateNum4(int num) {
     int[] digits = num2digits(num);
-    // 相对于方法3，只需保存前两个即可
-    int pre = 1;
-    int bepre = 1;
+    int dp_i_1 = 1;
+    int dp_i_2 = 1;
     for (int i = 1; i < digits.length; i++) {
       int alpha = digits[i - 1] * 10 + digits[i];
-      int cur = 0;
+      int dp_i;
       if (alpha >= 10 && alpha <= 25) {
-        cur = pre + bepre;
+        dp_i = dp_i_1 + dp_i_2;
       } else {
-        cur = pre;
+        dp_i = dp_i_1;
       }
-      bepre = pre;
-      pre = cur;
+      dp_i_2 = dp_i_1;
+      dp_i_1 = dp_i;
     }
 
-    return pre;
+    return dp_i_1;
   }
 }

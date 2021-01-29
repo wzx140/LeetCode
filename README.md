@@ -21,8 +21,9 @@ Table of Contents
 * [算法](#算法)
   * [动态规划](#动态规划)
     * [贪心](#贪心)
-    * [子序列问题](#子序列问题)
-    * [子串问题](#子串问题)
+    * [序列问题](#序列问题)
+      * [单一序列问题](#单一序列问题)
+      * [双序列问题](#双序列问题)
     * [背包问题](#背包问题)
     * [股票问题](#股票问题)
     * [打家劫舍](#打家劫舍)
@@ -31,7 +32,7 @@ Table of Contents
     * [快慢指针](#快慢指针)
     * [滑动窗口](#滑动窗口)
     * [左右指针](#左右指针)
-  * [深搜, 回溯](#深搜回溯)
+  * [深搜回溯](#深搜回溯)
   * [广搜](#广搜)
   * [分治](#分治)
 * [其他](#其他)
@@ -189,7 +190,6 @@ Created by [gh-md-toc](https://github.com/ekalinin/github-markdown-toc.go)
 
 - [offer46. 把数字翻译成字符串](src/main/java/com/wzx/sword/No46TranslateNumbersIntoStrings.java)
 - [offer47. 礼物的最大值](src/main/java/com/wzx/sword/No47MaximumGift.java)
-- [offer48. 最长不含重复字符的子字符串](src/main/java/com/wzx/sword/No48TheLongestSubstringWithoutRepeatedCharacters.java)
 - [887. Super Egg Drop](src/main/java/com/wzx/leetcode/No887SuperEggDrop.java)
 - [877. Stone Game](src/main/java/com/wzx/leetcode/No877StoneGame.java)
 - [28. Implement strStr()](src/main/java/com/wzx/leetcode/No28ImplementStrStr.java): [字符串匹配算法](https://masterwangzx.com/2020/10/03/str-match/)
@@ -207,22 +207,31 @@ Created by [gh-md-toc](https://github.com/ekalinin/github-markdown-toc.go)
 区间问题
 - [1288. Remove Covered Intervals](src/main/java/com/wzx/leetcode/No1288RemoveCoveredIntervals.java)
 - [56. Merge Intervals](src/main/java/com/wzx/leetcode/No56MergeIntervals.java)
-- [986. Interval List Intersections](src/main/java/com/wzx/leetcode/No986IntervalListIntersections.java)q
+- [986. Interval List Intersections](src/main/java/com/wzx/leetcode/No986IntervalListIntersections.java)
 
-### 子序列问题
-> 非连续, dp数组定义
+### 序列问题
+- 子串(sub array): 原序列的连续元素的组成的新序列
+- 子序列(sub sequence):  原序列的非连续元素(符合原序列顺序)的组成的新序列
+
+#### 单一序列问题
+> dp[i]: 以第i个元素结尾的序列
+
+- [offer48. 最长不含重复字符的子字符串](src/main/java/com/wzx/sword/No48TheLongestSubstringWithoutRepeatedCharacters.java)
 - [300. Longest Increasing Subsequence](src/main/java/com/wzx/leetcode/No300LongestIncreasingSubsequence.java)
 - [354. Russian Doll Envelopes](src/main/java/com/wzx/leetcode/No354RussianDollEnvelopes.java)
 - [53. Maximum subarray](src/main/java/com/wzx/leetcode/No53MaximumSubarray.java)
-- [1143. Longest Common Subsequence](src/main/java/com/wzx/leetcode/No1143LongestCommonSubsequence.java)
-- [516. Longest Palindromic Subsequence](src/main/java/com/wzx/leetcode/No516LongestPalindromicSubsequence.java)
 
-### 子串问题
-> 连续, dp数组定义
+#### 双序列问题
+> 回文序列是自身与自身比较也是双序列问题
+> 
+> dp[i, j]: 子串i~j
+
 - [72. Edit Distance](src/main/java/com/wzx/leetcode/No72EditDistance.java)
 - [10. Regular Expression Matching](src/main/java/com/wzx/leetcode/No10RegularExpressionMatching.java)
 - [1312. Minimum Insertion Steps to Make a String Palindrome](src/main/java/com/wzx/leetcode/No1312MinimumInsertionStepsToMakeAStringPalindrome.java)
 - [5. Longest Palindromic Substring](src/main/java/com/wzx/leetcode/No5LongestPalindromicSubstring.java)
+- [1143. Longest Common Subsequence](src/main/java/com/wzx/leetcode/No1143LongestCommonSubsequence.java)
+- [516. Longest Palindromic Subsequence](src/main/java/com/wzx/leetcode/No516LongestPalindromicSubsequence.java)
 
 ### 背包问题
 - [322. Coin Change](src/main/java/com/wzx/leetcode/No322CoinChange.java): 完全背包

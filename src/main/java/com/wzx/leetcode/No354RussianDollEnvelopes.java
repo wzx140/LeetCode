@@ -11,7 +11,7 @@ public class No354RussianDollEnvelopes {
 
   /**
    * 按照width升序排列, 相同的width按照height降序排列(防止选择相同width的信封)
-   * 取得height的最长增长子序列, 做法桶No300. Longest Increasing Subsequence
+   * 取得height的最长增长子序列, 做法同No300LongestIncreasingSubsequence
    * <p>
    * time: O(n^2)
    * space: O(n^2)

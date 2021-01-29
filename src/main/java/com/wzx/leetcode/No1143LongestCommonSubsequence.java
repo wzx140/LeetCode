@@ -9,8 +9,8 @@ public class No1143LongestCommonSubsequence {
 
   /**
    * dp[i][j]: nums1[0~i]和nums2[0~j]的最长公共子序列长度
-   * 递推公式: nums1[i]==nums[j]: dp[i][j] = dp[i-1][j-1]+1
-   * else            : dp[i][j] = max(dp[i-1][j], dp[i][j-1])
+   * 递推公式:  if nums1[i]==nums[j]: dp[i][j] = dp[i-1][j-1]+1
+   * |        else                : dp[i][j] = max(dp[i-1][j], dp[i][j-1])
    * <p>
    * time: O(n^2)
    * space: O(n^2)
