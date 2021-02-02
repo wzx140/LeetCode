@@ -1,9 +1,10 @@
 package com.wzx.sword;
 
+import java.util.Arrays;
+
 /**
- * https://leetcode-cn.com/problems/nge-tou-zi-de-dian-shu-lcof/
- *
  * @author wzx
+ * @see <a href="https://leetcode-cn.com/problems/nge-tou-zi-de-dian-shu-lcof/">https://leetcode-cn.com/problems/nge-tou-zi-de-dian-shu-lcof/</a>
  */
 public class No60NumberOfNDice {
 
@@ -13,18 +14,19 @@ public class No60NumberOfNDice {
    * time: O(6^n)
    * space: O(1)
    */
-  public double[] twoSum1(int n) {
+  public double[] dicesProbability1(int n) {
     // 所有可能出现的点数和
     int min = n, max = 6 * n;
     double[] res = new double[max - min + 1];
 
-    // 计算总次数
-    for (int i = min; i <= max; i++) {
-      res[i - min] = recursion(n, i);
+    // 计算次数
+    double sum = 0;
+    for (int i = 0; i < res.length; i++) {
+      res[i] = recursion(n, i + min);
+      sum += res[i];
     }
 
     // 计算概率
-    int sum = (int) Math.pow(6, n);
     for (int i = 0; i < res.length; i++) {
       res[i] /= sum;
     }
@@ -43,10 +45,11 @@ public class No60NumberOfNDice {
     // 只有一个骰子时，每个点数只能出现一次
     if (n == 1) return 1;
 
-    // 其中一个骰子的点数分别为1~6,其他骰子点数和对应为min(k-1, 6(n-1)) ~ max(k-6,1)
+    // 当前骰子最小可以取 max(k-6*(n-1), 1)
+    // 当前骰子最大可以取 min(k-1*(n-1), 6)
     int sum = 0;
-    for (int i = Math.min(k - 1, 6 * (n - 1)); i >= Math.max(k - 6, 1); i--) {
-      sum += recursion(n - 1, i);
+    for (int i = Math.max(k - 6 * (n - 1), 1); i <= Math.min(k - (n - 1), 6); i++) {
+      sum += recursion(n - 1, k - i);
     }
 
     return sum;
@@ -58,23 +61,24 @@ public class No60NumberOfNDice {
    * time: O(n^2)
    * space: O(n^2)
    */
-  public double[] twoSum2(int n) {
+  public double[] dicesProbability2(int n) {
     // 所有可能出现的点数和
     int min = n, max = 6 * n;
+    double[] res = new double[max - min + 1];
     // 备忘录
     int[][] memo = new int[n][6 * n];
     for (int i = 0; i < 6; i++) {
       memo[0][i] = 1;
     }
 
-    // 计算总次数
-    double[] res = new double[max - min + 1];
-    for (int i = min; i <= max; i++) {
-      res[i - min] = recursion(n, i, memo);
+    // 计算次数
+    double sum = 0;
+    for (int i = 0; i < res.length; i++) {
+      res[i] = recursion(n, i + min, memo);
+      sum += res[i];
     }
 
     // 计算概率
-    int sum = (int) Math.pow(6, n);
     for (int i = 0; i < res.length; i++) {
       res[i] /= sum;
     }
@@ -89,8 +93,8 @@ public class No60NumberOfNDice {
     if (memo[n - 1][k - 1] != 0) return memo[n - 1][k - 1];
 
     int sum = 0;
-    for (int i = Math.min(k - 1, 6 * (n - 1)); i >= Math.max(k - 6, 1); i--) {
-      sum += recursion(n - 1, i, memo);
+    for (int i = Math.max(k - 6 * (n - 1), 1); i <= Math.min(k - (n - 1), 6); i++) {
+      sum += recursion(n - 1, k - i, memo);
     }
     memo[n - 1][k - 1] = sum;
 
@@ -106,7 +110,7 @@ public class No60NumberOfNDice {
    * time: O(n^2)
    * space: O(n)
    */
-  public double[] twoSum3(int n) {
+  public double[] dicesProbability3(int n) {
     // 边界
     int[] dp = new int[6 * n + 1];
     for (int i = 1; i <= 6; i++) {
@@ -132,7 +136,7 @@ public class No60NumberOfNDice {
     // 计算概率
     int min = n, max = 6 * n;
     double[] res = new double[max - min + 1];
-    double sum = Math.pow(6, n);
+    double sum = Arrays.stream(dp).skip(min).sum();
     for (int i = min; i <= max; i++) {
       res[i - min] = dp[i] / sum;
     }

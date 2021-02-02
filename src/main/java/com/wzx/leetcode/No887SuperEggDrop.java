@@ -1,17 +1,19 @@
 package com.wzx.leetcode;
 
 /**
- * https://leetcode.com/problems/super-egg-drop/
- *
+ * @see <a href="https://leetcode.com/problems/super-egg-drop/">https://leetcode.com/problems/super-egg-drop/</a>
+ * @see <a href="https://mp.weixin.qq.com/s/7XPGKe7bMkwovH95cnhang">https://mp.weixin.qq.com/s/7XPGKe7bMkwovH95cnhang</a>
  * @author wzx
  */
 public class No887SuperEggDrop {
 
   /**
    * 动态规划, TLE
-   * dp[n][k]: n剩余未测楼层(1~n), k剩余鸡蛋数(0~K-1)
+   * dp[n][k]:
+   * |    n: 剩余未测楼层(1~N)个数, 由鸡蛋数判定剩余1～n还是N-i～N
+   * |    k: 剩余鸡蛋数(0~K-1)
    * 边界条件: dp[i][1] = i, 只剩一个鸡蛋只能一层一层慢慢试
-   * 递推公式: dp[n][k] = min_i{max(dp[i-1][k-1], dp[n-i][k])+1}
+   * 递推公式: dp[n][k] = min_i{max(dp[i-1][k-1], dp[N-i][k])+1}
    * <p>
    * time: O(n^2*k)
    * space: O(nk)
@@ -38,7 +40,6 @@ public class No887SuperEggDrop {
   }
 
   /**
-   * https://labuladong.gitbook.io/algo/dong-tai-gui-hua-xi-lie/1.5-qi-ta-jing-dian-wen-ti/gao-lou-reng-ji-dan-jin-jie
    * 对于f(i)=max(dp[i-1][k-1], dp[n-i][k])+1, g(x)=dp[i-1][k-1], h(x)=dp[n-i][k]来说
    * 上一个方法中对于f_min(i)的求解是线性的, 迭代i=[1, n]取最小值
    * 由于g(x)单增, h(x)单减, 所以当g(x)=h(x)时, 即找到了f_min(i), 所以可以使用二分搜索进行优化
