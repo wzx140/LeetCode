@@ -4,9 +4,8 @@ import java.util.Arrays;
 import java.util.Comparator;
 
 /**
- * https://leetcode.com/problems/non-overlapping-intervals/
- *
  * @author wzx
+ * @see <a href="https://leetcode.com/problems/non-overlapping-intervals/">https://leetcode.com/problems/non-overlapping-intervals/</a>
  */
 public class No435NonOverlappingIntervals {
 

@@ -4,14 +4,14 @@ import java.util.Arrays;
 import java.util.Comparator;
 
 /**
- * https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/
- *
  * @author wzx
+ * @see <a href="https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/">https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/</a>
  */
 public class No452MinimumNumberOfArrowsToBurstBalloons {
 
   /**
-   * 贪心, 做法与No435NonOverlappingIntervals一致
+   * 贪心
+   * No435NonOverlappingIntervals求的是最大不重叠区间数，本题求的是最小不重叠区间数
    * <p>
    * time: O(nlogn)
    * space: O(1)

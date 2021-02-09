@@ -1,9 +1,8 @@
 package com.wzx.sword;
 
 /**
- * https://leetcode-cn.com/problems/jian-sheng-zi-lcof/
- *
  * @author wzx
+ * @see <a href="https://leetcode-cn.com/problems/jian-sheng-zi-lcof/">https://leetcode-cn.com/problems/jian-sheng-zi-lcof/</a>
  */
 public class No14CutTheRope {
 
@@ -24,7 +23,7 @@ public class No14CutTheRope {
 
     for (int i = 4; i <= n; i++) {
       // 分别从1~i-1处减一刀, 比较处最大值
-      for (int split = 1; split <= i / 2; split++) {
+      for (int split = 1; split < i; split++) {
         dp[i] = Math.max(dp[i], dp[split] * dp[i - split]);
       }
     }

@@ -3,9 +3,8 @@ package com.wzx.leetcode;
 import java.util.Arrays;
 
 /**
- * https://leetcode.com/problems/maximum-subarray/
- *
  * @author wzx
+ * @see <a href="https://leetcode.com/problems/maximum-subarray/">https://leetcode.com/problems/maximum-subarray/</a>
  */
 public class No53MaximumSubarray {
 

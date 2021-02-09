@@ -3,9 +3,8 @@ package com.wzx.leetcode;
 import java.util.Arrays;
 
 /**
- * https://leetcode.com/problems/jump-game-ii/
- *
  * @author wzx
+ * @see <a href="https://leetcode.com/problems/jump-game-ii/">https://leetcode.com/problems/jump-game-ii/</a>
  */
 public class No45JumpGameII {
 
