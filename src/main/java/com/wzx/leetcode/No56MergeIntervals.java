@@ -3,8 +3,7 @@ package com.wzx.leetcode;
 import java.util.*;
 
 /**
- * https://leetcode.com/problems/merge-intervals/
- *
+ * @see <a href="https://leetcode.com/problems/merge-intervals/">https://leetcode.com/problems/merge-intervals/</a>
  * @author wzx
  */
 public class No56MergeIntervals {
@@ -16,40 +15,31 @@ public class No56MergeIntervals {
    * space: O(n)
    */
   public int[][] merge(int[][] intervals) {
-    if (intervals == null) return null;
-    if (intervals.length == 0) return new int[0][0];
-
     // 起点升序
     Arrays.sort(intervals, Comparator.comparingInt(interval -> interval[0]));
 
-    List<int[]> res = new LinkedList<>();
-    res.add(intervals[0]);
+    List<int[]> res = new ArrayList<>();
+    int left = intervals[0][0];
+    int right = intervals[0][1];
     for (int i = 1; i < intervals.length; i++) {
-      int[] last = res.get(res.size() - 1);
       int[] interval = intervals[i];
-      if (interval[0] <= last[1]) {
-        // cur   |---|
-        // sum |-------|
+      if (interval[0] <= right) {
+        // cur    |---|
+        // prev |-------|
 
-        // cur |---|
-        // sum |------|
-
-        // cur |--------|
-        // sum |------|
-
-        // cur   |-------|
-        // sum |-------|
-
-        // cur        |----|
-        // sum |------|
-        last[1] = Math.max(interval[1], last[1]);
+        // cur    |-------|
+        // prev |-------|
+        right = Math.max(interval[1], right);
       } else {
         // cur          |----|
         // sum |------|
-        res.add(interval);
+        res.add(new int[]{left, right});
+        left = interval[0];
+        right = interval[1];
       }
     }
+    res.add(new int[]{left, right});
 
-    return res.toArray(new int[res.size()][]);
+    return res.toArray(new int[0][0]);
   }
 }

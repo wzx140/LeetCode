@@ -1,40 +1,36 @@
 package com.wzx.leetcode;
 
 import java.util.Arrays;
+import java.util.Comparator;
 
 /**
- * https://leetcode.com/problems/russian-doll-envelopes/
- *
+ * @see <a href="https://leetcode.com/problems/russian-doll-envelopes/">https://leetcode.com/problems/russian-doll-envelopes/</a>
  * @author wzx
  */
 public class No354RussianDollEnvelopes {
 
   /**
-   * 按照width升序排列, 相同的width按照height降序排列(防止选择相同width的信封)
-   * 取得height的最长增长子序列, 做法同No300LongestIncreasingSubsequence
+   * 按照width升序排列, 取得height的最长增长子序列, 做法同No300LongestIncreasingSubsequence
    * <p>
    * time: O(n^2)
    * space: O(n^2)
    */
   public int maxEnvelopes(int[][] envelopes) {
-    Arrays.sort(envelopes,
-            (en1, en2) -> {
-              if (en1[0] == en2[0]) {
-                return Integer.compare(en2[1], en1[1]);
-              } else {
-                return Integer.compare(en1[0], en2[0]);
-              }
-            });
+    Arrays.sort(envelopes, Comparator.comparingInt(e -> e[0]));
 
     int[] dp = new int[envelopes.length];
     Arrays.fill(dp, 1);
 
+    int res = 0;
     for (int i = 0; i < envelopes.length; i++) {
       for (int j = 0; j < i; j++) {
-        if (envelopes[i][1] > envelopes[j][1]) dp[i] = Math.max(dp[i], dp[j] + 1);
+        if(envelopes[i][0] >  envelopes[j][0] && envelopes[i][1] >  envelopes[j][1]){
+          dp[i] = Math.max(dp[i], dp[j] + 1);
+        }
+        res = Math.max(res, dp[i]);
       }
     }
 
-    return Arrays.stream(dp).max().orElse(0);
+    return res;
   }
 }

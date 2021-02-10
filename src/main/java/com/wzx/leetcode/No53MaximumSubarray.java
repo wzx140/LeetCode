@@ -1,7 +1,5 @@
 package com.wzx.leetcode;
 
-import java.util.Arrays;
-
 /**
  * @author wzx
  * @see <a href="https://leetcode.com/problems/maximum-subarray/">https://leetcode.com/problems/maximum-subarray/</a>
@@ -20,11 +18,13 @@ public class No53MaximumSubarray {
     int[] dp = new int[nums.length + 1];
     dp[0] = 0;
 
+    int res = Integer.MIN_VALUE;
     for (int i = 1; i <= nums.length; i++) {
       dp[i] = Math.max(nums[i - 1], nums[i - 1] + dp[i - 1]);
+      res = Math.max(dp[i], res);
     }
 
-    return Arrays.stream(dp).skip(1).max().orElse(0);
+    return res;
   }
 
   /**

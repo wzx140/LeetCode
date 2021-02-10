@@ -3,8 +3,7 @@ package com.wzx.leetcode;
 import java.util.Arrays;
 
 /**
- * https://leetcode.com/problems/longest-increasing-subsequence/
- *
+ * @see <a href="https://leetcode.com/problems/longest-increasing-subsequence/">https://leetcode.com/problems/longest-increasing-subsequence/</a>
  * @author wzx
  */
 public class No300LongestIncreasingSubsequence {
@@ -21,12 +20,14 @@ public class No300LongestIncreasingSubsequence {
     // 每个元素自身都能组成增长子序列
     Arrays.fill(dp, 1);
 
+    int res = 0;
     for (int i = 0; i < nums.length; i++) {
       for (int j = 0; j < i; j++) {
         if (nums[j] < nums[i]) dp[i] = Math.max(dp[i], dp[j] + 1);
       }
+      res = Math.max(dp[i], res);
     }
 
-    return Arrays.stream(dp).max().orElse(0);
+    return res;
   }
 }
