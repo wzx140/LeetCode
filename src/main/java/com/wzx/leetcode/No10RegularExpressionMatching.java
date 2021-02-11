@@ -1,9 +1,8 @@
 package com.wzx.leetcode;
 
 /**
- * https://leetcode.com/problems/regular-expression-matching/
- *
  * @author wzx
+ * @see <a href="https://leetcode.com/problems/regular-expression-matching/">https://leetcode.com/problems/regular-expression-matching/</a>
  */
 public class No10RegularExpressionMatching {
 
@@ -67,17 +66,25 @@ public class No10RegularExpressionMatching {
    * space: O(mn)
    */
   public boolean isMatch2(String s, String p) {
-    boolean[][] dp = new boolean[s.length() + 1][p.length() + 1];
-    // 哨兵
-    dp[s.length()][p.length()] = true;
+    int n = s.length(), m = p.length();
+    // dp[i][j]: i~n的字符串和j～m的匹配串是否匹配
+    boolean[][] dp = new boolean[n + 1][m + 1];
+    // 边界条件
+    // 空字符串和空匹配串可以匹配
+    dp[n][m] = true;
+    // 空匹配串和非空字符串不可以匹配
+    // dp[0~n][m] = false
+    // 空字符串只有和带*的匹配串匹配
+    for (int i = m - 2; i >= 0; i--) {
+      dp[n][i] = (i < m - 1 && p.charAt(i + 1) == '*') && dp[n][i + 2];
+    }
 
     // 从后往前倒退
-    for (int i = s.length(); i >= 0; i--) {
-      // j=p.length时，只有i=s.length时，才为true，已经考虑过
-      for (int j = p.length() - 1; j >= 0; j--) {
-        boolean firstMatch = i < s.length() && (s.charAt(i) == p.charAt(j) || p.charAt(j) == '.');
+    for (int i = n - 1; i >= 0; i--) {
+      for (int j = m - 1; j >= 0; j--) {
+        boolean firstMatch = s.charAt(i) == p.charAt(j) || p.charAt(j) == '.';
 
-        if (j < p.length() - 1 && p.charAt(j + 1) == '*') {
+        if (j < m - 1 && p.charAt(j + 1) == '*') {
           dp[i][j] = dp[i][j + 2] || (firstMatch && dp[i + 1][j]);
         } else {
           dp[i][j] = firstMatch && dp[i + 1][j + 1];

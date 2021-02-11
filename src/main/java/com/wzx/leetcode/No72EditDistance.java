@@ -6,9 +6,8 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * https://leetcode.com/problems/edit-distance/
- *
  * @author wzx
+ * @see <a href="https://leetcode.com/problems/edit-distance/">https://leetcode.com/problems/edit-distance/</a>
  */
 public class No72EditDistance {
 
@@ -60,25 +59,28 @@ public class No72EditDistance {
    * space: O(n^2)
    */
   public int minDistance2(String word1, String word2) {
-    int[][] dp = new int[word1.length() + 1][word2.length() + 1];
+    int n = word1.length(), m = word2.length();
+    int[][] dp = new int[n + 1][m + 1];
     // 边界条件, 一个子串为空时
-    for (int i = 1; i <= word1.length(); i++) {
+    for (int i = 0; i < n + 1; i++) {
       dp[i][0] = i;
     }
-    for (int i = 1; i <= word2.length(); i++) {
+    for (int i = 0; i < m + 1; i++) {
       dp[0][i] = i;
     }
 
-    for (int i = 1; i <= word1.length(); i++) {
-      for (int j = 1; j <= word2.length(); j++) {
+    for (int i = 1; i <= n; i++) {
+      for (int j = 1; j <= m; j++) {
         if (word1.charAt(i - 1) == word2.charAt(j - 1)) {
           dp[i][j] = dp[i - 1][j - 1];
         } else {
-          dp[i][j] = Math.min(Math.min(dp[i][j - 1] + 1, dp[i - 1][j] + 1), dp[i - 1][j - 1] + 1);
+          int insertAndDelete = Math.min(dp[i - 1][j], dp[i][j - 1]) + 1;
+          int replace = dp[i - 1][j - 1] + 1;
+          dp[i][j] = Math.min(replace, insertAndDelete);
         }
       }
     }
 
-    return dp[word1.length()][word2.length()];
+    return dp[n][m];
   }
 }
