@@ -1,8 +1,7 @@
 package com.wzx.leetcode;
 
 /**
- * https://leetcode.com/problems/longest-palindromic-substring/
- *
+ * @see <a href="https://leetcode.com/problems/longest-palindromic-substring/">https://leetcode.com/problems/longest-palindromic-substring/</a>
  * @author wzx
  */
 public class No5LongestPalindromicSubstring {

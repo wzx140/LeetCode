@@ -1,8 +1,7 @@
 package com.wzx.leetcode;
 
 /**
- * https://leetcode.com/problems/minimum-insertion-steps-to-make-a-string-palindrome/
- *
+ * @see <a href="https://leetcode.com/problems/minimum-insertion-steps-to-make-a-string-palindrome/">https://leetcode.com/problems/minimum-insertion-steps-to-make-a-string-palindrome/</a>
  * @author wzx
  */
 public class No1312MinimumInsertionStepsToMakeAStringPalindrome {
