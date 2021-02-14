@@ -1,8 +1,7 @@
 package com.wzx.leetcode;
 
 /**
- * https://leetcode.com/problems/house-robber/
- *
+ * @see <a href="https://leetcode.com/problems/house-robber/">https://leetcode.com/problems/house-robber/</a>
  * @author wzx
  */
 public class No198HouseRobber {

@@ -6,8 +6,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * https://leetcode.com/problems/house-robber-iii/
- *
+ * @see <a href="https://leetcode.com/problems/house-robber-iii/">https://leetcode.com/problems/house-robber-iii/</a>
  * @author wzx
  */
 public class No337HouseRobber3 {

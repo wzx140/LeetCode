@@ -1,8 +1,7 @@
 package com.wzx.leetcode;
 
 /**
- * https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/
- *
+ * @see <a href="https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/">https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/</a>
  * @author wzx
  */
 public class No309BestTimeToBuyAndSellStockWithCooldown {

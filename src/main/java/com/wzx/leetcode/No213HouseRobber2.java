@@ -1,11 +1,8 @@
 package com.wzx.leetcode;
 
-import java.util.Arrays;
-
 /**
- * https://leetcode.com/problems/house-robber-ii/
- *
  * @author wzx
+ * @see <a href="https://leetcode.com/problems/house-robber-ii/">https://leetcode.com/problems/house-robber-ii/</a>
  */
 public class No213HouseRobber2 {
 
@@ -18,20 +15,21 @@ public class No213HouseRobber2 {
   public int rob(int[] nums) {
     if (nums.length == 1) return nums[0];
 
-    int[] dp = new int[nums.length + 2];
-    // 最后一个房间不偷
-    int rob1 = dp(nums, dp, 0, nums.length - 2);
-    // 第一个房间不偷
-    int rob2 = dp(nums, dp, 1, nums.length - 1);
+    // 第一个房间可以偷
+    int rob1 = helper(nums, 0, nums.length - 2);
+    // 第一个房间不可以偷
+    int rob2 = helper(nums, 1, nums.length - 1);
 
     return Math.max(rob1, rob2);
   }
 
-  private int dp(int[] nums, int[] dp, int start, int end) {
-    Arrays.fill(dp, start, end + 2, 0);
-    for (int i = end; i >= start; i--) {
-      dp[i] = Math.max(nums[i] + dp[i + 2], dp[i + 1]);
+  private int helper(int[] nums, int start, int end) {
+    int n = end - start + 1;
+    int[] dp = new int[n + 2];
+    for (int i = 2; i <= n + 1; i++) {
+      dp[i] = Math.max(dp[i - 1], dp[i - 2] + nums[i - 2 + start]);
     }
-    return dp[start];
+
+    return dp[n + 1];
   }
 }

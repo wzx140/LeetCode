@@ -3,8 +3,7 @@ package com.wzx.leetcode;
 import java.util.Arrays;
 
 /**
- * https://leetcode.com/problems/target-sum/
- *
+ * @see <a href="https://leetcode.com/problems/target-sum/">https://leetcode.com/problems/target-sum/</a>
  * @author wzx
  */
 public class No494TargetSum {
@@ -36,7 +35,7 @@ public class No494TargetSum {
     }
 
     // 递推
-    // 从0开始
+    // 从0开始, 处理nums中有0的特殊情况
     for (int n = 0; n <= target; n++) {
       for (int i = 1; i <= nums.length; i++) {
         dp[n][i] = dp[n][i - 1]

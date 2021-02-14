@@ -3,8 +3,7 @@ package com.wzx.leetcode;
 import java.util.Arrays;
 
 /**
- * https://leetcode.com/problems/partition-equal-subset-sum/
- *
+ * @see <a href="https://leetcode.com/problems/partition-equal-subset-sum/">https://leetcode.com/problems/partition-equal-subset-sum/</a>
  * @author wzx
  */
 public class No416PartitionEqualSubsetSum {

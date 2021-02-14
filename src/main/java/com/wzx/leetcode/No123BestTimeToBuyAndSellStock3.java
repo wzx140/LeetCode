@@ -1,8 +1,7 @@
 package com.wzx.leetcode;
 
 /**
- * https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/ *
- *
+ * @see <a href="https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/">https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/</a>
  * @author wzx
  */
 public class No123BestTimeToBuyAndSellStock3 {
