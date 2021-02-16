@@ -1,8 +1,7 @@
 package com.wzx.sword;
 
 /**
- * https://leetcode-cn.com/problems/fan-zhuan-dan-ci-shun-xu-lcof/
- *
+ * @see <a href="https://leetcode-cn.com/problems/fan-zhuan-dan-ci-shun-xu-lcof/">https://leetcode-cn.com/problems/fan-zhuan-dan-ci-shun-xu-lcof/</a>
  * @author wzx
  */
 public class No58ReverseWordOrder {

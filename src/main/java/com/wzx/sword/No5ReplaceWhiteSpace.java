@@ -1,8 +1,7 @@
 package com.wzx.sword;
 
 /**
- * https://leetcode-cn.com/problems/ti-huan-kong-ge-lcof/
- *
+ * @see <a href="https://leetcode-cn.com/problems/ti-huan-kong-ge-lcof/">https://leetcode-cn.com/problems/ti-huan-kong-ge-lcof/</a>
  * @author wzx
  */
 public class No5ReplaceWhiteSpace {

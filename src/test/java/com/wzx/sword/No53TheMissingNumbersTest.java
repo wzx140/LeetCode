@@ -25,12 +25,4 @@ public class No53TheMissingNumbersTest {
     assertEquals(8, solution.missingNumber2(nums2));
     assertEquals(1, solution.missingNumber2(nums3));
   }
-
-  @Test
-  public void missingNumber3() {
-    No53TheMissingNumbers solution = new No53TheMissingNumbers();
-    assertEquals(2, solution.missingNumber3(nums1));
-    assertEquals(8, solution.missingNumber3(nums2));
-    assertEquals(1, solution.missingNumber3(nums3));
-  }
 }

@@ -57,7 +57,7 @@ Created by [gh-md-toc](https://github.com/ekalinin/github-markdown-toc.go)
 - [710. Random Pick with Blacklist](src/main/java/com/wzx/leetcode/No710RandomPickWithBlacklist.java)
 
 符号位替代哈希表
-- [offer3. 数组中的重复数字1](src/main/java/com/wzx/sword/No3DuplicateNum.java)
+- [offer3. 数组中的重复数字](src/main/java/com/wzx/sword/No3DuplicateNum.java)
 - [448. Find All Numbers Disappeared in an Array](src/main/java/com/wzx/leetcode/No448FindAllNumbersDisappearedInAnArray.java)
 - [645. Set Mismatch](src/main/java/com/wzx/leetcode/No645SetMismatch.java)
 
@@ -258,7 +258,6 @@ Created by [gh-md-toc](https://github.com/ekalinin/github-markdown-toc.go)
 ## 二分搜索
 - [34. Find First and Last Position of Element in Sorted Array](src/main/java/com/wzx/leetcode/No34FindFirstAndLastPositionOfElementInSortedArray.java): [上下界查找](https://masterwangzx.com/2020/03/03/binary-search/)
 - [offer4. 二维数组中的查找](src/main/java/com/wzx/sword/No4TwoDimensionalArraySearch.java)
-- [offer3. 数组中的重复数字2](src/main/java/com/wzx/sword/No3DuplicateNum2.java)
 - [offer11. 旋转数组的最小数字](src/main/java/com/wzx/sword/No11RotateMinNum.java)
 - [offer53. 0～n-1中缺失的数字](src/main/java/com/wzx/sword/No53TheMissingNumbers.java)
 - [793. Preimage Size of Factorial Zeroes Function](src/main/java/com/wzx/leetcode/No793PreimageSizeOfFactorialZeroesFunction.java)
@@ -291,7 +290,7 @@ Created by [gh-md-toc](https://github.com/ekalinin/github-markdown-toc.go)
 
 ### 左右指针
 - [167. two sum II - input array is sorted](src/main/java/com/wzx/leetcode/No167TwoSum2InputArrayIsSorted.java)
-- [15. 3sum](src/main/java/com/wzx/leetcode/No15ThreeSum.java) NSum问题总结
+- [15. 3sum](src/main/java/com/wzx/leetcode/No15ThreeSum.java)
 - [16. 3sum closest](src/main/java/com/wzx/leetcode/No16ThreeSumClosest.java)
 - [923. 3sum with multiplicity](src/main/java/com/wzx/leetcode/No923ThreeSumWithMultiplicity.java)
 - [18. 4Sum](src/main/java/com/wzx/leetcode/No18FourSum.java)

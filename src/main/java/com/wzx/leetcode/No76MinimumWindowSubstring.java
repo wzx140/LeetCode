@@ -4,62 +4,55 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * https://leetcode.com/problems/minimum-window-substring/
- *
  * @author wzx
+ * @see <a href="https://leetcode.com/problems/minimum-window-substring/">https://leetcode.com/problems/minimum-window-substring/</a>
  */
 public class No76MinimumWindowSubstring {
 
   /**
    * 滑动窗口
-   *
+   * <p>
    * time: O(n)
    * space: O(n)
    */
   public String minWindow(String s, String t) {
-    // 要包含的字符
+    // 字符串t：要包含的字符
     Map<Character, Integer> target = new HashMap<>();
-    for (int i = 0; i < t.length(); i++) {
-      target.merge(t.charAt(i), 1, Integer::sum);
+    for (char ch : t.toCharArray()) {
+      target.merge(ch, 1, Integer::sum);
     }
-    // 窗口
-    Map<Character, Integer> window = new HashMap<>();
-    // [left, right)
-    int left = 0, right = 0;
-    // 符合要求的字母数, 防止每次判断window是否合法时, 只需比较valid和target.size()
-    int valid = 0;
-    // 最小窗口的起始索引和长度
+    int n = s.length();
+    // 保存最小窗口
     int begin = 0, len = Integer.MAX_VALUE;
+    // 窗口中合法字符数
+    int valid = 0;
+    // 窗口中已经包含的字符
+    Map<Character, Integer> window = new HashMap<>();
+    int left = 0;
+    char[] sArray = s.toCharArray();
+    for (int right = 0; right < n; right++) {
+      if (!target.containsKey(sArray[right])) continue;
+      // 向右拓展window
+      window.merge(sArray[right], 1, Integer::sum);
+      if (window.get(sArray[right]).equals(target.get(sArray[right]))) valid++;
 
-    while (right < s.length()) {
-      char rightCh = s.charAt(right);
-      // 从右边扩大窗口
-      right++;
-      // 非target字符不会影响结果
-      if (!target.containsKey(rightCh)) continue;
-      // 更新window
-      window.merge(rightCh, 1, Integer::sum);
-      // 更新valid
-      if (window.get(rightCh).equals(target.get(rightCh))) valid++;
-      // window已经包含target中所有字符
-      while (valid == target.size()) {
-        // 找到当前最小合法window, 更新begin, len
-        if (right - left < len) {
+      for(; valid == target.size(); left++){
+        // 更新最小窗口
+        if (right - left + 1 < len) {
           begin = left;
-          len = right - left;
+          len = right - left + 1;
         }
-        char leftCh = s.charAt(left);
-        // 从左边缩小窗口
-        left++;
-        // 非target字符不会影响结果
-        if (!target.containsKey(leftCh)) continue;
-        // 更新valid
-        if (window.get(leftCh).equals(target.get(leftCh))) valid--;
-        // 更新window
-        window.compute(leftCh, (ch, cnt) -> cnt - 1);
+        if (!target.containsKey(sArray[left])) continue;
+        // 向左缩减window
+        if (window.get(sArray[left]).equals(target.get(sArray[left]))) valid--;
+        window.compute(sArray[left], (ch, num) -> num - 1);
       }
     }
 
-    return len == Integer.MAX_VALUE ? "" : s.substring(begin, begin + len);
+    if (len == Integer.MAX_VALUE) {
+      return "";
+    } else {
+      return s.substring(begin, begin + len);
+    }
   }
 }

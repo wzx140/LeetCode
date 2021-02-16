@@ -1,8 +1,8 @@
 package com.wzx.leetcode;
 
 /**
- * @see <a href="https://leetcode.com/problems/longest-palindromic-substring/">https://leetcode.com/problems/longest-palindromic-substring/</a>
  * @author wzx
+ * @see <a href="https://leetcode.com/problems/longest-palindromic-substring/">https://leetcode.com/problems/longest-palindromic-substring/</a>
  */
 public class No5LongestPalindromicSubstring {
 
@@ -51,10 +51,10 @@ public class No5LongestPalindromicSubstring {
    * space: O(1)
    */
   public String longestPalindrome2(String s) {
-    int maxLen = 0;
-    int begin = 0;
-    for (int i = 0; i < s.length(); i++) {
-      int len = Math.max(expand(s, i, i), expand(s, i, i + 1));
+    char[] sArray = s.toCharArray();
+    int begin = 0, maxLen = 0;
+    for (int i = 0; i < sArray.length; i++) {
+      int len = Math.max(expand(sArray, i, i), expand(sArray, i, i + 1));
       if (len > maxLen) {
         maxLen = len;
         begin = i - (len - 1) / 2;
@@ -64,13 +64,11 @@ public class No5LongestPalindromicSubstring {
     return s.substring(begin, begin + maxLen);
   }
 
-  private int expand(String s, int left, int right) {
-    // 左右指针
-    while (left >= 0 && right < s.length() && s.charAt(left) == s.charAt(right)) {
-      right++;
+  private int expand(char[] s, int left, int right) {
+    while (left >= 0 && right < s.length && s[left] == s[right]) {
       left--;
+      right++;
     }
-
     return (right - 1) - (left + 1) + 1;
   }
 }

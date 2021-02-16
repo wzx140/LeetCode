@@ -1,8 +1,7 @@
 package com.wzx.leetcode;
 
 /**
- * https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/
- *
+ * @see <a href="https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/">https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/</a>
  * @author wzx
  */
 public class No167TwoSum2InputArrayIsSorted {

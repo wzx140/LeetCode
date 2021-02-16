@@ -1,8 +1,7 @@
 package com.wzx.sword;
 
 /**
- * https://leetcode-cn.com/problems/que-shi-de-shu-zi-lcof/
- *
+ * @see <a href="https://leetcode-cn.com/problems/que-shi-de-shu-zi-lcof/">https://leetcode-cn.com/problems/que-shi-de-shu-zi-lcof/</a>
  * @author wzx
  */
 public class No53TheMissingNumbers {
@@ -31,31 +30,6 @@ public class No53TheMissingNumbers {
    * space: O(1)
    */
   public int missingNumber2(int[] nums) {
-    if (nums.length == 0) return 0;
-    if (nums[0] != 0) return 0;
-    if (nums[nums.length - 1] != nums.length) return nums.length;
-
-    // begin和end趋向于缺失数字的右边一个元素
-    int begin = 0, end = nums.length - 1;
-    while (begin < end) {
-      int middle = (end - begin) / 2 + begin;
-      if (nums[middle] == middle) {
-        begin = middle + 1;
-      } else {
-        end = middle;
-      }
-    }
-
-    return nums[begin] - 1;
-  }
-
-  /**
-   * 二分搜索
-   * <p>
-   * time: O(logn)
-   * space: O(1)
-   */
-  public int missingNumber3(int[] nums) {
     // 划分左数组和右数组
     // 左数组的末尾元素nums[i]=i
     // 右数组的开始元素nums[i]=i+1

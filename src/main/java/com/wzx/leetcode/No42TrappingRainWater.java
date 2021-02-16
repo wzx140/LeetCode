@@ -1,8 +1,7 @@
 package com.wzx.leetcode;
 
 /**
- * https://leetcode.com/problems/trapping-rain-water/
- *
+ * @see <a href="https://leetcode.com/problems/trapping-rain-water/">https://leetcode.com/problems/trapping-rain-water/</a>
  * @author wzx
  */
 public class No42TrappingRainWater {

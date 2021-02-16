@@ -5,8 +5,7 @@ import java.util.List;
 import java.util.stream.IntStream;
 
 /**
- * https://leetcode-cn.com/problems/he-wei-sde-lian-xu-zheng-shu-xu-lie-lcof/
- *
+ * @see <a href="https://leetcode-cn.com/problems/he-wei-sde-lian-xu-zheng-shu-xu-lie-lcof/">https://leetcode-cn.com/problems/he-wei-sde-lian-xu-zheng-shu-xu-lie-lcof/</a>
  * @author wzx
  */
 public class No57NSum {

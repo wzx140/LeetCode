@@ -3,8 +3,7 @@ package com.wzx.leetcode;
 import java.util.Arrays;
 
 /**
- * https://leetcode.com/problems/3sum-with-multiplicity/
- *
+ * @see <a href="https://leetcode.com/problems/3sum-with-multiplicity/">https://leetcode.com/problems/3sum-with-multiplicity/</a>
  * @author wzx
  */
 public class No923ThreeSumWithMultiplicity {

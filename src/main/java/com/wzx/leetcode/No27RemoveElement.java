@@ -1,8 +1,7 @@
 package com.wzx.leetcode;
 
 /**
- * https://leetcode.com/problems/remove-element/
- *
+ * @see <a href="https://leetcode.com/problems/remove-element/">https://leetcode.com/problems/remove-element/</a>
  * @author wzx
  */
 public class No27RemoveElement {

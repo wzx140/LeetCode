@@ -1,8 +1,7 @@
 package com.wzx.leetcode;
 
 /**
- * https://leetcode.com/problems/preimage-size-of-factorial-zeroes-function/
- *
+ * @see <a href="https://leetcode.com/problems/preimage-size-of-factorial-zeroes-function/">https://leetcode.com/problems/preimage-size-of-factorial-zeroes-function/</a>
  * @author wzx
  */
 public class No793PreimageSizeOfFactorialZeroesFunction {
