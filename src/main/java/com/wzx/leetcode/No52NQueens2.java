@@ -1,66 +1,56 @@
 package com.wzx.leetcode;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-
 /**
- * https://leetcode.com/problems/n-queens-ii/
- *
+ * @see <a href="https://leetcode.com/problems/n-queens-ii/">https://leetcode.com/problems/n-queens-ii/</a>
  * @author wzx
  */
 public class No52NQueens2 {
-
+  private boolean[] colSet = null;
+  private boolean[] diagonalSet = null;
+  private boolean[] antiDiagonalSet = null;
   private int cnt = 0;
 
   /**
    * 回溯
+   * <p>
    * time: O(n!)
    * space: O(n)
    */
   public int totalNQueens(int n) {
-    cnt = 0;
-    List<char[]> board = new ArrayList<>(n);
-    for (int i = 0; i < n; i++) {
-      char[] row = new char[n];
-      Arrays.fill(row, '.');
-      board.add(row);
-    }
+    // 每列是否有皇后
+    colSet = new boolean[n];
+    // 每个左上斜线是否有皇后
+    diagonalSet = new boolean[2 * n - 1];
+    // 每个右上斜线是否有皇后
+    antiDiagonalSet = new boolean[2 * n - 1];
 
-    recursion(0, board, n);
+    cnt = 0;
+    recursion(0, n);
     return cnt;
   }
 
-  private void recursion(int row, List<char[]> board, int n) {
+  private void recursion(int row, int n) {
     if (row == n) {
       cnt++;
       return;
     }
 
     for (int col = 0; col < n; col++) {
-      if (isValid(board, row, col)) {
-        board.get(row)[col] = 'Q';
-        recursion(row + 1, board, n);
-        board.get(row)[col] = '.';
+      if (valid(row, col, n)) {
+        setVisit(row, col, n, true);
+        recursion(row + 1, n);
+        setVisit(row, col, n, false);
       }
     }
   }
 
-  private boolean isValid(List<char[]> board, int row, int col) {
-    int n = board.size();
-    // 垂直方向是否有其他皇后
-    for (char[] boardRow : board) {
-      if (boardRow[col] == 'Q') return false;
-    }
-    // 右上方是否有其他皇后
-    for (int r = row - 1, c = col + 1; r >= 0 && c < n; r--, c++) {
-      if (board.get(r)[c] == 'Q') return false;
-    }
-    // 左上方是否有其他皇后
-    for (int r = row - 1, c = col - 1; r >= 0 && c >= 0; r--, c--) {
-      if (board.get(r)[c] == 'Q') return false;
-    }
+  private boolean valid(int row, int col, int n) {
+    return !colSet[col] && !diagonalSet[col + row] && !antiDiagonalSet[row - col + n - 1];
+  }
 
-    return true;
+  private void setVisit(int row, int col, int n, boolean visit) {
+    colSet[col] = visit;
+    diagonalSet[col + row] = visit;
+    antiDiagonalSet[row - col + n - 1] = visit;
   }
 }

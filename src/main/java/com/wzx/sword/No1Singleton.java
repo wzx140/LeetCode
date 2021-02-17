@@ -9,7 +9,7 @@ public class No1Singleton {
    * 锁保证线程安全的懒汉式
    */
   public static class Singleton1{
-    private static Singleton1 instance = null;
+    volatile private static Singleton1 instance = null;
 
     private Singleton1(){}
 

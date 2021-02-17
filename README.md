@@ -325,7 +325,7 @@ Created by [gh-md-toc](https://github.com/ekalinin/github-markdown-toc.go)
 - [53. Maximum subarray](src/main/java/com/wzx/leetcode/No53MaximumSubarray.java)
 
 # 其他
-- [offer1. 单例模式](src/main/java/com/wzx/sword/No1Singleton.java)
+- [offer1. 单例模式](src/main/java/com/wzx/sword/No1Singleton.java) [线程安全的单例模式](https://masterwangzx.com/2021/01/10/java-singleton/)
 - [offer20. 表示数值的字符串](src/main/java/com/wzx/sword/No20StringRepresentingNumericValue.java)
 - [921. Minimum Add to Make Parentheses Valid](src/main/java/com/wzx/leetcode/No921MinimumAddToMakeParenthesesValid.java)
 - [1541. Minimum Insertions to Balance a Parentheses String](src/main/java/com/wzx/leetcode/No1541MinimumInsertionsToBalanceAParenthesesString.java)

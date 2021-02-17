@@ -1,14 +1,12 @@
 package com.wzx.sword;
 
-import java.util.HashSet;
-import java.util.Set;
-
 /**
- * https://leetcode-cn.com/problems/ju-zhen-zhong-de-lu-jing-lcof/
- *
  * @author wzx
+ * @see <a href="https://leetcode-cn.com/problems/ju-zhen-zhong-de-lu-jing-lcof/">https://leetcode-cn.com/problems/ju-zhen-zhong-de-lu-jing-lcof/</a>
  */
 public class No12MatrixPath {
+  // 方向
+  int[][] dict = {{1, 0}, {-1, 0}, {0, 1}, {0, -1}};
 
   /**
    * 深搜+回溯
@@ -17,44 +15,51 @@ public class No12MatrixPath {
    * space: O(max(n, k))    递归栈空间k 和 缓存visit数组n 的最大值
    */
   public boolean exist(char[][] board, String word) {
-    if (null == board) return false;
-    int rows = board.length;
-    int cols = board[0].length;
-    Set<Integer> visit = new HashSet<>(rows * cols);
-
-    for (int i = 0; i < rows; i++) {
-      for (int j = 0; j < cols; j++) {
-        if (backtrack(board, i, j, word, 0, visit)) return true;
+    if (board.length == 0) return false;
+    // 已访问格点
+    boolean[][] visit = new boolean[board.length][board[0].length];
+    char[] wordArray = word.toCharArray();
+    for (int i = 0; i < board.length; i++) {
+      for (int j = 0; j < board[0].length; j++) {
+        if (recursion(board, i, j, wordArray, 0, visit)) {
+          return true;
+        }
       }
     }
-
     return false;
   }
 
   /**
    * 回溯
    *
-   * @param matrix      矩阵
-   * @param row         当前行号
-   * @param col         当前列号
-   * @param word      目标字符串
-   * @param targetBegin 剩余字符串的开始索引
-   * @param visit       已访问位置
+   * @param board 矩阵
+   * @param row   当前行号
+   * @param col   当前列号
+   * @param word  目标字符串
+   * @param index 剩余字符串的开始索引
+   * @param visit 已访问位置
    * @return 是否可以得到目标字符串
    */
-  public boolean backtrack(char[][] matrix, int row, int col, String word, int targetBegin, Set<Integer> visit) {
-    if (row < 0 || row >= matrix.length || col < 0 || col >= matrix[0].length) return false;
-    int index = row * matrix[0].length + col;
-    if (visit.contains(index)) return false;
-    if (word.length() - 1 == targetBegin && word.charAt(targetBegin) == matrix[row][col]) return true;
-    if (word.charAt(targetBegin) != matrix[row][col]) return false;
+  private boolean recursion(char[][] board,
+                            int row,
+                            int col,
+                            char[] word,
+                            int index,
+                            boolean[][] visit) {
+    if (index == word.length) return true;
+    if (row >= board.length || col >= board[0].length || row < 0 || col < 0) return false;
+    // 首个搜索元素在循环外部添加, 所以visit判断在循环外部
+    if (visit[row][col]) return false;
+    if (board[row][col] != word[index]) return false;
+    // 回溯
+    visit[row][col] = true;
+    for (int i = 0; i < 4; i++) {
+      int nextRow = row + dict[i][0];
+      int nextCol = col + dict[i][1];
+      if (recursion(board, nextRow, nextCol, word, index + 1, visit)) return true;
+    }
+    visit[row][col] = false;
 
-    visit.add(index);
-    if (backtrack(matrix, row + 1, col, word, targetBegin + 1, visit)) return true;
-    if (backtrack(matrix, row - 1, col, word, targetBegin + 1, visit)) return true;
-    if (backtrack(matrix, row, col - 1, word, targetBegin + 1, visit)) return true;
-    if (backtrack(matrix, row, col + 1, word, targetBegin + 1, visit)) return true;
-    visit.remove(index);
     return false;
   }
 }

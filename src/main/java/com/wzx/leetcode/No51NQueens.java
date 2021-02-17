@@ -7,11 +7,13 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 /**
- * https://leetcode.com/problems/n-queens/
- *
  * @author wzx
+ * @see <a href="https://leetcode.com/problems/n-queens/">https://leetcode.com/problems/n-queens/</a>
  */
 public class No51NQueens {
+  private boolean[] colSet = null;
+  private boolean[] diagonalSet = null;
+  private boolean[] antiDiagonalSet = null;
 
   /**
    * 回溯
@@ -20,19 +22,26 @@ public class No51NQueens {
    * space: O(n)
    */
   public List<List<String>> solveNQueens(int n) {
-    List<List<String>> res = new LinkedList<>();
+    // 初始化棋盘
     List<char[]> board = new ArrayList<>(n);
     for (int i = 0; i < n; i++) {
       char[] row = new char[n];
       Arrays.fill(row, '.');
       board.add(row);
     }
+    // 每列是否有皇后
+    colSet = new boolean[n];
+    // 每个左上斜线是否有皇后
+    diagonalSet = new boolean[2 * n - 1];
+    // 每个右上斜线是否有皇后
+    antiDiagonalSet = new boolean[2 * n - 1];
 
-    recursion(0, board, n, res);
+    List<List<String>> res = new LinkedList<>();
+    recursion(0, n, board, res);
     return res;
   }
 
-  private void recursion(int row, List<char[]> board, int n, List<List<String>> res) {
+  private void recursion(int row, int n, List<char[]> board, List<List<String>> res) {
     if (row == n) {
       List<String> solution = board.stream()
               .map(String::new)
@@ -42,29 +51,23 @@ public class No51NQueens {
     }
 
     for (int col = 0; col < n; col++) {
-      if (isValid(board, row, col)) {
+      if (valid(row, col, n)) {
         board.get(row)[col] = 'Q';
-        recursion(row + 1, board, n, res);
+        setVisit(row, col, n, true);
+        recursion(row + 1, n, board, res);
         board.get(row)[col] = '.';
+        setVisit(row, col, n, false);
       }
     }
   }
 
-  private boolean isValid(List<char[]> board, int row, int col) {
-    int n = board.size();
-    // 垂直方向是否有其他皇后
-    for (char[] boardRow : board) {
-      if (boardRow[col] == 'Q') return false;
-    }
-    // 右上方是否有其他皇后
-    for (int r = row - 1, c = col + 1; r >= 0 && c < n; r--, c++) {
-      if (board.get(r)[c] == 'Q') return false;
-    }
-    // 左上方是否有其他皇后
-    for (int r = row - 1, c = col - 1; r >= 0 && c >= 0; r--, c--) {
-      if (board.get(r)[c] == 'Q') return false;
-    }
+  private boolean valid(int row, int col, int n) {
+    return !colSet[col] && !diagonalSet[col + row] && !antiDiagonalSet[row - col + n - 1];
+  }
 
-    return true;
+  private void setVisit(int row, int col, int n, boolean visit) {
+    colSet[col] = visit;
+    diagonalSet[col + row] = visit;
+    antiDiagonalSet[row - col + n - 1] = visit;
   }
 }

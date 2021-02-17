@@ -9,7 +9,6 @@ public class No13RobotMovementRangeTest {
   @Test
   public void movingCount() {
     No13RobotMovementRange solution = new No13RobotMovementRange();
-    assertEquals(3, solution.movingCount(2, 3, 1));
-    assertEquals(1, solution.movingCount(3, 1, 0));
+    assertEquals(21, solution.movingCount(5, 10, 10));
   }
 }

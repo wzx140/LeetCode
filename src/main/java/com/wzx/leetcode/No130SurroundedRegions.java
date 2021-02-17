@@ -23,44 +23,41 @@ public class No130SurroundedRegions {
    */
   public void solve1(char[][] board) {
     if (board.length == 0) return;
-    // 标记四周的O连通区域
-    for (int r = 0; r < board.length; r++) {
-      dfs(board, r, 0);
-      dfs(board, r, board[0].length - 1);
+    int n = board.length, m = board[0].length;
+    // 从四周搜索O连通区域, 并标记
+    for (int i = 0; i < n; i++) {
+      recursion(board, i, 0);
+      recursion(board, i, m - 1);
     }
-    for (int c = 0; c < board[0].length; c++) {
-      dfs(board, 0, c);
-      dfs(board, board.length - 1, c);
+    for (int i = 0; i < m; i++) {
+      recursion(board, 0, i);
+      recursion(board, n - 1, i);
     }
 
-    for (int r = 0; r < board.length; r++) {
-      for (int c = 0; c < board[0].length; c++) {
-        if (board[r][c] == '#') {
+    for (int i = 0; i < n; i++) {
+      for (int j = 0; j < m; j++) {
+        if (board[i][j] == 'E') {
           // 将标记变回O
-          board[r][c] = 'O';
-        } else if (board[r][c] == 'O') {
+          board[i][j] = 'O';
+        } else if (board[i][j] == 'O') {
           // 将被X包围的O翻转
-          board[r][c] = 'X';
+          board[i][j] = 'X';
         }
       }
     }
   }
 
-
   /**
-   * 标记O连通区域
+   * 标记O联通区域
    */
-  private void dfs(char[][] board, int r, int c) {
-    if (r < 0 || r >= board.length || c < 0 || c >= board[0].length) {
-      return;
-    }
+  private void recursion(char[][] board, int row, int col) {
+    if (row < 0 || row >= board.length || col < 0 || col >= board[0].length) return;
+    if (board[row][col] == 'X') return;
+    if (board[row][col] == 'E') return;
+    if (board[row][col] == 'O') board[row][col] = 'E';
 
-    if (board[r][c] == 'O') {
-      board[r][c] = '#';
-      dfs(board, r + 1, c);
-      dfs(board, r, c + 1);
-      dfs(board, r - 1, c);
-      dfs(board, r, c - 1);
+    for (int i = 0; i < 4; i++) {
+      recursion(board, row + dir[i][0], col + dir[i][1]);
     }
   }
 

@@ -1,47 +1,42 @@
 package com.wzx.sword;
 
-import java.util.HashSet;
-import java.util.Set;
-
 /**
- * https://www.nowcoder.com/practice/6e5207314b5241fb83f2329e89fdecc8
- *
  * @author wzx
+ * @see <a href="https://www.nowcoder.com/practice/6e5207314b5241fb83f2329e89fdecc8">https://www.nowcoder.com/practice/6e5207314b5241fb83f2329e89fdecc8</a>
  */
 public class No13RobotMovementRange {
 
+  private final int[][] dict = {
+          {1, 0},
+          {-1, 0},
+          {0, 1},
+          {0, -1}
+  };
+
   /**
-   * 深搜+备忘录
+   * 深搜
    * <p>
    * time: O(mn)
    * space: O(mn)
    */
-  public int movingCount(int m, int n, int k) {
-    Set<Integer> visit = new HashSet<>(m * n);
-    return recursion(k, 0, 0, m, n, visit);
+  public int movingCount(int threshold, int rows, int cols) {
+    return recursion(0, 0, rows, cols, new boolean[rows][cols], threshold);
   }
 
-  /**
-   * 递归深搜
-   *
-   * @param threshold 阈值
-   * @param row       当前行号
-   * @param col       当前列号
-   * @param rows      总行数
-   * @param cols      总列数
-   * @param visit     已访问数组
-   * @return 当前状态所能访问格子的数量
-   */
-  private int recursion(int threshold, int row, int col, int rows, int cols, Set<Integer> visit) {
+  private int recursion(int row, int col, int rows, int cols, boolean[][] visit, int threshold) {
     if (row < 0 || row >= rows || col < 0 || col >= cols) return 0;
-    int index = row * cols + col;
-    if (visit.contains(index) || getSum(row) + getSum(col) > threshold) return 0;
+    if (getSum(row) + getSum(col) > threshold) return 0;
+    if (visit[row][col]) return 0;
+    // 回溯
+    int step = 1;
+    visit[row][col] = true;
+    for (int i = 0; i < 4; i++) {
+      int nextRow = row + dict[i][0];
+      int nextCol = col + dict[i][1];
+      step += recursion(nextRow, nextCol, rows, cols, visit, threshold);
+    }
 
-    visit.add(index);
-    return 1 + recursion(threshold, row + 1, col, rows, cols, visit)
-            + recursion(threshold, row - 1, col, rows, cols, visit)
-            + recursion(threshold, row, col + 1, rows, cols, visit)
-            + recursion(threshold, row, col - 1, rows, cols, visit);
+    return step;
   }
 
   /**

@@ -4,8 +4,7 @@ import java.util.LinkedList;
 import java.util.List;
 
 /**
- * https://leetcode.com/problems/combinations/
- *
+ * @see <a href="https://leetcode.com/problems/combinations/">https://leetcode.com/problems/combinations/</a>
  * @author wzx
  */
 public class No77Combinations {
@@ -25,7 +24,10 @@ public class No77Combinations {
   }
 
   private void recursion(int start, int n, int k, LinkedList<Integer> track) {
-    if (k == 0) res.add(new LinkedList<>(track));
+    if (k == 0){
+      res.add(new LinkedList<>(track));
+      return;
+    }
 
     for (int i = start; i <= n; i++) {
       track.add(i);

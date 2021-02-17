@@ -1,8 +1,7 @@
 package com.wzx.leetcode;
 
 /**
- * https://leetcode.com/problems/sudoku-solver/
- *
+ * @see <a href="https://leetcode.com/problems/sudoku-solver/">https://leetcode.com/problems/sudoku-solver/</a>
  * @author wzx
  */
 public class No37SudokuSolver {

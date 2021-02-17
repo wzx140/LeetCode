@@ -4,8 +4,7 @@ import java.util.LinkedList;
 import java.util.List;
 
 /**
- * https://leetcode.com/problems/generate-parentheses/
- *
+ * @see <a href="https://leetcode.com/problems/generate-parentheses/">https://leetcode.com/problems/generate-parentheses/</a>
  * @author wzx
  */
 public class No22GenerateParentheses {
@@ -18,21 +17,26 @@ public class No22GenerateParentheses {
    */
   public List<String> generateParenthesis(int n) {
     List<String> res = new LinkedList<>();
-    recursion(0, n * 2, 0, new StringBuffer(), res);
+    recursion(n * 2, 0, new StringBuilder(), res);
     return res;
   }
 
-  private void recursion(int start, int n, int left, StringBuffer track, List<String> res) {
-    if (left < start - left) return;
-    if (left > n / 2) return;
-    if (start == n) {
+  private void recursion(int n, int left, StringBuilder track, List<String> res) {
+    // 右括号较多
+    if (left < 0) return;
+    // 左括号较多
+    if (left > n) return;
+    if (n == 0) {
       res.add(track.toString());
       return;
     }
 
-    recursion(start + 1, n, left + 1, track.append('('), res);
+    track.append('(');
+    recursion(n-1, left + 1, track, res);
     track.deleteCharAt(track.length() - 1);
-    recursion(start + 1, n, left, track.append(')'), res);
+
+    track.append(')');
+    recursion(n-1, left - 1, track, res);
     track.deleteCharAt(track.length() - 1);
   }
 }

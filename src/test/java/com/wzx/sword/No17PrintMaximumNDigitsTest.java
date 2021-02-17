@@ -14,11 +14,4 @@ public class No17PrintMaximumNDigitsTest {
     int[] res = solution.printNumbers1(2);
     assertArrayEquals(IntStream.range(1, 100).toArray(), res);
   }
-
-  @Test
-  public void printNumbers2() {
-    No17PrintMaximumNDigits solution = new No17PrintMaximumNDigits();
-    int[] res = solution.printNumbers2(2);
-    assertArrayEquals(IntStream.range(1, 100).toArray(), res);
-  }
 }

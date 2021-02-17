@@ -4,8 +4,7 @@ import java.util.LinkedList;
 import java.util.List;
 
 /**
- * https://leetcode.com/problems/subsets/
- *
+ * @see <a href="https://leetcode.com/problems/subsets/">https://leetcode.com/problems/subsets/</a>
  * @author wzx
  */
 public class No78Subsets {

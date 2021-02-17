@@ -5,9 +5,8 @@ import java.util.LinkedList;
 import java.util.List;
 
 /**
- * https://leetcode.com/problems/permutations-ii/
- *
  * @author wzx
+ * @see <a href="https://leetcode.com/problems/permutations-ii/">https://leetcode.com/problems/permutations-ii/</a>
  */
 public class No47Permutations2 {
 
@@ -33,20 +32,15 @@ public class No47Permutations2 {
     }
 
     for (int i = 0; i < nums.length; i++) {
-      if (!visit[i]) {
+      if (visit[i]) continue;
+      // 防止重复
+      if (i > 0 && nums[i - 1] == nums[i] && !visit[i - 1] && !visit[i]) continue;
 
-        if (i > 0 && nums[i - 1] == nums[i] && !visit[i - 1]) {
-          // 当前元素m和不在track序列中的且m之前的元素相同
-          // 这说明在之前添加的track序列中相同位置已经放置过与m相同的元素了
-          continue;
-        }
-
-        track.add(nums[i]);
-        visit[i] = true;
-        recursion(nums, track, visit, res);
-        visit[i] = false;
-        track.removeLast();
-      }
+      track.add(nums[i]);
+      visit[i] = true;
+      recursion(nums, track, visit, res);
+      visit[i] = false;
+      track.removeLast();
     }
   }
 }
