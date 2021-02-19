@@ -1,8 +1,7 @@
 package com.wzx.sword;
 
 /**
- * https://leetcode-cn.com/problems/qiu-12n-lcof/
- *
+ * @see <a href="https://leetcode-cn.com/problems/qiu-12n-lcof/">https://leetcode-cn.com/problems/qiu-12n-lcof/</a>
  * @author wzx
  */
 public class No64Solve1ton {

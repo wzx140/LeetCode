@@ -3,8 +3,7 @@ package com.wzx.sword;
 import java.util.Arrays;
 
 /**
- * https://leetcode-cn.com/problems/ba-shu-zu-pai-cheng-zui-xiao-de-shu-lcof/
- *
+ * @see <a href="https://leetcode-cn.com/problems/ba-shu-zu-pai-cheng-zui-xiao-de-shu-lcof/">https://leetcode-cn.com/problems/ba-shu-zu-pai-cheng-zui-xiao-de-shu-lcof/</a>
  * @author wzx
  */
 public class No45ArrangeTheArrayIntoTheSmallestNumber {

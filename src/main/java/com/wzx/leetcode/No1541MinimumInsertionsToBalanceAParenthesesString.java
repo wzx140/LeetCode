@@ -1,8 +1,7 @@
 package com.wzx.leetcode;
 
 /**
- * https://leetcode.com/problems/minimum-insertions-to-balance-a-parentheses-string/
- *
+ * @see <a href="https://leetcode.com/problems/minimum-insertions-to-balance-a-parentheses-string/">https://leetcode.com/problems/minimum-insertions-to-balance-a-parentheses-string/</a>
  * @author wzx
  */
 public class No1541MinimumInsertionsToBalanceAParenthesesString {

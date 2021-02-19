@@ -1,8 +1,7 @@
 package com.wzx.sword;
 
 /**
- * https://www.nowcoder.com/practice/22243d016f6b47f2a6928b4313c85387
- *
+ * @see <a href="https://www.nowcoder.com/practice/22243d016f6b47f2a6928b4313c85387">https://www.nowcoder.com/practice/22243d016f6b47f2a6928b4313c85387</a>
  * @author wzx
  */
 public class No10StepUp {

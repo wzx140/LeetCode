@@ -1,9 +1,8 @@
 package com.wzx.sword;
 
 /**
- * https://leetcode-cn.com/problems/fei-bo-na-qi-shu-lie-lcof/
- *
  * @author wzx
+ * @see <a href="https://leetcode-cn.com/problems/fei-bo-na-qi-shu-lie-lcof/">https://leetcode-cn.com/problems/fei-bo-na-qi-shu-lie-lcof/</a>
  */
 public class No10FibonacciSequence {
 
@@ -16,24 +15,22 @@ public class No10FibonacciSequence {
    */
 
   /**
-   * 迭代
+   * 滚动数组优化的动态规划
    * <p>
    * time: O(n)
    * space: O(1)
    */
   public int fib1(int n) {
-    if (0 == n) return 0;
-    if (1 == n || 2 == n) return 1;
-
-    int n1 = 1;
-    int n2 = 1;
-    for (int i = 0; i < n - 2; i++) {
-      // 题目要求取模
-      int sum = (n1 + n2) % 1000000007;
-      n1 = n2;
-      n2 = sum;
+    if (n < 2) return n;
+    int dp_i_1 = 0;
+    int dp_i = 1;
+    for (int i = 2; i <= n; i++) {
+      int tmp = dp_i;
+      dp_i = (dp_i + dp_i_1) % 1000000007;
+      dp_i_1 = tmp;
     }
-    return n2;
+
+    return dp_i;
   }
 
   /**
@@ -48,6 +45,6 @@ public class No10FibonacciSequence {
     if (1 == n || 2 == n) return 1;
 
     // 题目要求取模
-    return (fib2(n - 1) + fib2(n - 2))% 1000000007;
+    return (fib2(n - 1) + fib2(n - 2)) % 1000000007;
   }
 }

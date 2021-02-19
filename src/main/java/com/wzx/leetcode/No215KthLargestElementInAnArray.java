@@ -3,8 +3,7 @@ package com.wzx.leetcode;
 import java.util.PriorityQueue;
 
 /**
- * https://leetcode.com/problems/kth-largest-element-in-an-array/
- *
+ * @see <a href="https://leetcode.com/problems/kth-largest-element-in-an-array/">https://leetcode.com/problems/kth-largest-element-in-an-array/</a>
  * @author wzx
  */
 public class No215KthLargestElementInAnArray {

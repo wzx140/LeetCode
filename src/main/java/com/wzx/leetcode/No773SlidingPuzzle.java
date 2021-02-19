@@ -3,8 +3,7 @@ package com.wzx.leetcode;
 import java.util.*;
 
 /**
- * https://leetcode.com/problems/sliding-puzzle/
- *
+ * @see <a href="https://leetcode.com/problems/sliding-puzzle/">https://leetcode.com/problems/sliding-puzzle/</a>
  * @author wzx
  */
 public class No773SlidingPuzzle {

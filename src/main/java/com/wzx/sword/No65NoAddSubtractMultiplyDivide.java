@@ -1,8 +1,7 @@
 package com.wzx.sword;
 
 /**
- * https://leetcode-cn.com/problems/bu-yong-jia-jian-cheng-chu-zuo-jia-fa-lcof/
- *
+ * @see <a href="https://leetcode-cn.com/problems/bu-yong-jia-jian-cheng-chu-zuo-jia-fa-lcof/">https://leetcode-cn.com/problems/bu-yong-jia-jian-cheng-chu-zuo-jia-fa-lcof/</a>
  * @author wzx
  */
 public class No65NoAddSubtractMultiplyDivide {

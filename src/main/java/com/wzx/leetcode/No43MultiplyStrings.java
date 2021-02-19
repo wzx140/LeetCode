@@ -1,8 +1,7 @@
 package com.wzx.leetcode;
 
 /**
- * https://leetcode.com/problems/multiply-strings/
- *
+ * @see <a href="https://leetcode.com/problems/multiply-strings/">https://leetcode.com/problems/multiply-strings/</a>
  * @author wzx
  */
 public class No43MultiplyStrings {

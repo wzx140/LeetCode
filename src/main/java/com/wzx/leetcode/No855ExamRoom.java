@@ -3,8 +3,7 @@ package com.wzx.leetcode;
 import java.util.*;
 
 /**
- * https://leetcode.com/problems/exam-room/
- *
+ * @see <a href="https://leetcode.com/problems/exam-room/">https://leetcode.com/problems/exam-room/</a>
  * @author wzx
  */
 public class No855ExamRoom {

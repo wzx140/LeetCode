@@ -3,8 +3,7 @@ package com.wzx.leetcode;
 import java.util.Random;
 
 /**
- * https://leetcode.com/problems/random-pick-index/
- *
+ * @see <a href="https://leetcode.com/problems/random-pick-index/">https://leetcode.com/problems/random-pick-index/</a>
  * @author wzx
  */
 public class No398RandomPickIndex {
@@ -24,11 +23,11 @@ public class No398RandomPickIndex {
    */
   public int pick(int target) {
     int res = 0;
-    int len = 0;
+    int cnt = 0;
 
     for (int i = 0; i < nums.length; i++) {
       int num = nums[i];
-      if (num == target && rand.nextInt(++len) < 1) {
+      if (num == target && rand.nextInt(++cnt) < 1) {
         res = i;
       }
     }

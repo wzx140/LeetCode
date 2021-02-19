@@ -6,8 +6,7 @@ import java.util.List;
 import java.util.Set;
 
 /**
- * https://leetcode.com/problems/perfect-rectangle/
- *
+ * @see <a href="https://leetcode.com/problems/perfect-rectangle/">https://leetcode.com/problems/perfect-rectangle/</a>
  * @author wzx
  */
 public class No391PerfectRectangle {
@@ -60,7 +59,7 @@ public class No391PerfectRectangle {
         corners.add(rRightDown);
       }
       // 计算总面积
-      area += Math.abs(rX1 - rX2) * Math.abs(rY1 - rY2);
+      area += (rX2 - rX1) * (rY2 - rY1);
     }
     // 1. 4个顶点
     List<Integer> leftUp = Arrays.asList(x1, y1);
@@ -68,7 +67,7 @@ public class No391PerfectRectangle {
     List<Integer> rightUp = Arrays.asList(x2, y1);
     List<Integer> rightDown = Arrays.asList(x2, y2);
     // 2. 面积是否一致
-    if (area != Math.abs(x1 - x2) * Math.abs(y1 - y2)) return false;
+    if (area != (x2 - x1) * (y2 - y1)) return false;
     // 3. 角点是否和4个顶点一致
     if (corners.size() != 4) return false;
     if (!corners.contains(leftUp)) return false;

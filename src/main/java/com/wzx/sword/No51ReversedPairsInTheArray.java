@@ -1,8 +1,7 @@
 package com.wzx.sword;
 
 /**
- * https://leetcode-cn.com/problems/shu-zu-zhong-de-ni-xu-dui-lcof/
- *
+ * @see <a href="https://leetcode-cn.com/problems/shu-zu-zhong-de-ni-xu-dui-lcof/">https://leetcode-cn.com/problems/shu-zu-zhong-de-ni-xu-dui-lcof/</a>
  * @author wzx
  */
 public class No51ReversedPairsInTheArray {

@@ -4,8 +4,7 @@ import java.util.Arrays;
 import java.util.PriorityQueue;
 
 /**
- * https://leetcode.com/problems/sort-an-array/
- *
+ * @see <a href="https://leetcode.com/problems/sort-an-array/">https://leetcode.com/problems/sort-an-array/</a>
  * @author wzx
  */
 public class No912SortAnArray {
@@ -208,10 +207,9 @@ public class No912SortAnArray {
     }
     // 按照count数组中的计数重新指定数组的顺序
     int[] tmp = nums.clone();
-    // 从后至前指定数组顺序, 保证排序稳定性
-    for (int i = nums.length - 1; i >= 0; i--) {
-      nums[count[tmp[i] - min] - 1] = tmp[i];
-      count[tmp[i] - min]--;
+    for (int num : tmp){
+      nums[count[num - min] - 1] = num;
+      count[num - min]--;
     }
 
     return nums;

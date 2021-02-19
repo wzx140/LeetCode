@@ -1,8 +1,7 @@
 package com.wzx.sword;
 
 /**
- * https://leetcode-cn.com/problems/1nzheng-shu-zhong-1chu-xian-de-ci-shu-lcof/
- *
+ * @see <a href="https://leetcode-cn.com/problems/1nzheng-shu-zhong-1chu-xian-de-ci-shu-lcof/">https://leetcode-cn.com/problems/1nzheng-shu-zhong-1chu-xian-de-ci-shu-lcof/</a>
  * @author wzx
  */
 public class No43NumberOfOccurrencesOf1InAnInteger {

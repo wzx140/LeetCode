@@ -5,8 +5,7 @@ import java.util.Map;
 import java.util.regex.Pattern;
 
 /**
- * https://leetcode-cn.com/problems/biao-shi-shu-zhi-de-zi-fu-chuan-lcof/
- *
+ * @see <a href="https://leetcode-cn.com/problems/biao-shi-shu-zhi-de-zi-fu-chuan-lcof/">https://leetcode-cn.com/problems/biao-shi-shu-zhi-de-zi-fu-chuan-lcof/</a>
  * @author wzx
  */
 public class No20StringRepresentingNumericValue {

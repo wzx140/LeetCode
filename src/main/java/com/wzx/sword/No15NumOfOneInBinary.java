@@ -1,8 +1,7 @@
 package com.wzx.sword;
 
 /**
- * https://leetcode-cn.com/problems/er-jin-zhi-zhong-1de-ge-shu-lcof/
- *
+ * @see <a href="https://leetcode-cn.com/problems/er-jin-zhi-zhong-1de-ge-shu-lcof/">https://leetcode-cn.com/problems/er-jin-zhi-zhong-1de-ge-shu-lcof/</a>
  * @author wzx
  */
 public class No15NumOfOneInBinary {

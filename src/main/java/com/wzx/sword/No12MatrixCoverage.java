@@ -1,8 +1,7 @@
 package com.wzx.sword;
 
 /**
- * https://www.nowcoder.com/practice/72a5a919508a4251859fb2cfb987a0e6
- *
+ * @see <a href="https://www.nowcoder.com/practice/72a5a919508a4251859fb2cfb987a0e6">https://www.nowcoder.com/practice/72a5a919508a4251859fb2cfb987a0e6</a>
  * @author wzx
  */
 public class No12MatrixCoverage {

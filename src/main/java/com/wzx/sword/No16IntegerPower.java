@@ -1,8 +1,7 @@
 package com.wzx.sword;
 
 /**
- * https://leetcode-cn.com/problems/shu-zhi-de-zheng-shu-ci-fang-lcof/
- *
+ * @see <a href="https://leetcode-cn.com/problems/shu-zhi-de-zheng-shu-ci-fang-lcof/">https://leetcode-cn.com/problems/shu-zhi-de-zheng-shu-ci-fang-lcof/</a>
  * @author wzx
  */
 public class No16IntegerPower {
@@ -18,7 +17,6 @@ public class No16IntegerPower {
   public double myPow1(double x, int n) {
     if (x == 0) return 0;
     if (n == 0) return 1;
-    if (n == 1) return x;
     if (n == -1) return 1 / x;
 
     double r = myPow1(x, n >> 1);
@@ -30,22 +28,6 @@ public class No16IntegerPower {
       // n为奇数
       return r * r * x;
     }
-  }
-
-  private double powerHelper(double base, long index) {
-    if (index == 0) return 1;
-    if (index == 1) return base;
-    if (index == -1) return 1 / base;
-
-    // x >> 1 = x/2
-    double res = powerHelper(base, index >> 1);
-    // x & 1 = x % 2
-    if ((index & 1) == 0) {
-      res *= res;
-    } else {
-      res *= (res * base);
-    }
-    return res;
   }
 
   /**

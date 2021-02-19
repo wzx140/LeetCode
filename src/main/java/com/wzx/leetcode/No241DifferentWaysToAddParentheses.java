@@ -6,8 +6,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * https://leetcode.com/problems/different-ways-to-add-parentheses/
- *
+ * @see <a href="https://leetcode.com/problems/different-ways-to-add-parentheses/">https://leetcode.com/problems/different-ways-to-add-parentheses/</a>
  * @author wzx
  */
 public class No241DifferentWaysToAddParentheses {
@@ -20,22 +19,17 @@ public class No241DifferentWaysToAddParentheses {
    */
   public List<Integer> diffWaysToCompute(String input) {
     Map<Integer, List<Integer>> memo = new HashMap<>();
-    return helper(input.toCharArray(), 0, input.length() - 1, memo);
+    return helper(input.toCharArray(), 0, input.length() - 1);
   }
 
-  private List<Integer> helper(char[] input, int start, int end, Map<Integer, List<Integer>> memo) {
-    // 防止重复计算
-    if (memo.containsKey(start + end * input.length)) {
-      return memo.get(start + end * input.length);
-    }
-
+  private List<Integer> helper(char[] input, int start, int end) {
     List<Integer> res = new LinkedList<>();
     // 分, 给当前表达式[start, end]加一层括号
     for (int i = start; i <= end; i++) {
       if (input[i] == '+' || input[i] == '-' || input[i] == '*') {
         // 以运算符为分割点, 两侧分别加括号
-        List<Integer> left = helper(input, start, i - 1, memo);
-        List<Integer> right = helper(input, i + 1, end, memo);
+        List<Integer> left = helper(input, start, i - 1);
+        List<Integer> right = helper(input, i + 1, end);
         // 合并, 左右两侧
         res.addAll(merge(left, right, input[i]));
       }
@@ -46,7 +40,6 @@ public class No241DifferentWaysToAddParentheses {
       res.add(Integer.parseInt(new String(input, start, end - start + 1)));
     }
 
-    memo.put(start + end * input.length, res);
     return res;
   }
 

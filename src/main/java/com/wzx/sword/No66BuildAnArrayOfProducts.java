@@ -3,8 +3,7 @@ package com.wzx.sword;
 import java.util.Arrays;
 
 /**
- * https://leetcode-cn.com/problems/gou-jian-cheng-ji-shu-zu-lcof/
- *
+ * @see <a href="https://leetcode-cn.com/problems/gou-jian-cheng-ji-shu-zu-lcof/">https://leetcode-cn.com/problems/gou-jian-cheng-ji-shu-zu-lcof/</a>
  * @author wzx
  */
 public class No66BuildAnArrayOfProducts {

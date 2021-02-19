@@ -5,9 +5,8 @@ import java.util.HashSet;
 import java.util.Set;
 
 /**
- * https://leetcode-cn.com/problems/bu-ke-pai-zhong-de-shun-zi-lcof/
- *
  * @author wzx
+ * @see <a href="https://leetcode-cn.com/problems/bu-ke-pai-zhong-de-shun-zi-lcof/">https://leetcode-cn.com/problems/bu-ke-pai-zhong-de-shun-zi-lcof/</a>
  */
 public class No61StraightInPlayingCards {
 
@@ -19,25 +18,20 @@ public class No61StraightInPlayingCards {
    */
   public boolean isStraight1(int[] nums) {
     Arrays.sort(nums);
-    // 统计大小王个数
-    int zero = 0;
-    for (int num : nums) {
-      if (num == 0) zero++;
-      else break;
+    int numZero = 0;
+    int diff = 0;
+    for (int i = 0; i < nums.length; i++) {
+      if (nums[i] == 0) {
+        numZero++;
+      } else if (i > 0 && nums[i - 1] != 0) {
+        // 重复不能构成顺子
+        if (nums[i] == nums[i - 1]) return false;
+        // 顺子间的差距
+        diff += nums[i] - nums[i - 1] - 1;
+      }
     }
 
-    for (int i = zero + 1; i < nums.length; i++) {
-      int preCard = nums[i - 1];
-      int card = nums[i];
-      // 不能重复
-      if (card == preCard) return false;
-
-      // 用大小王填充不连续的字符
-      zero -= card - preCard - 1;
-      if (zero < 0) return false;
-    }
-
-    return true;
+    return diff - numZero <= 0;
   }
 
   /**

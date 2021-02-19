@@ -3,8 +3,7 @@ package com.wzx.leetcode;
 import java.util.*;
 
 /**
- * https://leetcode.com/problems/open-the-lock/
- *
+ * @see <a href="https://leetcode.com/problems/open-the-lock/">https://leetcode.com/problems/open-the-lock/</a>
  * @author wzx
  */
 public class No752OpenTheLock {

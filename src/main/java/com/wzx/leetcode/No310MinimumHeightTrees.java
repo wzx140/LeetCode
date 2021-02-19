@@ -5,8 +5,7 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 /**
- * https://leetcode.com/problems/minimum-height-trees/
- *
+ * @see <a href="https://leetcode.com/problems/minimum-height-trees/">https://leetcode.com/problems/minimum-height-trees/</a>
  * @author wzx
  */
 public class No310MinimumHeightTrees {

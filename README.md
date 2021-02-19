@@ -316,7 +316,6 @@ Created by [gh-md-toc](https://github.com/ekalinin/github-markdown-toc.go)
 - [111. Minimum Depth of Binary Tree](src/main/java/com/wzx/leetcode/No111MinimumDepthOfBinaryTree.java)
 - [752. Open the Lock](src/main/java/com/wzx/leetcode/No752OpenTheLock.java)
 - [773. Sliding Puzzle](src/main/java/com/wzx/leetcode/No773SlidingPuzzle.java)
-- [111. Minimum Depth of Binary Tree](src/main/java/com/wzx/leetcode/No111MinimumDepthOfBinaryTree.java)
 
 ## 分治
 > [分治](https://mp.weixin.qq.com/s/fcCJFk89w953gXDjnlZFIA)
@@ -353,7 +352,7 @@ Created by [gh-md-toc](https://github.com/ekalinin/github-markdown-toc.go)
 - [offer51. 数组中的逆序对](src/main/java/com/wzx/sword/No51ReversedPairsInTheArray.java)
 
 ## 水塘抽样
-> [水塘抽样](https://labuladong.gitbook.io/algo/gao-pin-mian-shi-xi-lie/shui-tang-chou-yang)
+> [水塘抽样](https://mp.weixin.qq.com/s/DrBFYAZnPBgNNay2wjNU-A)
 
 - [382. Linked List Random Node](src/main/java/com/wzx/leetcode/No382LinkedListRandomNode.java)
 - [398. Random Pick Index](src/main/java/com/wzx/leetcode/No398RandomPickIndex.java)
@@ -368,7 +367,5 @@ Created by [gh-md-toc](https://github.com/ekalinin/github-markdown-toc.go)
 - [offer56. 数组中数字出现的次数2](src/main/java/com/wzx/sword/No56NumberOfOccurrencesOfNumbersInTheArray2.java)
 - [offer15. 二进制中1的个数](src/main/java/com/wzx/sword/No15NumOfOneInBinary.java)
 - [offer16. 数值的整数次方](src/main/java/com/wzx/sword/No16IntegerPower.java)
-- [offer56. 数组中数字出现的次数1](src/main/java/com/wzx/sword/No56NumberOfOccurrencesOfNumbersInTheArray1.java)
-- [offer56. 数组中数字出现的次数2](src/main/java/com/wzx/sword/No56NumberOfOccurrencesOfNumbersInTheArray2.java)
 - [offer64. 求1+2+…+n](src/main/java/com/wzx/sword/No64Solve1ton.java)
 - [offer65. 不用加减乘除做加法](src/main/java/com/wzx/sword/No65NoAddSubtractMultiplyDivide.java)

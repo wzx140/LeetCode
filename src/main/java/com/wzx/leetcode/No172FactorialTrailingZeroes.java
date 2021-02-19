@@ -1,8 +1,7 @@
 package com.wzx.leetcode;
 
 /**
- * https://leetcode.com/problems/factorial-trailing-zeroes/
- *
+ * @see <a href="https://leetcode.com/problems/factorial-trailing-zeroes/">https://leetcode.com/problems/factorial-trailing-zeroes/</a>
  * @author wzx
  */
 public class No172FactorialTrailingZeroes {

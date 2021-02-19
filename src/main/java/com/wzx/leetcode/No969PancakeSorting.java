@@ -4,8 +4,7 @@ import java.util.LinkedList;
 import java.util.List;
 
 /**
- * https://leetcode.com/problems/pancake-sorting/
- *
+ * @see <a href="https://leetcode.com/problems/pancake-sorting/">https://leetcode.com/problems/pancake-sorting/</a>
  * @author wzx
  */
 public class No969PancakeSorting {

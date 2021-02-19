@@ -5,8 +5,7 @@ import com.wzx.entity.ListNode;
 import java.util.Random;
 
 /**
- * https://leetcode.com/problems/find-the-difference/
- *
+ * @see <a href="https://leetcode.com/problems/linked-list-random-node/">https://leetcode.com/problems/linked-list-random-node/</a>
  * @author wzx
  */
 public class No382LinkedListRandomNode {

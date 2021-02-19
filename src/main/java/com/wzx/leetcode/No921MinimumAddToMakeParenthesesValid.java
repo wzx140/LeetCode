@@ -1,8 +1,7 @@
 package com.wzx.leetcode;
 
 /**
- * https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/
- *
+ * @see <a href="https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/">https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/</a>
  * @author wzx
  */
 public class No921MinimumAddToMakeParenthesesValid {

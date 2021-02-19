@@ -5,8 +5,7 @@ import java.util.LinkedList;
 import java.util.List;
 
 /**
- * https://leetcode.com/problems/flatten-nested-list-iterator/
- *
+ * @see <a href="https://leetcode.com/problems/flatten-nested-list-iterator/">https://leetcode.com/problems/flatten-nested-list-iterator/</a>
  * @author wzx
  */
 public class No341FlattenNestedListIterator {
