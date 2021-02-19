@@ -28,8 +28,6 @@ public class No51ReversedPairsInTheArray {
   }
 
   private int merge(int[] nums, int[] tmp, int begin, int end, int middle) {
-    if (begin >= end) return 0;
-
     // 左序列正序，右序列倒序。在后面归并的时候可以互为哨兵
     for (int i = begin; i <= middle; i++) {
       tmp[i] = nums[i];

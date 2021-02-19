@@ -279,7 +279,6 @@ public class No912SortAnArray {
   }
 
   private void merge(int[] nums, int start, int end, int middle, int[] tmp) {
-    if (start >= end) return;
     // [start, middle]正序放入tmp, [middle+1, end]反序放入tmp
     for (int i = start; i <= middle; i++) {
       tmp[i] = nums[i];

@@ -23,5 +23,6 @@ public class No347TopKFrequentElementsTest {
     No347TopKFrequentElements solution = new No347TopKFrequentElements();
     assertArrayEquals(res1, solution.topKFrequent2(nums1, 2));
     assertArrayEquals(res2, solution.topKFrequent2(nums2, 1));
+    assertArrayEquals(new int[]{0}, solution.topKFrequent2(new int[]{3,0,1,0}, 1));
   }
 }

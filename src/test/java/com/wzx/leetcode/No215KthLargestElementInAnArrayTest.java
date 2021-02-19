@@ -21,5 +21,6 @@ public class No215KthLargestElementInAnArrayTest {
     No215KthLargestElementInAnArray solution = new No215KthLargestElementInAnArray();
     assertEquals(5, solution.findKthLargest2(nums1, 2));
     assertEquals(4, solution.findKthLargest2(nums2, 4));
+    assertEquals(2, solution.findKthLargest2(new int[]{-1, 2, 0}, 1));
   }
 }

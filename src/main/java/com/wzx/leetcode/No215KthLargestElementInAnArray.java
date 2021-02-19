@@ -3,8 +3,8 @@ package com.wzx.leetcode;
 import java.util.PriorityQueue;
 
 /**
- * @see <a href="https://leetcode.com/problems/kth-largest-element-in-an-array/">https://leetcode.com/problems/kth-largest-element-in-an-array/</a>
  * @author wzx
+ * @see <a href="https://leetcode.com/problems/kth-largest-element-in-an-array/">https://leetcode.com/problems/kth-largest-element-in-an-array/</a>
  */
 public class No215KthLargestElementInAnArray {
 
@@ -26,45 +26,44 @@ public class No215KthLargestElementInAnArray {
   }
 
   /**
-   * 部分快排+二分搜索
+   * 快排思想
    * <p>
    * time: O(n)
    * space: O(n)
    */
   public int findKthLargest2(int[] nums, int k) {
-    int left = 0, right = nums.length - 1;
-    // 第k大即第nums.length - k+1小
-    k = nums.length - k;
-    // 二分搜索
-    while (left < right) {
-      int pivot = partition(nums, left, right);
-      if (pivot > k) {
-        right = pivot - 1;
-      } else if (pivot < k) {
-        left = pivot + 1;
-      } else {
-        return nums[k];
-      }
-    }
+    helper(nums, 0, nums.length - 1, k - 1);
 
-    return nums[left];
+    return nums[k - 1];
   }
 
-  private int partition(int[] nums, int left, int right) {
-    // 快排的想法
-    int pivot = left + (right - left) / 2;
-    int record = nums[pivot];
+  private void helper(int[] nums, int start, int end, int k) {
+    // 快排
+    if (start >= end) return;
 
+    int pivot = (end - start) / 2 + start;
+    int record = nums[pivot];
+    int left = start, right = end;
     nums[pivot] = nums[right];
     while (left < right) {
-      while (nums[left] < record && left < right) left++;
-      if (left < right) nums[right--] = nums[left];
-      while (nums[right] > record && left < right) right--;
-      if (left < right) nums[left++] = nums[right];
+      while (left < right && nums[left] > record) left++;
+      if (left < right) {
+        nums[right--] = nums[left];
+      }
+      while (left < right && nums[right] < record) right--;
+      if (left < right) {
+        nums[left++] = nums[right];
+      }
     }
     nums[left] = record;
-
-    // 返回排序后的轴值索引
-    return left;
+    // 根据轴值左侧个数递归排序
+    int leftNum = left - start;
+    if (leftNum > k) {
+      // 继续划分左侧
+      helper(nums, start, left - 1, k);
+    } else if (leftNum < k) {
+      // 已经提取出来前leftNum个元素, 继续从右侧提取k-leftNum-1
+      helper(nums, left + 1, end, k - leftNum - 1);
+    }
   }
 }
