@@ -27,8 +27,8 @@ public class No98ValidateBinarySearchTree {
   private boolean recursion(TreeNode root, Integer max, Integer min) {
     if (root == null) return true;
 
-    if (max != null && root.val > max) return false;
-    if (min != null && root.val < min) return false;
+    if (max != null && root.val >= max) return false;
+    if (min != null && root.val <= min) return false;
 
     // 左子树的所有结点小于根结点值, 所以根结点值为左子树的最大值
     return recursion(root.left, root.val, min)

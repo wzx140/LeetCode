@@ -16,7 +16,7 @@ public class No234PalindromeLinkedList {
    */
   public boolean isPalindrome(ListNode head) {
     // 快慢指针找中点
-    ListNode center = null;
+    ListNode center;
     ListNode fast = head, slow = head;
     while (fast != null && fast.next != null) {
       slow = slow.next;

@@ -24,14 +24,13 @@ public class No21MergeTwoSortedLists {
         node.next = l1;
         l1 = l1.next;
       } else {
-        if (l1.val > l2.val) {
-          ListNode tmp = l1;
-          l1 = l2;
-          l2 = tmp;
+        if (l1.val < l2.val) {
+          node.next = l1;
+          l1 = l1.next;
+        } else {
+          node.next = l2;
+          l2 = l2.next;
         }
-        node.next = l1;
-        l1 = l1.next;
-
       }
       node = node.next;
     }

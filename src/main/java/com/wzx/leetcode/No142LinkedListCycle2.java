@@ -17,7 +17,7 @@ public class No142LinkedListCycle2 {
    * time: O(n)
    * space: O(1)
    */
-  public ListNode detectCycle1(ListNode head) {
+  public ListNode detectCycle(ListNode head) {
     ListNode slow = head;
     ListNode fast = head;
 

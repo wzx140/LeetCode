@@ -16,19 +16,20 @@ public class No19RemoveNthNodeFromEndOfList {
    */
   public ListNode removeNthFromEnd(ListNode head, int n) {
     // 哨兵处理删除头结点的情况
-    ListNode sent = new ListNode(-1);
+    ListNode sent = new ListNode();
     sent.next = head;
     // 快指针比慢指针快n个节点
-    ListNode preSlow = sent, slow = head, fast = head;
-    while (n-- != 0) fast = fast.next;
-    // 快慢指针
-    while (fast != null) {
-      preSlow = slow;
+    ListNode fast = sent, slow = sent;
+    while (n-- > 0) {
+      fast = fast.next;
+    }
+    // 快指针指向链表末尾, 慢指针指向目标节点的前一个节点
+    while (fast.next != null) {
       slow = slow.next;
       fast = fast.next;
     }
-    // 删除慢指针处的结点
-    preSlow.next = slow.next;
+    // 删除slow.next节点
+    slow.next = slow.next.next;
 
     return sent.next;
   }

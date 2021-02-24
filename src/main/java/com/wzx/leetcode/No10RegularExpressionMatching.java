@@ -76,7 +76,7 @@ public class No10RegularExpressionMatching {
     // dp[0~n][m] = false
     // 空字符串只有和带*的匹配串匹配
     for (int i = m - 2; i >= 0; i--) {
-      dp[n][i] = (i < m - 1 && p.charAt(i + 1) == '*') && dp[n][i + 2];
+      dp[n][i] = p.charAt(i + 1) == '*' && dp[n][i + 2];
     }
 
     // 从后往前倒退

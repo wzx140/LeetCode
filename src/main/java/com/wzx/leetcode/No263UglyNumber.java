@@ -1,9 +1,8 @@
 package com.wzx.leetcode;
 
 /**
- * https://leetcode.com/problems/ugly-number/
- *
  * @author wzx
+ * @see <a href="https://leetcode.com/problems/ugly-number/">https://leetcode.com/problems/ugly-number/</a>
  */
 public class No263UglyNumber {
 
@@ -19,6 +18,6 @@ public class No263UglyNumber {
     while (num % 3 == 0) num /= 3;
     while (num % 5 == 0) num /= 5;
 
-    return Math.abs(num) == 1;
+    return num == 1;
   }
 }

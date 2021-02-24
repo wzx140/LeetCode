@@ -3,9 +3,8 @@ package com.wzx.leetcode;
 import java.util.Arrays;
 
 /**
- * https://leetcode.com/problems/implement-strstr/
- *
  * @author wzx
+ * @see <a href="https://leetcode.com/problems/implement-strstr/">https://leetcode.com/problems/implement-strstr/</a>
  */
 public class No28ImplementStrStr {
 

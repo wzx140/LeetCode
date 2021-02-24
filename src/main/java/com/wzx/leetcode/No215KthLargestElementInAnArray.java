@@ -32,7 +32,7 @@ public class No215KthLargestElementInAnArray {
    * space: O(n)
    */
   public int findKthLargest2(int[] nums, int k) {
-    helper(nums, 0, nums.length - 1, k - 1);
+    helper(nums, 0, nums.length - 1, k);
 
     return nums[k - 1];
   }
@@ -57,13 +57,13 @@ public class No215KthLargestElementInAnArray {
     }
     nums[left] = record;
     // 根据轴值左侧个数递归排序
-    int leftNum = left - start;
+    int leftNum = left - start + 1;
     if (leftNum > k) {
       // 继续划分左侧
       helper(nums, start, left - 1, k);
     } else if (leftNum < k) {
-      // 已经提取出来前leftNum个元素, 继续从右侧提取k-leftNum-1
-      helper(nums, left + 1, end, k - leftNum - 1);
+      // 已经提取出来前leftNum个元素, 继续从右侧提取k-leftNum
+      helper(nums, left + 1, end, k - leftNum);
     }
   }
 }

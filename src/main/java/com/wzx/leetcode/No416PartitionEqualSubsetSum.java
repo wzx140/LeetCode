@@ -3,8 +3,8 @@ package com.wzx.leetcode;
 import java.util.Arrays;
 
 /**
- * @see <a href="https://leetcode.com/problems/partition-equal-subset-sum/">https://leetcode.com/problems/partition-equal-subset-sum/</a>
  * @author wzx
+ * @see <a href="https://leetcode.com/problems/partition-equal-subset-sum/">https://leetcode.com/problems/partition-equal-subset-sum/</a>
  */
 public class No416PartitionEqualSubsetSum {
 
@@ -18,14 +18,11 @@ public class No416PartitionEqualSubsetSum {
    */
   public boolean canPartition(int[] nums) {
     int sum = Arrays.stream(nums).sum();
-    if ((sum & 1) == 1) return false;
+    if (sum % 2 != 0) return false;
     int target = sum / 2;
 
     boolean[][] dp = new boolean[target + 1][nums.length + 1];
     // 边界条件
-    for (int i = 0; i <= target; i++) {
-      dp[i][0] = false;
-    }
     for (int i = 1; i <= nums.length; i++) {
       dp[0][i] = true;
     }

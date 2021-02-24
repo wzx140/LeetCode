@@ -3,9 +3,8 @@ package com.wzx.leetcode;
 import java.util.BitSet;
 
 /**
- * https://leetcode.com/problems/count-primes/
- *
  * @author wzx
+ * @see <a href="https://leetcode.com/problems/count-primes/">https://leetcode.com/problems/count-primes/</a>
  */
 public class No204CountPrimes {
 

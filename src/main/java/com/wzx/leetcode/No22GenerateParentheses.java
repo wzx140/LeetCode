@@ -4,14 +4,14 @@ import java.util.LinkedList;
 import java.util.List;
 
 /**
- * @see <a href="https://leetcode.com/problems/generate-parentheses/">https://leetcode.com/problems/generate-parentheses/</a>
  * @author wzx
+ * @see <a href="https://leetcode.com/problems/generate-parentheses/">https://leetcode.com/problems/generate-parentheses/</a>
  */
 public class No22GenerateParentheses {
 
   /**
    * 回溯
-   *
+   * <p>
    * time: 卡特兰数
    * space: 卡特兰数
    */
@@ -32,11 +32,11 @@ public class No22GenerateParentheses {
     }
 
     track.append('(');
-    recursion(n-1, left + 1, track, res);
+    recursion(n - 1, left + 1, track, res);
     track.deleteCharAt(track.length() - 1);
 
     track.append(')');
-    recursion(n-1, left - 1, track, res);
+    recursion(n - 1, left - 1, track, res);
     track.deleteCharAt(track.length() - 1);
   }
 }

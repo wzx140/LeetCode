@@ -158,6 +158,7 @@ Created by [gh-md-toc](https://github.com/ekalinin/github-markdown-toc.go)
 - [503. Next Greater Element II](src/main/java/com/wzx/leetcode/No503NextGreaterElement2.java)
 - [offer30. 包含min函数的栈](src/main/java/com/wzx/sword/No30MinStack.java)
 - [739. Daily Temperatures](src/main/java/com/wzx/leetcode/No739DailyTemperatures.java)
+- [456. 132 Pattern](src/main/java/com/wzx/leetcode/No456132Pattern.java)
 
 ### 单调队列
 > 从一个方向看数组，前方的元素会将后面的较小元素阻挡
@@ -335,6 +336,7 @@ Created by [gh-md-toc](https://github.com/ekalinin/github-markdown-toc.go)
 - [855. Exam Room](src/main/java/com/wzx/leetcode/No855ExamRoom.java)
 
 ## 找规律
+
 - [offer43. 1~n整数中1出现的次数](src/main/java/com/wzx/sword/No43NumberOfOccurrencesOf1InAnInteger.java)
 - [offer29. 顺时针打印矩阵](src/main/java/com/wzx/sword/No29PrintMatrixClockwise.java)
 - [offer44. 数字序列中某一位的数字](src/main/java/com/wzx/sword/No44ADigitInASequenceOfNumbers.java)
@@ -343,6 +345,8 @@ Created by [gh-md-toc](https://github.com/ekalinin/github-markdown-toc.go)
 - [offer66. 构建乘积数组](src/main/java/com/wzx/sword/No66BuildAnArrayOfProducts.java)
 - [391. Perfect Rectangle](src/main/java/com/wzx/leetcode/No391PerfectRectangle.java)
 - [172. Factorial Trailing Zeroes](src/main/java/com/wzx/leetcode/No172FactorialTrailingZeroes.java)
+- [204. Count Primes](src/main/java/com/wzx/leetcode/No204CountPrimes.java)
+- [263. Ugly Number](src/main/java/com/wzx/leetcode/No263UglyNumber.java)
 
 ## 排序
 - [912. Sort an Array.cpp](src/main/java/com/wzx/leetcode/No912SortAnArray.java): [内排序算法](https://masterwangzx.com/2019/11/26/inner-sort/)

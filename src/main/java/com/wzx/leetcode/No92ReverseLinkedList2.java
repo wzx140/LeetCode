@@ -12,32 +12,35 @@ public class No92ReverseLinkedList2 {
    * time: O(n)
    * space: O(1)
    */
-  public ListNode reverseBetween(ListNode head, int m, int n) {
-    ListNode sentinel = new ListNode();
-    sentinel.next = head;
-    // 起始结点的前一个结点
-    ListNode preStart = sentinel;
-    for (int i = 1; i < m; i++) preStart = preStart.next;
-    // 翻转内部结点(2~4)
-    // 1 -> 2  ->  3 -> 4 -> 5 -> null
-    // 1 -> 2 -><- 3 <- 4    5 -> null
-    ListNode pre = preStart.next, cur = pre.next;
-    int len = n - m;
-    for (int i = 0; i < len; i++) {
-      ListNode next = cur.next;
-      cur.next = pre;
-      pre = cur;
-      cur = next;
+  public ListNode reverseBetween(ListNode head, int left, int right) {
+    ListNode sent = new ListNode();
+    sent.next = head;
+    // 找到left结点和left结点的前一个结点
+    ListNode preLeftNode = sent;
+    for (int i = 0; i < left - 1; i++) {
+      preLeftNode = preLeftNode.next;
     }
-    // 处理尾结点(2->5)
-    // 1 -> 2 -><- 3 <- 4    5 -> null
-    //      4  ->  3 -> 2 -> 5 -> null  1 -> 2
-    preStart.next.next = cur;
-    // 处理头结点(1->4)
-    // 1 -> 2
-    // 1 -> 4 -> 3 -> 2 -> 5 -> null
-    preStart.next = pre;
-    return sentinel.next;
+    ListNode leftNode = preLeftNode.next;
+    // 找到right结点和right结点的后一个结点
+    ListNode rightNode = leftNode;
+    for (int i = 0; i < right - left; i++) {
+      rightNode = rightNode.next;
+    }
+    ListNode postRightNode = rightNode.next;
+    // 反转left结点和right结点之间的结点
+    ListNode pre = preLeftNode;
+    ListNode node = leftNode;
+    while (pre != rightNode) {
+      ListNode next = node.next;
+      node.next = pre;
+      pre = node;
+      node = next;
+    }
+    // 处理首末结点
+    preLeftNode.next = rightNode;
+    leftNode.next = postRightNode;
+
+    return sent.next;
   }
 
 }

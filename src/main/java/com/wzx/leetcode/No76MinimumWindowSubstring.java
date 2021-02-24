@@ -29,23 +29,25 @@ public class No76MinimumWindowSubstring {
     // 窗口中已经包含的字符
     Map<Character, Integer> window = new HashMap<>();
     int left = 0;
-    char[] sArray = s.toCharArray();
     for (int right = 0; right < n; right++) {
-      if (!target.containsKey(sArray[right])) continue;
+      char rightCh = s.charAt(right);
+      if (!target.containsKey(rightCh)) continue;
       // 向右拓展window
-      window.merge(sArray[right], 1, Integer::sum);
-      if (window.get(sArray[right]).equals(target.get(sArray[right]))) valid++;
+      window.merge(rightCh, 1, Integer::sum);
+      if (window.get(rightCh).equals(target.get(rightCh))) valid++;
 
-      for(; valid == target.size(); left++){
+      while (left <= right && valid == target.size()) {
+        char leftCh = s.charAt(left);
         // 更新最小窗口
         if (right - left + 1 < len) {
           begin = left;
           len = right - left + 1;
         }
-        if (!target.containsKey(sArray[left])) continue;
+        left++;
+        if (!target.containsKey(leftCh)) continue;
         // 向左缩减window
-        if (window.get(sArray[left]).equals(target.get(sArray[left]))) valid--;
-        window.compute(sArray[left], (ch, num) -> num - 1);
+        if (window.get(leftCh).equals(target.get(leftCh))) valid--;
+        window.compute(leftCh, (ch, num) -> num - 1);
       }
     }
 

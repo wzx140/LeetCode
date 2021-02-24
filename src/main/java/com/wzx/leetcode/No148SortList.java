@@ -10,7 +10,7 @@ public class No148SortList {
 
   /**
    * 归并排序
-   *
+   * <p>
    * time: O(nlogn)
    * space: O(logn)
    */
@@ -18,6 +18,9 @@ public class No148SortList {
     return sort(head, null);
   }
 
+  /**
+   * [head, tail)
+   */
   private ListNode sort(ListNode head, ListNode tail) {
     if (head == null) return null;
     if (head.next == tail) {
@@ -26,13 +29,12 @@ public class No148SortList {
     }
     // 快慢指针找到中点
     ListNode fast = head, slow = head;
-    while (fast.next != tail && fast.next.next != tail) {
+    while (fast != tail && fast.next != tail) {
       slow = slow.next;
       fast = fast.next.next;
     }
-    ListNode middle = slow.next;
-    ListNode list1 = sort(head, middle);
-    ListNode list2 = sort(middle, tail);
+    ListNode list1 = sort(head, slow);
+    ListNode list2 = sort(slow, tail);
     return merge(list1, list2);
   }
 

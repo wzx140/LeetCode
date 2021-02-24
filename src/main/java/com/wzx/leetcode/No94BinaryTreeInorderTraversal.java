@@ -38,11 +38,9 @@ public class No94BinaryTreeInorderTraversal {
    */
   public List<Integer> inorderTraversal2(TreeNode root) {
     List<Integer> res = new LinkedList<>();
-    if (root == null) return res;
-
     // (结点,该节点是否访问过左子树)
     Deque<Map.Entry<TreeNode, Boolean>> stack = new LinkedList<>();
-    stack.addFirst(new AbstractMap.SimpleEntry<>(root, false));
+    if (root != null) stack.addFirst(new AbstractMap.SimpleEntry<>(root, false));
     while (!stack.isEmpty()) {
       Map.Entry<TreeNode, Boolean> entry = stack.peekFirst();
       boolean left = entry.getValue();
@@ -54,7 +52,7 @@ public class No94BinaryTreeInorderTraversal {
       } else {
         // 访问过左子树，先访问当前结点再访问右子树
         res.add(node.val);
-        stack.pollFirst();
+        stack.removeFirst();
         if (node.right != null) stack.addFirst(new AbstractMap.SimpleEntry<>(node.right, false));
       }
     }

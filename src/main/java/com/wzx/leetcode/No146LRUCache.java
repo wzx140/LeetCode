@@ -61,14 +61,14 @@ public class No146LRUCache {
       tail.prev = head;
     }
 
-    private void deleteNode(Node node) {
+    public void deleteNode(Node node) {
       // prev <-> node <-> next
       // prev <-> next
       node.prev.next = node.next;
       node.next.prev = node.prev;
     }
 
-    private void add2Head(Node node) {
+    public void add2Head(Node node) {
       // head <-> next
       // head <-> node <-> next
       head.next.prev = node;
@@ -113,24 +113,21 @@ public class No146LRUCache {
     }
 
     public void put(int key, int value) {
-      // 添加或更新结点
-      Node node;
-      if(map.containsKey(key)){
-        node = map.get(key);
-        node.val = value;
-        // 更新结点移动到链表首部
-        list.move2Head(node);
-      }else{
-        node = new Node(key, value);
+      // 删除多余尾部结点
+      if (!map.containsKey(key) && map.size() == capacity) {
+        Node node = list.popTail();
+        map.remove(node.key);
+      }
+      // 添加新结点
+      if (!map.containsKey(key)) {
+        Node node = new Node(key, value);
         map.put(key, node);
-        // 新增结点添加到链表首部
         list.add2Head(node);
       }
-      // 删除多余尾部结点
-      if (map.size() > capacity) {
-        Node tail = list.popTail();
-        map.remove(tail.key);
-      }
+      // 移到首部
+      Node node = map.get(key);
+      node.val = value;
+      list.move2Head(node);
     }
   }
 }

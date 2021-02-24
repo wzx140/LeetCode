@@ -8,18 +8,18 @@ public class No198HouseRobber {
 
   /**
    * 动态规划
-   * dp[i]: 偷窃房屋[i, n]的最大利润
-   * 递推: dp[i] = max(nums[i] + dp[i + 2], dp[i + 1]), 第i个房屋偷与不偷
-   *
+   * dp[i]: 偷窃房屋[0, i]的最大利润
+   * 递推: dp[i] = max(nums[i] + dp[i - 2], dp[i - 1]), 第i个房屋偷与不偷
+   * <p>
    * time: O(n)
    * space: O(n)
    */
   public int rob(int[] nums) {
     int[] dp = new int[nums.length + 2];
-    for (int i = nums.length - 1; i >= 0; i--) {
-      dp[i] = Math.max(nums[i] + dp[i + 2], dp[i + 1]);
+    for (int i = 2; i < nums.length + 2; i++) {
+      dp[i] = Math.max(nums[i - 2] + dp[i - 2], dp[i - 1]);
     }
 
-    return dp[0];
+    return dp[nums.length + 1];
   }
 }

@@ -1,8 +1,5 @@
 package com.wzx.leetcode;
 
-import java.util.HashSet;
-import java.util.Set;
-
 /**
  * @see <a href="https://leetcode.com/problems/set-mismatch/">https://leetcode.com/problems/set-mismatch/</a>
  * @author wzx
@@ -16,14 +13,14 @@ public class No645SetMismatch {
    * space: O(n)
    */
   public int[] findErrorNums1(int[] nums) {
-    Set<Integer> map = new HashSet<>();
+    boolean[] map = new boolean[nums.length];
     int[] res = new int[2];
     for (int num : nums) {
-      if (map.contains(num)) res[0] = num;
-      map.add(num);
+      if (map[num - 1]) res[0] = num;
+      map[num - 1] = true;
     }
     for (int i = 1; i <= nums.length; i++) {
-      if (!map.contains(i)) res[1] = i;
+      if (!map[i]) res[1] = i;
     }
     return res;
   }

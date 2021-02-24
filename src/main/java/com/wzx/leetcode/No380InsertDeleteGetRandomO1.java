@@ -3,8 +3,8 @@ package com.wzx.leetcode;
 import java.util.*;
 
 /**
- * @see <a href="https://leetcode.com/problems/insert-delete-getrandom-o1/">https://leetcode.com/problems/insert-delete-getrandom-o1/</a>
  * @author wzx
+ * @see <a href="https://leetcode.com/problems/insert-delete-getrandom-o1/">https://leetcode.com/problems/insert-delete-getrandom-o1/</a>
  */
 public class No380InsertDeleteGetRandomO1 {
 
@@ -14,7 +14,7 @@ public class No380InsertDeleteGetRandomO1 {
   public static class RandomizedSet {
 
     private final List<Integer> data;
-    private final Map<Integer,Integer> val2Index;
+    private final Map<Integer, Integer> val2Index;
     private final Random random = new Random();
 
     /** Initialize your data structure here. */

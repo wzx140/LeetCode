@@ -1,6 +1,7 @@
 package com.wzx.leetcode;
 
-import java.util.*;
+import java.util.HashSet;
+import java.util.Set;
 
 /**
  * @see <a href="https://leetcode.com/problems/sliding-puzzle/">https://leetcode.com/problems/sliding-puzzle/</a>
@@ -57,10 +58,7 @@ public class No773SlidingPuzzle {
         // 找到交集
         if (set2.contains(puzzle)) return step;
         // 找到0所在位置
-        int zeroPos = 0;
-        while (puzzle.charAt(zeroPos) != '0') {
-          zeroPos++;
-        }
+        int zeroPos = puzzle.indexOf('0');
         // 移动
         if (!visit.contains(puzzle)) {
           visit.add(puzzle);

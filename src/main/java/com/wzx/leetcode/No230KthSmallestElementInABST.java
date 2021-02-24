@@ -18,20 +18,20 @@ public class No230KthSmallestElementInABST {
    * space: O(n)
    */
   public int kthSmallest(TreeNode root, int k) {
-    rank = 0;
+    rank = k;
     res = 0;
-    helper(root, k);
+    helper(root);
     return res;
   }
 
-  private void helper(TreeNode root, int k) {
+  private void helper(TreeNode root) {
     if (root == null) return;
-    helper(root.left, k);
-    rank++;
-    if (rank == k) {
+    helper(root.left);
+    rank--;
+    if (rank == 0) {
       res = root.val;
       return;
     }
-    helper(root.right, k);
+    helper(root.right);
   }
 }

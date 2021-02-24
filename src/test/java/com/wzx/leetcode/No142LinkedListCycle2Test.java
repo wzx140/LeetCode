@@ -30,8 +30,8 @@ public class No142LinkedListCycle2Test {
   @Test
   public void detectCycle1Test() {
     No142LinkedListCycle2 solution = new No142LinkedListCycle2();
-    assertEquals(node1.next, solution.detectCycle1(node1));
-    assertEquals(node2, solution.detectCycle1(node2));
-    assertNull(solution.detectCycle1(node3));
+    assertEquals(node1.next, solution.detectCycle(node1));
+    assertEquals(node2, solution.detectCycle(node2));
+    assertNull(solution.detectCycle(node3));
   }
 }

@@ -3,8 +3,8 @@ package com.wzx.leetcode;
 import java.util.Arrays;
 
 /**
- * @see <a href="https://leetcode.com/problems/target-sum/">https://leetcode.com/problems/target-sum/</a>
  * @author wzx
+ * @see <a href="https://leetcode.com/problems/target-sum/">https://leetcode.com/problems/target-sum/</a>
  */
 public class No494TargetSum {
 
@@ -27,19 +27,17 @@ public class No494TargetSum {
 
     // 初始化
     int[][] dp = new int[target + 1][nums.length + 1];
-    for (int i = 0; i <= target; i++) {
-      dp[i][0] = 0;
-    }
-    for (int i = 0; i <= nums.length; i++) {
-      dp[0][i] = 1;
-    }
+    dp[0][0] = 1;
 
     // 递推
-    // 从0开始, 处理nums中有0的特殊情况
+    // 从0开始
     for (int n = 0; n <= target; n++) {
       for (int i = 1; i <= nums.length; i++) {
-        dp[n][i] = dp[n][i - 1]
-                + (n >= nums[i - 1] ? dp[n - nums[i - 1]][i - 1] : 0);
+        if (n >= nums[i - 1]) {
+          dp[n][i] = dp[n][i - 1] + dp[n - nums[i - 1]][i - 1];
+        } else {
+          dp[n][i] = dp[n][i - 1];
+        }
       }
     }
 

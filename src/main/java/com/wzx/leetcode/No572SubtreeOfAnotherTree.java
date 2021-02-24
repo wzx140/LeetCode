@@ -44,9 +44,10 @@ public class No572SubtreeOfAnotherTree {
    * space: O(m) 第一棵树的深度最坏为m
    */
   public boolean isSubtree2(TreeNode s, TreeNode t) {
+    if (s == null) return false;
 
-    return s != null && (TreeNode.treeEquals(s, t)
+    return TreeNode.treeEquals(s, t)
             || isSubtree2(s.left, t)
-            || isSubtree2(s.right, t));
+            || isSubtree2(s.right, t);
   }
 }

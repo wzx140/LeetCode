@@ -22,7 +22,6 @@ public class No130SurroundedRegions {
    * space: O(mn)
    */
   public void solve1(char[][] board) {
-    if (board.length == 0) return;
     int n = board.length, m = board[0].length;
     // 从四周搜索O连通区域, 并标记
     for (int i = 0; i < n; i++) {
@@ -68,7 +67,6 @@ public class No130SurroundedRegions {
    * space: O(mn)
    */
   public void solve2(char[][] board) {
-    if (board.length == 0) return;
     int m = board.length, n = board[0].length;
     // 利用并查集保存O区域与外界的连通关系
     UF uf = new UF(m * n + 1);
