@@ -17,6 +17,7 @@ Table of Contents
     * [单调队列](#单调队列)
   * [字典树](#字典树)
   * [哈希表](#哈希表)
+  * [图](#图)
   * [其他数据结构](#其他数据结构)
 * [算法](#算法)
   * [动态规划](#动态规划)
@@ -171,15 +172,23 @@ Created by [gh-md-toc](https://github.com/ekalinin/github-markdown-toc.go)
 - [offer59. 队列的最大值](src/main/java/com/wzx/sword/No59MaximumValueOfTheQueue.java)
 
 ## 字典树
+
 - [211. Design Add and Search Words Data Structure](src/main/java/com/wzx/leetcode/No211DesignAddAndSearchWordsDataStructure.java)
 
 ## 哈希表
+
 - [offer50. 第一个只出现一次的字符](src/main/java/com/wzx/sword/No50TheFirstCharacterThatAppearsOnlyOnce.java)
 - [offer39. 数组中出现次数超过一半的数字](src/main/java/com/wzx/sword/No39MoreThanHalfOfTheOccurrences.java)
 - [1. tow sum](src/main/java/com/wzx/leetcode/No1TwoSum.java)
 - [454. 4Sum II](src/main/java/com/wzx/leetcode/No454FourSum2.java)
 
+## 图
+
+- [743. Network Delay Time](): [最短路径](https://masterwangzx.com/2019/11/09/graph-algorithm/#%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84)
+- [1584. Min Cost to Connect All Points](): [最小生成树](https://masterwangzx.com/2019/11/09/graph-algorithm/#%E6%9C%80%E5%B0%8F%E7%94%9F%E6%88%90%E6%A0%91minimum-cost-spanning-mst)
+
 ## 其他数据结构
+
 - [146. LRU Cache](src/main/java/com/wzx/leetcode/No146LRUCache.java)
 - [460. LFU Cache](src/main/java/com/wzx/leetcode/No460LFUCache.java)
 - [355. Design Twitter](src/main/java/com/wzx/leetcode/No355DesignTwitter.java)
@@ -187,6 +196,7 @@ Created by [gh-md-toc](https://github.com/ekalinin/github-markdown-toc.go)
 # 算法
 
 ## 动态规划
+
 > [动态规划](https://labuladong.gitbook.io/algo/di-ling-zhang-bi-du-xi-lie/dong-tai-gui-hua-xiang-jie-jin-jie)
 
 - [offer46. 把数字翻译成字符串](src/main/java/com/wzx/sword/No46TranslateNumbersIntoStrings.java)

@@ -207,9 +207,10 @@ public class No912SortAnArray {
     }
     // 按照count数组中的计数重新指定数组的顺序
     int[] tmp = nums.clone();
-    for (int num : tmp){
-      nums[count[num - min] - 1] = num;
-      count[num - min]--;
+    // 由后至前遍历, 保证稳定性
+    for (int i = nums.length - 1; i >= 0; i--) {
+      nums[count[tmp[i] - min] - 1] = tmp[i];
+      count[tmp[i] - min]--;
     }
 
     return nums;
@@ -292,13 +293,12 @@ public class No912SortAnArray {
     while (left <= right) {
       if (tmp[left] <= tmp[right]) {
         nums[curIndex] = tmp[left];
-        curIndex++;
         left++;
       } else {
         nums[curIndex] = tmp[right];
-        curIndex++;
         right--;
       }
+      curIndex++;
     }
   }
 }

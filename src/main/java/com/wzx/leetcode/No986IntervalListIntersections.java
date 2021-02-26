@@ -45,6 +45,6 @@ public class No986IntervalListIntersections {
       }
     }
 
-    return res.toArray(new int[0][0]);
+    return res.toArray(new int[res.size()][2]);
   }
 }

@@ -15,7 +15,7 @@ public class No1541MinimumInsertionsToBalanceAParenthesesString {
       char ch = s.charAt(i);
       if (ch == '(') {
 
-        if ((balance & 1) == 1) {
+        if (balance % 2 != 0) {
           // 如果是奇数说明有个(刚匹配了一半，现在补上一个)
           insert++;
           balance--;

@@ -10,34 +10,34 @@ public class No923ThreeSumWithMultiplicity {
 
   /**
    * 左右指针
-   *
+   * <p>
    * time: O(n^2)
    * space: O(1)
    */
-  public int threeSumMulti(int[] A, int target) {
+  public int threeSumMulti(int[] arr, int target) {
     int MOD = 1_000_000_007;
-    Arrays.sort(A);
+    Arrays.sort(arr);
     int res = 0;
 
     // 先确定一个数，再使用2sum的左右指针
-    for (int i = 0; i < A.length; i++) {
+    for (int i = 0; i < arr.length; i++) {
 
-      int left = i + 1, right = A.length - 1;
+      int left = i + 1, right = arr.length - 1;
       while (left < right) {
-        int sum = A[i] + A[left] + A[right];
+        int sum = arr[i] + arr[left] + arr[right];
         if (sum > target) {
           right--;
         } else if (sum < target) {
           left++;
-          // A[left] + A[right] + A[i] = target
-        } else if (A[left] != A[right]) {
-          // a=A[left],b=A[right]  a, a, a,..., b, b,... 共有count(a)*count(b)种选择方案
+          // arr[left] + arr[right] + arr[i] = target
+        } else if (arr[left] != arr[right]) {
+          // a=arr[left],b=arr[right]  a, a, a,..., b, b,... 共有count(a)*count(b)种选择方案
           int cntLeft = 1, cntRight = 1;
-          while (left + 1 < right && A[left] == A[left + 1]) {
+          while (left < right - 1 && arr[left] == arr[left + 1]) {
             cntLeft++;
             left++;
           }
-          while (right - 1 > left && A[right] == A[right - 1]) {
+          while (left + 1 < right && arr[right] == arr[right - 1]) {
             cntRight++;
             right--;
           }

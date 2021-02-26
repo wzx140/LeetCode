@@ -20,7 +20,7 @@ public class No921MinimumAddToMakeParenthesesValid {
       char ch = S.charAt(i);
       if (ch == '(') {
         balance++;
-      } else if (balance == 0 && ch == ')') {
+      } else if (balance == 0) {
         insert++;
       } else {
         balance--;

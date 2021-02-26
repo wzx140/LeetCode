@@ -10,7 +10,7 @@ public class No887SuperEggDrop {
   /**
    * 动态规划, TLE
    * dp[n][k]:
-   * |    n: 剩余未测楼层(1~N)个数, 由鸡蛋数判定剩余1～n还是N-i～N
+   * |    n: 剩余未测楼层(1~N)个数
    * |    k: 剩余鸡蛋数(0~K-1)
    * 边界条件: dp[i][1] = i, 只剩一个鸡蛋只能一层一层慢慢试
    * 递推公式: dp[n][k] = min_i{max(dp[i-1][k-1], dp[N-i][k])+1}
@@ -25,11 +25,15 @@ public class No887SuperEggDrop {
       dp[i][0] = i;
     }
 
+    // 当前楼层个数
     for (int n = 1; n <= N; n++) {
-      int move = Integer.MAX_VALUE;
+      // 当前鸡蛋个数
       for (int k = 1; k < K; k++) {
         // 分别从1~n层扔鸡蛋尝试
+        int move = Integer.MAX_VALUE;
         for (int i = 1; i <= n; i++) {
+          // 碎了: 在1～i-1层继续扔
+          // 没碎: 在i+1～n层继续扔
           move = Math.min(move, Math.max(dp[i - 1][k - 1], dp[n - i][k]) + 1);
         }
         dp[n][k] = move;

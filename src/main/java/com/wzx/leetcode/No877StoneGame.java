@@ -18,23 +18,19 @@ public class No877StoneGame {
    * space: O(n^2)
    */
   public boolean stoneGame(int[] piles) {
-    int n = piles.length;
-
-    int[][][] dp = new int[n][n][2];
-    for (int i = 0; i < n; i++) {
+    int[][][] dp = new int[piles.length][piles.length][2];
+    for (int i = 0; i < piles.length; i++) {
       dp[i][i][0] = piles[i];
-      dp[i][i][1] = 0;
     }
 
-    // 斜着遍历
-    for (int delta = 1; delta < n; delta++) {
-      for (int i = 0; i < n - delta; i++) {
-        int j = i + delta;
-
+    for (int i = piles.length - 1; i >= 0; i--) {
+      for (int j = i + 1; j < piles.length; j++) {
+        // 先手取i或j所能获得的最大值
         int getI = piles[i] + dp[i + 1][j][1];
         int getJ = piles[j] + dp[i][j - 1][1];
         if (getI > getJ) {
           dp[i][j][0] = getI;
+          // 后手的取值由先手而定
           dp[i][j][1] = dp[i + 1][j][0];
         } else {
           dp[i][j][0] = getJ;
@@ -43,6 +39,6 @@ public class No877StoneGame {
       }
     }
 
-    return dp[0][n - 1][0] > dp[0][n - 1][1];
+    return dp[0][piles.length - 1][0] > dp[0][piles.length - 1][1];
   }
 }
