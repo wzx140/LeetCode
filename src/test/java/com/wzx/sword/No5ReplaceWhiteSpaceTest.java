@@ -12,18 +12,10 @@ public class No5ReplaceWhiteSpaceTest {
   private final String res2 = "hello%20world";
 
   @Test
-  public void replaceSpace1() {
+  public void testReplaceSpace() {
     No5ReplaceWhiteSpace solution = new No5ReplaceWhiteSpace();
-    assertEquals(res1, solution.replaceSpace1(new StringBuffer(data1)));
-    assertEquals(res2, solution.replaceSpace1(new StringBuffer(data2)));
-    assertEquals("", solution.replaceSpace1(new StringBuffer()));
-  }
-
-  @Test
-  public void testReplaceSpace2() {
-    No5ReplaceWhiteSpace solution = new No5ReplaceWhiteSpace();
-    assertEquals(res1, solution.replaceSpace2(new StringBuffer(data1)));
-    assertEquals(res2, solution.replaceSpace2(new StringBuffer(data2)));
-    assertEquals("", solution.replaceSpace1(new StringBuffer()));
+    assertEquals(res1, solution.replaceSpace(data1));
+    assertEquals(res2, solution.replaceSpace(data2));
+    assertEquals("", solution.replaceSpace(""));
   }
 }

@@ -61,15 +61,14 @@ public class No48TheLongestSubstringWithoutRepeatedCharacters {
 
     int res = 0;
     // 窗口[left,right]表示以right结尾的最长不重复子串
-    int left = 0, right = -1;
-    for(int i = 0; i < chars.length; i++){
-      int ch = chars[i];
+    int left = 0;
+    for(int right = 0; right < chars.length; right++){
+      int ch = chars[right];
       int dupIndex = dict[ch];
       // 窗口更新
       left = Math.max(left, dupIndex + 1);
-      right++;
 
-      dict[ch] = i;
+      dict[ch] = right;
       res = Math.max(right - left + 1, res);
     }
     return res;

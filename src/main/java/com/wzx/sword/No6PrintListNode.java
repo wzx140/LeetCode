@@ -5,8 +5,8 @@ import com.wzx.entity.ListNode;
 import java.util.*;
 
 /**
- * @see <a href="https://leetcode-cn.com/problems/cong-wei-dao-tou-da-yin-lian-biao-lcof/">https://leetcode-cn.com/problems/cong-wei-dao-tou-da-yin-lian-biao-lcof/</a>
  * @author wzx
+ * @see <a href="https://leetcode-cn.com/problems/cong-wei-dao-tou-da-yin-lian-biao-lcof/">https://leetcode-cn.com/problems/cong-wei-dao-tou-da-yin-lian-biao-lcof/</a>
  */
 public class No6PrintListNode {
 
@@ -41,27 +41,23 @@ public class No6PrintListNode {
     if (null == head) return new int[0];
 
     int size = 0;
-    ListNode sent = new ListNode(0);
-    sent.next = head;
+    ListNode pre = null;
     ListNode cur = head;
-    // 头插法，反转链表
-    // sent->x->cur->next(curHead)->y
-    // sent->next(curHead)->x->cur->y
-    while (cur.next != null) {
-      ListNode curHead = cur.next;
-      cur.next = curHead.next;
-      curHead.next = sent.next;
-      sent.next = curHead;
+    while (cur != null) {
+      ListNode next = cur.next;
+      cur.next = pre;
+      pre = cur;
+      cur = next;
 
       size++;
     }
 
-    int[] res = new int[size + 1];
-    head = sent.next;
+    int[] res = new int[size];
+    ListNode node = pre;
     int index = 0;
-    while (head != null) {
-      res[index++] = head.val;
-      head = head.next;
+    while (node != null) {
+      res[index++] = node.val;
+      node = node.next;
     }
     return res;
   }
@@ -80,9 +76,9 @@ public class No6PrintListNode {
   }
 
   private void recursion(ListNode node, List<Integer> list) {
-    if (node != null) {
-      recursion(node.next, list);
-      list.add(node.val);
-    }
+    if (node == null) return;
+
+    recursion(node.next, list);
+    list.add(node.val);
   }
 }

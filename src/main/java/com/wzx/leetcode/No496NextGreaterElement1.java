@@ -6,14 +6,14 @@ import java.util.LinkedList;
 import java.util.Map;
 
 /**
- * @see <a href="https://leetcode.com/problems/next-greater-element-i/">https://leetcode.com/problems/next-greater-element-i/</a>
  * @author wzx
+ * @see <a href="https://leetcode.com/problems/next-greater-element-i/">https://leetcode.com/problems/next-greater-element-i/</a>
  */
 public class No496NextGreaterElement1 {
 
   /**
    * 利用单调栈先求出元素与next greater numbers的映射关系
-   *
+   * <p>
    * time: O(n)
    * space: O(n)
    */

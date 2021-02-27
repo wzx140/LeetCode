@@ -13,19 +13,19 @@ public class No21AdjustArrayOrder {
    * space: O(1)
    */
   public void exchange(int[] nums) {
-    int oddIndex = 0;
-    int evenIndex = nums.length - 1;
+    int left = 0;
+    int right = nums.length - 1;
 
-    while (oddIndex < evenIndex) {
+    while (left < right) {
       // 找到前半部分的偶数
-      while (oddIndex < evenIndex && (nums[oddIndex] & 1) != 0) oddIndex++;
+      while (left < right && (nums[left] & 1) != 0) left++;
       // 找到后半部分的奇数
-      while (oddIndex < evenIndex && (nums[evenIndex] & 1) != 1) evenIndex--;
+      while (left < right && (nums[right] & 1) != 1) right--;
       // 交换
-      if (oddIndex < evenIndex) {
-        int tmp = nums[oddIndex];
-        nums[oddIndex] = nums[evenIndex];
-        nums[evenIndex] = tmp;
+      if (left < right) {
+        int tmp = nums[left];
+        nums[left] = nums[right];
+        nums[right] = tmp;
       }
     }
   }

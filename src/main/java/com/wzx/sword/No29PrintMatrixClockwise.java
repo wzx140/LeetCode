@@ -1,8 +1,8 @@
 package com.wzx.sword;
 
 /**
- * @see <a href="https://leetcode-cn.com/problems/shun-shi-zhen-da-yin-ju-zhen-lcof/">https://leetcode-cn.com/problems/shun-shi-zhen-da-yin-ju-zhen-lcof/</a>
  * @author wzx
+ * @see <a href="https://leetcode-cn.com/problems/shun-shi-zhen-da-yin-ju-zhen-lcof/">https://leetcode-cn.com/problems/shun-shi-zhen-da-yin-ju-zhen-lcof/</a>
  */
 public class No29PrintMatrixClockwise {
 
@@ -24,8 +24,8 @@ public class No29PrintMatrixClockwise {
     }
 
     if (offset < col * row) {
-      for (int j = layer; j < col - layer; j++) {
-        for (int i = layer; i < row - layer; i++) {
+      for (int i = layer; i < row - layer; i++) {
+        for (int j = layer; j < col - layer; j++) {
           output[offset++] = matrix[i][j];
         }
       }

@@ -61,6 +61,7 @@ Created by [gh-md-toc](https://github.com/ekalinin/github-markdown-toc.go)
 - [offer3. 数组中的重复数字](src/main/java/com/wzx/sword/No3DuplicateNum.java)
 - [448. Find All Numbers Disappeared in an Array](src/main/java/com/wzx/leetcode/No448FindAllNumbersDisappearedInAnArray.java)
 - [645. Set Mismatch](src/main/java/com/wzx/leetcode/No645SetMismatch.java)
+- [41. First Missing Positive](src/main/java/com/wzx/leetcode/No41FirstMissingPositive.java)
 
 众数
 - [offer39. 数组中出现次数超过一半的数字](src/main/java/com/wzx/sword/No39MoreThanHalfOfTheOccurrences.java)
@@ -125,19 +126,19 @@ Created by [gh-md-toc](https://github.com/ekalinin/github-markdown-toc.go)
 - [206. Reverse Linked List](src/main/java/com/wzx/leetcode/No206ReverseLinkedList.java)
 - [92. Reverse Linked List II](src/main/java/com/wzx/leetcode/No92ReverseLinkedList2.java)
 - [25. Reverse Nodes in k-Group](src/main/java/com/wzx/leetcode/No25ReverseNodesInKGroup.java)
-- [141. LinkedListCycle](src/main/java/com/wzx/leetcode/No141LinkedListCycle.java)
-- [142. LinkedListCycle2](src/main/java/com/wzx/leetcode/No142LinkedListCycle2.java)
-- [2. AddTwoNumbers](src/main/java/com/wzx/leetcode/No2AddTwoNumbers.java)
-- [21. MergeTwoSortedLists](src/main/java/com/wzx/leetcode/No21MergeTwoSortedLists.java)
-- [61. RotateList](src/main/java/com/wzx/leetcode/No61RotateList.java)
-- [138. CopyListWithRandomPointer](src/main/java/com/wzx/leetcode/No138CopyListWithRandomPointer.java)
-- [160. IntersectionOfTwoLinkedLists](src/main/java/com/wzx/leetcode/No160IntersectionOfTwoLinkedLists.java)
-- [430. FlattenAMultilevelDoublyLinkedList](src/main/java/com/wzx/leetcode/No430FlattenAMultilevelDoublyLinkedList.java)
-- [707. DesignLinkedList](src/main/java/com/wzx/leetcode/No707DesignLinkedList.java)
+- [141. Linked List Cycle](src/main/java/com/wzx/leetcode/No141LinkedListCycle.java)
+- [142. Linked List Cycle II](src/main/java/com/wzx/leetcode/No142LinkedListCycle2.java)
+- [2. Add Two Numbers](src/main/java/com/wzx/leetcode/No2AddTwoNumbers.java)
+- [21. Merge Two Sorted Lists](src/main/java/com/wzx/leetcode/No21MergeTwoSortedLists.java)
+- [61. Rotate List](src/main/java/com/wzx/leetcode/No61RotateList.java)
+- [138. Copy List With Random Pointer](src/main/java/com/wzx/leetcode/No138CopyListWithRandomPointer.java)
+- [160. Intersection Of Two Linked Lists](src/main/java/com/wzx/leetcode/No160IntersectionOfTwoLinkedLists.java)
+- [430. Flatten A Multilevel Doubly Linked List](src/main/java/com/wzx/leetcode/No430FlattenAMultilevelDoublyLinkedList.java)
+- [707. Design Linked List](src/main/java/com/wzx/leetcode/No707DesignLinkedList.java)
 - [offer6. 从尾到头打印链表](src/main/java/com/wzx/sword/No6PrintListNode.java)
 
 ## 栈
-- [445. AddTwoNumbers2](src/main/java/com/wzx/leetcode/No445AddTwoNumbers2.java)
+- [445. Add Two Numbers II](src/main/java/com/wzx/leetcode/No445AddTwoNumbers2.java)
 - [316. Remove Duplicate Letters](src/main/java/com/wzx/leetcode/No316RemoveDuplicateLetters.java)
 - [20. Valid Parentheses](src/main/java/com/wzx/leetcode/No20ValidParentheses.java)
 - [offer9. 用两个栈实现队列](src/main/java/com/wzx/sword/No9TwoStackImplementQueue.java)
@@ -247,7 +248,7 @@ Created by [gh-md-toc](https://github.com/ekalinin/github-markdown-toc.go)
 
 ### 背包问题
 - [322. Coin Change](src/main/java/com/wzx/leetcode/No322CoinChange.java): 完全背包
-- [518. Coin Change 2](src/main/java/com/wzx/leetcode/No518CoinChange2.java): 完全背包
+- [518. Coin Change II](src/main/java/com/wzx/leetcode/No518CoinChange2.java): 完全背包
 - [416. Partition Equal Subset Sum](src/main/java/com/wzx/leetcode/No416PartitionEqualSubsetSum.java): 0-1背包    
 - [494. Target Sum](src/main/java/com/wzx/leetcode/No494TargetSum.java): 0-1背包
 
@@ -282,8 +283,8 @@ Created by [gh-md-toc](https://github.com/ekalinin/github-markdown-toc.go)
 ### 快慢指针
 - [141. LinkedListCycle](src/main/java/com/wzx/leetcode/No141LinkedListCycle.java)
 - [19. Remove Nth Node From End of List](src/main/java/com/wzx/leetcode/No19RemoveNthNodeFromEndOfList.java)
-- [141. LinkedListCycle](src/main/java/com/wzx/leetcode/No141LinkedListCycle.java)
-- [142. LinkedListCycle2](src/main/java/com/wzx/leetcode/No142LinkedListCycle2.java)
+- [141. Linked List Cycle](src/main/java/com/wzx/leetcode/No141LinkedListCycle.java)
+- [142. Linked List Cycle II](src/main/java/com/wzx/leetcode/No142LinkedListCycle2.java)
 - [26. Remove Duplicates from Sorted Array](src/main/java/com/wzx/leetcode/No26RemoveDuplicatesFromSortedArray.java)
 - [83. Remove Duplicates from Sorted List](src/main/java/com/wzx/leetcode/No83RemoveDuplicatesFromSortedList.java)
 - [82. Remove Duplicates from Sorted List II](src/main/java/com/wzx/leetcode/No82RemoveDuplicatesFromSortedList2.java)
@@ -310,18 +311,20 @@ Created by [gh-md-toc](https://github.com/ekalinin/github-markdown-toc.go)
 
 ## 深搜回溯
 - [offer12. 矩阵中的路径](src/main/java/com/wzx/sword/No12MatrixPath.java)
-- [offer38. 字符串的排列](src/main/java/com/wzx/sword/No38StringArrangement.java)
-- [46. Permutations](src/main/java/com/wzx/leetcode/No46Permutations.java)
-- [47. Permutations II](src/main/java/com/wzx/leetcode/No47Permutations2.java)
 - [51. N-Queens](src/main/java/com/wzx/leetcode/No51NQueens.java)
 - [52. N-Queens II](src/main/java/com/wzx/leetcode/No52NQueens2.java)
 - [offer13. 机器人的运动范围](src/main/java/com/wzx/sword/No13RobotMovementRange.java)
 - [offer17. 打印从1到最大的n位数](src/main/java/com/wzx/sword/No17PrintMaximumNDigits.java)
 - [130. Surrounded Regions](src/main/java/com/wzx/leetcode/No130SurroundedRegions.java)
-- [77. Combinations](src/main/java/com/wzx/leetcode/No77Combinations.java)
-- [78. Subsets](src/main/java/com/wzx/leetcode/No78Subsets.java)
 - [37. Sudoku Solver](src/main/java/com/wzx/leetcode/No37SudokuSolver.java)
 - [22. Generate Parentheses](src/main/java/com/wzx/leetcode/No22GenerateParentheses.java)
+
+### 排列组合
+- [offer38. 字符串的排列](src/main/java/com/wzx/sword/No38StringArrangement.java)
+- [46. Permutations](src/main/java/com/wzx/leetcode/No46Permutations.java)
+- [47. Permutations II](src/main/java/com/wzx/leetcode/No47Permutations2.java)
+- [77. Combinations](src/main/java/com/wzx/leetcode/No77Combinations.java)
+- [78. Subsets](src/main/java/com/wzx/leetcode/No78Subsets.java)
 
 ## 广搜
 - [111. Minimum Depth of Binary Tree](src/main/java/com/wzx/leetcode/No111MinimumDepthOfBinaryTree.java)
@@ -337,6 +340,7 @@ Created by [gh-md-toc](https://github.com/ekalinin/github-markdown-toc.go)
 # 其他
 - [offer1. 单例模式](src/main/java/com/wzx/sword/No1Singleton.java) [线程安全的单例模式](https://masterwangzx.com/2021/01/10/java-singleton/)
 - [offer20. 表示数值的字符串](src/main/java/com/wzx/sword/No20StringRepresentingNumericValue.java)
+- [offer67. 把字符串转换成整数](src/main/java/com/wzx/sword/No67ConvertStringToInteger.java)
 - [921. Minimum Add to Make Parentheses Valid](src/main/java/com/wzx/leetcode/No921MinimumAddToMakeParenthesesValid.java)
 - [1541. Minimum Insertions to Balance a Parentheses String](src/main/java/com/wzx/leetcode/No1541MinimumInsertionsToBalanceAParenthesesString.java)
 - [offer61. 扑克牌中的顺子](src/main/java/com/wzx/sword/No61StraightInPlayingCards.java)

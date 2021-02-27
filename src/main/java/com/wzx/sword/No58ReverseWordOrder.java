@@ -16,16 +16,16 @@ public class No58ReverseWordOrder {
     StringBuilder sb = new StringBuilder();
 
     // 去除末尾的空格
-    int wordBegin = s.length() - 1;
-    while (wordBegin >= 0 && s.charAt(wordBegin) == ' ') wordBegin--;
+    int left = s.length() - 1;
+    while (left >= 0 && s.charAt(left) == ' ') left--;
 
     // 从后往前遍历
-    while (wordBegin >= 0) {
-      int wordEnd = wordBegin;
-      while (wordBegin >= 0 && s.charAt(wordBegin) != ' ') wordBegin--;
-      if (s.charAt(wordBegin + 1) != ' ') sb.append(s, wordBegin + 1, wordEnd + 1).append(' ');
+    while (left >= 0) {
+      int right = left;
+      while (left >= 0 && s.charAt(left) != ' ') left--;
+      if (s.charAt(left + 1) != ' ') sb.append(s, left + 1, right + 1).append(' ');
       // 跳过空格
-      while (wordBegin >= 0 && s.charAt(wordBegin) == ' ') wordBegin--;
+      while (left >= 0 && s.charAt(left) == ' ') left--;
     }
     // 删除最后一个多余空格
     if (sb.length() > 0) sb.setLength(sb.length() - 1);

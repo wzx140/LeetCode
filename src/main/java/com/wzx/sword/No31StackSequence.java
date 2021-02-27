@@ -1,7 +1,7 @@
 package com.wzx.sword;
 
-import java.util.ArrayDeque;
 import java.util.Deque;
+import java.util.LinkedList;
 
 /**
  * @see <a href="https://leetcode-cn.com/problems/zhan-de-ya-ru-dan-chu-xu-lie-lcof/">https://leetcode-cn.com/problems/zhan-de-ya-ru-dan-chu-xu-lie-lcof/</a>
@@ -15,25 +15,23 @@ public class No31StackSequence {
    * space: O(n)
    */
   public boolean validateStackSequences(int[] pushed, int[] popped) {
-    Deque<Integer> stack = new ArrayDeque<>(pushed.length);
-    int pushIndex = 0;
-    int popIndex = 0;
-    while (pushIndex < pushed.length) {
-      if (pushed[pushIndex] != popped[popIndex]) {
-        // 如果不相等，说明当前操作肯定为压栈
-        stack.push(pushed[pushIndex++]);
-      } else {
-        // 如果相等，说明当前操作为先压栈紧接着开始弹栈
+    Deque<Integer> stack = new LinkedList<>();
+    int pushIndex = 0, popIndex = 0;
+    while(pushIndex < pushed.length || !stack.isEmpty()){
+      if(stack.isEmpty() || (pushIndex < pushed.length && stack.peekFirst() != popped[popIndex])){
+        // 栈为空或者不符合弹栈条件时, 压栈
+        stack.addFirst(pushed[pushIndex]);
         pushIndex++;
+      }else if(stack.peekFirst() == popped[popIndex]){
+        // 符合条件即弹栈
+        stack.removeFirst();
         popIndex++;
-        // 下一步操作可能为压栈也可能为弹栈
-        while (!stack.isEmpty() && stack.peek() == popped[popIndex]) {
-          stack.removeFirst();
-          popIndex++;
-        }
+      }else{
+        // 即没有压栈的元素, 也不符合弹栈条件
+        return false;
       }
     }
 
-    return stack.isEmpty();
+    return true;
   }
 }

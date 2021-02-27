@@ -13,8 +13,8 @@ public class No38StringArrangement {
   /**
    * 深搜
    * <p>
-   * time: O(n^2)
-   * space: O(1)
+   * time: O(n!)
+   * space: O(n)
    */
   public String[] permutation(String s) {
     char[] sArray = s.toCharArray();

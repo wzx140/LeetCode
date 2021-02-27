@@ -104,7 +104,7 @@ public class No60NumberOfNDice {
   /**
    * 自底向上，动态规划
    * dp[i][j]: 掷i个骰子,点数j出现的次数
-   * 递推: dp[n][k] = sum_{i-1}^6{dp[n-1][k-1]}
+   * 递推: dp[n][k] = sum_{i=1}^6{dp[n-i][k-1]}
    * dp[i][j] ->(优化) dp[j]
    * <p>
    * time: O(n^2)
@@ -122,6 +122,7 @@ public class No60NumberOfNDice {
       // i-1个骰子所能出现的最大和最小点数
       int minPoint = i - 1, maxPoint = 6 * (i - 1);
       // j i个骰子可能出现的点数和
+      // 由于使用了滚动数组优化, 所以这里要逆序遍历
       for (int j = 6 * i; j >= i; j--) {
         // 此处的值在上一个循环中已经使用过，赋值为0防止干扰本次循环求值
         dp[j] = 0;

@@ -19,6 +19,8 @@ public class No16IntegerPower {
     if (n == 0) return 1;
     if (n == -1) return 1 / x;
 
+    // -3 / 2 = -1
+    // -3 >> 1 = -2
     double r = myPow1(x, n >> 1);
 
     if ((n & 1) == 0) {

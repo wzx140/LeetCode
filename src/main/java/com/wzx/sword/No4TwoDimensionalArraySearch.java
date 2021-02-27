@@ -13,7 +13,7 @@ public class No4TwoDimensionalArraySearch {
    * space: O(n)
    */
   public boolean findNumberIn2DArray(int[][] matrix, int target) {
-    if (matrix.length == 0 || matrix[0].length == 0) return false;
+    if (matrix.length == 0) return false;
 
     int rowSize = matrix.length;
     int colSize = matrix[0].length;

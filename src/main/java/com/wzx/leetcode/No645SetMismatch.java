@@ -20,7 +20,7 @@ public class No645SetMismatch {
       map[num - 1] = true;
     }
     for (int i = 1; i <= nums.length; i++) {
-      if (!map[i]) res[1] = i;
+      if (!map[i - 1]) res[1] = i;
     }
     return res;
   }

@@ -17,11 +17,9 @@ public class No11RotateMinNum {
 
     int begin = 0;
     int end = numbers.length - 1;
-    int middle = 0;
-
     // 旋转序列将序列分成两个有序序列
     while (begin < end) {
-      middle = begin + (end - begin) / 2;
+      int middle = begin + (end - begin) / 2;
       if (numbers[middle] > numbers[end]) {
         // 3 4 [5] 1 (2)
         // [begin, middle]属于后半段有序序列

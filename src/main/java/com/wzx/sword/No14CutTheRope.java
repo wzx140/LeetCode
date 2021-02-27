@@ -22,8 +22,8 @@ public class No14CutTheRope {
     dp[3] = 3;
 
     for (int i = 4; i <= n; i++) {
-      // 分别从1~i-1处减一刀, 比较处最大值
-      for (int split = 1; split < i; split++) {
+      // 分别从2~i-1处减一刀, 比较处最大值
+      for (int split = 2; split < i; split++) {
         dp[i] = Math.max(dp[i], dp[split] * dp[i - split]);
       }
     }

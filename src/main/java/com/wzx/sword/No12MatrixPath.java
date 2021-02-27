@@ -48,7 +48,6 @@ public class No12MatrixPath {
                             boolean[][] visit) {
     if (index == word.length) return true;
     if (row >= board.length || col >= board[0].length || row < 0 || col < 0) return false;
-    // 首个搜索元素在循环外部添加, 所以visit判断在循环外部
     if (visit[row][col]) return false;
     if (board[row][col] != word[index]) return false;
     // 回溯

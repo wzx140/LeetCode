@@ -30,21 +30,19 @@ public class No53TheMissingNumbers {
    * space: O(1)
    */
   public int missingNumber2(int[] nums) {
-    // 划分左数组和右数组
-    // 左数组的末尾元素nums[i]=i
-    // 右数组的开始元素nums[i]=i+1
-    int begin = 0, end = nums.length - 1;
-    while (begin <= end) {
-      int middle = (end - begin) / 2 + begin;
-      if (nums[middle] == middle) {
-        // 右数组的开始元素在[middle+1, end]
-        begin = middle + 1;
-      } else {
-        // 左数组的结尾元素在[0, middle-1]
-        end = middle - 1;
+    int start = 0, end = nums.length - 1;
+    while(start < end){
+      int middle = (end - start) / 2 + start;
+      if(nums[middle] == middle){
+        // 缺失元素在[middle + 1, end]
+        start = middle + 1;
+      }else{
+        // 缺失元素在[start, middle]
+        end = middle;
       }
     }
-    // 返回右数组开始元素索引
-    return begin;
+    // 缺失最后一个元素
+    if(nums[start] == start) return start + 1;
+    return start;
   }
 }
