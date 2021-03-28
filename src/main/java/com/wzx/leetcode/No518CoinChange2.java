@@ -1,14 +1,17 @@
 package com.wzx.leetcode;
 
 /**
- * @see <a href="https://leetcode.com/problems/coin-change-2/">https://leetcode.com/problems/coin-change-2/</a>
  * @author wzx
+ * @see <a href="https://leetcode.com/problems/coin-change-2/">https://leetcode.com/problems/coin-change-2/</a>
  */
 public class No518CoinChange2 {
 
   /**
    * dp[n][i]: 使用前i个硬币组合成n的方法数
    * 递推公式: dp[n][i]=dp[n-nums[i]][i]+dp[n][i-1]  不取与取nums[i]硬币
+   * 注意和322对比, 322求的是最少硬币个数, 使用一维数组会重复遍历重复组合, 但是由于记录最小硬币数, 所以对结果没有影响
+   * 这里求的是组合数, 使用一维数组会产生重复的组合eg:(1, 2), (2, 1)
+   * <p>
    * time: O(S*n)
    * space: O(S*n)
    */

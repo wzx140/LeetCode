@@ -67,8 +67,8 @@ public class No60NumberOfNDice {
     double[] res = new double[max - min + 1];
     // 备忘录
     int[][] memo = new int[n][6 * n];
-    for (int i = 0; i < 6; i++) {
-      memo[0][i] = 1;
+    for (int i = 1; i <= 6; i++) {
+      memo[0][i - 1] = 1;
     }
 
     // 计算次数
@@ -90,10 +90,15 @@ public class No60NumberOfNDice {
    * 用备忘录防止重复计算
    */
   private int recursion(int n, int k, int[][] memo) {
+    if (n <= 0) return 0;
+    // 点数太少
+    if (k < n) return 0;
+    // 点数太大
+    if (6 * n < k) return 0;
     if (memo[n - 1][k - 1] != 0) return memo[n - 1][k - 1];
 
     int sum = 0;
-    for (int i = Math.max(k - 6 * (n - 1), 1); i <= Math.min(k - (n - 1), 6); i++) {
+    for (int i = 1; i <= 6; i++) {
       sum += recursion(n - 1, k - i, memo);
     }
     memo[n - 1][k - 1] = sum;

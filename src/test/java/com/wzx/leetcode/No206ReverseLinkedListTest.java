@@ -19,9 +19,16 @@ public class No206ReverseLinkedListTest {
   }
 
   @Test
-  public void reverseListTest() {
+  public void reverseList1Test() {
     No206ReverseLinkedList solution = new No206ReverseLinkedList();
-    ListNode head = solution.reverseList(this.node);
+    ListNode head = solution.reverseList1(node);
+    assertEquals(Arrays.asList(5, 4, 3, 2, 1), head.toList());
+  }
+
+  @Test
+  public void reverseList2Test() {
+    No206ReverseLinkedList solution = new No206ReverseLinkedList();
+    ListNode head = solution.reverseList2(node);
     assertEquals(Arrays.asList(5, 4, 3, 2, 1), head.toList());
   }
 

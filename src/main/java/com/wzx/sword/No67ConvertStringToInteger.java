@@ -28,9 +28,6 @@ public class No67ConvertStringToInteger {
       index++;
     } else if (ch == '+') {
       index++;
-    } else if (!Character.isDigit(ch)) {
-      // 非有效字符, 不能转换
-      return 0;
     }
 
     // 数字位

@@ -21,7 +21,6 @@ public class No76MinimumWindowSubstring {
     for (char ch : t.toCharArray()) {
       target.merge(ch, 1, Integer::sum);
     }
-    int n = s.length();
     // 保存最小窗口
     int begin = 0, len = Integer.MAX_VALUE;
     // 窗口中合法字符数
@@ -29,7 +28,7 @@ public class No76MinimumWindowSubstring {
     // 窗口中已经包含的字符
     Map<Character, Integer> window = new HashMap<>();
     int left = 0;
-    for (int right = 0; right < n; right++) {
+    for (int right = 0; right < s.length(); right++) {
       char rightCh = s.charAt(right);
       if (!target.containsKey(rightCh)) continue;
       // 向右拓展window

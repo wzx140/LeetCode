@@ -22,9 +22,8 @@ public class No17PrintMaximumNDigits {
 
     List<Integer> res = new LinkedList<>();
     recursion(num, 0, res);
-    res.remove(0);
 
-    return res.stream().mapToInt(Integer::intValue).toArray();
+    return res.stream().skip(1).mapToInt(Integer::intValue).toArray();
   }
 
   private void recursion(char[] num, int bit, List<Integer> res) {

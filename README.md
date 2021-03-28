@@ -185,8 +185,8 @@ Created by [gh-md-toc](https://github.com/ekalinin/github-markdown-toc.go)
 
 ## 图
 
-- [743. Network Delay Time](): [最短路径](https://masterwangzx.com/2019/11/09/graph-algorithm/#%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84)
-- [1584. Min Cost to Connect All Points](): [最小生成树](https://masterwangzx.com/2019/11/09/graph-algorithm/#%E6%9C%80%E5%B0%8F%E7%94%9F%E6%88%90%E6%A0%91minimum-cost-spanning-mst)
+- [743. Network Delay Time](src/main/java/com/wzx/leetcode/No743NetworkDelayTime.java): [最短路径](https://masterwangzx.com/2019/11/09/graph-algorithm/#%E6%9C%80%E7%9F%AD%E8%B7%AF%E5%BE%84)
+- [1584. Min Cost to Connect All Points](src/main/java/com/wzx/leetcode/No1584MinCostToConnectAllPoints.java): [最小生成树](https://masterwangzx.com/2019/11/09/graph-algorithm/#%E6%9C%80%E5%B0%8F%E7%94%9F%E6%88%90%E6%A0%91minimum-cost-spanning-mst)
 
 ## 其他数据结构
 
@@ -220,6 +220,7 @@ Created by [gh-md-toc](https://github.com/ekalinin/github-markdown-toc.go)
 - [1288. Remove Covered Intervals](src/main/java/com/wzx/leetcode/No1288RemoveCoveredIntervals.java)
 - [56. Merge Intervals](src/main/java/com/wzx/leetcode/No56MergeIntervals.java)
 - [986. Interval List Intersections](src/main/java/com/wzx/leetcode/No986IntervalListIntersections.java)
+- [354. Russian Doll Envelopes](src/main/java/com/wzx/leetcode/No354RussianDollEnvelopes.java)
 
 ### 序列问题
 - 子串(sub array): 原序列的连续元素的组成的新序列
@@ -231,13 +232,13 @@ Created by [gh-md-toc](https://github.com/ekalinin/github-markdown-toc.go)
 - [53. maximum subarray](src/main/java/com/wzx/leetcode/No53MaximumSubarray.java)
 - [offer48. 最长不含重复字符的子字符串](src/main/java/com/wzx/sword/No48TheLongestSubstringWithoutRepeatedCharacters.java)
 - [300. Longest Increasing Subsequence](src/main/java/com/wzx/leetcode/No300LongestIncreasingSubsequence.java)
-- [354. Russian Doll Envelopes](src/main/java/com/wzx/leetcode/No354RussianDollEnvelopes.java)
 - [53. Maximum subarray](src/main/java/com/wzx/leetcode/No53MaximumSubarray.java)
 
 #### 双序列问题
-> 回文序列是自身与自身比较也是双序列问题
-> 
-> dp[i, j]: 子串i~j
+
+> 回文序列是自身与自身比较也是双序列问题，
+>
+> dp[i, j]: 序列; 子串->i,j元素结尾
 
 - [72. Edit Distance](src/main/java/com/wzx/leetcode/No72EditDistance.java)
 - [10. Regular Expression Matching](src/main/java/com/wzx/leetcode/No10RegularExpressionMatching.java)

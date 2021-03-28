@@ -34,7 +34,7 @@ public class No38StringArrangement {
     for (int i = 0; i < s.length; i++) {
       if (visit[i]) continue;
       // 防止重复
-      if (i > 0 && s[i] == s[i - 1] && !visit[i] && !visit[i - 1]) continue;
+      if (i > 0 && s[i] == s[i - 1] && !visit[i - 1]) continue;
       // 回溯
       visit[i] = true;
       sb.append(s[i]);

@@ -1,8 +1,6 @@
 package com.wzx.sword;
 
 import java.util.Arrays;
-import java.util.HashSet;
-import java.util.Set;
 
 /**
  * @author wzx
@@ -41,19 +39,18 @@ public class No61StraightInPlayingCards {
    * space: O(n)
    */
   public boolean isStraight2(int[] nums) {
-    Set<Integer> set = new HashSet<>();
+    boolean[] visit = new boolean[13];
     int min = 14, max = 0;
     for (int num : nums) {
-      if (num != 0) {
-        // 不能重复
-        if (set.contains(num)) return false;
+      if (num == 0) continue;
+      // 不能重复
+      if (visit[num - 1]) return false;
 
-        min = Math.min(min, num);
-        max = Math.max(max, num);
-        set.add(num);
-      }
+      visit[num - 1] = true;
+      max = Math.max(max, num);
+      min = Math.min(min, num);
     }
 
-    return max - min < 5;
+    return max - min <= 4;
   }
 }

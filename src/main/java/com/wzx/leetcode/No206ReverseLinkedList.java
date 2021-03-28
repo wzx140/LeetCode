@@ -12,7 +12,7 @@ public class No206ReverseLinkedList {
    * time: O(n)
    * space: O(1)
    */
-  public ListNode reverseList(ListNode head) {
+  public ListNode reverseList1(ListNode head) {
     if (head == null) return null;
     ListNode pre = null;
     ListNode cur = head;
@@ -23,6 +23,29 @@ public class No206ReverseLinkedList {
       cur = next;
     }
     return pre;
+  }
+
+  /**
+   * 头插法
+   * <p>
+   * time: O(n)
+   * space: O(1)
+   */
+  public ListNode reverseList2(ListNode head) {
+    if (head == null) return null;
+    ListNode sent = new ListNode();
+    sent.next = head;
+    ListNode node = head;
+    // sent -> x -> node -> next -> y
+    // sent -> next -> x -> node -> y
+    while (node.next != null) {
+      ListNode next = node.next;
+      node.next = next.next;
+      next.next = sent.next;
+      sent.next = next;
+    }
+
+    return sent.next;
   }
 
 }
