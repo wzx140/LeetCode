@@ -9,6 +9,7 @@ import com.wzx.entity.ListNode;
 public class No206ReverseLinkedList {
 
   /**
+   * 迭代
    * time: O(n)
    * space: O(1)
    */
@@ -26,12 +27,28 @@ public class No206ReverseLinkedList {
   }
 
   /**
+   * 递归
+   * time: O(n)
+   * space: O(n)
+   */
+  public ListNode reverseList2(ListNode head) {
+    if (head == null || head.next == null) {
+      return head;
+    }
+    // reverseList2 返回是已经翻转好的链表
+    ListNode newHead = reverseList2(head.next);
+    head.next.next = head;
+    head.next = null;
+    return newHead;
+  }
+
+  /**
    * 头插法
    * <p>
    * time: O(n)
    * space: O(1)
    */
-  public ListNode reverseList2(ListNode head) {
+  public ListNode reverseList3(ListNode head) {
     if (head == null) return null;
     ListNode sent = new ListNode();
     sent.next = head;

@@ -32,4 +32,10 @@ public class No206ReverseLinkedListTest {
     assertEquals(Arrays.asList(5, 4, 3, 2, 1), head.toList());
   }
 
+  @Test
+  public void reverseList3Test() {
+    No206ReverseLinkedList solution = new No206ReverseLinkedList();
+    ListNode head = solution.reverseList3(node);
+    assertEquals(Arrays.asList(5, 4, 3, 2, 1), head.toList());
+  }
 }
