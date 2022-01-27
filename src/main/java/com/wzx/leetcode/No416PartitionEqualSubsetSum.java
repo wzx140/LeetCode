@@ -9,34 +9,27 @@ import java.util.Arrays;
 public class No416PartitionEqualSubsetSum {
 
   /**
-   * 容量为sum/2的0-1背包问题
-   * dp[n][i]: 前i个数是否可以组合成n
-   * dp[n][i]=dp[n-nums[i]][i-1]||dp[n][i-1] 是否组合nums[i]
+   * 容量为 sum/2 的 0-1 背包问题
    * <p>
    * time: O(S*n)
-   * space: O(S*n)
+   * space: O(S)
    */
   public boolean canPartition(int[] nums) {
     int sum = Arrays.stream(nums).sum();
-    if (sum % 2 != 0) return false;
-    int target = sum / 2;
-
-    boolean[][] dp = new boolean[target + 1][nums.length + 1];
-    // 边界条件
-    for (int i = 1; i <= nums.length; i++) {
-      dp[0][i] = true;
+    if (sum % 2 != 0) {
+      return false;
     }
 
-    for (int n = 1; n <= target; n++) {
-      for (int i = 1; i <= nums.length; i++) {
-        if (n >= nums[i - 1]) {
-          dp[n][i] = dp[n - nums[i - 1]][i - 1] || dp[n][i - 1];
-        } else {
-          dp[n][i] = dp[n][i - 1];
-        }
+    int target = sum / 2;
+    boolean[] dp = new boolean[target + 1];
+    dp[0] = true;
+    for (int num : nums) {
+      for (int j = target; j >= num; j--) {
+        dp[j] |= dp[j - num];
       }
     }
-
-    return dp[target][nums.length];
+    return dp[target];
   }
+
+
 }

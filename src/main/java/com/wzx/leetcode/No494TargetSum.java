@@ -9,38 +9,31 @@ import java.util.Arrays;
 public class No494TargetSum {
 
   /**
-   * sum(+num) - sum(-num) = target
-   * 2sum(+num) = target + sum(num)
-   * sum(+num) = (target + sum(num))/2
-   * 转化为背包问题
+   * 转化为0-1背包问题
    * <p>
    * time: O(S*n)
-   * space: O(S*n)
+   * space: O(S)
    */
-  public int findTargetSumWays(int[] nums, int S) {
-    // 转化为背包问题
+  public int findTargetSumWays(int[] nums, int target) {
+    // A1 - A2 = target
+    // A1 + A2 = sum
+    // A1 = (target + sum) / 2
+    Arrays.sort(nums);
+
     int sum = Arrays.stream(nums).sum();
-    if (sum < S) return 0;
-    int target = S + sum;
-    if ((target & 1) == 1) return 0;
-    target /= 2;
+    if ((target + sum) % 2 != 0) {
+      return 0;
+    }
+    int goal = (target + sum) / 2;
 
-    // 初始化
-    int[][] dp = new int[target + 1][nums.length + 1];
-    dp[0][0] = 1;
-
-    // 递推
-    // 从0开始
-    for (int n = 0; n <= target; n++) {
-      for (int i = 1; i <= nums.length; i++) {
-        if (n >= nums[i - 1]) {
-          dp[n][i] = dp[n][i - 1] + dp[n - nums[i - 1]][i - 1];
-        } else {
-          dp[n][i] = dp[n][i - 1];
-        }
+    int[] dp = new int[goal + 1];
+    dp[0] = 1;
+    for (int i = 0; i < nums.length; i++) {
+      for (int j = goal; j >= nums[i]; j--) {
+        dp[j] = dp[j] + dp[j - nums[i]];
       }
     }
 
-    return dp[target][nums.length];
+    return dp[goal];
   }
 }

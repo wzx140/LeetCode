@@ -41,9 +41,7 @@ public class No322CoinChange {
   }
 
   /**
-   * 自顶向上的动态规划
-   * dp[i]: i元的最小硬币数
-   * dp[i] = min (dp[i-coin] for coin in coins)
+   * 0-1 背包: 价值为1的硬币, 装入最大容量为 amount 的包中, 最小收益
    * <p>
    * time: O(s*n) s:amount, n:number of coins
    * space: O(n)
@@ -51,13 +49,12 @@ public class No322CoinChange {
   public int coinChange2(int[] coins, int amount) {
     int[] dp = new int[amount + 1];
     Arrays.fill(dp, amount + 1);
+    // 哨兵
     dp[0] = 0;
 
-    for (int i = 1; i <= amount; i++) {
-      for (int coin : coins) {
-        if (coin <= i) {
-          dp[i] = Math.min(dp[i], dp[i - coin] + 1);
-        }
+    for (int coin : coins) {
+      for (int j = coin; j <= amount; j++) {
+        dp[j] = Math.min(dp[j], dp[j - coin] + 1);
       }
     }
 

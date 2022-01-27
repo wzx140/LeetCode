@@ -247,13 +247,16 @@ Created by [gh-md-toc](https://github.com/ekalinin/github-markdown-toc.go)
 - [1143. Longest Common Subsequence](src/main/java/com/wzx/leetcode/No1143LongestCommonSubsequence.java)
 - [516. Longest Palindromic Subsequence](src/main/java/com/wzx/leetcode/No516LongestPalindromicSubsequence.java)
 
-### 背包问题
-- [322. Coin Change](src/main/java/com/wzx/leetcode/No322CoinChange.java): 完全背包
+### [背包问题](https://zhuanlan.zhihu.com/p/93857890)
+
+- [322. Coin Change](src/main/java/com/wzx/leetcode/No322CoinChange.java): 0-1背包
 - [518. Coin Change II](src/main/java/com/wzx/leetcode/No518CoinChange2.java): 完全背包
-- [416. Partition Equal Subset Sum](src/main/java/com/wzx/leetcode/No416PartitionEqualSubsetSum.java): 0-1背包    
+- [416. Partition Equal Subset Sum](src/main/java/com/wzx/leetcode/No416PartitionEqualSubsetSum.java): 0-1背包
 - [494. Target Sum](src/main/java/com/wzx/leetcode/No494TargetSum.java): 0-1背包
+- [474. Ones and Zeroes](src/main/java/com/wzx/leetcode/No474OnesAndZeroes.java): 多重背包
 
 ### 股票问题
+
 > [股票问题](https://labuladong.gitbook.io/algo/dong-tai-gui-hua-xi-lie/tuan-mie-gu-piao-wen-ti)
 
 - [121. Best Time to Buy and Sell Stock](src/main/java/com/wzx/leetcode/No121BestTimeToBuyAndSellStock.java)
