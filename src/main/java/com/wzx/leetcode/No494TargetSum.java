@@ -18,13 +18,14 @@ public class No494TargetSum {
     // A1 - A2 = target
     // A1 + A2 = sum
     // A1 = (target + sum) / 2
-    Arrays.sort(nums);
-
     int sum = Arrays.stream(nums).sum();
     if ((target + sum) % 2 != 0) {
       return 0;
     }
     int goal = (target + sum) / 2;
+    if (goal < 0) {
+      return 0;
+    }
 
     int[] dp = new int[goal + 1];
     dp[0] = 1;

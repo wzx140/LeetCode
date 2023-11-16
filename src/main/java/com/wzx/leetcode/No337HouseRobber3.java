@@ -25,13 +25,17 @@ public class No337HouseRobber3 {
     if (root == null) return 0;
     if (memo.containsKey(root)) return memo.get(root);
 
-    int rob = root.val
-            + (root.left == null ? 0 :
-            recursion1(root.left.left, memo) + recursion1(root.left.right, memo))
-            + (root.right == null ? 0 :
-            recursion1(root.right.left, memo) + recursion1(root.right.right, memo));
+    int rob = root.val;
+    if (root.left != null) {
+      rob += recursion1(root.left.left, memo) + recursion1(root.left.right, memo);
+    }
+    if (root.right != null) {
+      rob += recursion1(root.right.left, memo) + recursion1(root.right.right, memo);
+    }
     int nRob = recursion1(root.left, memo) + recursion1(root.right, memo);
+    int maxRob = Math.max(rob, nRob);
 
+    memo.put(root, maxRob);
     return Math.max(rob, nRob);
   }
 

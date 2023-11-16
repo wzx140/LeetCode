@@ -232,7 +232,6 @@ Created by [gh-md-toc](https://github.com/ekalinin/github-markdown-toc.go)
 - [53. maximum subarray](src/main/java/com/wzx/leetcode/No53MaximumSubarray.java)
 - [offer48. 最长不含重复字符的子字符串](src/main/java/com/wzx/sword/No48TheLongestSubstringWithoutRepeatedCharacters.java)
 - [300. Longest Increasing Subsequence](src/main/java/com/wzx/leetcode/No300LongestIncreasingSubsequence.java)
-- [53. Maximum subarray](src/main/java/com/wzx/leetcode/No53MaximumSubarray.java)
 
 #### 双序列问题
 
@@ -249,7 +248,11 @@ Created by [gh-md-toc](https://github.com/ekalinin/github-markdown-toc.go)
 
 ### [背包问题](https://zhuanlan.zhihu.com/p/93857890)
 
-- [322. Coin Change](src/main/java/com/wzx/leetcode/No322CoinChange.java): 0-1背包
+- 0-1 背包：物品反向枚举
+- 完全背包：物品正向枚举
+- 最值或者组合个数需要体现在状态转移方程中
+
+- [322. Coin Change](src/main/java/com/wzx/leetcode/No322CoinChange.java): 完全背包
 - [518. Coin Change II](src/main/java/com/wzx/leetcode/No518CoinChange2.java): 完全背包
 - [416. Partition Equal Subset Sum](src/main/java/com/wzx/leetcode/No416PartitionEqualSubsetSum.java): 0-1背包
 - [494. Target Sum](src/main/java/com/wzx/leetcode/No494TargetSum.java): 0-1背包
