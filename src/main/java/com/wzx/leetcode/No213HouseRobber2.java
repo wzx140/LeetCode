@@ -15,9 +15,9 @@ public class No213HouseRobber2 {
   public int rob(int[] nums) {
     if (nums.length == 1) return nums[0];
 
-    // 第一个房间可以偷
-    int rob1 = helper(nums, 0, nums.length - 2);
-    // 第一个房间不可以偷
+    // 第一个房间偷
+    int rob1 = helper(nums, 2, nums.length - 2) + nums[0];
+    // 第一个房间不偷
     int rob2 = helper(nums, 1, nums.length - 1);
 
     return Math.max(rob1, rob2);
