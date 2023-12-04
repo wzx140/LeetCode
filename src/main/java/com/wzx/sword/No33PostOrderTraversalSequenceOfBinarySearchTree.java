@@ -31,8 +31,8 @@ public class No33PostOrderTraversalSequenceOfBinarySearchTree {
     // 未找到分割点, 没有右子树
     if (rightSplit > end) return recursion(post, begin, end - 1);
     // 判断右子树合法性
-    for (int i = rightSplit; i <= end; i++) {
-      if (post[i] < root) return false;
+    for (int i = rightSplit; i < end; i++) {
+      if (post[i] <= root) return false;
     }
     return recursion(post, begin, rightSplit - 1) && recursion(post, rightSplit, end - 1);
   }
