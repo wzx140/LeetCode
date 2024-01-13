@@ -34,7 +34,7 @@ public class No47Permutations2 {
     for (int i = 0; i < nums.length; i++) {
       if (visit[i]) continue;
       // 防止重复
-      if (i > 0 && nums[i - 1] == nums[i] && !visit[i - 1] && !visit[i]) continue;
+      if (i > 0 && nums[i - 1] == nums[i] && !visit[i - 1]) continue;
 
       track.add(nums[i]);
       visit[i] = true;

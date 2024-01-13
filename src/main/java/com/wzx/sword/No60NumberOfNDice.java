@@ -109,7 +109,7 @@ public class No60NumberOfNDice {
   /**
    * 自底向上，动态规划
    * dp[i][j]: 掷i个骰子,点数j出现的次数
-   * 递推: dp[n][k] = sum_{i=1}^6{dp[n-i][k-1]}
+   * 递推: dp[n][k] = sum_{i=1}^6{dp[n-1][k-i]}
    * dp[i][j] ->(优化) dp[j]
    * <p>
    * time: O(n^2)
